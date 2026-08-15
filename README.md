@@ -107,4 +107,4 @@ It checks runtime boot, content hashes, unique IDs, question metadata, handlers,
 - Project context now records Prof. RC Nath, a grinding/firing synthesis phase, and a subsequent characterization phase. Personalization remains incomplete until the exact compound, precursors, firing schedule/atmosphere, instruments, safety controls, contribution, and next run are confirmed.
 - Training evidence and AI feedback do not predict selection.
 
-See [`MISSION_VIVA_REMAINING_WORK_AUDIT.md`](MISSION_VIVA_REMAINING_WORK_AUDIT.md) for the detailed completion and remaining-work ledger.
+See [`MISSION_VIVA_PENDING_WORK.md`](MISSION_VIVA_PENDING_WORK.md) for the concise current backlog and [`MISSION_VIVA_REMAINING_WORK_AUDIT.md`](MISSION_VIVA_REMAINING_WORK_AUDIT.md) for the full historical audit.
