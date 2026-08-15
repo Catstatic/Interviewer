@@ -50,13 +50,13 @@ Current question-kind signals:
 
 Since this prompt review, four reviewed answer batches have been added:
 
-- **300 curated full-model answer layers**
-- **368 question-bank records** resolve to those full models, including reviewed full-layer aliases and cross-lane variants
+- **325 curated full-model answer layers**
+- **393 question-bank records** resolve to those full models, including reviewed full-layer aliases and cross-lane variants
 - **103 additional records** resolve to reviewed deep-sheet answers/outlines through exact or explicit alias links
 - **128 human-reviewed semantic aliases** explicitly target a named deep-sheet or curated full layer without automatic fuzzy matching
-- **84 records** remain structure-cue-only
+- **59 records** remain structure-cue-only
 
-Each curated layer contains a short answer, full model answer, assumptions, traps, and five follow-ups. Answer-level scientific acceptance applies to those 300 layers and explicit reviewed aliases only; expansion remains deliberately manual.
+Each curated layer contains a short answer, full model answer, assumptions, traps, and five follow-ups. Answer-level scientific acceptance applies to those 325 layers and explicit reviewed aliases only; expansion remains deliberately manual.
 
 ---
 
@@ -254,7 +254,7 @@ Current metadata is reliable enough for the repaired prototype, but final conten
 
 ## 5.3 Scientific review must continue with model answers
 
-Prompt-level review is complete for this seed bank, and 300 full-answer layers plus 50 Dojo derivations have since passed their first scientific-content review. Every additional answer or derivation batch must still check:
+Prompt-level review is complete for this seed bank, and 325 full-answer layers plus 50 Dojo derivations have since passed their first scientific-content review. Every additional answer or derivation batch must still check:
 
 - Equations and sign conventions
 - Dimensions and units
@@ -282,6 +282,6 @@ The seed question bank now passes **prompt-level editorial acceptance** with the
 - Context-dependent interruptions are **not standalone questions**.
 - Cross-organization duplicates are linked variants, not hidden duplication.
 - Radiation/nuclear and mutable-organization prompts carry risk context.
-- Full answer-level scientific acceptance is delivered for 300 curated layers; runtime aliases extend reviewed coverage, while 84 records remain cue-only.
+- Full answer-level scientific acceptance is delivered for 325 curated layers; runtime aliases extend reviewed coverage, while 59 records remain cue-only.
 
 > The question bank is now honest enough to build upon. The next content step should deepen the highest-priority subject sheets and replace generic rubrics with scientifically reviewed answer layers—not increase the counter again.
