@@ -51,7 +51,7 @@ def main() -> None:
             assert "<title" in diagram["svg"] and "<svg" in diagram["svg"]
 
     answers = load("answer-layers.json")["layers"]
-    assert len(answers) == 325
+    assert len(answers) == 327
     unique(answers, "id", "answers")
     unique(answers, "question", "answers")
     answer_targets = {(row["topic"], row["question"]) for row in answers}
@@ -124,7 +124,7 @@ def main() -> None:
         assert row["status"] == "reviewed-original-v1" and len(row["checklist"]) == 5
         assert "<title" in row["svg"] and "<svg" in row["svg"]
 
-    print("Content validation passed: 12 deep sheets, 325 answers, 128 aliases, 250 traps, 658 expanded cards, 14 extension derivations, 24 dossiers, 22 resources, and 64 extension visuals.")
+    print("Content validation passed: 12 deep sheets, 327 answers, 128 aliases, 250 traps, 658 expanded cards, 14 extension derivations, 24 dossiers, 22 resources, and 64 extension visuals.")
 
 
 if __name__ == "__main__":

@@ -5,7 +5,7 @@
 ### Release-candidate 2.4.0 completion pass
 
 - Split the maintainable application into `src/mission-viva.template.html`, `src/mission-viva.css`, and `src/mission-viva.js` while preserving `mission-viva.html` as the deterministic single-file deliverable.
-- Added a reproducible self-contained builder, documentation JSON Schema, zero-dependency content validator, and build-reproducibility smoke assertion.
+- Added a reproducible self-contained builder, documentation JSON Schema, zero-dependency content validator, static offline/security audit, and build-reproducibility smoke assertion.
 - Added target-specific local evidence coverage, target-board routing, dossier-to-topic fit maps, role-specific private-space boards, a prerequisite graph, evidence trends, and 30-day plan history.
 - Added five-level declared-subject follow-up trees, evidence-based state recommendations, and deep-sheet failure-to-revision routing.
 - Added dedicated wrong-answer correction, factual-coverage self-checks against reviewed criteria, and user-authored simple/specialist answer revisions.
@@ -27,7 +27,7 @@
 ### Reviewed content
 
 - Added 12 complete-v1, 16-tab priority deep sheets.
-- Added 325 reviewed full-model answer layers across twelve batches.
+- Added 327 reviewed full-model answer layers across thirteen batches.
 - Added 128 human-reviewed semantic answer aliases with explicit deep-sheet or full-layer targets.
 - Added 250 reviewed distinct trap/recovery records.
 - Added 800 reviewed factual flashcards.

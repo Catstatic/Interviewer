@@ -8001,6 +8001,54 @@
       ],
       "reviewedOn": "2026-08-15",
       "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-326",
+      "topic": "Experimental Contradictions",
+      "question": "What if your expected peak is absent?",
+      "shortAnswer": "First verify sensitivity, calibration, range, background and sample identity; then treat absence as a bounded nondetection that may challenge the assignment or model.",
+      "modelAnswer": "I would not add a peak through processing or immediately blame the instrument. I would check reference/standard response, acquisition range and resolution, baseline, expected intensity, overlap, preparation, orientation and detection limit. The feature may be genuinely absent, too weak, shifted, broadened or masked. I would report the nondetection with sensitivity and choose a complementary or higher-sensitivity test that distinguishes these explanations.",
+      "assumptions": [
+        "Expected feature and instrument response defined",
+        "Detection limit and sample history available"
+      ],
+      "traps": [
+        "Calling nondetection proof of absence without sensitivity",
+        "Changing baseline until a peak appears"
+      ],
+      "followUps": [
+        "Was standard detected?",
+        "Could peak shift?",
+        "What overlap?",
+        "Which complementary method?",
+        "How report upper bound?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-327",
+      "topic": "Experimental Contradictions",
+      "question": "What if the control shows the same trend as the sample?",
+      "shortAnswer": "The trend is not yet attributable to the sample-specific variable; audit whether the control is appropriate and test shared preparation, environment, instrument or analysis causes.",
+      "modelAnswer": "I would preserve both results, verify labels and acquisition order, and compare magnitude with uncertainty. A shared trend can indicate background, drift, solvent/substrate/container effect, handling, batch history or a response common to both. The control may also be poorly designed or contaminated. I would add a blank or orthogonal control and vary the proposed causal factor. Until separated, I would withdraw the sample-specific claim rather than subtract the control opportunistically.",
+      "assumptions": [
+        "Control intended to isolate one causal factor",
+        "Matched acquisition and uncertainty available"
+      ],
+      "traps": [
+        "Ignoring the control because the sample signal is larger",
+        "Subtracting without a physical normalization model"
+      ],
+      "followUps": [
+        "Is control appropriate?",
+        "Could drift explain both?",
+        "Which blank next?",
+        "How compare uncertainty?",
+        "What claim remains safe?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
     }
   ]
 }

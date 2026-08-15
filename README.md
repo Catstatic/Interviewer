@@ -12,10 +12,10 @@ External study links and the optional AI/TTS integrations require internet or a 
 
 - 12/12 priority complete-v1 deep sheets
 - 555 reviewed standalone interview prompts
-- 325 reviewed full-model answer layers
+- 327 reviewed full-model answer layers
 - 128 human-reviewed semantic answer aliases, including explicit deep-sheet and full-layer targets
 - 598 indexed deep-sheet answers/outlines/numericals
-- 393 question-bank records resolving to full models, 103 to deep answers, and 59 still cue-only
+- 395 question-bank records resolving to full models, 103 to deep answers, and 57 still cue-only
 - 250 reviewed distinct traps
 - 800 reviewed factual SRS cards with daily limits, leech, suspend, and bury controls
 - 50 complete Derivation Dojo items
@@ -64,6 +64,7 @@ python3 scripts/build_answer_batch9.py
 python3 scripts/build_answer_batch10.py
 python3 scripts/build_answer_batch11.py
 python3 scripts/build_answer_batch12.py
+python3 scripts/build_answer_batch13.py
 python3 scripts/build_visual_extensions.py
 python3 scripts/sync_expanded_flashcards.py
 python3 scripts/sync_deep_sheets.py
@@ -83,6 +84,7 @@ Run the zero-dependency smoke and schema battery:
 
 ```bash
 python3 scripts/validate_content.py
+python3 scripts/audit_security.py
 node tests/phase0-smoke.js
 ```
 
