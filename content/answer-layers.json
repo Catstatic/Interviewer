@@ -5601,6 +5601,1806 @@
       ],
       "reviewedOn": "2026-08-15",
       "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-226",
+      "topic": "Electronics and RF",
+      "question": "What is impedance matching?",
+      "shortAnswer": "Impedance matching controls reflection or power/signal transfer by making source, line and load impedances satisfy the intended frequency-dependent condition.",
+      "modelAnswer": "On a transmission line, matching Z_L to characteristic impedance makes the load reflection coefficient zero at the design frequency. For a source/load network, conjugate matching can maximize delivered power under stated assumptions, while voltage measurement often prefers high input impedance instead. Matching can use transformers, reactive networks or distributed structures and is bandwidth-, loss- and tolerance-limited. The objective must be stated before saying impedances should be equal.",
+      "assumptions": [
+        "Linear steady-state network at stated frequency",
+        "Reference impedance and matching objective defined"
+      ],
+      "traps": [
+        "Saying every circuit needs equal impedances",
+        "Ignoring bandwidth and reactive components"
+      ],
+      "followUps": [
+        "Reflection coefficient?",
+        "Conjugate match?",
+        "Why scope input is high?",
+        "How measure S11?",
+        "What limits bandwidth?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-227",
+      "topic": "Electromagnetic Theory",
+      "question": "What are boundary conditions for electric fields?",
+      "shortAnswer": "Boundary conditions follow Maxwell equations: tangential E jumps with time-varying magnetic surface effects as appropriate, while normal D changes by free surface charge; electrostatic tangential E is continuous.",
+      "modelAnswer": "A shrinking loop across an electrostatic interface gives n×(E₂−E₁)=0. A pillbox gives n·(D₂−D₁)=σ_free in macroscopic media. Normal E therefore depends on permittivity and surface charge. At a perfect conductor in electrostatic equilibrium, interior E is zero, the surface is equipotential and external tangential E vanishes; normal external field is tied to surface charge. Dynamic interfaces require the full Maxwell boundary relations.",
+      "assumptions": [
+        "Interface normal and macroscopic/microscopic fields defined",
+        "Electrostatic simplifications used only where stated"
+      ],
+      "traps": [
+        "Saying all E components are continuous",
+        "Using D boundary condition with total charge without convention"
+      ],
+      "followUps": [
+        "Derive with loop.",
+        "Derive with pillbox.",
+        "Dielectric interface?",
+        "Perfect conductor?",
+        "What changes dynamically?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-228",
+      "topic": "Project Ownership",
+      "question": "What is your independent contribution to the project?",
+      "shortAnswer": "State only work personally completed, separating observed, assisted, supervised and independently repeatable tasks; unknown or planned contribution remains explicitly pending.",
+      "modelAnswer": "I would answer with specific actions: literature or protocol work, sample preparation, instrument operation, code, analysis, decisions, troubleshooting and documentation that I actually performed. I would name guidance from my supervisor and facility staff, then identify one judgement I made and what I can safely repeat under approved procedure. If the project is early-stage, a narrow truthful contribution is stronger than group credit. The Mission Viva ledger must be filled with real facts before this answer is personalized.",
+      "assumptions": [
+        "Actual notebook/contribution records available",
+        "Facility authorization distinguished from competence"
+      ],
+      "traps": [
+        "Using “we” to hide personal role",
+        "Claiming independence after observing once"
+      ],
+      "followUps": [
+        "Which decision was yours?",
+        "What required supervision?",
+        "What can you repeat?",
+        "Where documented?",
+        "What did you learn?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-229",
+      "topic": "Radiation Protection",
+      "question": "Why is shielding material-dependent?",
+      "shortAnswer": "Shielding depends on radiation type and energy because interaction probabilities, secondary radiation, density, composition and geometry differ across materials.",
+      "modelAnswer": "Charged particles, photons and neutrons lose energy through different mechanisms. High-Z material may attenuate photons efficiently but can increase bremsstrahlung for energetic beta particles; hydrogen-rich materials can slow neutrons while capture products also need consideration. Real design includes spectrum, buildup, gaps, activation, heat and dose geometry. Therefore no material is a universal shield, and facility shielding must be designed by qualified personnel under current standards.",
+      "assumptions": [
+        "Conceptual comparison with radiation spectrum specified",
+        "No operational shielding design inferred"
+      ],
+      "traps": [
+        "Naming lead as universal shield",
+        "Ignoring secondary radiation and geometry"
+      ],
+      "followUps": [
+        "Beta shielding issue?",
+        "Why hydrogen for neutrons?",
+        "What is buildup?",
+        "How energy matters?",
+        "Who verifies design?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-230",
+      "topic": "Spacecraft Thermal Engineering",
+      "question": "Why are thermal controls needed on spacecraft?",
+      "shortAnswer": "Spacecraft need thermal control because vacuum removes convection while solar, planetary, internal and eclipse loads vary; components must remain within survival and performance temperatures.",
+      "modelAnswer": "Heat moves by conduction through structure and radiation between surfaces and space. Absorptivity, emissivity, view factors, internal dissipation, orbit/attitude and transient heat capacity determine temperatures. Passive coatings, insulation, radiators and heat paths can be combined with heaters or active transport. “Space is cold” does not guarantee cooling, and vacuum does not prevent radiation. A credible answer starts with node energy balances and validated thermal-vacuum correlation.",
+      "assumptions": [
+        "Orbit/attitude and component limits specified",
+        "Radiative and conductive paths modelled"
+      ],
+      "traps": [
+        "Saying vacuum makes a spacecraft freeze",
+        "Ignoring internal power and eclipse transients"
+      ],
+      "followUps": [
+        "Why no convection?",
+        "Role of emissivity?",
+        "What is MLI?",
+        "Why heaters?",
+        "How validate model?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-231",
+      "topic": "Research Integrity",
+      "question": "How do you avoid confirmation bias?",
+      "shortAnswer": "Predefine hypotheses, controls, inclusion and decision criteria; preserve all data; use blinding/randomization where possible; seek alternatives and tests that could falsify the preferred explanation.",
+      "modelAnswer": "I would distinguish exploratory from confirmatory analysis and avoid changing criteria silently after seeing results. Negative and contradictory runs remain in the record. Independent replication, code review, held-out data, competing models and a planned discriminating experiment reduce motivated interpretation. Bias cannot be eliminated by confidence alone; transparent methods, provenance and criticism create checks.",
+      "assumptions": [
+        "Testable competing explanations exist",
+        "Raw data and analysis history preserved"
+      ],
+      "traps": [
+        "Claiming objectivity removes bias",
+        "Discarding inconvenient runs as outliers without criteria"
+      ],
+      "followUps": [
+        "What would falsify claim?",
+        "Why preregister?",
+        "How blind experiment?",
+        "Exploratory versus confirmatory?",
+        "How handle contradiction?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-232",
+      "topic": "Electromagnetic Theory",
+      "question": "What happens at a conductor surface?",
+      "shortAnswer": "In electrostatic equilibrium the conductor interior field is zero, the surface is equipotential, tangential external E vanishes and surface charge supports the normal field; finite-frequency conductors require skin depth and surface-current physics.",
+      "modelAnswer": "Free charges move until no tangential force remains. A Gaussian pillbox relates the normal field or D discontinuity to surface charge. Just outside an ideal vacuum conductor E_n=σ/ε₀. Surface curvature changes charge density, and cavities depend on enclosed charge and boundary conditions. In real finite-conductivity AC fields, penetration, loss and current occur over a skin depth, so the ideal electrostatic statement must not be generalized.",
+      "assumptions": [
+        "Electrostatic equilibrium and ideal conductor for simple result",
+        "Surface normal and surrounding medium specified"
+      ],
+      "traps": [
+        "Saying fields are always zero near conductors",
+        "Ignoring finite-frequency penetration"
+      ],
+      "followUps": [
+        "Why tangential E zero?",
+        "Field inside cavity?",
+        "Curvature effect?",
+        "What is skin depth?",
+        "How surface current arises?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-233",
+      "topic": "Thermodynamics",
+      "question": "Why is enthalpy useful for constant-pressure processes?",
+      "shortAnswer": "Enthalpy H=U+PV packages internal energy and pressure–volume displacement; for a closed system with only PV work at constant pressure, heat added equals ΔH.",
+      "modelAnswer": "From dU=δQ−P_ext dV, a quasistatic constant-pressure process with only PV work gives δQ=dU+P dV=dH. In open steady-flow systems, h naturally appears with flow work in the energy balance. The equality Q_p=ΔH fails with non-PV work, varying external conditions or unaccounted kinetic/potential changes. Enthalpy is a state function; heat remains path dependent.",
+      "assumptions": [
+        "Closed system, constant pressure and only PV work for Qp relation",
+        "Equilibrium states and sign convention defined"
+      ],
+      "traps": [
+        "Calling enthalpy heat content universally",
+        "Using Q=ΔH with electrical/shaft work unaccounted"
+      ],
+      "followUps": [
+        "Derive dH.",
+        "Open-system role?",
+        "Ideal-gas enthalpy?",
+        "When Qp fails?",
+        "Why state function?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-234",
+      "topic": "Thermodynamics",
+      "question": "Why does free energy decrease spontaneously at fixed T and P?",
+      "shortAnswer": "For a closed system at fixed reservoir temperature and pressure with only PV work, spontaneous change gives ΔG≤0; equality marks equilibrium under those constraints.",
+      "modelAnswer": "Combining first and second laws for system plus reservoirs gives the Gibbs criterion when temperature and pressure are controlled and composition/reaction variables can change. G decreases because total entropy of the isolated composite increases, not because every system always minimizes G. Other constraints use U, H or F, and ΔG says direction/available non-PV work, not rate. Kinetic barriers can keep a metastable state for a long time.",
+      "assumptions": [
+        "Closed system at fixed T and P",
+        "Only specified work modes and equilibrium endpoints"
+      ],
+      "traps": [
+        "Saying G always decreases under any conditions",
+        "Equating negative ΔG with fast reaction"
+      ],
+      "followUps": [
+        "Derive from entropy.",
+        "What potential at fixed T,V?",
+        "What is metastability?",
+        "Equilibrium criterion?",
+        "How chemical potential enters?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-235",
+      "topic": "Phase Transitions",
+      "question": "What is a phase transition order parameter?",
+      "shortAnswer": "An order parameter is a quantity that distinguishes phases and changes characteristically across a transition, often reflecting broken symmetry; it must be chosen for the system.",
+      "modelAnswer": "Examples include magnetization in a ferromagnet or density difference near a liquid–gas critical point. In a continuous transition it may approach zero continuously, while a first-order transition can jump. It is not always directly measurable and can be multi-component or topological. Landau theory expands free energy in an assumed order parameter and symmetry, but fluctuations and dimensionality can invalidate mean-field predictions.",
+      "assumptions": [
+        "Phases and symmetry/transition class defined",
+        "Thermodynamic limit or finite-size qualification stated"
+      ],
+      "traps": [
+        "Calling any measured property an order parameter",
+        "Assuming every transition breaks symmetry conventionally"
+      ],
+      "followUps": [
+        "Magnet example?",
+        "First versus second order?",
+        "What is conjugate field?",
+        "Why fluctuations matter?",
+        "Topological transition?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-236",
+      "topic": "Statistical Mechanics",
+      "question": "What is chemical potential for a classical ideal gas?",
+      "shortAnswer": "Chemical potential is the free-energy change per added particle and, for a dilute classical ideal gas, depends logarithmically on density and thermal wavelength, with internal-state factors as defined.",
+      "modelAnswer": "For a monatomic ideal gas, μ=kT ln(nλ_T³/g) under a common convention, where λ_T=h/√(2πmkT) and g represents internal degeneracy. In the classical regime nλ_T³/g≪1, μ is negative relative to the chosen single-particle energy zero. Chemical potential drives particle exchange/diffusion and equalizes at equilibrium. Energy-zero and standard-state conventions must be stated.",
+      "assumptions": [
+        "Dilute noninteracting classical gas",
+        "Thermal wavelength/internal degeneracy convention defined"
+      ],
+      "traps": [
+        "Treating μ as energy per particle",
+        "Quoting formula outside classical regime"
+      ],
+      "followUps": [
+        "Derive from partition function.",
+        "Why negative?",
+        "What equalizes?",
+        "Quantum-gas change?",
+        "How energy zero affects μ?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-237",
+      "topic": "Nuclear and Radiation Physics",
+      "question": "Why are gamma rays not deflected by electric fields?",
+      "shortAnswer": "Gamma rays are electrically neutral photons, so they do not experience the Lorentz force q(E+v×B) that bends charged particles.",
+      "modelAnswer": "Photons can still interact with matter through photoelectric absorption, Compton scattering, pair production and fields indirectly through matter or gravity. Their momentum direction can change in scattering, and refractive effects may be described in media, but a static electric field does not curve a free gamma ray as it would an electron. Neutrality does not mean non-interacting or harmless.",
+      "assumptions": [
+        "Free photon in classical external electromagnetic field",
+        "Matter interactions considered separately"
+      ],
+      "traps": [
+        "Saying gamma rays never change direction",
+        "Equating neutrality with no biological interaction"
+      ],
+      "followUps": [
+        "How gamma interacts?",
+        "Why beta deflects?",
+        "What about magnetic field?",
+        "Photon momentum?",
+        "Pair production condition?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-238",
+      "topic": "Laboratory Safety Culture",
+      "question": "What is your relationship with safety in a laboratory?",
+      "shortAnswer": "Safety is part of scientific quality: I work within authorization, understand hazards, use approved procedures and controls, document deviations, and stop/ask when conditions are unclear.",
+      "modelAnswer": "I would review risk assessment and training before work, verify sample/reagent/equipment identity, use engineering controls and PPE as specified, maintain housekeeping and records, and report incidents or near misses. I would not improvise radiation, high-voltage, pressure, vacuum, laser, cryogenic or chemical controls. Hierarchy or schedule does not override a mandatory procedure. My exact project hazards must remain unknown until recorded from the real laboratory process.",
+      "assumptions": [
+        "Institutional procedures and competent supervision available",
+        "Actual hazards identified before work"
+      ],
+      "traps": [
+        "Describing safety as PPE only",
+        "Claiming willingness to bypass procedure for schedule"
+      ],
+      "followUps": [
+        "What if procedure unclear?",
+        "How report near miss?",
+        "When stop work?",
+        "Why document deviation?",
+        "What hazard applies to your project?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-239",
+      "topic": "Defence Materials",
+      "question": "Why are materials important in defence systems?",
+      "shortAnswer": "Materials determine whether structures, sensors, optics, electronics and protection systems retain required properties under mechanical, thermal, chemical, electromagnetic and environmental constraints.",
+      "modelAnswer": "Selection can involve strength-to-weight, fatigue, fracture, corrosion, temperature, wear, dielectric/magnetic/optical response, radiation, manufacturability, repair and supply. A material property measured on a coupon is not system readiness: joints, coatings, defects, processing, variability and qualification matter. I would connect one public requirement to a measurable property and a representative test without speculating about restricted performance.",
+      "assumptions": [
+        "Public non-sensitive requirement selected",
+        "Service environment and failure criterion defined"
+      ],
+      "traps": [
+        "Listing exotic materials without requirement",
+        "Equating highest strength with best system material"
+      ],
+      "followUps": [
+        "Which property?",
+        "How processing matters?",
+        "What environmental test?",
+        "Why variability?",
+        "How qualify joint/coating?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-240",
+      "topic": "Astrophysical Modelling",
+      "question": "What assumptions would you state in an astrophysical model?",
+      "shortAnswer": "State geometry/symmetry, gravity and dynamics, equation of state, composition/opacity, equilibrium or time dependence, radiation/transport, initial/boundary conditions and how observables are generated.",
+      "modelAnswer": "The relevant list depends on the question: a stellar model may assume spherical hydrostatic equilibrium and specified transport; a galaxy model may assume axisymmetry or circular orbits; a cosmology model homogeneity/isotropy at large scales. I would distinguish physical approximations from numerical choices, identify parameter degeneracies and selection effects, and name an observable or limiting case that tests each dominant assumption.",
+      "assumptions": [
+        "Specific astrophysical question and observable defined",
+        "Approximation regime and data selection stated"
+      ],
+      "traps": [
+        "Reciting assumptions with no consequence",
+        "Treating numerical convergence as physical validation"
+      ],
+      "followUps": [
+        "Which assumption dominates?",
+        "What observable tests it?",
+        "How boundary chosen?",
+        "What degeneracy?",
+        "What limiting case?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-241",
+      "topic": "Materials Research",
+      "question": "Why are reproducibility and scale-up important in materials research?",
+      "shortAnswer": "Reproducibility tests whether a result survives independent preparation/measurement; scale-up tests whether process, uniformity, safety and performance persist when geometry, equipment or throughput changes.",
+      "modelAnswer": "A striking single sample can reflect local heterogeneity, uncontrolled processing or measurement artifact. Independent batches, positions, operators and instruments reveal variance. Scale changes heat/mass transfer, mixing, atmosphere, contamination, gradients and sampling, so multiplying quantities is insufficient. I would define acceptance criteria, process windows, yield and uncertainty, while distinguishing laboratory proof from manufacturable technology.",
+      "assumptions": [
+        "Material claim and preparation protocol defined",
+        "Independent batch and larger-scale conditions traceable"
+      ],
+      "traps": [
+        "Calling repeated scans reproducibility",
+        "Assuming linear scale-up"
+      ],
+      "followUps": [
+        "Repeatability versus reproducibility?",
+        "How many batches?",
+        "Which gradient changes?",
+        "How define yield?",
+        "What pilot test?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-242",
+      "topic": "Project Motivation",
+      "question": "Why did you choose this material or system?",
+      "shortAnswer": "Answer from real facts: connect the scientific question to a property or mechanism, evidence gap, feasible method and learning value; if material is unconfirmed, say so.",
+      "modelAnswer": "A defensible answer compares the chosen system with at least one alternative and explains why its structure, composition or response can test the project objective using available safe facilities. It should not say merely that the material is popular, easy or grade-friendly. The current Mission Viva material field is unknown, so the app cannot personalize this answer without invention. Once known, cite actual literature and supervisor-approved scope.",
+      "assumptions": [
+        "Actual material/system and objective confirmed",
+        "Alternative and facility constraints known"
+      ],
+      "traps": [
+        "Inventing application or novelty",
+        "Choosing only because synthesis is easy"
+      ],
+      "followUps": [
+        "What property matters?",
+        "Which alternative?",
+        "What evidence gap?",
+        "Why feasible?",
+        "What result would change choice?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-243",
+      "topic": "Project Motivation",
+      "question": "What scientific gap motivates the project?",
+      "shortAnswer": "Identify a specific unresolved comparison, mechanism, measurement limitation or condition from real literature—not a broad claim that the topic is unexplored.",
+      "modelAnswer": "I would state what is already established, what evidence is missing or contradictory, why that missing piece matters, and the observable this project can measure. The gap must fit the actual material, method and project duration. A literature gap is not automatically scientific importance, and no gap should be invented before the project system and sources are recorded. A good gap leads to a falsifiable objective and control.",
+      "assumptions": [
+        "Actual literature and material/system confirmed",
+        "Gap is tractable with available method"
+      ],
+      "traps": [
+        "Calling any untested material combination a gap",
+        "Claiming “first” without search"
+      ],
+      "followUps": [
+        "What is known?",
+        "Which contradiction?",
+        "What observable?",
+        "Why tractable?",
+        "What result closes gap?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-244",
+      "topic": "Project Motivation",
+      "question": "Why is this problem worth studying?",
+      "shortAnswer": "Explain the fundamental or practical consequence of resolving the actual question, tied to a measurable property and evidence—not a generic application promise.",
+      "modelAnswer": "Worth can come from understanding a mechanism, improving measurement confidence, comparing models, establishing reproducibility or informing a device/process decision. I would identify who or what decision benefits and the current uncertainty cost. For an early-stage project, learning a reliable synthesis–structure relation can be worthwhile even without a final application. The answer must use confirmed project facts and avoid selection-oriented exaggeration.",
+      "assumptions": [
+        "Actual objective and stakeholder/scientific context known",
+        "Expected evidence is achievable"
+      ],
+      "traps": [
+        "Equating novelty with importance",
+        "Promising a device from sample characterization"
+      ],
+      "followUps": [
+        "Who benefits?",
+        "What decision changes?",
+        "What uncertainty now?",
+        "Fundamental or applied value?",
+        "What negative result teaches?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-245",
+      "topic": "Project Translation",
+      "question": "What would make the project important beyond your laboratory?",
+      "shortAnswer": "Importance beyond the lab requires reproducible evidence, a property tied to external requirements, independent validation, scale/interface understanding and a user or scientific decision—not merely a possible application.",
+      "modelAnswer": "I would separate the present sample claim from future translation. The project gains broader value if another group can reproduce it, the measurement is traceable, performance is compared with a baseline, operating constraints and failure modes are known, and a next prototype or dataset addresses a real need. Until actual results exist, this remains a planned impact pathway rather than an achievement.",
+      "assumptions": [
+        "Actual project evidence and application requirement known",
+        "Independent validation pathway available"
+      ],
+      "traps": [
+        "Calling publication or one graph broad impact",
+        "Claiming scalability without process evidence"
+      ],
+      "followUps": [
+        "What baseline?",
+        "Who validates?",
+        "Which requirement?",
+        "What scale-up issue?",
+        "What is next prototype?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-246",
+      "topic": "Project Synthesis",
+      "question": "Which parameter most strongly affects the synthesis?",
+      "shortAnswer": "Do not guess: identify the parameter with the strongest mechanistic sensitivity and evidence from literature, controls or a designed series; otherwise state it is not yet known.",
+      "modelAnswer": "Candidates may include stoichiometry, pH, solvent, mixing, temperature, dwell, ramp/cooling, atmosphere or pressure. I would explain how the parameter affects reaction, nucleation, growth, phase, defects or contamination, then hold other variables controlled and define a measurable response. The actual route is unknown in the current ledger, so no parameter can be named honestly yet.",
+      "assumptions": [
+        "Actual synthesis route and chemistry recorded",
+        "Parameter range and response measurable"
+      ],
+      "traps": [
+        "Naming temperature universally",
+        "Changing several parameters at once"
+      ],
+      "followUps": [
+        "Mechanism?",
+        "What range?",
+        "What control?",
+        "How measure response?",
+        "Could interaction dominate?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-247",
+      "topic": "Project Synthesis",
+      "question": "How would precursor ratio change the result?",
+      "shortAnswer": "Precursor ratio can change stoichiometry, chemical potential, reaction pathway, defects and secondary phases, but the direction is system-specific and must be tested from actual chemistry.",
+      "modelAnswer": "I would distinguish nominal weighed ratio from incorporated composition because purity, volatility, solubility, reaction completeness and loss matter. A controlled ratio series with mass/composition checks, phase analysis and property measurement can reveal sensitivity. Excess precursor may compensate loss or create an impurity; no universal prediction is safe. The project precursors are currently unknown and must not be invented.",
+      "assumptions": [
+        "Actual precursors, valence/chemistry and route known",
+        "Other synthesis conditions controlled"
+      ],
+      "traps": [
+        "Assuming weighed ratio equals final stoichiometry",
+        "Predicting phase direction without chemistry"
+      ],
+      "followUps": [
+        "How verify composition?",
+        "What impurity possible?",
+        "Why volatility matters?",
+        "Which ratio series?",
+        "What safety changes?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-248",
+      "topic": "Project Characterization",
+      "question": "What does your main characterization technique actually measure?",
+      "shortAnswer": "Name the physical interaction, detector signal and calibrated quantity—not the final conclusion—and distinguish direct observable from model-derived output.",
+      "modelAnswer": "A strong answer traces stimulus to sample interaction, emitted/transmitted/scattered response, detector and processing. For XRD the detector records diffracted intensity versus angle; for microscopy it records selected electron/optical signals versus position; for spectroscopy it records response versus energy/wavelength. Phase, composition or property claims require assumptions, calibration, sampling and complementary evidence. The actual main technique is unknown in the ledger.",
+      "assumptions": [
+        "Actual technique and mode confirmed",
+        "Instrument geometry and calibration known"
+      ],
+      "traps": [
+        "Saying the instrument directly measures “structure” or “truth”",
+        "Ignoring processing and sampling volume"
+      ],
+      "followUps": [
+        "What is stimulus?",
+        "What detector records?",
+        "Which output is derived?",
+        "What artifact dominates?",
+        "What can falsify interpretation?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-249",
+      "topic": "Project Characterization",
+      "question": "What can this technique not establish?",
+      "shortAnswer": "State the method’s claim boundary from its interaction, sampling depth/volume, resolution, detection limit, model and artifacts; never answer “nothing” or “everything.”",
+      "modelAnswer": "Every technique leaves alternatives. XRD may miss amorphous/minor phases and does not prove composition or morphology; EDS does not reliably give oxidation state; XPS is surface-sensitive; microscopy is local and may be unrepresentative; optical edges are model-dependent. The exact limitation must match the actual mode and sample. I would name one complementary method chosen to address the most decision-critical gap.",
+      "assumptions": [
+        "Actual technique and claim specified",
+        "Sensitivity and sampling scale known"
+      ],
+      "traps": [
+        "Giving a memorized limitation unrelated to mode",
+        "Assuming expensive technique is definitive"
+      ],
+      "followUps": [
+        "Detection limit?",
+        "Sampling depth?",
+        "Main artifact?",
+        "What complementary method?",
+        "Could nondetection prove absence?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-250",
+      "topic": "Project Characterization",
+      "question": "Why do you need a complementary technique?",
+      "shortAnswer": "Different techniques measure different physical quantities and scales, so complementary evidence tests separate clauses and competing explanations of the project claim.",
+      "modelAnswer": "A structure–property claim may require periodic structure, composition, morphology, surface chemistry and functional response. I would choose methods with distinct sensitivities and artifacts, align samples and scales, and specify what disagreement would mean. More plots are not automatically stronger evidence; each technique must reduce a named uncertainty. Actual project techniques remain unknown until entered.",
+      "assumptions": [
+        "Scientific claim decomposed into measurable clauses",
+        "Technique sensitivities/artifacts understood"
+      ],
+      "traps": [
+        "Collecting techniques for quantity rather than discrimination",
+        "Treating agreement as causation"
+      ],
+      "followUps": [
+        "Which claim clause?",
+        "How scales differ?",
+        "What if disagree?",
+        "What is cheapest next method?",
+        "Which uncertainty remains?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-251",
+      "topic": "Project Data",
+      "question": "How would you distinguish signal from background?",
+      "shortAnswer": "Define signal and background physically, acquire matched blanks/controls, model distributions and uncertainty, and test whether the excess follows the expected condition, scale and reproducibility.",
+      "modelAnswer": "I would preserve raw data and compare target-on/off, blank, reference or spatial/temporal control conditions under the same acquisition. Background may include detector dark response, substrate, environment, contamination, drift or unrelated physics. Subtraction needs normalization and propagated uncertainty; an excess is not automatically the target. I would vary a discriminating parameter, inspect residuals and repeat independent samples.",
+      "assumptions": [
+        "Signal mechanism and control condition defined",
+        "Acquisition and normalization matched"
+      ],
+      "traps": [
+        "Subtracting an unmatched blank",
+        "Calling every excess signal"
+      ],
+      "followUps": [
+        "Which blank?",
+        "How propagate uncertainty?",
+        "What drift check?",
+        "What parameter discriminates?",
+        "What if background varies?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-252",
+      "topic": "Project Data",
+      "question": "How would you report uncertainty?",
+      "shortAnswer": "Report estimate, units, uncertainty type/coverage, method, contributors, assumptions and whether it changes the conclusion; do not use unsupported significant figures.",
+      "modelAnswer": "I would distinguish repeatability, calibration, sampling and model components, include covariance where relevant, and state whether the value is a standard uncertainty, confidence interval or other quantity. For an early project I would not invent an error bar before data and a measurement model exist. I would show sensitivity to processing choices and identify the next action that most reduces decision-critical uncertainty.",
+      "assumptions": [
+        "Measurand and uncertainty model defined",
+        "Raw repeats/calibration information available"
+      ],
+      "traps": [
+        "Giving ± without definition",
+        "Treating spread as all uncertainty"
+      ],
+      "followUps": [
+        "Type A/B?",
+        "Coverage factor?",
+        "How covariance enters?",
+        "Does conclusion change?",
+        "How reduce dominant term?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-253",
+      "topic": "Project Reasoning",
+      "question": "Which assumption is most fragile?",
+      "shortAnswer": "Choose the assumption whose plausible failure most changes the conclusion, explain evidence for it, and name a test or alternative model; if project facts are unknown, do not guess.",
+      "modelAnswer": "Possible fragile assumptions involve phase purity, uniformity, equilibrium, single mechanism, representative sampling, instrument calibration or causal interpretation. I would rank assumptions by sensitivity and support, then design the cheapest discriminating control. The answer must refer to the actual project and current data. Calling every assumption uncertain avoids the question; selecting one with no consequence is also weak.",
+      "assumptions": [
+        "Actual hypothesis/model and evidence chain known",
+        "Alternative outcome is testable"
+      ],
+      "traps": [
+        "Naming a generic assumption unrelated to conclusion",
+        "Claiming assumptions are certainly true"
+      ],
+      "followUps": [
+        "What if it fails?",
+        "Which data supports it?",
+        "What control tests it?",
+        "Alternative model?",
+        "How conclusion changes?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-254",
+      "topic": "Project Reasoning",
+      "question": "What limiting case can test your model?",
+      "shortAnswer": "Take a parameter to a physically interpretable boundary where the model predicts simple behavior, check dimensions and whether assumptions remain valid, then compare with data or simulation.",
+      "modelAnswer": "Examples may be zero concentration, long time, low field, thin sample or high/low temperature, but the relevant limit depends on the actual model. A useful limit distinguishes algebraic error or competing mechanism and has an accessible observable. I would not select a limit outside the model domain. The current project model is unknown, so only the method—not a specific answer—can be rehearsed safely.",
+      "assumptions": [
+        "Actual model and parameter domain specified",
+        "Boundary remains physically meaningful"
+      ],
+      "traps": [
+        "Taking infinity without checking assumptions",
+        "Choosing a limit every model shares"
+      ],
+      "followUps": [
+        "What prediction?",
+        "Do units agree?",
+        "Does approximation survive?",
+        "How measure limit?",
+        "Which alternative differs?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-255",
+      "topic": "Project Ownership",
+      "question": "Which part required the most judgement?",
+      "shortAnswer": "Name one real decision where evidence was incomplete, state options and criteria, explain your choice and uncertainty, and separate your judgement from supervisor direction.",
+      "modelAnswer": "Judgement may involve parameter range, sample rejection, fit region, control, troubleshooting or next measurement. A strong answer shows what information existed, what risks mattered, what was documented and what result could reverse the choice. If no such decision has happened yet, I would say so and identify the planned decision rather than fabricate ownership.",
+      "assumptions": [
+        "Actual decision record available",
+        "Personal and supervisor roles separated"
+      ],
+      "traps": [
+        "Presenting routine button operation as judgement",
+        "Taking credit for supervisor decision"
+      ],
+      "followUps": [
+        "What options?",
+        "Which evidence?",
+        "What risk?",
+        "Who reviewed?",
+        "Would you choose differently?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-256",
+      "topic": "Project Communication",
+      "question": "Summarise your project in one sentence.",
+      "shortAnswer": "Use one sentence containing the actual system, scientific question, method/evidence and current stage—without an unmeasured result or generic application.",
+      "modelAnswer": "A safe template is: “I am investigating [confirmed system/question] by [confirmed or explicitly planned method] to determine [measurable claim], and the work is currently [truthful stage].” The sentence should not list every instrument or claim importance without mechanism. Because material, method and contribution remain unknown in the current ledger, Mission Viva must leave placeholders rather than invent content.",
+      "assumptions": [
+        "Confirmed project fields available",
+        "Planned versus completed wording preserved"
+      ],
+      "traps": [
+        "Turning expected result into conclusion",
+        "Using jargon without question"
+      ],
+      "followUps": [
+        "What is measurable claim?",
+        "Which method?",
+        "Current stage?",
+        "Your role?",
+        "One nontechnical version?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-257",
+      "topic": "Project Communication",
+      "question": "Give the project motivation in 30 seconds.",
+      "shortAnswer": "State the known problem, specific evidence gap, why resolving it matters and the project objective; stop before methods/results unless needed.",
+      "modelAnswer": "A 30-second motivation should move from context to a bounded unanswered question. It should distinguish scientific importance from possible application and avoid “nobody has done this” without literature. The exact material and gap must come from confirmed project fields and sources. If still unknown, say the motivation is being refined with the supervisor and name the information needed.",
+      "assumptions": [
+        "Actual problem and literature gap confirmed",
+        "Objective matches available project scope"
+      ],
+      "traps": [
+        "Generic “important for technology” claim",
+        "Inventing novelty"
+      ],
+      "followUps": [
+        "What is known?",
+        "What gap?",
+        "Why now?",
+        "Who benefits?",
+        "What objective follows?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-258",
+      "topic": "Project Applications",
+      "question": "What property would matter for a space application?",
+      "shortAnswer": "Begin from a specific space function and environment, then identify the measurable property and required stability; no material property is universally “space suitable.”",
+      "modelAnswer": "Possible properties include optical response, conductivity, emissivity, outgassing, radiation tolerance, thermal stability or strength, but relevance depends on payload, structure, thermal or sensor use. I would connect property to requirement, interface, temperature/vacuum/radiation/mechanical conditions, calibration and lifetime. The actual project material/property is unknown, so a specific application claim is not justified yet.",
+      "assumptions": [
+        "Specific application and environment defined",
+        "Actual material property measured or planned"
+      ],
+      "traps": [
+        "Saying “lightweight” without function",
+        "Calling one room-temperature value space readiness"
+      ],
+      "followUps": [
+        "Which subsystem?",
+        "Operating range?",
+        "How test vacuum?",
+        "What baseline?",
+        "What lifetime evidence?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-259",
+      "topic": "Project Translation",
+      "question": "What would you test before claiming usefulness?",
+      "shortAnswer": "Test the requirement-linked property with controls, repeatability, relevant environment, baseline comparison and failure criteria before moving from possibility to usefulness.",
+      "modelAnswer": "I would define the user/function and minimum acceptable metric, confirm sample identity and calibration, repeat independent batches, and test stability, selectivity or reliability as relevant. A prototype/interface test may be required to show the property survives packaging and operation. Accelerated tests need a justified model. Until then, wording remains “possible application,” not demonstrated utility.",
+      "assumptions": [
+        "Application requirement and actual property known",
+        "Representative test environment available"
+      ],
+      "traps": [
+        "Using one characterization plot as usefulness",
+        "Moving acceptance threshold after data"
+      ],
+      "followUps": [
+        "What is baseline?",
+        "How many batches?",
+        "Which environment?",
+        "What failure criterion?",
+        "What prototype?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-260",
+      "topic": "Project Safety",
+      "question": "What safety hazards exist in this work?",
+      "shortAnswer": "List only hazards confirmed for the actual material, precursors, process and instruments, then pair each with approved controls and stop conditions; unknown hazards remain unknown.",
+      "modelAnswer": "Hazards may involve chemical toxicity/reactivity, dust, heat, pressure, vacuum, gas, laser, high voltage, radiation, cryogenics or mechanical equipment, but naming generic hazards as project facts is unsafe. I would use SDS, institutional risk assessment, training and facility procedures, identify waste/emergency response and never improvise. The ledger currently lacks actual materials/methods, so specific controls cannot be rehearsed as facts.",
+      "assumptions": [
+        "Actual route/reagents/instruments confirmed",
+        "Institutional procedure and supervision available"
+      ],
+      "traps": [
+        "Inventing a hazard/control list",
+        "Treating PPE as the only control"
+      ],
+      "followUps": [
+        "Which SDS?",
+        "Engineering control?",
+        "Stop condition?",
+        "Waste route?",
+        "What changed after risk review?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-261",
+      "topic": "ISRO Fit",
+      "question": "What technical skill can you contribute to ISRO?",
+      "shortAnswer": "Choose one evidenced skill—such as calibrated materials characterization, optics/detectors, electronics/instrumentation or data—and connect it to a bounded mission-system task and learning plan.",
+      "modelAnswer": "I would avoid claiming broad spacecraft expertise. A credible first contribution might be executing a controlled measurement, analysing uncertainty, calibrating a sensor, documenting a test or supporting material/payload validation under supervision. I would cite actual project or practice evidence and one current official role/centre need. The organization determines posting and training; willingness to learn and reliability matter alongside fundamentals.",
+      "assumptions": [
+        "Actual skill evidence available",
+        "Current role/centre checked officially"
+      ],
+      "traps": [
+        "Listing every physics topic",
+        "Claiming immediate subsystem ownership"
+      ],
+      "followUps": [
+        "Which deliverable?",
+        "What evidence?",
+        "Which centre source?",
+        "What training needed?",
+        "How validate work?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-262",
+      "topic": "Space Career Motivation",
+      "question": "Why space technology rather than only astronomy?",
+      "shortAnswer": "Astronomy motivates questions about the universe; space technology adds the challenge of building calibrated, reliable systems that create measurements and services under real constraints.",
+      "modelAnswer": "My answer would not devalue astronomy. Physics, optics, detectors, materials and data connect both: astronomy asks what to observe and infer, while spacecraft/payload work demands interfaces, thermal/power/pointing, qualification and operations. I am interested in turning scientific understanding into dependable measurements and would choose the role based on actual tasks rather than the word “space.”",
+      "assumptions": [
+        "Genuine interests and target role known",
+        "No claim that astronomy lacks technology"
+      ],
+      "traps": [
+        "Contrasting fields dismissively",
+        "Saying only that space is exciting"
+      ],
+      "followUps": [
+        "Which payload task?",
+        "How astronomy helps?",
+        "Which constraint interests you?",
+        "What skill transfers?",
+        "Which role would you choose?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-263",
+      "topic": "Launch Performance",
+      "question": "What determines payload mass to orbit?",
+      "shortAnswer": "Payload capability follows required orbit/trajectory and total delta-v, propulsion performance, propellant/dry mass, staging, structural/aero loads, guidance losses, margins, launch site and mission constraints.",
+      "modelAnswer": "The rocket equation gives ideal stage delta-v from effective exhaust velocity and mass ratio, but real ascent pays gravity, drag and steering losses and must satisfy thrust-to-weight, dynamic pressure, thermal, structural and control limits. Target altitude, inclination and injection accuracy matter. Payload is part of the final mass budget; it cannot be inferred from thrust alone or one vehicle number.",
+      "assumptions": [
+        "Public conceptual launch analysis",
+        "Target orbit and vehicle architecture specified"
+      ],
+      "traps": [
+        "Equating payload with maximum lift-off mass difference",
+        "Ignoring losses and inclination"
+      ],
+      "followUps": [
+        "Rocket equation?",
+        "Why staging?",
+        "Launch latitude effect?",
+        "What is gravity loss?",
+        "How margin enters?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-264",
+      "topic": "Propulsion",
+      "question": "Compare solid and liquid propulsion conceptually.",
+      "shortAnswer": "Solid motors are mechanically simpler and storable with high thrust but limited throttling/restart; liquid systems offer controllability and potentially high performance with tanks, feed, ignition and operational complexity.",
+      "modelAnswer": "A solid stores fuel and oxidizer together in a grain whose geometry drives thrust history; once ignited it is difficult to stop or restart. Liquid propellants are stored separately and fed to a chamber, enabling throttle, cutoff and sometimes restart, but adding pumps/pressurization, plumbing, leakage, slosh and control. Performance, safety, cost and suitability depend on stage and propellant; neither is universally better.",
+      "assumptions": [
+        "Conceptual public-domain comparison",
+        "Specific mission/stage context stated"
+      ],
+      "traps": [
+        "Saying solid is always less efficient",
+        "Ignoring liquid feed and cryogenic complexity"
+      ],
+      "followUps": [
+        "How grain geometry matters?",
+        "Pressure-fed versus pump?",
+        "Restart value?",
+        "Storage safety?",
+        "Which upper stage?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-265",
+      "topic": "Payload Verification",
+      "question": "How would you test a payload?",
+      "shortAnswer": "Trace payload requirements to calibrated component, subsystem and integrated tests across function, interfaces, environment, failure modes and data-product validation.",
+      "modelAnswer": "I would verify optical/RF/sensor performance and calibration first, then power, thermal, data, timing, pointing/alignment and command interfaces. Flight-representative environmental tests may include vibration, thermal-vacuum, EMC and radiation as required, with functional checks before/during/after. Ground processing and reference targets test the measurement chain. Exact levels and procedures come from programme standards and authorized facilities.",
+      "assumptions": [
+        "Payload requirements and configuration controlled",
+        "Applicable environment/standards defined"
+      ],
+      "traps": [
+        "Testing only survival, not performance",
+        "Calling one bench test qualification"
+      ],
+      "followUps": [
+        "Which requirement first?",
+        "How calibration transfers?",
+        "What interface test?",
+        "What anomaly criterion?",
+        "How validate data product?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-266",
+      "topic": "Spacecraft Budgets",
+      "question": "How do mass and power constraints interact?",
+      "shortAnswer": "Power generation/storage hardware adds mass and thermal load, while mass/orbit/attitude choices change available power and mission operation; budgets must be traded by mode with margins.",
+      "modelAnswer": "A higher-power payload may require larger arrays, batteries, regulators, structure and radiators, increasing launch mass and inertia. Mass reduction choices can reduce thermal area or stiffness and create risk. Orbit/eclipse, pointing and degradation shape generation; peak versus average loads shape storage/distribution. I would use a common configuration, avoid double-counting margin and run sensitivity on mission value.",
+      "assumptions": [
+        "Mission modes/orbit defined",
+        "Mass, power and thermal budgets use same baseline"
+      ],
+      "traps": [
+        "Treating budgets independently",
+        "Using average power only"
+      ],
+      "followUps": [
+        "What drives array size?",
+        "How eclipse matters?",
+        "Thermal coupling?",
+        "How margin set?",
+        "Which trade test?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-267",
+      "topic": "Fault Management",
+      "question": "What happens when a subsystem fails?",
+      "shortAnswer": "The system should detect and isolate the fault, protect critical functions, enter a safe or degraded state, recover or reconfigure when justified, and communicate evidence for ground action.",
+      "modelAnswer": "Response depends on criticality, observability, redundancy and autonomy. FDIR must avoid both missed faults and false isolation, and safe mode needs independent enough power, thermal, attitude and communication support. Some failures cause graceful degradation; others are single-point. Tests should include sensor faults, interface loss and incorrect commands under controlled simulation.",
+      "assumptions": [
+        "Specific architecture and failure mode defined",
+        "Public non-operational discussion"
+      ],
+      "traps": [
+        "Saying redundancy automatically recovers",
+        "Assuming every fault is immediately detectable"
+      ],
+      "followUps": [
+        "What is FDIR?",
+        "Safe mode needs?",
+        "Common-cause risk?",
+        "How test fault injection?",
+        "When ground decides?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-268",
+      "topic": "Space Environment",
+      "question": "Why is vacuum a design constraint?",
+      "shortAnswer": "Vacuum removes convection, promotes outgassing/contamination and changes discharge, lubrication, heat transfer and material behavior while pressure loads can act across sealed volumes.",
+      "modelAnswer": "Thermal design relies on conduction and radiation. Volatile materials can deposit on optics; conventional lubricants and adhesives may fail; trapped gas and virtual leaks matter; high voltage can face pressure-transition/discharge issues; electronics cannot cool by air. Vacuum is not “nothing,” and qualification needs material screening, bakeout/cleanliness and thermal-vacuum testing under programme rules.",
+      "assumptions": [
+        "Spacecraft external/internal pressure boundaries defined",
+        "Material/electrical operating conditions specified"
+      ],
+      "traps": [
+        "Saying everything cools in vacuum",
+        "Ignoring outgassing on optics"
+      ],
+      "followUps": [
+        "Why no convection?",
+        "What is outgassing?",
+        "How lubricate?",
+        "High-voltage issue?",
+        "How TVAC validates?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-269",
+      "topic": "ISRO Awareness",
+      "question": "What does ISRO broadly do?",
+      "shortAnswer": "ISRO is India’s national space organization working across access to space, spacecraft/payloads, applications, science and enabling ground/institutional systems; current programmes must be checked officially.",
+      "modelAnswer": "A strong answer is not a mission-name list. I would describe the end-to-end ecosystem—launch, satellites, payloads, communication/remote sensing/navigation/science applications, tracking/control and technology development—then connect one verified centre/work area to my skills. Exact missions, organizational details and recruitment routes can change and should come from the official source ledger.",
+      "assumptions": [
+        "Only stable official profile used",
+        "Current examples separately verified"
+      ],
+      "traps": [
+        "Listing stale missions as awareness",
+        "Giving only patriotic language"
+      ],
+      "followUps": [
+        "Which centre?",
+        "One application physics?",
+        "Ground segment role?",
+        "Where verify current facts?",
+        "What skill fits?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-270",
+      "topic": "Space Applications",
+      "question": "Name a space application and explain its physics.",
+      "shortAnswer": "Choose one verified application, identify the measured electromagnetic or dynamical quantity, trace sensor/orbit/calibration to the user product, and state uncertainty.",
+      "modelAnswer": "For remote sensing, a calibrated detector measures reflected/emitted/backscattered radiation; spectral, spatial, radiometric and temporal resolution plus atmosphere and ground truth shape retrieval. For communication, propagation, antenna gain, bandwidth and noise shape a link. I would pick one and explain mechanism and limitations rather than list applications.",
+      "assumptions": [
+        "Application and sensor/service chosen",
+        "Current mission example verified separately"
+      ],
+      "traps": [
+        "Calling satellite images direct truth",
+        "Naming application without governing physics"
+      ],
+      "followUps": [
+        "What is measured?",
+        "Why that orbit?",
+        "How calibrated?",
+        "Main uncertainty?",
+        "What user decision?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-271",
+      "topic": "Organization Awareness",
+      "question": "How would you discuss a mission you have not followed closely?",
+      "shortAnswer": "Say you are not current on the mission, avoid inventing status or numbers, state only verified broad purpose if known and explain how you would check the official source.",
+      "modelAnswer": "I would separate stable physics from mutable programme facts. If the panel invites reasoning, I can discuss likely measurement chain or subsystem requirements conditionally, while clearly labelling assumptions. I would not bluff launch date, outcome, payload or centre. Afterward I would verify on the organization’s official mission/news page and update a short-expiry current-fact card.",
+      "assumptions": [
+        "No current fact recalled confidently",
+        "Official source access identified"
+      ],
+      "traps": [
+        "Guessing mission status",
+        "Refusing all reasoning after honest caveat"
+      ],
+      "followUps": [
+        "What do you know safely?",
+        "Which source?",
+        "How reason conditionally?",
+        "When stop?",
+        "How update notes?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-272",
+      "topic": "ISRO Fit",
+      "question": "Which ISRO centre or work area interests you and why?",
+      "shortAnswer": "Choose one current officially verified centre/work area, connect its public technical lane to a skill you can defend and remain open to organizational posting needs.",
+      "modelAnswer": "The answer should include what the centre broadly does from the official source, one relevant topic or project method, a realistic first contribution and the skill gap you will train. Bengaluru preference can be stated professionally but not as refusal to relocate. The app’s source ledger is current as of its date, yet it should be refreshed near interview.",
+      "assumptions": [
+        "Centre/work area checked officially",
+        "Actual skills and mobility constraints honest"
+      ],
+      "traps": [
+        "Choosing centre only for location",
+        "Inventing current projects"
+      ],
+      "followUps": [
+        "Which public lane?",
+        "What skill evidence?",
+        "First deliverable?",
+        "What training?",
+        "Would you accept other posting?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-273",
+      "topic": "Nuclear Science Motivation",
+      "question": "Why nuclear science?",
+      "shortAnswer": "Connect interest in nuclear structure/reactions/radiation to a specific peaceful scientific or technology problem, emphasizing measurement, materials, safety, procedure and evidence.",
+      "modelAnswer": "A credible answer may focus on detectors, materials under radiation, accelerators, isotope applications or fundamental nuclear physics. I would state the governing physics and how calibrated experimentation serves the objective, while respecting authorization. Generic prestige, job security or unsafe operational curiosity is weak. Current programmes and roles require official verification.",
+      "assumptions": [
+        "Genuine technical interest selected",
+        "Public peaceful context and safety boundary"
+      ],
+      "traps": [
+        "Generic national-service answer only",
+        "Claiming operational expertise"
+      ],
+      "followUps": [
+        "Which physics topic?",
+        "Which measurement?",
+        "How project connects?",
+        "What safety means?",
+        "Which current source?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-274",
+      "topic": "Nuclear Materials",
+      "question": "How does your materials project connect to nuclear technology?",
+      "shortAnswer": "Connect only confirmed project methods/properties to a public materials need such as characterization, detectors, corrosion or radiation response, and label any application as a hypothesis.",
+      "modelAnswer": "Materials work can transfer through synthesis control, XRD/microscopy/spectroscopy, transport, thermal or mechanical measurement and uncertainty discipline. Nuclear environments add radiation, temperature, chemistry, safety and authorization constraints that the current project may not test. I would identify the gap and next authorized experiment rather than claim nuclear suitability. The actual project material is unknown in Mission Viva.",
+      "assumptions": [
+        "Actual project method/property confirmed",
+        "Public nuclear requirement and authorized test context"
+      ],
+      "traps": [
+        "Calling any material nuclear-grade",
+        "Inventing radiation data"
+      ],
+      "followUps": [
+        "Which property transfers?",
+        "What environment missing?",
+        "How characterize safely?",
+        "What baseline?",
+        "What would falsify fit?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-275",
+      "topic": "Nuclear Structure",
+      "question": "What is binding energy?",
+      "shortAnswer": "Nuclear binding energy is the mass defect between separated nucleons and the bound nucleus times c²; it measures energy required to separate the nucleus under a consistent mass convention.",
+      "modelAnswer": "B=[Zm_p+Nm_n−m_nucleus]c² for nuclear masses, with electron bookkeeping adjusted if atomic masses are used. Binding per nucleon shows broad stability trends but does not alone predict every decay; Q values, separation energies, barriers, conservation laws and matrix elements matter. Volume, surface, Coulomb, asymmetry, pairing and shell effects shape the pattern.",
+      "assumptions": [
+        "Consistent atomic or nuclear masses",
+        "Ground/specified nuclear state"
+      ],
+      "traps": [
+        "Mixing atomic and nuclear mass electrons",
+        "Using B/A as universal decay criterion"
+      ],
+      "followUps": [
+        "Mass defect?",
+        "Why B positive?",
+        "Separation energy?",
+        "SEMF terms?",
+        "How Q relates?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-276",
+      "topic": "Reactor Physics",
+      "question": "What is neutron multiplication?",
+      "shortAnswer": "Neutron multiplication describes how one generation produces the next after fission production, absorption and leakage; k_eff is their population ratio.",
+      "modelAnswer": "If k_eff is below one the chain decreases, equal to one it is steady and above one it grows in the modeled state. The value depends on composition, geometry, spectrum, leakage and feedback. Power dynamics also require delayed neutrons and thermal/control response. This is conceptual physics only; operation belongs to authorized facilities.",
+      "assumptions": [
+        "Defined multiplying configuration",
+        "Generation-averaged model"
+      ],
+      "traps": [
+        "Equating multiplication with explosion",
+        "Ignoring leakage/absorption"
+      ],
+      "followUps": [
+        "Define k_eff.",
+        "Why delayed neutrons?",
+        "Moderator role?",
+        "What is feedback?",
+        "Why critical can be normal?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-277",
+      "topic": "Radiation Protection",
+      "question": "Why is monitoring important?",
+      "shortAnswer": "Monitoring provides evidence about radiation fields, contamination, dose-related quantities and abnormal change so controls and authorized decisions can be verified.",
+      "modelAnswer": "Area, personal and contamination monitoring measure different quantities with calibrated instruments and defined response. Results require background, geometry, energy response, limits, uncertainty and records. Monitoring does not replace source control or procedure, and a zero reading only supports absence above the instrument’s sensitivity. Alarm settings and actions come from facility rules.",
+      "assumptions": [
+        "Authorized programme and calibrated monitor",
+        "Quantity and detection limit specified"
+      ],
+      "traps": [
+        "Calling no reading no radiation",
+        "Using wrong monitor for the hazard"
+      ],
+      "followUps": [
+        "Area versus personal?",
+        "What is background?",
+        "Why energy response?",
+        "What if alarm?",
+        "How record trend?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-278",
+      "topic": "Radiation Detectors",
+      "question": "What is a Geiger counter useful for?",
+      "shortAnswer": "A Geiger–Müller counter is useful for robust detection and survey counting of ionizing events, but usually provides little energy information and has dead-time/rate limitations.",
+      "modelAnswer": "A gas avalanche spreads along the tube, producing nearly uniform pulse size independent of initial deposited energy. It can locate elevated fields or contamination when the probe/window and radiation are suitable. Efficiency, geometry, background, plateau voltage, dead time and saturation matter. Counts are not automatically activity or dose.",
+      "assumptions": [
+        "Suitable GM tube/probe and radiation type",
+        "Authorized survey/calibration context"
+      ],
+      "traps": [
+        "Calling count rate dose",
+        "Using GM for spectroscopy"
+      ],
+      "followUps": [
+        "Why no energy resolution?",
+        "What is dead time?",
+        "Plateau meaning?",
+        "Window effect?",
+        "How background enters?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-279",
+      "topic": "Radiation Detectors",
+      "question": "Why use semiconductor detectors?",
+      "shortAnswer": "Semiconductors convert deposited energy into many electron–hole pairs with low creation energy, enabling compact detectors and often good energy resolution.",
+      "modelAnswer": "A depleted junction collects carriers to form a pulse proportional to deposited energy when charge collection is complete. Material band gap, atomic number, thickness, bias, leakage, capacitance, trapping, temperature and radiation damage shape efficiency and resolution. Cooling may reduce leakage. They are not universally best: scintillators can offer larger volume, speed or cost advantages.",
+      "assumptions": [
+        "Detector material/geometry and radiation specified",
+        "Bias and readout calibrated"
+      ],
+      "traps": [
+        "Saying semiconductors detect every radiation efficiently",
+        "Ignoring charge trapping/leakage"
+      ],
+      "followUps": [
+        "Why good resolution?",
+        "What sets efficiency?",
+        "Why cooling?",
+        "Compare scintillator.",
+        "Radiation damage?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-280",
+      "topic": "Radiation Instrumentation",
+      "question": "What determines detector energy resolution?",
+      "shortAnswer": "Energy resolution combines statistical carrier/photon production, collection nonuniformity, sensor gain, electronic noise, calibration, material effects and event processing.",
+      "modelAnswer": "It is often quoted as FWHM at a specified energy or ΔE/E. Fano/statistical variation sets a lower bound, while leakage, capacitance, optical collection, trapping, ballistic deficit, pile-up and temperature add width. The observed peak also includes source/environment effects. Resolution must be measured with suitable lines and stable calibration, not inferred from channel count.",
+      "assumptions": [
+        "Specified detector and energy",
+        "Peak model/calibration defined"
+      ],
+      "traps": [
+        "Equating ADC bins with resolution",
+        "Quoting resolution without energy"
+      ],
+      "followUps": [
+        "FWHM meaning?",
+        "Fano factor?",
+        "Electronic noise?",
+        "Pile-up?",
+        "How calibrate width?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-281",
+      "topic": "Measurement Science",
+      "question": "How do you distinguish signal from noise?",
+      "shortAnswer": "Define expected signal structure and noise model, use controls and matched conditions, quantify SNR/detection performance and test reproducibility on independent data.",
+      "modelAnswer": "Signal can be distinguished by known time, spectrum, spatial pattern, modulation, scaling or response to a controlled variable. Noise may be stochastic, drift, interference or model mismatch. I would inspect raw/time/frequency data, backgrounds and residuals, then use a predeclared detector and false-alarm criterion. Filtering alone cannot prove the remaining feature is signal.",
+      "assumptions": [
+        "Signal mechanism and observation window defined",
+        "Representative controls/background"
+      ],
+      "traps": [
+        "Calling any repeatable artifact signal",
+        "Smoothing into expected shape"
+      ],
+      "followUps": [
+        "What is SNR?",
+        "Which control?",
+        "How false alarm measured?",
+        "What modulation helps?",
+        "When insufficient evidence?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-282",
+      "topic": "Radiation Effects in Materials",
+      "question": "How does radiation affect materials?",
+      "shortAnswer": "Radiation deposits energy and displaces atoms, creating excitation, ionization, defects, transmutation or microstructural change that can alter mechanical, electrical, optical and chemical properties.",
+      "modelAnswer": "Effects depend on particle/photon type, energy, dose/fluence/rate, temperature, material and environment. Point defects can migrate, recombine, cluster or interact with interfaces; ionizing damage changes dielectrics/electronics. Testing needs authorized irradiation, dosimetry, controls, before/after characterization and safe handling. A generic radiation exposure cannot predict one property direction.",
+      "assumptions": [
+        "Radiation spectrum and exposure quantity defined",
+        "Authorized facility and material condition"
+      ],
+      "traps": [
+        "Equating dose and fluence",
+        "Assuming all defects accumulate linearly"
+      ],
+      "followUps": [
+        "Ionization versus displacement?",
+        "Dose-rate effect?",
+        "Annealing?",
+        "Which characterization?",
+        "How control temperature?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-283",
+      "topic": "Nuclear Materials",
+      "question": "Why are defects important?",
+      "shortAnswer": "Defects govern diffusion, trapping, swelling, embrittlement, conductivity, corrosion and phase evolution; irradiation continually creates and redistributes them.",
+      "modelAnswer": "Vacancies, interstitials, dislocations, interfaces and precipitates act as sources, sinks and transport paths. Their effect depends on concentration, mobility, temperature, stress and chemistry. Controlled microstructure can improve tolerance, while clusters or segregation can degrade it. Evidence requires multiple scales and comparison with unirradiated/control material.",
+      "assumptions": [
+        "Defect type and property defined",
+        "Temperature/exposure history known"
+      ],
+      "traps": [
+        "Calling all defects damage",
+        "Inferring mechanism from one bulk property"
+      ],
+      "followUps": [
+        "What is defect sink?",
+        "How temperature matters?",
+        "Why grain boundaries?",
+        "How measure defects?",
+        "What control?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-284",
+      "topic": "Nuclear Materials",
+      "question": "How would you characterize an irradiated material within an authorized facility?",
+      "shortAnswer": "Follow authorization and chain of custody, establish exposure/dose and controls, then use approved structural, compositional, microstructural and property methods with contamination and uncertainty controls.",
+      "modelAnswer": "I would not transport or prepare material outside procedure. Before/after and unirradiated references help distinguish irradiation from batch/handling effects. XRD, microscopy, spectroscopy, dimensional/mechanical/thermal/electrical tests may be selected by hypothesis and activity constraints. Sampling, shielding, remote handling, waste and release criteria are facility-controlled. Results must separate measured changes from inferred mechanisms.",
+      "assumptions": [
+        "Authorized radiological facility/procedure",
+        "Exposure and sample history traceable"
+      ],
+      "traps": [
+        "Improvising sample handling",
+        "Calling one change radiation mechanism proof"
+      ],
+      "followUps": [
+        "Which control?",
+        "How record dose?",
+        "What method first?",
+        "How test contamination?",
+        "What result falsifies mechanism?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-285",
+      "topic": "Nuclear Materials",
+      "question": "What properties matter in nuclear materials?",
+      "shortAnswer": "Relevant properties depend on function but may include neutron interaction, phase/chemical stability, thermal transport, mechanical integrity, corrosion, swelling, creep, radiation damage and inspectability.",
+      "modelAnswer": "Fuel, cladding, moderator, coolant-facing, shielding and detector materials have different requirements. Temperature gradients, stress, chemistry and irradiation interact over lifetime. A useful answer begins from component function and failure criteria, then connects properties to qualified measurements and models. No material is “nuclear grade” from composition or one room-temperature test alone.",
+      "assumptions": [
+        "Component/function and environment specified",
+        "Public conceptual scope"
+      ],
+      "traps": [
+        "Listing properties without role",
+        "Ignoring coupled degradation"
+      ],
+      "followUps": [
+        "Which component?",
+        "Dominant failure?",
+        "How test corrosion?",
+        "Why thermal conductivity?",
+        "What surveillance evidence?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-286",
+      "topic": "Radiation Safety",
+      "question": "How do you respond to a suspected contamination event?",
+      "shortAnswer": "Stop work, avoid spreading or touching material, warn/secure the area as trained, notify authorized radiation-protection staff and follow the facility procedure.",
+      "modelAnswer": "I would not attempt cleanup or use an arbitrary survey method. Qualified personnel determine monitoring, boundaries, decontamination, personal assessment, waste and reporting. I would preserve event details—time, location, source/work, people and actions—without compromising safety. Contamination is material, so response differs from simply leaving an external radiation field.",
+      "assumptions": [
+        "Actual facility procedure controls response",
+        "No operational cleanup advice"
+      ],
+      "traps": [
+        "Cleaning before monitoring",
+        "Leaving without reporting"
+      ],
+      "followUps": [
+        "Contamination versus irradiation?",
+        "Why avoid spread?",
+        "Who monitors?",
+        "What record?",
+        "When resume work?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-287",
+      "topic": "Research Safety",
+      "question": "Why must experiments be documented?",
+      "shortAnswer": "Documentation provides traceability for safety, configuration, calibration, data integrity, reproducibility, anomalies and accountability.",
+      "modelAnswer": "A contemporaneous record links objective, sample, equipment, settings, authorization, hazards, raw files, code, deviations and results. It lets others reconstruct work, investigate abnormal outcomes and determine whether controls were followed. In nuclear or mission work, undocumented configuration can invalidate both science and safety case. Records should preserve corrections and access controls rather than be rewritten after success.",
+      "assumptions": [
+        "Institutional records policy followed",
+        "Configuration/identifiers defined"
+      ],
+      "traps": [
+        "Documenting only final plots",
+        "Using confidentiality to avoid authorized records"
+      ],
+      "followUps": [
+        "What before run?",
+        "How note deviation?",
+        "Why raw data path?",
+        "Who reviews?",
+        "How protect confidential records?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-288",
+      "topic": "Scientific Reporting",
+      "question": "How would you report an abnormal result?",
+      "shortAnswer": "Make the system safe, preserve raw evidence/configuration, report promptly through the proper channel, separate observation from interpretation and propose a controlled investigation.",
+      "modelAnswer": "I would state what requirement or baseline was violated, timing, conditions, uncertainty and immediate actions. I would not hide, delete or “fix” the value before review. Calibration, sample identity, instrument health, interfaces and procedure deviations are checked, with safe reproduction only if authorized. Impact and next steps are updated as evidence develops.",
+      "assumptions": [
+        "Reporting/escalation channel exists",
+        "Safe state achieved first"
+      ],
+      "traps": [
+        "Waiting until root cause is known",
+        "Blaming operator or instrument without evidence"
+      ],
+      "followUps": [
+        "What is observation?",
+        "When stop work?",
+        "What evidence preserve?",
+        "How reproduce safely?",
+        "How communicate uncertainty?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-289",
+      "topic": "Radar Systems",
+      "question": "How is target range measured by a pulsed radar, and what limits maximum detectable range?",
+      "shortAnswer": "Range comes from round-trip delay R=cΔt/2; maximum detectable range follows whether received echo energy exceeds noise/clutter and detection requirements after propagation and system losses.",
+      "modelAnswer": "A known pulse or compressed waveform is transmitted and delay estimated by matched processing. Received power in an ideal monostatic radar falls strongly with range and depends on transmit power, gains, wavelength, target scattering and losses. Noise temperature, bandwidth, integration, false-alarm threshold, clutter, atmosphere, ambiguity, duty cycle and hardware dynamic range set practical range. Maximum range is not range resolution or unambiguous range.",
+      "assumptions": [
+        "Public generic monostatic model",
+        "Waveform, target/statistics and detection criterion defined"
+      ],
+      "traps": [
+        "Using delay formula as maximum range",
+        "Confusing resolution and detectability"
+      ],
+      "followUps": [
+        "Radar equation factors?",
+        "Bandwidth and resolution?",
+        "What is unambiguous range?",
+        "How integration helps?",
+        "How false alarm enters?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-290",
+      "topic": "Transistors",
+      "question": "Why bias a transistor?",
+      "shortAnswer": "Biasing establishes a quiescent operating point that provides intended gain, headroom, linearity and stability before the signal is applied.",
+      "modelAnswer": "For a BJT or MOSFET, device parameters and temperature vary, so a bias network and often feedback stabilize current/voltage. The load line and supply determine cutoff/saturation limits and signal swing. Poor bias causes distortion, clipping, excess power or sensitivity. Bias does not guarantee high-frequency stability, and small-signal models apply only around the operating point.",
+      "assumptions": [
+        "Specific transistor topology and supply",
+        "Small-signal operation around Q point"
+      ],
+      "traps": [
+        "Saying bias only turns transistor on",
+        "Ignoring temperature/device spread"
+      ],
+      "followUps": [
+        "What is Q point?",
+        "Load line?",
+        "How emitter/source degeneration helps?",
+        "Headroom?",
+        "What if signal large?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-291",
+      "topic": "Amplifiers",
+      "question": "What limits amplifier bandwidth?",
+      "shortAnswer": "Bandwidth is limited by device transit and parasitic capacitances/inductances, gain/compensation, source/load impedance, feedback stability, packaging and measurement setup.",
+      "modelAnswer": "Internal poles reduce gain with frequency, while Miller effect and load capacitance can dominate. Gain-bandwidth trade-offs apply to particular compensated amplifiers and small signals; large signals can instead be slew-rate limited. At low frequency, coupling/bypass networks may set corners. A bandwidth number needs gain, amplitude, load, distortion and criterion such as −3 dB.",
+      "assumptions": [
+        "Linear small-signal regime unless stated",
+        "Source/load and gain configuration specified"
+      ],
+      "traps": [
+        "Equating slew rate and bandwidth",
+        "Quoting bandwidth without gain/load"
+      ],
+      "followUps": [
+        "What is pole?",
+        "Miller effect?",
+        "Gain-bandwidth?",
+        "Why capacitive load unstable?",
+        "How measure response?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-292",
+      "topic": "Environmental Qualification",
+      "question": "Why are defence materials tested under extremes?",
+      "shortAnswer": "Testing under representative extremes checks whether required properties, interfaces and failure margins survive actual mechanical, thermal, chemical, electromagnetic and storage conditions.",
+      "modelAnswer": "Temperature cycling, vibration, shock, humidity, corrosion, wear, radiation or other loads are selected from public requirements and failure analysis. Testing only nominal conditions misses coupled degradation; arbitrary “harsh” tests can create irrelevant failures. Qualification uses controlled specimens/configuration, instrumentation, pre/post function, uncertainty and acceptance criteria. Restricted performance details should not be speculated.",
+      "assumptions": [
+        "Public requirement/environment specified",
+        "Representative configuration and criteria"
+      ],
+      "traps": [
+        "Harshest test equals best test",
+        "Survival equals function"
+      ],
+      "followUps": [
+        "Which failure mode?",
+        "Why combined loads?",
+        "What is margin?",
+        "How instrument?",
+        "Qualification versus acceptance?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-293",
+      "topic": "Sensor Materials",
+      "question": "What properties matter in a sensor material?",
+      "shortAnswer": "The target transduction response, sensitivity/selectivity, noise, stability, response time, range, drift, environment, interfaces and reproducibility matter more than one headline property.",
+      "modelAnswer": "A sensing material must couple the measurand to optical, electrical, mechanical, magnetic or chemical output. Defects, morphology, contacts, thickness, temperature and interferents shape response. I would define calibration and detection criteria, test controls/mixtures and ageing, and compare with a reference material. High response without selectivity or stability is not useful.",
+      "assumptions": [
+        "Measurand and transduction mechanism defined",
+        "Operating environment/interferents specified"
+      ],
+      "traps": [
+        "Equating large response with good sensor",
+        "Ignoring contacts and drift"
+      ],
+      "followUps": [
+        "What is selectivity?",
+        "Noise source?",
+        "How calibrate?",
+        "Response time?",
+        "How test ageing?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-294",
+      "topic": "Experimental Design",
+      "question": "How do you design a repeatability test?",
+      "shortAnswer": "Hold defined conditions constant, make independent repeated measurements across relevant time/order, randomize where drift matters and quantify within-condition variance with controls.",
+      "modelAnswer": "I would define measurand, setup, operator, sample position, environment and reset procedure. Repeat scans without reset probe instrument repeatability; removing/replacing sample tests setup; independent preparations test reproducibility and should be reported separately. Control charts or time plots reveal drift. Predeclared exclusions and sufficient repetitions avoid cherry-picking.",
+      "assumptions": [
+        "Repeatability condition explicitly defined",
+        "Measurement resolution/stability adequate"
+      ],
+      "traps": [
+        "Calling repeated software reads independent",
+        "Mixing batch variation into repeatability silently"
+      ],
+      "followUps": [
+        "How many repeats?",
+        "How test drift?",
+        "Why randomize?",
+        "Repeatability versus reproducibility?",
+        "What statistic report?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-295",
+      "topic": "Reliability",
+      "question": "Why use redundancy?",
+      "shortAnswer": "Redundancy can preserve critical function after a fault by providing alternate sensors, paths, processors or modes, but only if detection, switching and common-cause risks are controlled.",
+      "modelAnswer": "Active, standby and diverse redundancy trade mass, power, complexity, dormant failures and recovery time. Fault detection must identify the bad element without switching away from healthy hardware. Shared power, software, environment or design flaws can defeat copies. Graceful degradation, margins and procedures may be better for some functions. Redundancy should follow criticality analysis, not habit.",
+      "assumptions": [
+        "Critical function and failure modes defined",
+        "Switching/FDIR verified"
+      ],
+      "traps": [
+        "More copies always safer",
+        "Ignoring common cause"
+      ],
+      "followUps": [
+        "Active versus cold?",
+        "What is voter?",
+        "How test backup?",
+        "Dormant failure?",
+        "When graceful degradation?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-296",
+      "topic": "Research Motivation",
+      "question": "What astronomy question interests you?",
+      "shortAnswer": "Choose one precise question, name the observable that could answer it, the instrument/data and assumptions, and why the result changes understanding.",
+      "modelAnswer": "A strong response might concern stellar spectra, detector calibration, transients, exoplanet signals or galaxy dynamics, but it must reflect genuine preparation. I would connect model to measurement and uncertainty, mention one current institute group only after official verification, and state the skill gap I am addressing. “How the universe works” is too broad.",
+      "assumptions": [
+        "Genuine topic and basic literature prepared",
+        "Relevant group/source current"
+      ],
+      "traps": [
+        "Only childhood fascination",
+        "No observable or method"
+      ],
+      "followUps": [
+        "What observable?",
+        "Which instrument?",
+        "Main uncertainty?",
+        "Alternative explanation?",
+        "Why this group?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-297",
+      "topic": "Astronomical Instrumentation",
+      "question": "How does your materials background help astronomy?",
+      "shortAnswer": "Materials skills transfer to detector/optics/coating/thermal structures, contamination control and calibrated characterization, while astronomy-specific measurement and data skills still require training.",
+      "modelAnswer": "I would cite actual synthesis or characterization tasks only after they are confirmed. Instrument materials influence band response, dark noise, coatings, stability, outgassing, radiation and thermal distortion. My contribution could begin with controlled material/device measurement and uncertainty, not an unsupported claim of astronomical expertise. The exact fit depends on the institute’s current instrumentation work.",
+      "assumptions": [
+        "Actual project skills known",
+        "Current astronomy instrumentation need verified"
+      ],
+      "traps": [
+        "Generic “materials are everywhere”",
+        "Claiming project material is telescope-ready"
+      ],
+      "followUps": [
+        "Which component?",
+        "What property?",
+        "How test vacuum/thermal?",
+        "What astronomy skill gap?",
+        "What first deliverable?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-298",
+      "topic": "Galactic Astrophysics",
+      "question": "What is an active galactic nucleus?",
+      "shortAnswer": "An AGN is a compact, highly luminous galactic nucleus powered primarily by accretion onto a supermassive black hole, producing radiation and sometimes jets across wavelengths.",
+      "modelAnswer": "Gravitational energy released in an accretion flow can power continuum, broad/narrow emission lines, X-rays and radio jets. Orientation, obscuration, accretion rate, black-hole mass and host environment create different observed classes. Variability constrains source size, but one bright nucleus is not sufficient identification. Spectra, multi-wavelength data and time behavior test models.",
+      "assumptions": [
+        "Accretion-powered framework",
+        "Observed band and selection stated"
+      ],
+      "traps": [
+        "Saying luminosity comes from black hole surface",
+        "Treating all AGN classes as intrinsically different objects"
+      ],
+      "followUps": [
+        "Why variability useful?",
+        "What are emission lines?",
+        "How jets form?",
+        "Orientation unification?",
+        "How measure mass?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-299",
+      "topic": "Galactic Astrophysics",
+      "question": "Why are galaxy spectra useful?",
+      "shortAnswer": "Galaxy spectra reveal redshift, stellar populations, gas excitation, kinematics, dust and chemical evidence through continuum and lines under population/radiative-transfer models.",
+      "modelAnswer": "Absorption features trace integrated stars and velocity dispersion; emission lines probe ionized gas, star formation or nuclear activity; wavelength shifts give radial/cosmological information. Aperture, resolution, calibration, dust, blending and population degeneracy matter. A spectrum is integrated light and does not uniquely decompose every component without spatial or multi-band evidence.",
+      "assumptions": [
+        "Calibrated spectrum and aperture known",
+        "Population/line model stated"
+      ],
+      "traps": [
+        "Assigning one line uniquely to mechanism",
+        "Ignoring aperture and dust"
+      ],
+      "followUps": [
+        "How get redshift?",
+        "What is velocity dispersion?",
+        "Line-ratio use?",
+        "Age-metallicity degeneracy?",
+        "Why spatial spectroscopy?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-300",
+      "topic": "Cosmology",
+      "question": "What is the evidence for expansion?",
+      "shortAnswer": "Distance–redshift observations, time-dilation and multiple cosmological probes are consistent with an expanding spacetime; no single Hubble plot point establishes the model.",
+      "modelAnswer": "Spectral redshift correlated with independently calibrated distance indicators was foundational. Modern evidence includes supernova light-curve time dilation, CMB and baryon acoustic scales, and consistency of structure/age observations within cosmology. Peculiar velocities, calibration and selection affect inference. Expansion is described by scale-factor dynamics, not an explosion from a central point into empty space.",
+      "assumptions": [
+        "FLRW large-scale framework",
+        "Distance indicators/redshifts calibrated"
+      ],
+      "traps": [
+        "Calling redshift alone proof of expansion",
+        "Treating expansion as local motion from a centre"
+      ],
+      "followUps": [
+        "What is Hubble law?",
+        "Why low-z peculiar velocity?",
+        "Time dilation evidence?",
+        "What is scale factor?",
+        "Which distance definition?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
     }
   ]
 }

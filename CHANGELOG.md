@@ -27,8 +27,8 @@
 ### Reviewed content
 
 - Added 12 complete-v1, 16-tab priority deep sheets.
-- Added 225 reviewed full-model answer layers across eight batches.
-- Added 101 human-reviewed semantic answer aliases with explicit deep-sheet or full-layer targets.
+- Added 300 reviewed full-model answer layers across eleven batches.
+- Added 128 human-reviewed semantic answer aliases with explicit deep-sheet or full-layer targets.
 - Added 250 reviewed distinct trap/recovery records.
 - Added 800 reviewed factual flashcards.
 - Added a 50-item Derivation Dojo.

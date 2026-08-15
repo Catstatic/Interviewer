@@ -23,7 +23,7 @@ The current build should be classified as:
 - **Core runtime:** first repair pass complete; smoke-tested, but full real-browser QA remains
 - **Content breadth:** many overview headings plus all twelve priority complete-v1 deep sheets
 - **Content depth:** 12 of 12 priority sheets meet the complete-v1 schema; advanced and project-specific extensions remain
-- **Question quality:** 555 prompt-level reviewed questions; 278 records resolve to 225 full models, 89 records resolve to deep-sheet answers through exact or reviewed-alias links, and 188 records remain cue-only
+- **Question quality:** 555 prompt-level reviewed questions; 368 records resolve to 300 full models, 103 records resolve to deep-sheet answers through exact or reviewed-alias links, and 84 records remain cue-only
 - **Progress/readiness evidence:** local evidence events now exist, but independent correctness validation remains limited
 - **Project personalization:** structured 25-field truth ledger, status-aware pitch generator, tailored questions and board implemented; actual project facts are still required
 - **Organization/current-affairs content:** twenty-four source-backed dossiers with 54 official links and stale/check-required states, including six company-specific Bengaluru/private-space profiles; mutable mission/recruitment facts still require current checks
@@ -42,7 +42,7 @@ The app no longer presents the old padded totals as completion. It now distingui
 
 This dated block supersedes older numeric snapshots later in the historical audit:
 
-- Expanded reviewed answer coverage to **225 full-model layers** and **101 explicit semantic aliases**. Runtime coverage is now **278 full-model · 89 deep-sheet · 188 cue-only** across 555 records.
+- Expanded reviewed answer coverage to **300 full-model layers** and **128 explicit semantic aliases**. Runtime coverage is now **368 full-model · 103 deep-sheet · 84 cue-only** across 555 records.
 - Completed the original **100-diagram target**: 36 complete-v1 sheet diagrams plus 64 source-controlled original extensions, each with speaking guidance and a five-point comparison checklist.
 - Completed and exceeded the original **100-resource target** with **114 unique links**. The 22 reviewed study extensions include level, learning mode, expected use, check date, scope, and stable URL; new company sources increased the deduplicated total further.
 - Expanded Signal Watch to **24 dossiers and 54 official source links**, adding source-backed records for Pixxel, Bellatrix Aerospace, Digantara, GalaxEye, KaleidEO, and SatSure. No salary or unverified vacancy claim was added.
@@ -61,7 +61,7 @@ This dated block supersedes older numeric snapshots later in the historical audi
 
 Still blocked or intentionally incomplete:
 
-- **188 cue-only prompts** still need individually reviewed full layers or explicit aliases; no fuzzy auto-linking is permitted.
+- **84 cue-only prompts** still need individually reviewed full layers or explicit aliases; no fuzzy auto-linking is permitted.
 - Actual project material, route, parameters, hazards, instruments, contribution, observations, and next experiment remain unknown until supplied by the user.
 - **0 source checks are currently due** after the 2026-08-15 official-link refresh; mutable sources still expire after 30 days and must be refreshed near use.
 - Real screen-reader, zoom, forced-colour, stylus/touch, microphone, SpeechRecognition, print, and device testing requires external browsers/devices; no browser runtime is installed in this repository environment.
@@ -86,7 +86,7 @@ Phase 0 repair and subsequent depth work delivered:
 - Generates 30-second, 90-second, 3-minute, and non-specialist pitches only from status-labelled local fields.
 - Generates tailored cross-questions and a project-only board without inventing missing material, method, instrument, result, or contribution facts.
 - Implements local Again/Hard/Good/Easy spaced repetition with due queues, intervals, ease, repetitions, lapses, bounded history, legacy migration, immediate undo, Mission Control routing, and card-type-filtered sessions across the complete 800-card deck.
-- Adds 225 reviewed full-model answer layers across eight batches, all twelve priority topics, atomic/astronomy extensions, HR/officer/project/research/teamwork, experimental design, and organization lanes, each with a 30-second answer, full explanation, assumptions, traps, and five follow-ups.
+- Adds 300 reviewed full-model answer layers across eleven batches, all twelve priority topics, atomic/astronomy extensions, HR/officer/project/research/teamwork, experimental design, and organization lanes, each with a 30-second answer, full explanation, assumptions, traps, and five follow-ups.
 - Indexes 598 authored deep-sheet answer/outline/numerical records, keeps exact matching, and adds 40 explicitly human-reviewed semantic aliases rather than trusting automatic fuzzy matching.
 - Adds Answer Coach status filters (`full model`, `deep answer`, `cue only`), reveal-after-attempt behavior, and locally saved draft history.
 - Adds twenty-four source-backed organization/company dossiers with 72 stable fact statements and 54 official source links, stable/mutable labels, stale/check-required logic, manual local recheck evidence, search/type filters, and organization-specific interview drills.
@@ -122,7 +122,7 @@ Latest smoke-test result:
 All tested handlers and all 32 deep-sheet tab views: OK
 ```
 
-Prompt-level scientific/editorial review is complete and documented in `MISSION_VIVA_QUESTION_BANK_EDITORIAL_REVIEW.md`. The 12/12 priority depth build, structured project engine, SRS v2, 225 full-model answer layers, 100-diagram library, and twenty-four source-backed organization/company dossiers are delivered. Release work is **not closed yet**: 188 bank records remain cue-only, user-confirmed project facts are missing, mutable sources still require near-use refresh, and full real-browser/device QA is still required.
+Prompt-level scientific/editorial review is complete and documented in `MISSION_VIVA_QUESTION_BANK_EDITORIAL_REVIEW.md`. The 12/12 priority depth build, structured project engine, SRS v2, 300 full-model answer layers, 100-diagram library, and twenty-four source-backed organization/company dossiers are delivered. Release work is **not closed yet**: 84 bank records remain cue-only, user-confirmed project facts are missing, mutable sources still require near-use refresh, and full real-browser/device QA is still required.
 
 ---
 
@@ -158,10 +158,10 @@ These are foundations, not finished modules.
 | Area | Current count/state | Substantive audit | Verdict |
 |---|---:|---:|---|
 | Questions | 555 reviewed standalone subject/question prompts | 535 globally distinct wordings, 20 linked cross-lane variants, and 36 separate contextual follow-ups | Prompt-level editorial review complete |
-| Answer layers | 225 curated full-model layers | 278 question-bank records resolve to full models across core, project, characterization, atomic/astronomy, experimental design, HR/officer/research/teamwork, ISRO, BARC/DAE, DRDO, and private-space lanes; every layer has short/full answers, assumptions, traps, and five follow-ups | Eight reviewed batches delivered |
+| Answer layers | 300 curated full-model layers | 368 question-bank records resolve to full models across core, project, characterization, atomic/astronomy, experimental design, HR/officer/research/teamwork, ISRO, BARC/DAE, DRDO, and private-space lanes; every layer has short/full answers, assumptions, traps, and five follow-ups | Eleven reviewed batches delivered |
 | Deep-sheet exact answer links | 598 indexed authored records | 25 question-bank records match exactly after curated full layers take precedence | Honest exact-link integration |
-| Reviewed semantic aliases | 101 human-reviewed mappings | They cover alternate bank wording through an explicit deep-sheet or curated-full target and rationale; 61 new mappings reduce cue-only backlog without fuzzy attachment | No automatic fuzzy matching |
-| Cue-only bank records | 188 | Clearly labelled as structure cues rather than scientific model answers | Largest remaining answer-depth backlog |
+| Reviewed semantic aliases | 128 human-reviewed mappings | They cover alternate bank wording through an explicit deep-sheet or curated-full target and rationale; 88 new mappings reduce cue-only backlog without fuzzy attachment | No automatic fuzzy matching |
+| Cue-only bank records | 84 | Clearly labelled as structure cues rather than scientific model answers | Largest remaining answer-depth backlog |
 | Questions with metadata | 555 of 555 | Metadata is generated after all batches and includes review/cue/variant/risk fields | P0 data-pipeline fault resolved |
 | Difficulty metadata | 336 core · 72 deep · 147 project | Current classification works, but authored enum metadata is still preferable | Functional first pass |
 | Traps | 250 | 250 unique wrong statements and trap/recovery pairs across 25 reviewed categories; each has rationale, follow-up, severity, tags, and review date | 250/250 target delivered |
@@ -457,11 +457,11 @@ Remaining:
 Delivered:
 
 - Fixed organization-lens routing and retained technical, project, HR, and unknown-answer frameworks.
-- Added 225 reviewed full-model layers in eight batches spanning all twelve priority topics plus atomic/astronomy, project, characterization, experimental design, HR/officer/research/teamwork, ISRO, BARC/DAE, DRDO, and private-space lanes.
+- Added 300 reviewed full-model layers in eleven batches spanning all twelve priority topics plus atomic/astronomy, project, characterization, experimental design, HR/officer/research/teamwork, ISRO, BARC/DAE, DRDO, and private-space lanes.
 - Each curated layer contains a 30-second answer, full model answer, assumptions, traps, five follow-ups, topic, review date, and stable ID.
 - Indexed 598 deep-sheet concise answers, outlines, and worked numericals for exact-match reuse.
-- Added 101 human-reviewed semantic aliases linking alternate wording to a specific deep-sheet or curated full-layer target; no automatic fuzzy match is trusted.
-- Exact and reviewed-alias deep links now cover 89 bank records after curated full models take precedence.
+- Added 128 human-reviewed semantic aliases linking alternate wording to a specific deep-sheet or curated full-layer target; no automatic fuzzy match is trusted.
+- Exact and reviewed-alias deep links now cover 103 bank records after curated full models take precedence.
 - Explicit statuses: reviewed full model, reviewed deep-sheet answer, and structure cue only.
 - Question Bank can filter by answer status and shows coverage before opening a card.
 - Answer layers stay hidden until the user attempts and presses Reveal.
@@ -470,7 +470,7 @@ Delivered:
 
 Remaining:
 
-- Expand reviewed full-model or explicitly reviewed alias coverage; 188 bank records remain cue-only.
+- Expand reviewed full-model or explicitly reviewed alias coverage; 84 bank records remain cue-only.
 - Factual-coverage checklists now use reviewed assumptions/traps separately from communication scores; independent grading remains external.
 - User-authored plain-language and rigorous-specialist revision editors are delivered and clearly remain subordinate to the reviewed source.
 - Twenty-six organization-facing answer layers now carry explicit dossier provenance and mutable-fact policy fields.
@@ -1199,7 +1199,7 @@ Advanced extension sheets should be added only for confirmed target roles, while
 
 Delivered:
 
-- Reviewed prompt bank and 225 full-model answer layers.
+- Reviewed prompt bank and 300 full-model answer layers.
 - Timed single drills, why-chain, six-persona full boards, project/organization boards, progressive stress, answer metrics, and saved post-mortems.
 - Functional SRS v1.
 

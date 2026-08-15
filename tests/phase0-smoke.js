@@ -225,11 +225,11 @@ const runtimeAssertions = `
   });
   ok(ANSWER_CONTENT_META.sha256 === EXPECTED_ANSWER_HASH, 'Inlined answer-layer hash does not match source JSON');
   ok(JSON.stringify(CURATED_ANSWER_LAYERS) === JSON.stringify(EXPECTED_ANSWER_LAYERS), 'Inlined answer layers differ from source JSON');
-  ok(CURATED_ANSWER_LAYERS.length === 225, 'Expected 225 reviewed full answer layers across eight batches');
+  ok(CURATED_ANSWER_LAYERS.length === 300, 'Expected 300 reviewed full answer layers across eleven batches');
   ok(CURATED_ANSWER_LAYERS.every(x=>x.status==='reviewed-full-v1'&&x.shortAnswer&&x.modelAnswer&&x.assumptions.length>=2&&x.traps.length>=2&&x.followUps.length===5),'Reviewed answer-layer schema is incomplete');
   ok(ANSWER_ALIAS_META.sha256===EXPECTED_ANSWER_ALIAS_HASH,'Inlined answer-alias hash does not match source JSON');
   ok(JSON.stringify(CURATED_ANSWER_ALIASES)===JSON.stringify(EXPECTED_ANSWER_ALIASES),'Inlined answer aliases differ from source JSON');
-  ok(CURATED_ANSWER_ALIASES.length===101&&new Set(CURATED_ANSWER_ALIASES.map(x=>answerNorm(x.question))).size===101,'Reviewed answer aliases are incomplete or duplicated');
+  ok(CURATED_ANSWER_ALIASES.length===128&&new Set(CURATED_ANSWER_ALIASES.map(x=>answerNorm(x.question))).size===128,'Reviewed answer aliases are incomplete or duplicated');
   ok(CURATED_ANSWER_ALIASES.every(x=>x.status==='reviewed-semantic-alias-v1'&&(x.targetType==='curated-full'?CURATED_ANSWER_INDEX:DEEP_ANSWER_INDEX).get(answerNorm(x.targetQuestion))),'An answer alias target is unresolved');
   ok(answerLayerForQuestion('What is a Hohmann transfer?').status==='reviewed-deep-alias','Reviewed deep semantic alias lookup failed');
   ok(answerLayerForQuestion('Why ISRO?').status==='reviewed-full-alias','Reviewed full-layer semantic alias lookup failed');

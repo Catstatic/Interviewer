@@ -614,6 +614,146 @@
     },
     {
       "id": "ALIAS-062",
+      "question": "How does a boundary condition produce reflection?",
+      "targetType": "deep-sheet",
+      "targetTopic": "Electromagnetic Theory",
+      "targetQuestion": "What causes reflection at interface?",
+      "rationale": "Human-reviewed semantic equivalence: the wording asks the same core concept under the target answer's stated assumptions.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-semantic-alias-v1"
+    },
+    {
+      "id": "ALIAS-063",
+      "question": "How are polarization and antenna orientation related?",
+      "targetType": "deep-sheet",
+      "targetTopic": "Electromagnetic Theory",
+      "targetQuestion": "What is polarization matching?",
+      "rationale": "Human-reviewed semantic equivalence: the wording asks the same core concept under the target answer's stated assumptions.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-semantic-alias-v1"
+    },
+    {
+      "id": "ALIAS-064",
+      "question": "How does material conductivity affect wave penetration?",
+      "targetType": "deep-sheet",
+      "targetTopic": "Electromagnetic Theory",
+      "targetQuestion": "What is skin depth?",
+      "rationale": "Human-reviewed semantic equivalence: the wording asks the same core concept under the target answer's stated assumptions.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-semantic-alias-v1"
+    },
+    {
+      "id": "ALIAS-065",
+      "question": "How do quantum states produce a band structure?",
+      "targetType": "deep-sheet",
+      "targetTopic": "Solid State Physics",
+      "targetQuestion": "Why do energy bands form?",
+      "rationale": "Human-reviewed semantic equivalence: the wording asks the same core concept under the target answer's stated assumptions.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-semantic-alias-v1"
+    },
+    {
+      "id": "ALIAS-066",
+      "question": "How does temperature affect carrier occupation?",
+      "targetType": "deep-sheet",
+      "targetTopic": "Solid State Physics",
+      "targetQuestion": "How does temperature affect a doped semiconductor?",
+      "rationale": "Human-reviewed semantic equivalence: the wording asks the same core concept under the target answer's stated assumptions.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-semantic-alias-v1"
+    },
+    {
+      "id": "ALIAS-067",
+      "question": "How would you distinguish a kinetic product from a stable phase?",
+      "targetType": "deep-sheet",
+      "targetTopic": "Thermodynamics",
+      "targetQuestion": "How would you distinguish equilibrium phase stability from synthesis kinetics?",
+      "rationale": "Human-reviewed semantic equivalence: the wording asks the same core concept under the target answer's stated assumptions.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-semantic-alias-v1"
+    },
+    {
+      "id": "ALIAS-068",
+      "question": "What causes peak broadening?",
+      "targetType": "deep-sheet",
+      "targetTopic": "Solid State Physics",
+      "targetQuestion": "What broadens an XRD peak?",
+      "rationale": "Human-reviewed semantic equivalence: the wording asks the same core concept under the target answer's stated assumptions.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-semantic-alias-v1"
+    },
+    {
+      "id": "ALIAS-069",
+      "question": "What is preferred orientation?",
+      "targetType": "deep-sheet",
+      "targetTopic": "Solid State Physics",
+      "targetQuestion": "Why is preferred orientation a problem in powder diffraction?",
+      "rationale": "Human-reviewed semantic equivalence: the wording asks the same core concept under the target answer's stated assumptions.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-semantic-alias-v1"
+    },
+    {
+      "id": "ALIAS-070",
+      "question": "Why can charging occur?",
+      "targetType": "deep-sheet",
+      "targetTopic": "Materials Characterization",
+      "targetQuestion": "Why can an insulating SEM sample charge?",
+      "rationale": "Human-reviewed semantic equivalence: the wording asks the same core concept under the target answer's stated assumptions.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-semantic-alias-v1"
+    },
+    {
+      "id": "ALIAS-071",
+      "question": "Why use a reference blank?",
+      "targetType": "deep-sheet",
+      "targetTopic": "Materials Characterization",
+      "targetQuestion": "Why run a blank?",
+      "rationale": "Human-reviewed semantic equivalence: the wording asks the same core concept under the target answer's stated assumptions.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-semantic-alias-v1"
+    },
+    {
+      "id": "ALIAS-072",
+      "question": "What is the limitation of optical gap estimation?",
+      "targetType": "deep-sheet",
+      "targetTopic": "Materials Characterization",
+      "targetQuestion": "Why is a Tauc plot model-dependent?",
+      "rationale": "Human-reviewed semantic equivalence: the wording asks the same core concept under the target answer's stated assumptions.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-semantic-alias-v1"
+    },
+    {
+      "id": "ALIAS-073",
+      "question": "What does XPS not reveal about bulk?",
+      "targetType": "deep-sheet",
+      "targetTopic": "Materials Characterization",
+      "targetQuestion": "Why is XPS surface sensitive?",
+      "rationale": "Human-reviewed semantic equivalence: the wording asks the same core concept under the target answer's stated assumptions.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-semantic-alias-v1"
+    },
+    {
+      "id": "ALIAS-074",
+      "question": "How do you calibrate temperature?",
+      "targetType": "deep-sheet",
+      "targetTopic": "Basic Electronics and Instrumentation",
+      "targetQuestion": "How would you calibrate a temperature sensor?",
+      "rationale": "Human-reviewed semantic equivalence: the wording asks the same core concept under the target answer's stated assumptions.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-semantic-alias-v1"
+    },
+    {
+      "id": "ALIAS-075",
+      "question": "How do you determine carrier type?",
+      "targetType": "deep-sheet",
+      "targetTopic": "Solid State Physics",
+      "targetQuestion": "What is the Hall effect?",
+      "rationale": "Human-reviewed semantic equivalence: the wording asks the same core concept under the target answer's stated assumptions.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-semantic-alias-v1"
+    },
+    {
+      "id": "ALIAS-076",
       "question": "How do you report uncertainty?",
       "targetType": "curated-full",
       "targetTopic": "Scientific Communication",
@@ -623,7 +763,7 @@
       "status": "reviewed-semantic-alias-v1"
     },
     {
-      "id": "ALIAS-063",
+      "id": "ALIAS-077",
       "question": "What is Doppler radar measuring?",
       "targetType": "curated-full",
       "targetTopic": "DRDO / Radar",
@@ -633,7 +773,7 @@
       "status": "reviewed-semantic-alias-v1"
     },
     {
-      "id": "ALIAS-064",
+      "id": "ALIAS-078",
       "question": "What is the difference between a satellite payload and a satellite bus?",
       "targetType": "curated-full",
       "targetTopic": "ISRO / Space Systems",
@@ -643,7 +783,7 @@
       "status": "reviewed-semantic-alias-v1"
     },
     {
-      "id": "ALIAS-065",
+      "id": "ALIAS-079",
       "question": "Why are launch vehicles staged?",
       "targetType": "curated-full",
       "targetTopic": "ISRO / Space Systems",
@@ -653,7 +793,7 @@
       "status": "reviewed-semantic-alias-v1"
     },
     {
-      "id": "ALIAS-066",
+      "id": "ALIAS-080",
       "question": "Why are redundancy and fault detection important in space?",
       "targetType": "curated-full",
       "targetTopic": "ISRO / Reliability",
@@ -663,7 +803,7 @@
       "status": "reviewed-semantic-alias-v1"
     },
     {
-      "id": "ALIAS-067",
+      "id": "ALIAS-081",
       "question": "What would you contribute as a physics graduate?",
       "targetType": "curated-full",
       "targetTopic": "Private Space Contribution",
@@ -673,7 +813,7 @@
       "status": "reviewed-semantic-alias-v1"
     },
     {
-      "id": "ALIAS-068",
+      "id": "ALIAS-082",
       "question": "How would you distinguish exposure from contamination?",
       "targetType": "curated-full",
       "targetTopic": "BARC / Radiation Protection",
@@ -683,7 +823,7 @@
       "status": "reviewed-semantic-alias-v1"
     },
     {
-      "id": "ALIAS-069",
+      "id": "ALIAS-083",
       "question": "What determines radar range resolution?",
       "targetType": "curated-full",
       "targetTopic": "DRDO / Radar",
@@ -693,7 +833,7 @@
       "status": "reviewed-semantic-alias-v1"
     },
     {
-      "id": "ALIAS-070",
+      "id": "ALIAS-084",
       "question": "Explain your project to a non-specialist.",
       "targetType": "curated-full",
       "targetTopic": "Project Communication",
@@ -703,7 +843,7 @@
       "status": "reviewed-semantic-alias-v1"
     },
     {
-      "id": "ALIAS-071",
+      "id": "ALIAS-085",
       "question": "Why ISRO?",
       "targetType": "curated-full",
       "targetTopic": "ISRO Motivation",
@@ -713,7 +853,7 @@
       "status": "reviewed-semantic-alias-v1"
     },
     {
-      "id": "ALIAS-072",
+      "id": "ALIAS-086",
       "question": "What does national service mean to you in a scientific organization?",
       "targetType": "curated-full",
       "targetTopic": "Mission-driven Work",
@@ -723,7 +863,7 @@
       "status": "reviewed-semantic-alias-v1"
     },
     {
-      "id": "ALIAS-073",
+      "id": "ALIAS-087",
       "question": "Why BARC/DAE?",
       "targetType": "curated-full",
       "targetTopic": "BARC/DAE Motivation",
@@ -733,7 +873,7 @@
       "status": "reviewed-semantic-alias-v1"
     },
     {
-      "id": "ALIAS-074",
+      "id": "ALIAS-088",
       "question": "What does criticality mean?",
       "targetType": "curated-full",
       "targetTopic": "BARC / Nuclear Systems",
@@ -743,7 +883,7 @@
       "status": "reviewed-semantic-alias-v1"
     },
     {
-      "id": "ALIAS-075",
+      "id": "ALIAS-089",
       "question": "How do you handle confidential technical work?",
       "targetType": "curated-full",
       "targetTopic": "Confidentiality",
@@ -753,7 +893,7 @@
       "status": "reviewed-semantic-alias-v1"
     },
     {
-      "id": "ALIAS-076",
+      "id": "ALIAS-090",
       "question": "Why should BARC select you?",
       "targetType": "curated-full",
       "targetTopic": "Career and Early-Career Fit",
@@ -763,7 +903,7 @@
       "status": "reviewed-semantic-alias-v1"
     },
     {
-      "id": "ALIAS-077",
+      "id": "ALIAS-091",
       "question": "Why DRDO?",
       "targetType": "curated-full",
       "targetTopic": "DRDO Motivation",
@@ -773,7 +913,7 @@
       "status": "reviewed-semantic-alias-v1"
     },
     {
-      "id": "ALIAS-078",
+      "id": "ALIAS-092",
       "question": "Why astronomy?",
       "targetType": "curated-full",
       "targetTopic": "Astronomy Motivation",
@@ -783,7 +923,7 @@
       "status": "reviewed-semantic-alias-v1"
     },
     {
-      "id": "ALIAS-079",
+      "id": "ALIAS-093",
       "question": "How would you respond to a model-data disagreement?",
       "targetType": "curated-full",
       "targetTopic": "Research Integrity",
@@ -793,7 +933,7 @@
       "status": "reviewed-semantic-alias-v1"
     },
     {
-      "id": "ALIAS-080",
+      "id": "ALIAS-094",
       "question": "What is the main research question?",
       "targetType": "curated-full",
       "targetTopic": "Research Readiness",
@@ -803,7 +943,7 @@
       "status": "reviewed-semantic-alias-v1"
     },
     {
-      "id": "ALIAS-081",
+      "id": "ALIAS-095",
       "question": "What did you personally do?",
       "targetType": "curated-full",
       "targetTopic": "Project Presentation Lab",
@@ -813,7 +953,7 @@
       "status": "reviewed-semantic-alias-v1"
     },
     {
-      "id": "ALIAS-082",
+      "id": "ALIAS-096",
       "question": "How would you explain the project simply?",
       "targetType": "curated-full",
       "targetTopic": "Project Communication",
@@ -823,7 +963,7 @@
       "status": "reviewed-semantic-alias-v1"
     },
     {
-      "id": "ALIAS-083",
+      "id": "ALIAS-097",
       "question": "How can a band gap be estimated?",
       "targetType": "curated-full",
       "targetTopic": "Solid State Physics",
@@ -833,7 +973,7 @@
       "status": "reviewed-semantic-alias-v1"
     },
     {
-      "id": "ALIAS-084",
+      "id": "ALIAS-098",
       "question": "How would you calibrate an instrument?",
       "targetType": "curated-full",
       "targetTopic": "DRDO / Sensors",
@@ -843,7 +983,7 @@
       "status": "reviewed-semantic-alias-v1"
     },
     {
-      "id": "ALIAS-085",
+      "id": "ALIAS-099",
       "question": "How would you calibrate the instrument?",
       "targetType": "curated-full",
       "targetTopic": "DRDO / Sensors",
@@ -853,7 +993,7 @@
       "status": "reviewed-semantic-alias-v1"
     },
     {
-      "id": "ALIAS-086",
+      "id": "ALIAS-100",
       "question": "What role does temperature play in formation?",
       "targetType": "curated-full",
       "targetTopic": "Materials Science",
@@ -863,7 +1003,7 @@
       "status": "reviewed-semantic-alias-v1"
     },
     {
-      "id": "ALIAS-087",
+      "id": "ALIAS-101",
       "question": "What makes a detector space-qualified?",
       "targetType": "curated-full",
       "targetTopic": "Space Instrumentation",
@@ -873,7 +1013,7 @@
       "status": "reviewed-semantic-alias-v1"
     },
     {
-      "id": "ALIAS-088",
+      "id": "ALIAS-102",
       "question": "What is selectivity?",
       "targetType": "curated-full",
       "targetTopic": "Sensors and Instrumentation",
@@ -883,7 +1023,7 @@
       "status": "reviewed-semantic-alias-v1"
     },
     {
-      "id": "ALIAS-089",
+      "id": "ALIAS-103",
       "question": "What is filtering?",
       "targetType": "curated-full",
       "targetTopic": "Basic Electronics and Instrumentation",
@@ -893,7 +1033,7 @@
       "status": "reviewed-semantic-alias-v1"
     },
     {
-      "id": "ALIAS-090",
+      "id": "ALIAS-104",
       "question": "What is a control test?",
       "targetType": "curated-full",
       "targetTopic": "Experimental Design",
@@ -903,7 +1043,7 @@
       "status": "reviewed-semantic-alias-v1"
     },
     {
-      "id": "ALIAS-091",
+      "id": "ALIAS-105",
       "question": "How does temperature affect phase formation?",
       "targetType": "curated-full",
       "targetTopic": "Materials Science",
@@ -913,7 +1053,7 @@
       "status": "reviewed-semantic-alias-v1"
     },
     {
-      "id": "ALIAS-092",
+      "id": "ALIAS-106",
       "question": "What if a repeated measurement drifts?",
       "targetType": "curated-full",
       "targetTopic": "Experimental Methods",
@@ -923,7 +1063,7 @@
       "status": "reviewed-semantic-alias-v1"
     },
     {
-      "id": "ALIAS-093",
+      "id": "ALIAS-107",
       "question": "How do temperature and time affect phase formation?",
       "targetType": "curated-full",
       "targetTopic": "Materials Science",
@@ -933,7 +1073,7 @@
       "status": "reviewed-semantic-alias-v1"
     },
     {
-      "id": "ALIAS-094",
+      "id": "ALIAS-108",
       "question": "How would you repeat the measurement?",
       "targetType": "curated-full",
       "targetTopic": "Experimental Methods",
@@ -943,7 +1083,7 @@
       "status": "reviewed-semantic-alias-v1"
     },
     {
-      "id": "ALIAS-095",
+      "id": "ALIAS-109",
       "question": "How can spectroscopy reveal composition?",
       "targetType": "curated-full",
       "targetTopic": "Astronomical Spectroscopy",
@@ -953,7 +1093,7 @@
       "status": "reviewed-semantic-alias-v1"
     },
     {
-      "id": "ALIAS-096",
+      "id": "ALIAS-110",
       "question": "How does spectroscopy reveal composition?",
       "targetType": "curated-full",
       "targetTopic": "Astronomical Spectroscopy",
@@ -963,7 +1103,7 @@
       "status": "reviewed-semantic-alias-v1"
     },
     {
-      "id": "ALIAS-097",
+      "id": "ALIAS-111",
       "question": "What limits a telescope’s resolution?",
       "targetType": "curated-full",
       "targetTopic": "Observational Astronomy",
@@ -973,7 +1113,7 @@
       "status": "reviewed-semantic-alias-v1"
     },
     {
-      "id": "ALIAS-098",
+      "id": "ALIAS-112",
       "question": "What limits angular resolution?",
       "targetType": "curated-full",
       "targetTopic": "Observational Astronomy",
@@ -983,7 +1123,7 @@
       "status": "reviewed-semantic-alias-v1"
     },
     {
-      "id": "ALIAS-099",
+      "id": "ALIAS-113",
       "question": "How does diffraction connect aperture to resolution?",
       "targetType": "curated-full",
       "targetTopic": "Observational Astronomy",
@@ -993,7 +1133,7 @@
       "status": "reviewed-semantic-alias-v1"
     },
     {
-      "id": "ALIAS-100",
+      "id": "ALIAS-114",
       "question": "What causes a spectral line?",
       "targetType": "curated-full",
       "targetTopic": "Atomic Physics and Spectroscopy",
@@ -1003,11 +1143,141 @@
       "status": "reviewed-semantic-alias-v1"
     },
     {
-      "id": "ALIAS-101",
+      "id": "ALIAS-115",
       "question": "What is the difference between laboratory and flight testing?",
       "targetType": "curated-full",
       "targetTopic": "Aerospace Qualification",
       "targetQuestion": "What is the difference between a prototype and a flight-ready component?",
+      "rationale": "Human-reviewed semantic equivalence: this alternate wording requests the same scientific or professional answer as the named reviewed full layer.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-semantic-alias-v1"
+    },
+    {
+      "id": "ALIAS-116",
+      "question": "Why does a spacecraft need thermal control?",
+      "targetType": "curated-full",
+      "targetTopic": "Spacecraft Thermal Engineering",
+      "targetQuestion": "Why are thermal controls needed on spacecraft?",
+      "rationale": "Human-reviewed semantic equivalence: this alternate wording requests the same scientific or professional answer as the named reviewed full layer.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-semantic-alias-v1"
+    },
+    {
+      "id": "ALIAS-117",
+      "question": "Why do spacecraft need thermal balance?",
+      "targetType": "curated-full",
+      "targetTopic": "Spacecraft Thermal Engineering",
+      "targetQuestion": "Why are thermal controls needed on spacecraft?",
+      "rationale": "Human-reviewed semantic equivalence: this alternate wording requests the same scientific or professional answer as the named reviewed full layer.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-semantic-alias-v1"
+    },
+    {
+      "id": "ALIAS-118",
+      "question": "What is your personal contribution?",
+      "targetType": "curated-full",
+      "targetTopic": "Project Ownership",
+      "targetQuestion": "What is your independent contribution to the project?",
+      "rationale": "Human-reviewed semantic equivalence: this alternate wording requests the same scientific or professional answer as the named reviewed full layer.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-semantic-alias-v1"
+    },
+    {
+      "id": "ALIAS-119",
+      "question": "What did your supervisor guide you on?",
+      "targetType": "curated-full",
+      "targetTopic": "Project Ownership",
+      "targetQuestion": "What is your independent contribution to the project?",
+      "rationale": "Human-reviewed semantic equivalence: this alternate wording requests the same scientific or professional answer as the named reviewed full layer.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-semantic-alias-v1"
+    },
+    {
+      "id": "ALIAS-120",
+      "question": "What complementary technique is needed?",
+      "targetType": "curated-full",
+      "targetTopic": "Project Characterization",
+      "targetQuestion": "Why do you need a complementary technique?",
+      "rationale": "Human-reviewed semantic equivalence: this alternate wording requests the same scientific or professional answer as the named reviewed full layer.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-semantic-alias-v1"
+    },
+    {
+      "id": "ALIAS-121",
+      "question": "What can you contribute as a new graduate?",
+      "targetType": "curated-full",
+      "targetTopic": "Private Space Contribution",
+      "targetQuestion": "What could you contribute in your first six months?",
+      "rationale": "Human-reviewed semantic equivalence: this alternate wording requests the same scientific or professional answer as the named reviewed full layer.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-semantic-alias-v1"
+    },
+    {
+      "id": "ALIAS-122",
+      "question": "What is a useful prototype?",
+      "targetType": "curated-full",
+      "targetTopic": "Product Prototyping",
+      "targetQuestion": "What is a minimum viable prototype?",
+      "rationale": "Human-reviewed semantic equivalence: this alternate wording requests the same scientific or professional answer as the named reviewed full layer.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-semantic-alias-v1"
+    },
+    {
+      "id": "ALIAS-123",
+      "question": "How do you calibrate an instrument?",
+      "targetType": "curated-full",
+      "targetTopic": "DRDO / Sensors",
+      "targetQuestion": "How do you calibrate a sensor?",
+      "rationale": "Human-reviewed semantic equivalence: this alternate wording requests the same scientific or professional answer as the named reviewed full layer.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-semantic-alias-v1"
+    },
+    {
+      "id": "ALIAS-124",
+      "question": "Why are environmental tests necessary?",
+      "targetType": "curated-full",
+      "targetTopic": "Aerospace Qualification",
+      "targetQuestion": "What is the difference between a prototype and a flight-ready component?",
+      "rationale": "Human-reviewed semantic equivalence: this alternate wording requests the same scientific or professional answer as the named reviewed full layer.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-semantic-alias-v1"
+    },
+    {
+      "id": "ALIAS-125",
+      "question": "How does irradiation create defects?",
+      "targetType": "curated-full",
+      "targetTopic": "Radiation Effects in Materials",
+      "targetQuestion": "How does radiation affect materials?",
+      "rationale": "Human-reviewed semantic equivalence: this alternate wording requests the same scientific or professional answer as the named reviewed full layer.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-semantic-alias-v1"
+    },
+    {
+      "id": "ALIAS-126",
+      "question": "How does radiation damage change conductivity?",
+      "targetType": "curated-full",
+      "targetTopic": "Materials Reliability",
+      "targetQuestion": "How do defects affect performance?",
+      "rationale": "Human-reviewed semantic equivalence: this alternate wording requests the same scientific or professional answer as the named reviewed full layer.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-semantic-alias-v1"
+    },
+    {
+      "id": "ALIAS-127",
+      "question": "How would you characterize an irradiated sample?",
+      "targetType": "curated-full",
+      "targetTopic": "Nuclear Materials",
+      "targetQuestion": "How would you characterize an irradiated material within an authorized facility?",
+      "rationale": "Human-reviewed semantic equivalence: this alternate wording requests the same scientific or professional answer as the named reviewed full layer.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-semantic-alias-v1"
+    },
+    {
+      "id": "ALIAS-128",
+      "question": "How does vacuum change a material process?",
+      "targetType": "curated-full",
+      "targetTopic": "Space Environment",
+      "targetQuestion": "Why is vacuum a design constraint?",
       "rationale": "Human-reviewed semantic equivalence: this alternate wording requests the same scientific or professional answer as the named reviewed full layer.",
       "reviewedOn": "2026-08-15",
       "status": "reviewed-semantic-alias-v1"

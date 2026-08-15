@@ -18,7 +18,7 @@ def build_block() -> str:
     raw = SOURCE.read_bytes()
     data = json.loads(raw)
     assert data["schemaVersion"] == 1
-    assert len(data["aliases"]) == 101
+    assert len(data["aliases"]) == 128
     meta = {
         "schemaVersion": data["schemaVersion"],
         "reviewedOn": data["reviewedOn"],

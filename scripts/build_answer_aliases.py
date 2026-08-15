@@ -71,7 +71,21 @@ PAIRS = [
     ("What is half-life?", "Nuclear Physics and Radiation Protection", "Half-life versus mean life?"),
     ("How do control rods work?", "Nuclear Physics and Radiation Protection", "What do control rods do conceptually?"),
     ("What is background subtraction?", "Nuclear Physics and Radiation Protection", "Why subtract background?"),
-    ("How do you validate remote-sensing output?", "Orbital Mechanics, Spacecraft Systems, and Remote Sensing", "How would you prove a remote-sensing retrieval is physically meaningful?")
+    ("How do you validate remote-sensing output?", "Orbital Mechanics, Spacecraft Systems, and Remote Sensing", "How would you prove a remote-sensing retrieval is physically meaningful?"),
+    ("How does a boundary condition produce reflection?", "Electromagnetic Theory", "What causes reflection at interface?"),
+    ("How are polarization and antenna orientation related?", "Electromagnetic Theory", "What is polarization matching?"),
+    ("How does material conductivity affect wave penetration?", "Electromagnetic Theory", "What is skin depth?"),
+    ("How do quantum states produce a band structure?", "Solid State Physics", "Why do energy bands form?"),
+    ("How does temperature affect carrier occupation?", "Solid State Physics", "How does temperature affect a doped semiconductor?"),
+    ("How would you distinguish a kinetic product from a stable phase?", "Thermodynamics", "How would you distinguish equilibrium phase stability from synthesis kinetics?"),
+    ("What causes peak broadening?", "Solid State Physics", "What broadens an XRD peak?"),
+    ("What is preferred orientation?", "Solid State Physics", "Why is preferred orientation a problem in powder diffraction?"),
+    ("Why can charging occur?", "Materials Characterization", "Why can an insulating SEM sample charge?"),
+    ("Why use a reference blank?", "Materials Characterization", "Why run a blank?"),
+    ("What is the limitation of optical gap estimation?", "Materials Characterization", "Why is a Tauc plot model-dependent?"),
+    ("What does XPS not reveal about bulk?", "Materials Characterization", "Why is XPS surface sensitive?"),
+    ("How do you calibrate temperature?", "Basic Electronics and Instrumentation", "How would you calibrate a temperature sensor?"),
+    ("How do you determine carrier type?", "Solid State Physics", "What is the Hall effect?")
 ]
 
 CURATED_PAIRS = [
@@ -114,7 +128,20 @@ CURATED_PAIRS = [
     ("What limits angular resolution?", "What is angular resolution?"),
     ("How does diffraction connect aperture to resolution?", "What is angular resolution?"),
     ("What causes a spectral line?", "What determines the spectral lines of an atom?"),
-    ("What is the difference between laboratory and flight testing?", "What is the difference between a prototype and a flight-ready component?")
+    ("What is the difference between laboratory and flight testing?", "What is the difference between a prototype and a flight-ready component?"),
+    ("Why does a spacecraft need thermal control?", "Why are thermal controls needed on spacecraft?"),
+    ("Why do spacecraft need thermal balance?", "Why are thermal controls needed on spacecraft?"),
+    ("What is your personal contribution?", "What is your independent contribution to the project?"),
+    ("What did your supervisor guide you on?", "What is your independent contribution to the project?"),
+    ("What complementary technique is needed?", "Why do you need a complementary technique?"),
+    ("What can you contribute as a new graduate?", "What could you contribute in your first six months?"),
+    ("What is a useful prototype?", "What is a minimum viable prototype?"),
+    ("How do you calibrate an instrument?", "How do you calibrate a sensor?"),
+    ("Why are environmental tests necessary?", "What is the difference between a prototype and a flight-ready component?"),
+    ("How does irradiation create defects?", "How does radiation affect materials?"),
+    ("How does radiation damage change conductivity?", "How do defects affect performance?"),
+    ("How would you characterize an irradiated sample?", "How would you characterize an irradiated material within an authorized facility?"),
+    ("How does vacuum change a material process?", "Why is vacuum a design constraint?")
 ]
 
 
@@ -128,8 +155,8 @@ def main() -> None:
     }
     curated = json.loads((ROOT / "content" / "answer-layers.json").read_text())["layers"]
     curated_targets = {item["question"]: item for item in curated}
-    assert len(PAIRS) == 61
-    assert len(CURATED_PAIRS) == 40
+    assert len(PAIRS) == 75
+    assert len(CURATED_PAIRS) == 53
     all_sources = [source.lower() for source, _, _ in PAIRS] + [source.lower() for source, _ in CURATED_PAIRS]
     assert len(set(all_sources)) == len(all_sources)
     for _, topic, target in PAIRS:
