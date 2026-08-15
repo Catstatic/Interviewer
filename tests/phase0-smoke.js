@@ -225,7 +225,7 @@ const runtimeAssertions = `
   });
   ok(ANSWER_CONTENT_META.sha256 === EXPECTED_ANSWER_HASH, 'Inlined answer-layer hash does not match source JSON');
   ok(JSON.stringify(CURATED_ANSWER_LAYERS) === JSON.stringify(EXPECTED_ANSWER_LAYERS), 'Inlined answer layers differ from source JSON');
-  ok(CURATED_ANSWER_LAYERS.length === 200, 'Expected 200 reviewed full answer layers across seven batches');
+  ok(CURATED_ANSWER_LAYERS.length === 225, 'Expected 225 reviewed full answer layers across eight batches');
   ok(CURATED_ANSWER_LAYERS.every(x=>x.status==='reviewed-full-v1'&&x.shortAnswer&&x.modelAnswer&&x.assumptions.length>=2&&x.traps.length>=2&&x.followUps.length===5),'Reviewed answer-layer schema is incomplete');
   ok(ANSWER_ALIAS_META.sha256===EXPECTED_ANSWER_ALIAS_HASH,'Inlined answer-alias hash does not match source JSON');
   ok(JSON.stringify(CURATED_ANSWER_ALIASES)===JSON.stringify(EXPECTED_ANSWER_ALIASES),'Inlined answer aliases differ from source JSON');

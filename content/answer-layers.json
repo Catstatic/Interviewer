@@ -5001,6 +5001,606 @@
       ],
       "reviewedOn": "2026-08-15",
       "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-201",
+      "topic": "Radar",
+      "question": "What is radar cross-section?",
+      "shortAnswer": "Radar cross-section is an equivalent area describing target scattering back toward a radar for a stated frequency, polarization, aspect and configuration; it is not simply physical size.",
+      "modelAnswer": "RCS relates incident power density to scattered power in a chosen direction under far-field conventions. It depends on geometry, material, wavelength, polarization, incidence/observation angles, resonances and multipath. A small object can have large RCS and vice versa. Measurement needs calibrated reference, range geometry, background subtraction and uncertainty. Any defence application discussion should remain public and generic.",
+      "assumptions": [
+        "Far-field scattering convention and monostatic/bistatic geometry stated",
+        "Frequency, polarization and aspect specified"
+      ],
+      "traps": [
+        "Equating RCS with projected area",
+        "Quoting one RCS as an intrinsic constant"
+      ],
+      "followUps": [
+        "What are RCS units?",
+        "Why aspect dependence?",
+        "Monostatic versus bistatic?",
+        "How calibrate range?",
+        "Why wavelength matters?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-202",
+      "topic": "Antennas",
+      "question": "Why is beamwidth important?",
+      "shortAnswer": "Beamwidth sets angular coverage and discrimination and trades against gain, aperture, pointing, scan and sidelobes under a stated pattern definition.",
+      "modelAnswer": "A narrow main beam can increase directional gain and angular selectivity but requires accurate pointing and may reduce instantaneous coverage. A broad beam covers more angle with lower peak directivity. Half-power and null-to-null beamwidth are different metrics; frequency, aperture illumination, array size, platform and polarization shape them. Beamwidth alone does not specify angular resolution or total link performance.",
+      "assumptions": [
+        "Far-field pattern and beamwidth convention defined",
+        "Frequency and polarization stated"
+      ],
+      "traps": [
+        "Saying narrow beam is always better",
+        "Confusing beamwidth with transmitted power"
+      ],
+      "followUps": [
+        "Gain relation?",
+        "What are sidelobes?",
+        "How aperture changes beam?",
+        "What is scan loss?",
+        "How measure beamwidth?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-203",
+      "topic": "Antennas",
+      "question": "Why use an array antenna?",
+      "shortAnswer": "An array combines controllable element amplitudes and phases to shape or steer a beam, create nulls, increase aperture, or support multiple functions without mechanically moving the whole aperture.",
+      "modelAnswer": "The array factor follows element positions, phase and amplitude, while the total pattern also includes each element and mutual coupling. Electronic steering enables rapid pointing, but spacing can create grating lobes and scanning changes gain, polarization and impedance. Calibration, phase-shifter errors, bandwidth, thermal drift, failures, cost and control complexity matter. An array does not create energy; it redistributes radiation.",
+      "assumptions": [
+        "Coherent elements and far-field superposition",
+        "Element pattern and spacing specified"
+      ],
+      "traps": [
+        "Ignoring grating lobes and coupling",
+        "Calling array gain free amplification"
+      ],
+      "followUps": [
+        "Derive steering phase.",
+        "Why spacing below wavelength?",
+        "What is array factor?",
+        "How calibrate phases?",
+        "What happens on element failure?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-204",
+      "topic": "Microwave Engineering",
+      "question": "What is waveguide cutoff?",
+      "shortAnswer": "Cutoff is the frequency below which a specified waveguide mode has no real propagation constant and becomes evanescent in an ideal uniform guide.",
+      "modelAnswer": "Boundary conditions quantize transverse field variation. For a rectangular guide, each TE/TM mode has a cutoff set by dimensions and mode indices; above cutoff β is real, while below it is imaginary and amplitude decays. Phase and group velocities differ near cutoff, and conductor/dielectric loss modifies the ideal picture. TEM propagation is not supported in a single-conductor hollow guide.",
+      "assumptions": [
+        "Uniform ideal waveguide and named mode",
+        "Material and dimensions specified"
+      ],
+      "traps": [
+        "Saying no field exists below cutoff",
+        "Using one cutoff for all modes"
+      ],
+      "followUps": [
+        "Dominant rectangular mode?",
+        "Why no TEM?",
+        "What is evanescent decay?",
+        "Group velocity near cutoff?",
+        "How measure cutoff?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-205",
+      "topic": "Microwave Engineering",
+      "question": "Why do reflections occur?",
+      "shortAnswer": "Reflections occur when a wave encounters a change in impedance or boundary conditions, requiring incident, reflected and transmitted fields to satisfy interface conditions.",
+      "modelAnswer": "For a simple transmission line the reflection coefficient is (Z_L−Z_0)/(Z_L+Z_0). In fields, material impedance, angle and polarization determine Fresnel amplitudes. Open/short/reactive loads, connectors, geometry changes and frequency dependence all matter. Reflected power is not automatically all lost; phase can create standing waves and interference. Matching reduces reflection only over a designed range.",
+      "assumptions": [
+        "Linear wave and interface/load model",
+        "Reference impedance, frequency and polarization defined"
+      ],
+      "traps": [
+        "Calling reflection only a material-surface effect",
+        "Ignoring reflection phase"
+      ],
+      "followUps": [
+        "What is matched load?",
+        "Open versus short phase?",
+        "How measure S11?",
+        "Why bandwidth limited?",
+        "Where does transmitted power go?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-206",
+      "topic": "Microwave Engineering",
+      "question": "What does a standing-wave ratio indicate?",
+      "shortAnswer": "VSWR quantifies maxima-to-minima voltage magnitude on a line and maps to reflection-coefficient magnitude; it indicates mismatch but not its phase or location by itself.",
+      "modelAnswer": "For a single-mode line VSWR=(1+|Γ|)/(1−|Γ|), with 1 meaning ideal match and larger values stronger reflection. It does not reveal whether the load is inductive/capacitive or where a discontinuity lies without phase/distance information. Loss, multiple reflections, calibration and connector effects affect measurement. S-parameters provide richer complex information.",
+      "assumptions": [
+        "Single-mode steady-state line and reference impedance",
+        "Measurement plane/calibration defined"
+      ],
+      "traps": [
+        "Saying VSWR gives reflected phase",
+        "Treating finite VSWR as zero delivered power"
+      ],
+      "followUps": [
+        "Derive relation to Γ.",
+        "What is return loss?",
+        "How locate fault?",
+        "Effect of loss?",
+        "Why VNA calibration?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-207",
+      "topic": "Sensors",
+      "question": "What is sensitivity?",
+      "shortAnswer": "Sensitivity is change in output per change in measurand under stated conditions, often a local derivative; it is distinct from resolution, selectivity and detection limit.",
+      "modelAnswer": "A calibration curve may have constant or varying slope. High sensitivity can amplify small changes but does not ensure low noise, accuracy, linearity or specificity. Units and operating point are essential, and cross-sensitivities can produce output changes from interferents. I would estimate slope with uncertainty over a validated range and pair it with noise to discuss detection capability.",
+      "assumptions": [
+        "Measurand and operating range defined",
+        "Calibration relation differentiable or local slope justified"
+      ],
+      "traps": [
+        "Using sensitivity as synonym for accuracy",
+        "Ignoring output noise and cross-sensitivity"
+      ],
+      "followUps": [
+        "Sensitivity units?",
+        "Resolution difference?",
+        "What is responsivity?",
+        "How estimate uncertainty?",
+        "How does noise set threshold?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-208",
+      "topic": "Detection",
+      "question": "What determines detection threshold?",
+      "shortAnswer": "A threshold is chosen from signal/background statistics, costs, required detection and false-alarm rates, measurement uncertainty and operational constraints—not from noise RMS alone.",
+      "modelAnswer": "The decision statistic may be amplitude, matched-filter output or model score. Lower threshold tends to catch weaker targets and increase false alarms. Non-Gaussian clutter, multiple search cells, drift, interference and label uncertainty alter performance. I would choose the threshold on representative development data, report ROC/precision-recall behavior, lock it before independent validation and monitor distribution shift.",
+      "assumptions": [
+        "Decision statistic and truth window defined",
+        "Representative background and target data available"
+      ],
+      "traps": [
+        "Choosing threshold on final test set",
+        "Reporting threshold without false-alarm trial definition"
+      ],
+      "followUps": [
+        "What is ROC?",
+        "How base rate matters?",
+        "CFAR idea?",
+        "How drift changes threshold?",
+        "What is miss cost?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-209",
+      "topic": "Signals",
+      "question": "Difference between noise and interference?",
+      "shortAnswer": "Noise is unwanted random or stochastic fluctuation from physical/electronic processes; interference is unwanted structured energy from another source, though the distinction depends on the receiver model.",
+      "modelAnswer": "Thermal and shot noise often have statistical models; interference may be tonal, modulated, impulsive or coupled from another system and can sometimes be identified or cancelled. Both reduce estimation/detection performance. A residual called “noise” may actually be drift, aliasing, model mismatch or interference. Time, spectrum, coherence, source-off tests, shielding/grounding and controlled injection help diagnose it.",
+      "assumptions": [
+        "Receiver bandwidth and intended signal defined",
+        "Measurement preserves time/frequency metadata"
+      ],
+      "traps": [
+        "Calling every unwanted signal Gaussian noise",
+        "Filtering without checking signal distortion"
+      ],
+      "followUps": [
+        "Thermal noise?",
+        "How identify tone?",
+        "What is SNR/SINR?",
+        "How grounding helps?",
+        "When averaging fails?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-210",
+      "topic": "Data Acquisition",
+      "question": "What is ADC resolution?",
+      "shortAnswer": "Nominal ADC resolution is the number of output codes or ideal LSB over full scale; it is not the same as accuracy or effective noise-free information.",
+      "modelAnswer": "An ideal N-bit converter has 2^N codes and approximate LSB span/2^N. Offset, gain, INL, DNL, reference error, noise, jitter, input bandwidth, settling and saturation reduce usable performance. ENOB can be inferred from dynamic tests under stated conditions. More bits do not recover aliased or clipped information, and front-end noise/drive must match the ADC.",
+      "assumptions": [
+        "Input range and coding convention specified",
+        "Ideal quantization distinguished from real converter"
+      ],
+      "traps": [
+        "Calling N bits N-bit accuracy",
+        "Ignoring reference and analogue front end"
+      ],
+      "followUps": [
+        "Calculate LSB.",
+        "What is ENOB?",
+        "INL versus DNL?",
+        "How jitter matters?",
+        "Why anti-alias filter?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-211",
+      "topic": "Materials Reliability",
+      "question": "How do defects affect performance?",
+      "shortAnswer": "Defects can change carriers, scattering, diffusion, strength, optical transitions, magnetism, leakage and failure paths; the sign depends on defect type, concentration, location and operating regime.",
+      "modelAnswer": "A vacancy, substitution, dislocation, grain boundary or pore couples differently to the relevant physics. Controlled doping may improve conductivity, while traps reduce lifetime; grain boundaries can strengthen mechanics yet impede transport. I would define the device/material requirement, measure the defect with a suitable scale-sensitive method, use controlled processing series and test competing microstructure/composition explanations. Correlation alone does not establish mechanism.",
+      "assumptions": [
+        "Defect type and performance metric defined",
+        "Representative composition/microstructure controls"
+      ],
+      "traps": [
+        "Saying all defects degrade properties",
+        "Attributing a property change to XRD width alone"
+      ],
+      "followUps": [
+        "Which defect measurement?",
+        "How separate composition?",
+        "Why concentration matters?",
+        "What control series?",
+        "What would falsify mechanism?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-212",
+      "topic": "Materials Trade Studies",
+      "question": "How would you compare two candidate materials?",
+      "shortAnswer": "Compare both against the same measurable requirements, environment and uncertainty across function, stability, processing, interfaces, reliability, safety, cost and scale—not one best-case property.",
+      "modelAnswer": "I would define hard constraints and weighted trade criteria, use comparable samples/geometries and calibrated methods, and expose missing data. Key dimensions may include target property, variability, temperature/radiation/vacuum behavior, compatibility, manufacturability and failure modes. Sensitivity analysis shows whether the decision depends on uncertain weights. The dominant unknown should be tested with a coupon or accelerated representative experiment.",
+      "assumptions": [
+        "Application and acceptance criteria agreed",
+        "Evidence compared under matched conditions"
+      ],
+      "traps": [
+        "Selecting highest headline property",
+        "Hiding uncertainty in weighted total"
+      ],
+      "followUps": [
+        "What is hard constraint?",
+        "How normalize data?",
+        "Which failure mode?",
+        "What test discriminates?",
+        "What reverses choice?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-213",
+      "topic": "Reliability",
+      "question": "What is a failure mode?",
+      "shortAnswer": "A failure mode is a specific way a function can fail, distinguished from its cause, local effect, system consequence and detection/control.",
+      "modelAnswer": "Examples include open circuit, drift, blockage, fracture or corrupted output. FMEA links each mode to causes, effects, severity, occurrence, detectability and controls, while fault trees reason from an undesired top event through combinations. Mode definitions must be functional and testable. Listing “component failed” is too vague, and a mitigation can introduce common-cause or hidden failures.",
+      "assumptions": [
+        "System function and boundary defined",
+        "Operating modes and environment included"
+      ],
+      "traps": [
+        "Confusing failure symptom with root cause",
+        "Using risk priority number as absolute truth"
+      ],
+      "followUps": [
+        "Mode versus cause?",
+        "What is local/system effect?",
+        "How detect?",
+        "FMEA versus fault tree?",
+        "What is common cause?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-214",
+      "topic": "Reliability",
+      "question": "What is derating?",
+      "shortAnswer": "Derating operates a component below a rated electrical, thermal, mechanical or environmental limit to reduce stress and improve margin/reliability under a defined model.",
+      "modelAnswer": "Examples include voltage, current, power, junction temperature or load. The appropriate factor depends on technology, temperature, duty cycle, transients, ageing and standards. Derating does not compensate for wrong part selection, manufacturing defects, radiation, poor thermal paths or unknown failure physics. I would verify actual worst-case stress, tolerance and environment against approved criteria.",
+      "assumptions": [
+        "Component rating conditions and mission stress known",
+        "Applicable reliability standard/model specified"
+      ],
+      "traps": [
+        "Applying one percentage to every technology",
+        "Counting derating margin twice"
+      ],
+      "followUps": [
+        "Why temperature matters?",
+        "How treat transients?",
+        "Derating versus safety factor?",
+        "How verify worst case?",
+        "What failure remains?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-215",
+      "topic": "Reliability Analysis",
+      "question": "How would you build a fault tree?",
+      "shortAnswer": "Define one precise undesired top event, decompose it through logical AND/OR relationships into credible lower events, preserve dependencies/common causes, and validate against architecture and evidence.",
+      "modelAnswer": "I would state mission phase and boundary, use functional failures before component detail, and stop at basic events that can be estimated or controlled. Minimal cut sets expose combinations leading to the top event. Independence cannot be assumed for shared power, software, environment or maintenance. The tree supports design and test decisions but depends on completeness and data quality; it is not proof no unlisted failure exists.",
+      "assumptions": [
+        "Top event and system configuration defined",
+        "Gate logic and dependency assumptions documented"
+      ],
+      "traps": [
+        "Mixing causes and mitigations ambiguously",
+        "Multiplying probabilities while ignoring common cause"
+      ],
+      "followUps": [
+        "AND versus OR?",
+        "What is cut set?",
+        "How include human action?",
+        "How validate tree?",
+        "Relation to FMEA?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-216",
+      "topic": "Systems Engineering",
+      "question": "What is systems engineering?",
+      "shortAnswer": "Systems engineering translates stakeholder needs into controlled requirements and an integrated architecture, manages interfaces/trades/risks across the lifecycle, and supplies verification and validation evidence.",
+      "modelAnswer": "It spans concept, design, implementation, integration, test, operation and retirement. Requirements must be traceable and testable; budgets and interface documents keep subsystems coherent; configuration and change control prevent incompatible versions. Verification asks whether requirements are met, while validation asks whether the system solves the intended need. It is not paperwork added after design—it is disciplined technical decision management.",
+      "assumptions": [
+        "Lifecycle and system boundary defined",
+        "Stakeholders and success criteria identified"
+      ],
+      "traps": [
+        "Equating systems engineering with project management only",
+        "Writing requirements that cannot be verified"
+      ],
+      "followUps": [
+        "Requirement qualities?",
+        "Verification versus validation?",
+        "What is interface control?",
+        "How manage trade?",
+        "What is configuration baseline?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-217",
+      "topic": "Interface Reliability",
+      "question": "How do component interfaces create failure?",
+      "shortAnswer": "Interfaces fail through mismatched assumptions, tolerances, timing, units, impedance, loads, thermal paths, protocols, grounding, configuration or ownership even when each component passes alone.",
+      "modelAnswer": "I would model mechanical, electrical, data, thermal and operational exchanges, including startup/shutdown and fault states. Examples are connector pinout errors, current surges, timing races, coordinate-frame mistakes, thermal contact loss or incompatible software versions. Interface control documents, boundary tests, hardware-in-loop, margins and clear ownership reduce risk. Integration anomalies must feed requirements and regression tests.",
+      "assumptions": [
+        "Interface endpoints/configurations defined",
+        "Nominal and fault states included"
+      ],
+      "traps": [
+        "Testing components only in isolation",
+        "Assuming interface documents guarantee implementation"
+      ],
+      "followUps": [
+        "Give timing example.",
+        "How units fail?",
+        "What is ICD?",
+        "Which boundary test?",
+        "How control versions?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-218",
+      "topic": "Engineering Trade-offs",
+      "question": "How do you trade mass, power, cost, and performance?",
+      "shortAnswer": "Identify hard constraints and mission value, compare common configurations with uncertainty, expose coupling and lifecycle risk, and test the unknown most likely to reverse the decision.",
+      "modelAnswer": "A trade matrix can organize mass, peak/average power, thermal dissipation, cost, schedule, performance, reliability, manufacturability and interfaces, but weights do not replace engineering judgment. I would separate requirements from preferences, normalize evidence, include margins once, run sensitivity and document assumptions. Pareto fronts can show non-dominated options. The best choice can change as uncertainty or mission priority changes.",
+      "assumptions": [
+        "Requirements and comparable configurations defined",
+        "Uncertainty and margins visible"
+      ],
+      "traps": [
+        "Optimizing one metric",
+        "Hiding a veto constraint in a weighted score"
+      ],
+      "followUps": [
+        "What is Pareto option?",
+        "How set weights?",
+        "Which coupling matters?",
+        "How test sensitivity?",
+        "What would reverse decision?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-219",
+      "topic": "Control Systems",
+      "question": "What is feedback control?",
+      "shortAnswer": "Feedback measures system output/state, compares it with a reference, and drives an actuator from the error to achieve performance and reject disturbances while preserving stability.",
+      "modelAnswer": "The loop contains plant, sensor, controller, actuator and dynamics/delays. Negative feedback can reduce sensitivity and disturbance effects, but noise, saturation, sampling and phase lag can cause poor performance or instability. Requirements include tracking, disturbance rejection, settling, overshoot, bandwidth, robustness and constraints. A block diagram and sign convention should precede equations.",
+      "assumptions": [
+        "Plant/sensor/actuator models and sign defined",
+        "Linearization only within stated range"
+      ],
+      "traps": [
+        "Saying negative feedback always stabilizes",
+        "Ignoring saturation and delay"
+      ],
+      "followUps": [
+        "Open versus closed loop?",
+        "What is loop gain?",
+        "How sensor noise enters?",
+        "Why phase margin?",
+        "What is anti-windup?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-220",
+      "topic": "Control and Instrumentation",
+      "question": "Why do sensors and actuators need calibration?",
+      "shortAnswer": "Calibration maps sensor indication to state and actuator command to delivered effect, including bias, scale, nonlinearity, hysteresis, dynamics and environment needed for stable accurate control.",
+      "modelAnswer": "A biased sensor creates wrong feedback; an actuator with unknown gain/dead zone produces wrong control authority. I would calibrate across range and conditions, model uncertainty and dynamics, validate independently and monitor drift. In closed loop, sensor/actuator errors can interact with stability and estimator observability. Calibration does not remove saturation, backlash, noise or failures; those need design and diagnostics.",
+      "assumptions": [
+        "Measurand/actuated quantity and range defined",
+        "Closed-loop operating environment represented"
+      ],
+      "traps": [
+        "Calibrating only zero point",
+        "Assuming feedback hides calibration error"
+      ],
+      "followUps": [
+        "How bias affects loop?",
+        "What is dead zone?",
+        "Why dynamic calibration?",
+        "How detect drift?",
+        "What if actuator saturates?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-221",
+      "topic": "Control Systems",
+      "question": "What causes control instability?",
+      "shortAnswer": "Instability arises when loop dynamics produce net reinforcing feedback—often excessive gain and phase lag/delay—so disturbances grow rather than decay.",
+      "modelAnswer": "Plant poles/zeros, sensor/actuator dynamics, sampling, computation/transport delay, structural modes, saturation, gain scheduling and model uncertainty can erode margins. Linear tools such as poles, Nyquist/Bode gain/phase margins apply around an operating point; nonlinear limits require simulation and test. I would first verify sign, units, timing, saturation and model, then reduce risk with staged closed-loop testing and safety limits.",
+      "assumptions": [
+        "Closed-loop model and operating point defined",
+        "Stability notion and sampling regime specified"
+      ],
+      "traps": [
+        "Blaming high gain alone without phase",
+        "Using linear margins beyond saturation/nonlinear regime"
+      ],
+      "followUps": [
+        "What is phase margin?",
+        "How delay adds phase?",
+        "Why flexible modes?",
+        "Sampling effect?",
+        "How test safely?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-222",
+      "topic": "Mission Reliability",
+      "question": "What does mission reliability mean to you?",
+      "shortAnswer": "Mission reliability is justified confidence that required functions will perform for stated environments, modes and duration, supported by architecture, margins, qualification, verification, operations and learning—not a slogan or one success.",
+      "modelAnswer": "I would identify critical functions and failure consequences, remove or control single-point failures, analyse common cause, qualify design, acceptance-test units, maintain configuration/traceability and plan fault detection/recovery. Reliability includes software, ground, people and procedures. Redundancy helps only when independent enough and correctly detected/switched. Anomalies and near misses must be documented and fed back.",
+      "assumptions": [
+        "Mission success criteria and duration defined",
+        "Environment and configuration controlled"
+      ],
+      "traps": [
+        "Equating redundancy with reliability",
+        "Quoting probability without evidence/model"
+      ],
+      "followUps": [
+        "What is single-point failure?",
+        "Common cause?",
+        "Qualification role?",
+        "How safe mode helps?",
+        "How learn from anomaly?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-223",
+      "topic": "Applied Physics and Defence R&D",
+      "question": "How can physics become defence technology?",
+      "shortAnswer": "Physics becomes dependable technology through a public-domain chain of requirement, model, material/sensor/electronic design, calibrated prototype, environmental test, system integration, reliability and controlled production.",
+      "modelAnswer": "A governing principle alone is not a fielded system. I would connect one area—optics, radar, materials, detectors or instrumentation—to a measurable requirement and error budget, then include interfaces, safety, uncertainty, failure modes and verification. Manufacturing, maintainability, confidentiality and user validation matter. I would not speculate about restricted capabilities or present a laboratory effect as deployment readiness.",
+      "assumptions": [
+        "Public non-sensitive context",
+        "Specific measurable requirement chosen"
+      ],
+      "traps": [
+        "Giving only patriotic motivation",
+        "Speculating about restricted performance"
+      ],
+      "followUps": [
+        "Choose one physics lane.",
+        "What prototype first?",
+        "How test environment?",
+        "What interface?",
+        "What evidence for readiness?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-224",
+      "topic": "Applied Research",
+      "question": "Why are you interested in applied research?",
+      "shortAnswer": "Applied research lets me use first principles to solve a defined need while remaining accountable to measurement, constraints, failure, iteration and user evidence.",
+      "modelAnswer": "I value the full chain from model and experiment to a calibrated prototype or decision. Constraints such as cost, time, safety, environment, manufacturability and interfaces make the scientific question sharper rather than less rigorous. I would support the answer with an actual project example, including what failed and what I learned, without claiming product impact not yet demonstrated. Applied and fundamental research inform each other.",
+      "assumptions": [
+        "Genuine example can be supplied",
+        "Role need and public context known"
+      ],
+      "traps": [
+        "Calling applied research easier or less scientific",
+        "Giving no evidence of building/testing"
+      ],
+      "followUps": [
+        "Which problem?",
+        "What constraint?",
+        "What failed?",
+        "How fundamentals helped?",
+        "How measure impact?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
+    },
+    {
+      "id": "ANS-225",
+      "topic": "Sensor Validation",
+      "question": "How would you test a new sensor?",
+      "shortAnswer": "Define the measurand and requirements, compare against a traceable reference across range/environment, include blanks/interferents/repeats, and predeclare uncertainty and acceptance criteria.",
+      "modelAnswer": "I would verify function in stages: electronics and safety, static calibration, linearity/sensitivity/noise, hysteresis, response time/bandwidth, cross-sensitivity, drift, saturation/recovery and representative environments. Randomized order and independent validation points reveal bias and overfit. Configuration, raw data and anomalies remain traceable. Passing a bench test does not equal qualification; system interfaces and failure cases come next.",
+      "assumptions": [
+        "Measurand, range and environment defined",
+        "Suitable reference and safe setup"
+      ],
+      "traps": [
+        "Testing only nominal target inputs",
+        "Using same points for fit and validation"
+      ],
+      "followUps": [
+        "Which reference?",
+        "How test selectivity?",
+        "What is detection limit?",
+        "How test drift?",
+        "When qualify system?"
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-full-v1"
     }
   ]
 }

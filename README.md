@@ -12,10 +12,10 @@ External study links and the optional AI/TTS integrations require internet or a 
 
 - 12/12 priority complete-v1 deep sheets
 - 555 reviewed standalone interview prompts
-- 200 reviewed full-model answer layers
+- 225 reviewed full-model answer layers
 - 101 human-reviewed semantic answer aliases, including explicit deep-sheet and full-layer targets
 - 598 indexed deep-sheet answers/outlines/numericals
-- 253 question-bank records resolving to full models, 89 to deep answers, and 213 still cue-only
+- 278 question-bank records resolving to full models, 89 to deep answers, and 188 still cue-only
 - 250 reviewed distinct traps
 - 800 reviewed factual SRS cards with daily limits, leech, suspend, and bury controls
 - 50 complete Derivation Dojo items
@@ -59,6 +59,7 @@ python3 scripts/build_answer_aliases.py
 python3 scripts/build_answer_batch5.py
 python3 scripts/build_answer_batch6.py
 python3 scripts/build_answer_batch7.py
+python3 scripts/build_answer_batch8.py
 python3 scripts/build_visual_extensions.py
 python3 scripts/sync_expanded_flashcards.py
 python3 scripts/sync_deep_sheets.py
