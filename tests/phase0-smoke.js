@@ -73,6 +73,7 @@ assert(html.includes('role="dialog"') && html.includes('aria-modal="true"') && h
 assert(html.includes('@media(prefers-reduced-motion:reduce)'), 'Reduced-motion CSS is missing');
 assert(html.includes('@media(forced-colors:active)'), 'Forced-colours CSS is missing');
 assert(html.includes('Professional interface refinement') && html.includes('backdrop-filter:blur') && html.includes('@media(max-width:640px)'), 'Professional responsive UI refinement is missing');
+assert(html.includes('class="brandmark"')&&html.includes('class="command-trigger"')&&html.includes('id="contextModule"')&&html.includes('Quick open'), 'Professional navigation or context rail is missing');
 assert(html.includes('@media print'), 'Print stylesheet is missing');
 assert(html.includes(':focus-visible'), 'Visible keyboard focus style is missing');
 const railMarkup=(html.match(/<aside class="rail">([\s\S]*?)<\/aside>/)||[])[1]||'';
@@ -175,7 +176,7 @@ sandbox.window.addEventListener = () => {};
 const runtimeAssertions = `
 (function phase0Assertions(){
   const ok = (condition, message) => { if (!condition) throw new Error(message); };
-  ok(BUILD_MANIFEST.version==='2.5.0'&&BUILD_MANIFEST.stage==='release-candidate'&&BUILD_MANIFEST.storageSchema===MV.version,'Build manifest is stale or inconsistent');
+  ok(BUILD_MANIFEST.version==='2.6.0'&&BUILD_MANIFEST.stage==='release-candidate'&&BUILD_MANIFEST.storageSchema===MV.version,'Build manifest is stale or inconsistent');
   ok(q.length > 0 && q.length < 1500, 'Generated question padding was not compacted');
   ok(QUESTION_STATS.total === q.length, 'QUESTION_STATS total is stale');
   ok(q.every(x => x[3] && x[3].id && x[3].org && x[3].difficulty), 'Question metadata is incomplete');
@@ -280,7 +281,7 @@ const runtimeAssertions = `
   ok(validateBackupObject(EXPECTED_BACKUP_V1).ok,'Valid version-1 fixture was rejected');const migratedBackup=migrateBackupObject(EXPECTED_BACKUP_V1);ok(migratedBackup.version===2&&migratedBackup.progress.flashcards&&!migratedBackup.progress.cards&&migratedBackup.progress.backupMigrations.length===1&&migratedBackup.settings.subjectStrategyNeedsReview,'Version-1 backup migration failed');
   ok(!validateBackupObject(EXPECTED_MALFORMED_BACKUP).ok,'Nested credential fixture was accepted');
   let replaceTarget={old:true};replaceRecord(replaceTarget,{safe:1,__proto__:{polluted:true}});ok(replaceTarget.safe===1&&!replaceTarget.old&&!({}).polluted,'Safe record replacement failed');
-  applyTheme('contrast');ok(document.body.dataset.theme==='contrast','High-contrast theme did not apply');applyTheme('default');
+  applyTheme('contrast');ok(document.body.dataset.theme==='contrast','High-contrast theme did not apply');applyTheme('default');openCommandPalette();ok(document.getElementById('modalbody').innerHTML.includes('QUICK OPEN')&&NAV_DESTINATIONS.length>=25,'Quick-open command palette failed');closeModal();
   const openReq=buildAIRequest('hello',null,{provider:'openai',endpoint:'https://example.com/v1',model:'test-model',key:'session-key'});
   ok(openReq.url==='https://example.com/v1/chat/completions'&&openReq.body.model==='test-model'&&openReq.headers.Authorization==='Bearer session-key','OpenAI-compatible request adapter is invalid');
   const ollamaReq=buildAIRequest('hello',null,{provider:'ollama',endpoint:'http://127.0.0.1:11434',model:'local'});

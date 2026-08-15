@@ -19,7 +19,7 @@ MISSION VIVA currently has a useful **visual prototype and broad feature scaffol
 
 The current build should be classified as:
 
-- **Shell/UI:** professional responsive 2.5.0 command interface with dark, calm-light, and high-contrast themes
+- **Shell/UI:** professional responsive 2.6.0 command interface with dark, calm-light, and high-contrast themes
 - **Core runtime:** first repair pass complete; smoke-tested, but full real-browser QA remains
 - **Content breadth:** many overview headings plus all twelve priority complete-v1 deep sheets
 - **Content depth:** 12 of 12 priority sheets meet the complete-v1 schema; advanced and project-specific extensions remain
@@ -52,8 +52,8 @@ This dated block supersedes older numeric snapshots later in the historical audi
 - Upgraded drawings with line, arrow, rectangle and ellipse tools, local drag/drop or camera image input, PNG export, reference-hidden practice, label toggling, and side-by-side comparison.
 - Added strict structured vision-review JSON, a visible image payload preview, and natural-TTS endpoint/timeout/size/MIME/cancellation safeguards with browser-voice fallback.
 - Added real mid-answer interruption events for applicable stress modes, project version snapshots/review export, Pre-flight emergency/accommodation/calendar controls, Exam Bridge weekly history, data-class deletion, and workload settings.
-- Published build manifest **2.5.0 release-candidate**. The exact self-contained HTML passes the expanded zero-dependency smoke/schema battery.
-- Delivered a professional interface pass with consistent theme surfaces, polished hierarchy/cards/forms/modals, mobile horizontal command navigation, touch-sized controls, theme-safe calm mode, and retained reduced-motion, forced-colours, print, and keyboard behavior.
+- Published build manifest **2.6.0 release-candidate**. The exact self-contained HTML passes the expanded zero-dependency smoke/schema battery.
+- Delivered professional interface and navigation passes with consistent theme surfaces, polished hierarchy/cards/forms/modals, searchable Ctrl/Cmd+K quick-open, active-module command bar, live evidence context rail, mobile horizontal navigation, touch-sized controls, theme-safe calm mode, and retained reduced-motion, forced-colours, print, and keyboard behavior.
 - Split maintainable shell, CSS, and JavaScript into `src/`, added deterministic self-contained build/reproducibility checks, a documentation JSON Schema, and a zero-dependency cross-source validator.
 - Added target-specific local evidence maps, dossier-to-topic fit maps, target/role boards, declared-subject follow-up ladders and state recommendations, and semantic near-duplicate avoidance in boards.
 - Added deep-sheet failure routing, dedicated wrong-answer correction, reviewed factual-coverage self-checks, and user-authored simple/specialist answer revisions.

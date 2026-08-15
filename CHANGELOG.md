@@ -2,6 +2,13 @@
 
 ## 2026-08-15 — Arena repair and depth build
 
+### Release-candidate 2.6.0 navigation and usability pass
+
+- Added a professional brand lockup, quick-open command button, searchable Ctrl/Cmd+K command palette, module descriptions, and keyboard-first navigation across all major workspaces.
+- Added a compact top command bar with offline status, active-module breadcrumb, quick theme switching, and mobile-adaptive controls.
+- Rebuilt the right context rail into clear active-module, network state, target cycle, evidence-event, SRS-due, and profile sections with live local updates.
+- Added polished command-palette result rows, context KPI blocks, keyboard-key styling, compact action buttons, live status indicators, and responsive behavior that hides secondary chrome cleanly on small screens.
+
 ### Release-candidate 2.5.0 professional interface pass
 
 - Rebuilt the visual system with a refined offline system-font stack, consistent surface/field variables, stronger information hierarchy, polished hero panels, compact evidence cards, clearer form controls, professional button states, improved modal presentation, and theme-aware shadows.
