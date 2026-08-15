@@ -235,7 +235,7 @@ const runtimeAssertions = `
   ok(answerLayerForQuestion('Why ISRO?').status==='reviewed-full-alias','Reviewed full-layer semantic alias lookup failed');
   const coverage=answerCoverageStats();ok(coverage.full+coverage.deep+coverage.cue===q.length,'Answer coverage totals are inconsistent');
   ok(coverage.full>=100&&coverage.deep>=10&&coverage.cue>0,'Answer coverage states are unexpectedly empty');
-  ok(answerLayerForQuestion('What is the physical meaning of entropy?').status==='reviewed-full-v1','Curated full answer lookup failed');
+  ok(answerLayerForQuestion('What is the physical meaning of entropy?').status==='reviewed-full-v1','Curated full answer lookup failed');ok(answerLayerForQuestion('What information does XRD provide? [Project instrument drill 1]').status==='reviewed-full-v1','Generated instrument suffix normalization failed');
   ok(ORG_CONTENT_META.sha256 === EXPECTED_ORG_HASH, 'Inlined organization-dossier hash does not match source JSON');
   ok(JSON.stringify(VERIFIED_DOSSIERS) === JSON.stringify(EXPECTED_ORG_DOSSIERS), 'Inlined organization dossiers differ from source JSON');
   ok(VERIFIED_DOSSIERS.length === 24, 'Expected twenty-four source-backed organization/company dossiers');
