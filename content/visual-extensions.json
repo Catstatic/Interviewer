@@ -1,0 +1,1094 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-08-15",
+  "diagrams": [
+    {
+      "id": "VIS-EXT-001",
+      "topic": "Solid State Physics",
+      "title": "Direct and reciprocal lattice mapping",
+      "kind": "flow",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Direct and reciprocal lattice mapping</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><rect x=\"25.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"77.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">direct vectors aᵢ</text><line x1=\"129.0\" y1=\"157\" x2=\"182.0\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"187.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"239.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">Fourier phase</text><line x1=\"291.0\" y1=\"157\" x2=\"344.0\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"349.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"401.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">reciprocal vectors bᵢ</text><line x1=\"453.0\" y1=\"157\" x2=\"506.0\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"511.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"563.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">Bragg vector G</text></svg>",
+      "say": "Start with real-space translations. Reciprocal vectors encode phase periodicity, and diffraction selects scattering-vector changes equal to reciprocal-lattice vectors.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-002",
+      "topic": "Solid State Physics",
+      "title": "Point, line, and planar crystal defects",
+      "kind": "compare",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Point, line, and planar crystal defects</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><rect x=\"30.0\" y=\"75\" width=\"181.3\" height=\"170\" rx=\"10\" fill=\"#ecfeff\" stroke=\"#0f172a\"/><text x=\"120.7\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">point</text><text x=\"120.7\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"120.7\" dy=\"0\">vacancy / interstitial</tspan></text><rect x=\"223.3\" y=\"75\" width=\"181.3\" height=\"170\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#0f172a\"/><text x=\"314.0\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">line</text><text x=\"314.0\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"314.0\" dy=\"0\">dislocation</tspan></text><rect x=\"416.7\" y=\"75\" width=\"181.3\" height=\"170\" rx=\"10\" fill=\"#ecfeff\" stroke=\"#0f172a\"/><text x=\"507.3\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">planar</text><text x=\"507.3\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"507.3\" dy=\"0\">grain boundary</tspan></text></svg>",
+      "say": "Classify defects by dimensionality, then connect each to strain, diffusion, scattering, and the property being measured.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-003",
+      "topic": "Solid State Physics",
+      "title": "Hall-bar geometry and sign convention",
+      "kind": "setup",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Hall-bar geometry and sign convention</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><line x1=\"100\" y1=\"160\" x2=\"300\" y2=\"160\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><line x1=\"300\" y1=\"160\" x2=\"500\" y2=\"160\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><line x1=\"300\" y1=\"65\" x2=\"300\" y2=\"160\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"42\" y=\"135\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"100\" y=\"158\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">current I</text><rect x=\"242\" y=\"135\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"300\" y=\"158\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">sample</text><rect x=\"242\" y=\"40\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"300\" y=\"63\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">B ⊙</text><rect x=\"442\" y=\"135\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"500\" y=\"158\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">Hall V_H</text></svg>",
+      "say": "Define current, magnetic-field direction, charge sign, and voltage leads before interpreting the Hall sign; multiband materials require a richer model.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-004",
+      "topic": "Solid State Physics",
+      "title": "Acoustic and optical phonon branches",
+      "kind": "graph",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Acoustic and optical phonon branches</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><line x1=\"75\" y1=\"270\" x2=\"600\" y2=\"270\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><line x1=\"75\" y1=\"270\" x2=\"75\" y2=\"35\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><text x=\"590\" y=\"300\" text-anchor=\"end\" font-size=\"13\" fill=\"#0f172a\">wavevector k</text><text x=\"22\" y=\"40\" font-size=\"13\" fill=\"#0f172a\">frequency ω</text><polyline points=\"101.2,258.8 206.2,213.8 337.5,162.0 468.8,121.5 573.8,108.0\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"3\"/><line x1=\"470\" y1=\"44\" x2=\"495\" y2=\"44\" stroke=\"#0f766e\" stroke-width=\"3\"/><text x=\"502\" y=\"48\" font-size=\"12\" fill=\"#0f172a\">acoustic</text><polyline points=\"101.2,94.5 206.2,90.0 337.5,85.5 468.8,83.2 573.8,81.0\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"3\"/><line x1=\"470\" y1=\"65\" x2=\"495\" y2=\"65\" stroke=\"#b45309\" stroke-width=\"3\"/><text x=\"502\" y=\"69\" font-size=\"12\" fill=\"#0f172a\">optical</text></svg>",
+      "say": "Acoustic frequency tends to zero at long wavelength, while an optical branch can remain finite when the basis has relative motion.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-005",
+      "topic": "Solid State Physics",
+      "title": "Magnetic hysteresis quantities",
+      "kind": "graph",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Magnetic hysteresis quantities</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><line x1=\"75\" y1=\"270\" x2=\"600\" y2=\"270\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><line x1=\"75\" y1=\"270\" x2=\"75\" y2=\"35\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><text x=\"590\" y=\"300\" text-anchor=\"end\" font-size=\"13\" fill=\"#0f172a\">field H</text><text x=\"22\" y=\"40\" font-size=\"13\" fill=\"#0f172a\">magnetization M</text><polyline points=\"101.2,168.8 153.8,225.0 258.8,243.0 468.8,229.5 568.5,173.2 505.5,94.5 400.5,72.0 190.5,85.5 101.2,146.2\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"3\"/><line x1=\"470\" y1=\"44\" x2=\"495\" y2=\"44\" stroke=\"#0f766e\" stroke-width=\"3\"/><text x=\"502\" y=\"48\" font-size=\"12\" fill=\"#0f172a\">loop</text></svg>",
+      "say": "Mark saturation, remanence, coercive field, sweep direction, and background. A loop alone does not prove intrinsic ferromagnetism.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-006",
+      "topic": "Materials Characterization",
+      "title": "Raman and infrared selection-rule comparison",
+      "kind": "compare",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Raman and infrared selection-rule comparison</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><rect x=\"30.0\" y=\"75\" width=\"181.3\" height=\"170\" rx=\"10\" fill=\"#ecfeff\" stroke=\"#0f172a\"/><text x=\"120.7\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">Raman</text><text x=\"120.7\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"120.7\" dy=\"0\">polarizability change</tspan></text><rect x=\"223.3\" y=\"75\" width=\"181.3\" height=\"170\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#0f172a\"/><text x=\"314.0\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">FTIR</text><text x=\"314.0\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"314.0\" dy=\"0\">dipole-moment change</tspan></text><rect x=\"416.7\" y=\"75\" width=\"181.3\" height=\"170\" rx=\"10\" fill=\"#ecfeff\" stroke=\"#0f172a\"/><text x=\"507.3\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">both</text><text x=\"507.3\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"507.3\" dy=\"0\">frequency + symmetry</tspan></text><text x=\"507.3\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"507.3\" dy=\"17\">+ geometry</tspan></text></svg>",
+      "say": "Both probe vibrational evidence, but their selection rules and artifacts differ; agreement is complementary rather than automatic molecular proof.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-007",
+      "topic": "Materials Characterization",
+      "title": "UV–Vis signal-to-gap inference",
+      "kind": "flow",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>UV–Vis signal-to-gap inference</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><rect x=\"25.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"77.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">dark + reference</text><line x1=\"129.0\" y1=\"157\" x2=\"141.5\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"146.5\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"198.5\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">T / R</text><text x=\"198.5\" y=\"162\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">signal</text><line x1=\"250.5\" y1=\"157\" x2=\"263.0\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"268.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"320.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">optical model</text><line x1=\"372.0\" y1=\"157\" x2=\"384.5\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"389.5\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"441.5\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">absorption α</text><line x1=\"493.5\" y1=\"157\" x2=\"506.0\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"511.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"563.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">edge fit +</text><text x=\"563.0\" y=\"162\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">uncertainty</text></svg>",
+      "say": "A detector signal becomes a gap estimate only through reference, geometry, thickness, scattering, transition model, fit range, and uncertainty.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-008",
+      "topic": "Materials Characterization",
+      "title": "XPS photoelectron energy balance",
+      "kind": "setup",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>XPS photoelectron energy balance</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><line x1=\"90\" y1=\"80\" x2=\"285\" y2=\"160\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><line x1=\"285\" y1=\"160\" x2=\"470\" y2=\"80\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><line x1=\"470\" y1=\"80\" x2=\"520\" y2=\"230\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"32\" y=\"55\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"90\" y=\"78\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">photon hν</text><rect x=\"227\" y=\"135\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"285\" y=\"158\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">surface</text><rect x=\"412\" y=\"55\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"470\" y=\"78\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">electron E_K</text><rect x=\"462\" y=\"205\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"520\" y=\"228\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">analyser Φ</text></svg>",
+      "say": "Use energy conservation E_B equals photon energy minus kinetic energy and analyser work-function term; then state charge referencing and surface sensitivity.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-009",
+      "topic": "Materials Characterization",
+      "title": "TGA and DSC complementary traces",
+      "kind": "graph",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>TGA and DSC complementary traces</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><line x1=\"75\" y1=\"270\" x2=\"600\" y2=\"270\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><line x1=\"75\" y1=\"270\" x2=\"75\" y2=\"35\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><text x=\"590\" y=\"300\" text-anchor=\"end\" font-size=\"13\" fill=\"#0f172a\">temperature T</text><text x=\"22\" y=\"40\" font-size=\"13\" fill=\"#0f172a\">normalized signal</text><polyline points=\"101.2,85.5 258.8,85.5 327.0,139.5 416.2,139.5 474.0,202.5 573.8,202.5\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"3\"/><line x1=\"470\" y1=\"44\" x2=\"495\" y2=\"44\" stroke=\"#0f766e\" stroke-width=\"3\"/><text x=\"502\" y=\"48\" font-size=\"12\" fill=\"#0f172a\">mass</text><polyline points=\"101.2,157.5 258.8,157.5 321.8,234.0 379.5,157.5 468.8,78.8 526.5,157.5 573.8,157.5\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"3\"/><line x1=\"470\" y1=\"65\" x2=\"495\" y2=\"65\" stroke=\"#b45309\" stroke-width=\"3\"/><text x=\"502\" y=\"69\" font-size=\"12\" fill=\"#0f172a\">heat flow</text></svg>",
+      "say": "TGA tracks mass while DSC tracks differential heat flow. Align temperature, atmosphere, rate, baseline, and thermal history before assigning events.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-010",
+      "topic": "Materials Characterization",
+      "title": "Claim–evidence matrix for a material",
+      "kind": "flow",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Claim–evidence matrix for a material</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><rect x=\"25.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"77.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">structure: XRD</text><line x1=\"129.0\" y1=\"157\" x2=\"141.5\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"146.5\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"198.5\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">composition: EDS/XPS</text><line x1=\"250.5\" y1=\"157\" x2=\"263.0\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"268.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"320.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">morphology: microscopy</text><line x1=\"372.0\" y1=\"157\" x2=\"384.5\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"389.5\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"441.5\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">property: functional test</text><line x1=\"493.5\" y1=\"157\" x2=\"506.0\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"511.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"563.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">claim boundary</text></svg>",
+      "say": "Each technique supports a different clause of a material claim; finish by naming detection limits, sampling scale, and unresolved alternatives.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-011",
+      "topic": "Optics and Lasers",
+      "title": "Young double-slit geometry and fringe scale",
+      "kind": "setup",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Young double-slit geometry and fringe scale</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><line x1=\"70\" y1=\"160\" x2=\"230\" y2=\"160\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><line x1=\"230\" y1=\"160\" x2=\"550\" y2=\"160\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><line x1=\"230\" y1=\"160\" x2=\"550\" y2=\"80\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"12\" y=\"135\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"70\" y=\"158\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">source</text><rect x=\"172\" y=\"135\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"230\" y=\"158\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">slits d</text><rect x=\"492\" y=\"135\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"550\" y=\"158\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">screen L</text><rect x=\"492\" y=\"55\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"550\" y=\"78\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">point y</text></svg>",
+      "say": "Label slit separation, screen distance, observation coordinate, path difference, and the small-angle condition before writing fringe spacing.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-012",
+      "topic": "Optics and Lasers",
+      "title": "Polarizer and wave-plate axes",
+      "kind": "setup",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Polarizer and wave-plate axes</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><line x1=\"80\" y1=\"160\" x2=\"220\" y2=\"160\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><line x1=\"220\" y1=\"160\" x2=\"370\" y2=\"160\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><line x1=\"370\" y1=\"160\" x2=\"540\" y2=\"160\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"22\" y=\"135\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"80\" y=\"158\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">linear E</text><rect x=\"162\" y=\"135\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"220\" y=\"158\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">polarizer P</text><rect x=\"312\" y=\"135\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"370\" y=\"158\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">λ/4 axes</text><rect x=\"482\" y=\"135\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"540\" y=\"158\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">ellipse</text></svg>",
+      "say": "Track amplitudes along fast and slow axes and their relative phase; a quarter-wave plate gives circular output only for equal components and the required phase delay.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-013",
+      "topic": "Optics and Lasers",
+      "title": "Fibre acceptance cone and numerical aperture",
+      "kind": "setup",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Fibre acceptance cone and numerical aperture</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><line x1=\"100\" y1=\"160\" x2=\"300\" y2=\"150\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><line x1=\"300\" y1=\"150\" x2=\"520\" y2=\"160\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"42\" y=\"135\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"100\" y=\"158\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">acceptance cone</text><rect x=\"242\" y=\"125\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"300\" y=\"148\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">core n₁</text><rect x=\"242\" y=\"205\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"300\" y=\"228\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">cladding n₂</text><rect x=\"462\" y=\"135\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"520\" y=\"158\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">guided ray</text></svg>",
+      "say": "Apply refraction at the entrance and total internal reflection at the core–cladding boundary, stating n_core greater than n_clad and the external medium.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-014",
+      "topic": "Optics and Lasers",
+      "title": "Airy pattern and Rayleigh separation",
+      "kind": "graph",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Airy pattern and Rayleigh separation</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><line x1=\"75\" y1=\"270\" x2=\"600\" y2=\"270\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><line x1=\"75\" y1=\"270\" x2=\"75\" y2=\"35\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><text x=\"590\" y=\"300\" text-anchor=\"end\" font-size=\"13\" fill=\"#0f172a\">image angle</text><text x=\"22\" y=\"40\" font-size=\"13\" fill=\"#0f172a\">intensity</text><polyline points=\"101.2,256.5 153.8,247.5 195.8,220.5 243.0,85.5 285.0,220.5 327.0,252.0 369.0,258.8\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"3\"/><line x1=\"470\" y1=\"44\" x2=\"495\" y2=\"44\" stroke=\"#0f766e\" stroke-width=\"3\"/><text x=\"502\" y=\"48\" font-size=\"12\" fill=\"#0f172a\">source A</text><polyline points=\"243.0,258.8 285.0,252.0 327.0,220.5 374.2,85.5 416.2,220.5 463.5,247.5 516.0,256.5\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"3\"/><line x1=\"470\" y1=\"65\" x2=\"495\" y2=\"65\" stroke=\"#b45309\" stroke-width=\"3\"/><text x=\"502\" y=\"69\" font-size=\"12\" fill=\"#0f172a\">source B</text></svg>",
+      "say": "A finite circular aperture creates point-spread functions; Rayleigh is a stated criterion, while aberration, sampling, and signal-to-noise also matter.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-015",
+      "topic": "Optics and Lasers",
+      "title": "Photodiode measurement chain",
+      "kind": "flow",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Photodiode measurement chain</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><rect x=\"25.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"77.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">photon flux</text><line x1=\"129.0\" y1=\"157\" x2=\"141.5\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"146.5\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"198.5\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">absorption + η</text><line x1=\"250.5\" y1=\"157\" x2=\"263.0\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"268.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"320.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">photocurrent</text><line x1=\"372.0\" y1=\"157\" x2=\"384.5\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"389.5\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"441.5\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">transimpedance</text><line x1=\"493.5\" y1=\"157\" x2=\"506.0\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"511.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"563.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">ADC + calibration</text></svg>",
+      "say": "Follow photons to charge and voltage. Responsivity, dark current, shot/electronic noise, bandwidth, saturation, and calibration set the usable measurement.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-016",
+      "topic": "Thermodynamics",
+      "title": "Isothermal and adiabatic P–V paths",
+      "kind": "graph",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Isothermal and adiabatic P–V paths</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><line x1=\"75\" y1=\"270\" x2=\"600\" y2=\"270\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><line x1=\"75\" y1=\"270\" x2=\"75\" y2=\"35\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><text x=\"590\" y=\"300\" text-anchor=\"end\" font-size=\"13\" fill=\"#0f172a\">volume V</text><text x=\"22\" y=\"40\" font-size=\"13\" fill=\"#0f172a\">pressure P</text><polyline points=\"138.0,72.0 206.2,128.2 311.2,180.0 442.5,213.8 558.0,229.5\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"3\"/><line x1=\"470\" y1=\"44\" x2=\"495\" y2=\"44\" stroke=\"#0f766e\" stroke-width=\"3\"/><text x=\"502\" y=\"48\" font-size=\"12\" fill=\"#0f172a\">isothermal</text><polyline points=\"138.0,72.0 206.2,146.2 311.2,204.8 442.5,238.5 558.0,252.0\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"3\"/><line x1=\"470\" y1=\"65\" x2=\"495\" y2=\"65\" stroke=\"#b45309\" stroke-width=\"3\"/><text x=\"502\" y=\"69\" font-size=\"12\" fill=\"#0f172a\">adiabatic</text></svg>",
+      "say": "For expansion from one state, the reversible adiabatic pressure drops faster than the isothermal path; area under a stated path is boundary work.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-017",
+      "topic": "Thermodynamics",
+      "title": "T–S heat-transfer view of a cycle",
+      "kind": "graph",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>T–S heat-transfer view of a cycle</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><line x1=\"75\" y1=\"270\" x2=\"600\" y2=\"270\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><line x1=\"75\" y1=\"270\" x2=\"75\" y2=\"35\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><text x=\"590\" y=\"300\" text-anchor=\"end\" font-size=\"13\" fill=\"#0f172a\">entropy S</text><text x=\"22\" y=\"40\" font-size=\"13\" fill=\"#0f172a\">temperature T</text><polyline points=\"180.0,213.8 180.0,94.5 484.5,94.5 484.5,213.8 180.0,213.8\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"3\"/><line x1=\"470\" y1=\"44\" x2=\"495\" y2=\"44\" stroke=\"#0f766e\" stroke-width=\"3\"/><text x=\"502\" y=\"48\" font-size=\"12\" fill=\"#0f172a\">reversible cycle</text></svg>",
+      "say": "On a reversible path, area under T dS is heat. Label direction and reservoirs before interpreting enclosed area as net work for a cycle.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-018",
+      "topic": "Thermodynamics",
+      "title": "Binary phase diagram reading",
+      "kind": "graph",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Binary phase diagram reading</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><line x1=\"75\" y1=\"270\" x2=\"600\" y2=\"270\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><line x1=\"75\" y1=\"270\" x2=\"75\" y2=\"35\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><text x=\"590\" y=\"300\" text-anchor=\"end\" font-size=\"13\" fill=\"#0f172a\">composition x_B</text><text x=\"22\" y=\"40\" font-size=\"13\" fill=\"#0f172a\">temperature T</text><polyline points=\"101.2,85.5 232.5,123.8 337.5,157.5 442.5,123.8 573.8,85.5\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"3\"/><line x1=\"470\" y1=\"44\" x2=\"495\" y2=\"44\" stroke=\"#0f766e\" stroke-width=\"3\"/><text x=\"502\" y=\"48\" font-size=\"12\" fill=\"#0f172a\">liquidus</text><polyline points=\"101.2,85.5 232.5,175.5 337.5,202.5 442.5,175.5 573.8,85.5\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"3\"/><line x1=\"470\" y1=\"65\" x2=\"495\" y2=\"65\" stroke=\"#b45309\" stroke-width=\"3\"/><text x=\"502\" y=\"69\" font-size=\"12\" fill=\"#0f172a\">solidus</text></svg>",
+      "say": "Read phase fields, tie line, and phase fractions at a stated overall composition; do not infer kinetics or microstructure from equilibrium boundaries alone.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-019",
+      "topic": "Thermodynamics",
+      "title": "Gibbs free-energy competition",
+      "kind": "graph",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Gibbs free-energy competition</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><line x1=\"75\" y1=\"270\" x2=\"600\" y2=\"270\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><line x1=\"75\" y1=\"270\" x2=\"75\" y2=\"35\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><text x=\"590\" y=\"300\" text-anchor=\"end\" font-size=\"13\" fill=\"#0f172a\">order parameter / composition</text><text x=\"22\" y=\"40\" font-size=\"13\" fill=\"#0f172a\">G</text><polyline points=\"101.2,101.2 206.2,191.2 337.5,220.5 468.8,191.2 573.8,101.2\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"3\"/><line x1=\"470\" y1=\"44\" x2=\"495\" y2=\"44\" stroke=\"#0f766e\" stroke-width=\"3\"/><text x=\"502\" y=\"48\" font-size=\"12\" fill=\"#0f172a\">phase α</text><polyline points=\"101.2,162.0 206.2,198.0 337.5,180.0 468.8,198.0 573.8,162.0\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"3\"/><line x1=\"470\" y1=\"65\" x2=\"495\" y2=\"65\" stroke=\"#b45309\" stroke-width=\"3\"/><text x=\"502\" y=\"69\" font-size=\"12\" fill=\"#0f172a\">phase β</text></svg>",
+      "say": "Stable equilibrium minimizes the appropriate potential under stated constraints; tangent constructions and barriers must not be confused with rate.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-020",
+      "topic": "Thermodynamics",
+      "title": "Spacecraft thermal-resistance network",
+      "kind": "flow",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Spacecraft thermal-resistance network</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><rect x=\"25.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"77.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">solar / albedo</text><line x1=\"129.0\" y1=\"157\" x2=\"141.5\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"146.5\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"198.5\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">surface absorption</text><line x1=\"250.5\" y1=\"157\" x2=\"263.0\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"268.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"320.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">conduction paths</text><line x1=\"372.0\" y1=\"157\" x2=\"384.5\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"389.5\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"441.5\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">component node</text><line x1=\"493.5\" y1=\"157\" x2=\"506.0\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"511.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"563.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">radiation to space</text></svg>",
+      "say": "Write an energy balance at each thermal node with properties, view factors, contact resistance, internal power, transient heat capacity, and boundary uncertainty.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-021",
+      "topic": "Basic Electronics and Instrumentation",
+      "title": "RC charging transient and time constant",
+      "kind": "graph",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>RC charging transient and time constant</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><line x1=\"75\" y1=\"270\" x2=\"600\" y2=\"270\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><line x1=\"75\" y1=\"270\" x2=\"75\" y2=\"35\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><text x=\"590\" y=\"300\" text-anchor=\"end\" font-size=\"13\" fill=\"#0f172a\">time t / RC</text><text x=\"22\" y=\"40\" font-size=\"13\" fill=\"#0f172a\">capacitor voltage V_C/V</text><polyline points=\"101.2,265.5 180.0,184.5 258.8,130.5 363.8,85.5 468.8,63.0 573.8,51.8\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"3\"/><line x1=\"470\" y1=\"44\" x2=\"495\" y2=\"44\" stroke=\"#0f766e\" stroke-width=\"3\"/><text x=\"502\" y=\"48\" font-size=\"12\" fill=\"#0f172a\">charging</text><polyline points=\"101.2,49.5 180.0,130.5 258.8,184.5 363.8,229.5 468.8,252.0 573.8,263.2\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"3\"/><line x1=\"470\" y1=\"65\" x2=\"495\" y2=\"65\" stroke=\"#b45309\" stroke-width=\"3\"/><text x=\"502\" y=\"69\" font-size=\"12\" fill=\"#0f172a\">discharging</text></svg>",
+      "say": "At one time constant charging reaches about sixty-three percent and discharging falls to about thirty-seven percent under a first-order Thevenin model.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-022",
+      "topic": "Basic Electronics and Instrumentation",
+      "title": "Diode I–V operating regions",
+      "kind": "graph",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Diode I–V operating regions</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><line x1=\"75\" y1=\"270\" x2=\"600\" y2=\"270\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><line x1=\"75\" y1=\"270\" x2=\"75\" y2=\"35\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><text x=\"590\" y=\"300\" text-anchor=\"end\" font-size=\"13\" fill=\"#0f172a\">diode voltage V_D</text><text x=\"22\" y=\"40\" font-size=\"13\" fill=\"#0f172a\">current I_D</text><polyline points=\"101.2,191.2 295.5,175.5 353.2,168.8 400.5,157.5 453.0,130.5 505.5,85.5 563.2,49.5\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"3\"/><line x1=\"470\" y1=\"44\" x2=\"495\" y2=\"44\" stroke=\"#0f766e\" stroke-width=\"3\"/><text x=\"502\" y=\"48\" font-size=\"12\" fill=\"#0f172a\">forward/reverse</text></svg>",
+      "say": "Mark reverse leakage, breakdown caution, forward exponential region, series resistance, temperature dependence, and the actual operating load line.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-023",
+      "topic": "Basic Electronics and Instrumentation",
+      "title": "Transistor bias point and load line",
+      "kind": "graph",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Transistor bias point and load line</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><line x1=\"75\" y1=\"270\" x2=\"600\" y2=\"270\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><line x1=\"75\" y1=\"270\" x2=\"75\" y2=\"35\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><text x=\"590\" y=\"300\" text-anchor=\"end\" font-size=\"13\" fill=\"#0f172a\">collector voltage V_CE</text><text x=\"22\" y=\"40\" font-size=\"13\" fill=\"#0f172a\">collector current I_C</text><polyline points=\"117.0,72.0 558.0,247.5\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"3\"/><line x1=\"470\" y1=\"44\" x2=\"495\" y2=\"44\" stroke=\"#0f766e\" stroke-width=\"3\"/><text x=\"502\" y=\"48\" font-size=\"12\" fill=\"#0f172a\">load line</text><polyline points=\"138.0,236.2 232.5,175.5 337.5,139.5 453.0,121.5 547.5,114.8\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"3\"/><line x1=\"470\" y1=\"65\" x2=\"495\" y2=\"65\" stroke=\"#b45309\" stroke-width=\"3\"/><text x=\"502\" y=\"69\" font-size=\"12\" fill=\"#0f172a\">output curve</text></svg>",
+      "say": "Bias chooses a quiescent point with gain and headroom. Show cutoff, active region, saturation, thermal drift, and signal excursion.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-024",
+      "topic": "Basic Electronics and Instrumentation",
+      "title": "First-order low-pass Bode magnitude",
+      "kind": "graph",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>First-order low-pass Bode magnitude</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><line x1=\"75\" y1=\"270\" x2=\"600\" y2=\"270\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><line x1=\"75\" y1=\"270\" x2=\"75\" y2=\"35\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><text x=\"590\" y=\"300\" text-anchor=\"end\" font-size=\"13\" fill=\"#0f172a\">log frequency</text><text x=\"22\" y=\"40\" font-size=\"13\" fill=\"#0f172a\">gain dB</text><polyline points=\"101.2,78.8 258.8,81.0 337.5,94.5 416.2,146.2 495.0,202.5 573.8,252.0\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"3\"/><line x1=\"470\" y1=\"44\" x2=\"495\" y2=\"44\" stroke=\"#0f766e\" stroke-width=\"3\"/><text x=\"502\" y=\"48\" font-size=\"12\" fill=\"#0f172a\">magnitude</text></svg>",
+      "say": "Mark the minus-three-decibel corner and the asymptotic roll-off; component tolerances, loading, op-amp bandwidth, and alias control affect the real response.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-025",
+      "topic": "Basic Electronics and Instrumentation",
+      "title": "Sampling and alias folding",
+      "kind": "graph",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Sampling and alias folding</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><line x1=\"75\" y1=\"270\" x2=\"600\" y2=\"270\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><line x1=\"75\" y1=\"270\" x2=\"75\" y2=\"35\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><text x=\"590\" y=\"300\" text-anchor=\"end\" font-size=\"13\" fill=\"#0f172a\">frequency</text><text x=\"22\" y=\"40\" font-size=\"13\" fill=\"#0f172a\">spectral amplitude</text><polyline points=\"117.0,258.8 180.0,101.2 243.0,258.8 432.0,258.8 495.0,101.2 558.0,258.8\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"3\"/><line x1=\"470\" y1=\"44\" x2=\"495\" y2=\"44\" stroke=\"#0f766e\" stroke-width=\"3\"/><text x=\"502\" y=\"48\" font-size=\"12\" fill=\"#0f172a\">replicas</text><polyline points=\"311.2,258.8 337.5,135.0 363.8,258.8\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"3\"/><line x1=\"470\" y1=\"65\" x2=\"495\" y2=\"65\" stroke=\"#b45309\" stroke-width=\"3\"/><text x=\"502\" y=\"69\" font-size=\"12\" fill=\"#0f172a\">aliased component</text></svg>",
+      "say": "Sampling replicates spectra around multiples of the sampling frequency; frequencies above Nyquist can fold unless analog filtering and bandwidth assumptions hold.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-026",
+      "topic": "Basic Electronics and Instrumentation",
+      "title": "Ground, shield, and differential signal path",
+      "kind": "setup",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Ground, shield, and differential signal path</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><line x1=\"80\" y1=\"140\" x2=\"250\" y2=\"140\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><line x1=\"250\" y1=\"140\" x2=\"450\" y2=\"140\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><line x1=\"270\" y1=\"245\" x2=\"450\" y2=\"140\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"22\" y=\"115\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"80\" y=\"138\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">sensor</text><rect x=\"192\" y=\"115\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"250\" y=\"138\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">twisted pair</text><rect x=\"392\" y=\"115\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"450\" y=\"138\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">differential input</text><rect x=\"212\" y=\"220\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"270\" y=\"243\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">shield → chassis</text></svg>",
+      "say": "Separate signal return, protective/chassis connection, and cable shield. Draw the intended current path and identify where a ground loop or capacitive pickup can enter.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-027",
+      "topic": "Mathematical Foundations, Data, and Uncertainty",
+      "title": "Gauss and Stokes orientation map",
+      "kind": "compare",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Gauss and Stokes orientation map</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><rect x=\"30.0\" y=\"75\" width=\"181.3\" height=\"170\" rx=\"10\" fill=\"#ecfeff\" stroke=\"#0f172a\"/><text x=\"120.7\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">Gauss</text><text x=\"120.7\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"120.7\" dy=\"0\">volume ↔ closed-surface</tspan></text><text x=\"120.7\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"120.7\" dy=\"17\">flux</tspan></text><rect x=\"223.3\" y=\"75\" width=\"181.3\" height=\"170\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#0f172a\"/><text x=\"314.0\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">Stokes</text><text x=\"314.0\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"314.0\" dy=\"0\">surface ↔ boundary</tspan></text><text x=\"314.0\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"314.0\" dy=\"17\">circulation</tspan></text><rect x=\"416.7\" y=\"75\" width=\"181.3\" height=\"170\" rx=\"10\" fill=\"#ecfeff\" stroke=\"#0f172a\"/><text x=\"507.3\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">orientation</text><text x=\"507.3\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"507.3\" dy=\"0\">outward normal /</tspan></text><text x=\"507.3\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"507.3\" dy=\"17\">right hand</tspan></text></svg>",
+      "say": "State the region, boundary, orientation, smoothness, and singularities; the integral theorems connect local derivatives to global measurements.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-028",
+      "topic": "Mathematical Foundations, Data, and Uncertainty",
+      "title": "Time-domain pulse and Fourier bandwidth",
+      "kind": "compare",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Time-domain pulse and Fourier bandwidth</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><rect x=\"30.0\" y=\"75\" width=\"181.3\" height=\"170\" rx=\"10\" fill=\"#ecfeff\" stroke=\"#0f172a\"/><text x=\"120.7\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">short pulse</text><text x=\"120.7\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"120.7\" dy=\"0\">broad frequency content</tspan></text><rect x=\"223.3\" y=\"75\" width=\"181.3\" height=\"170\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#0f172a\"/><text x=\"314.0\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">long pulse</text><text x=\"314.0\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"314.0\" dy=\"0\">narrow frequency content</tspan></text><rect x=\"416.7\" y=\"75\" width=\"181.3\" height=\"170\" rx=\"10\" fill=\"#ecfeff\" stroke=\"#0f172a\"/><text x=\"507.3\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">finite window</text><text x=\"507.3\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"507.3\" dy=\"0\">leakage / resolution</tspan></text></svg>",
+      "say": "A function and its transform describe the same signal in conjugate domains; finite duration and sampling introduce resolution and aliasing qualifications.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-029",
+      "topic": "Mathematical Foundations, Data, and Uncertainty",
+      "title": "Uncertainty-budget dependency tree",
+      "kind": "flow",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Uncertainty-budget dependency tree</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><rect x=\"25.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"77.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">measurand</text><line x1=\"129.0\" y1=\"157\" x2=\"141.5\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"146.5\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"198.5\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">calibration</text><line x1=\"250.5\" y1=\"157\" x2=\"263.0\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"268.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"320.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">repeatability</text><line x1=\"372.0\" y1=\"157\" x2=\"384.5\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"389.5\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"441.5\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">environment/model</text><line x1=\"493.5\" y1=\"157\" x2=\"506.0\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"511.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"563.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">covariance → combined</text><text x=\"563.0\" y=\"162\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">u</text></svg>",
+      "say": "List contributors with units and sensitivity coefficients, include covariance, and state whether the reported interval is standard or expanded uncertainty.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-030",
+      "topic": "Mathematical Foundations, Data, and Uncertainty",
+      "title": "Dimensional scaling and nondimensional groups",
+      "kind": "flow",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Dimensional scaling and nondimensional groups</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><rect x=\"25.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"77.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">variables + units</text><line x1=\"129.0\" y1=\"157\" x2=\"141.5\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"146.5\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"198.5\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">dimension matrix</text><line x1=\"250.5\" y1=\"157\" x2=\"263.0\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"268.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"320.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">null-space groups Π</text><line x1=\"372.0\" y1=\"157\" x2=\"384.5\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"389.5\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"441.5\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">regime comparison</text><line x1=\"493.5\" y1=\"157\" x2=\"506.0\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"511.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"563.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">experiment collapse</text></svg>",
+      "say": "Dimensional analysis constrains form and organizes regimes but cannot determine every numerical constant or replace governing physics.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-031",
+      "topic": "Mathematical Foundations, Data, and Uncertainty",
+      "title": "Eigenvectors as invariant directions",
+      "kind": "setup",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Eigenvectors as invariant directions</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><line x1=\"100\" y1=\"160\" x2=\"300\" y2=\"160\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><line x1=\"300\" y1=\"160\" x2=\"510\" y2=\"160\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><line x1=\"300\" y1=\"60\" x2=\"300\" y2=\"160\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"42\" y=\"135\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"100\" y=\"158\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">input vector</text><rect x=\"242\" y=\"135\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"300\" y=\"158\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">linear map A</text><rect x=\"452\" y=\"135\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"510\" y=\"158\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">λv</text><rect x=\"242\" y=\"35\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"300\" y=\"58\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">other direction rotates</text></svg>",
+      "say": "An eigenvector keeps its direction under a linear map up to scaling; basis completeness, degeneracy, conditioning, and physical inner product still matter.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-032",
+      "topic": "Classical Mechanics and Oscillations",
+      "title": "Rotating-frame acceleration terms",
+      "kind": "flow",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Rotating-frame acceleration terms</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><rect x=\"25.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"77.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">inertial acceleration</text><line x1=\"129.0\" y1=\"157\" x2=\"141.5\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"146.5\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"198.5\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">relative acceleration</text><line x1=\"250.5\" y1=\"157\" x2=\"263.0\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"268.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"320.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">Coriolis 2Ω×v</text><line x1=\"372.0\" y1=\"157\" x2=\"384.5\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"389.5\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"441.5\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">centrifugal Ω×(Ω×r)</text><line x1=\"493.5\" y1=\"157\" x2=\"506.0\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"511.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"563.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">Euler dΩ/dt×r</text></svg>",
+      "say": "Define the rotating origin and angular velocity first, then add translational, Coriolis, centrifugal, and Euler terms with signs consistent with the chosen equation.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-033",
+      "topic": "Classical Mechanics and Oscillations",
+      "title": "Torque and angular-momentum balance",
+      "kind": "setup",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Torque and angular-momentum balance</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><line x1=\"90\" y1=\"230\" x2=\"250\" y2=\"150\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><line x1=\"250\" y1=\"150\" x2=\"420\" y2=\"70\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><line x1=\"250\" y1=\"150\" x2=\"500\" y2=\"220\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"32\" y=\"205\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"90\" y=\"228\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">origin O</text><rect x=\"192\" y=\"125\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"250\" y=\"148\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">position r</text><rect x=\"362\" y=\"45\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"420\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">force F</text><rect x=\"442\" y=\"195\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"500\" y=\"218\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">torque r×F</text></svg>",
+      "say": "Angular momentum and torque require a specified origin and frame. Only the force component perpendicular to position contributes to torque.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-034",
+      "topic": "Classical Mechanics and Oscillations",
+      "title": "Underdamped, critical, and overdamped response",
+      "kind": "graph",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Underdamped, critical, and overdamped response</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><line x1=\"75\" y1=\"270\" x2=\"600\" y2=\"270\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><line x1=\"75\" y1=\"270\" x2=\"75\" y2=\"35\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><text x=\"590\" y=\"300\" text-anchor=\"end\" font-size=\"13\" fill=\"#0f172a\">time</text><text x=\"22\" y=\"40\" font-size=\"13\" fill=\"#0f172a\">displacement</text><polyline points=\"101.2,90.0 169.5,202.5 232.5,135.0 295.5,175.5 369.0,153.0 453.0,164.2 563.2,157.5\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"3\"/><line x1=\"470\" y1=\"44\" x2=\"495\" y2=\"44\" stroke=\"#0f766e\" stroke-width=\"3\"/><text x=\"502\" y=\"48\" font-size=\"12\" fill=\"#0f172a\">underdamped</text><polyline points=\"101.2,90.0 190.5,139.5 295.5,155.2 442.5,157.5 573.8,157.5\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"3\"/><line x1=\"470\" y1=\"65\" x2=\"495\" y2=\"65\" stroke=\"#b45309\" stroke-width=\"3\"/><text x=\"502\" y=\"69\" font-size=\"12\" fill=\"#0f172a\">critical</text><polyline points=\"101.2,90.0 206.2,112.5 337.5,130.5 468.8,144.0 573.8,150.8\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3\"/><line x1=\"470\" y1=\"86\" x2=\"495\" y2=\"86\" stroke=\"#7c3aed\" stroke-width=\"3\"/><text x=\"502\" y=\"90\" font-size=\"12\" fill=\"#0f172a\">overdamped</text></svg>",
+      "say": "Compare overshoot and settling, state the damping ratio, and distinguish critical fastest non-oscillatory return from maximum decay rate in every metric.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-035",
+      "topic": "Classical Mechanics and Oscillations",
+      "title": "Two-mass normal-mode patterns",
+      "kind": "compare",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Two-mass normal-mode patterns</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><rect x=\"30.0\" y=\"75\" width=\"181.3\" height=\"170\" rx=\"10\" fill=\"#ecfeff\" stroke=\"#0f172a\"/><text x=\"120.7\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">in-phase</text><text x=\"120.7\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"120.7\" dy=\"0\">masses move together</tspan></text><rect x=\"223.3\" y=\"75\" width=\"181.3\" height=\"170\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#0f172a\"/><text x=\"314.0\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">out-of-phase</text><text x=\"314.0\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"314.0\" dy=\"0\">masses oppose</tspan></text><rect x=\"416.7\" y=\"75\" width=\"181.3\" height=\"170\" rx=\"10\" fill=\"#ecfeff\" stroke=\"#0f172a\"/><text x=\"507.3\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">mode</text><text x=\"507.3\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"507.3\" dy=\"0\">fixed amplitude ratio</tspan></text></svg>",
+      "say": "Normal modes are eigenvectors of the coupled linear system. A general motion is a superposition, and symmetry/mass differences change the patterns.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-036",
+      "topic": "Classical Mechanics and Oscillations",
+      "title": "Oscillator phase portrait",
+      "kind": "graph",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Oscillator phase portrait</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><line x1=\"75\" y1=\"270\" x2=\"600\" y2=\"270\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><line x1=\"75\" y1=\"270\" x2=\"75\" y2=\"35\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><text x=\"590\" y=\"300\" text-anchor=\"end\" font-size=\"13\" fill=\"#0f172a\">position x</text><text x=\"22\" y=\"40\" font-size=\"13\" fill=\"#0f172a\">velocity v</text><polyline points=\"127.5,157.5 169.5,101.2 274.5,67.5 400.5,67.5 505.5,101.2 547.5,157.5 505.5,213.8 400.5,247.5 274.5,247.5 169.5,213.8 127.5,157.5\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"3\"/><line x1=\"470\" y1=\"44\" x2=\"495\" y2=\"44\" stroke=\"#0f766e\" stroke-width=\"3\"/><text x=\"502\" y=\"48\" font-size=\"12\" fill=\"#0f172a\">conservative orbit</text><polyline points=\"169.5,157.5 206.2,117.0 300.8,99.0 400.5,117.0 432.0,157.5 390.0,184.5 316.5,193.5 264.0,175.5 274.5,153.0 327.0,144.0\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"3\"/><line x1=\"470\" y1=\"65\" x2=\"495\" y2=\"65\" stroke=\"#b45309\" stroke-width=\"3\"/><text x=\"502\" y=\"69\" font-size=\"12\" fill=\"#0f172a\">damped spiral</text></svg>",
+      "say": "Closed contours represent conserved-energy oscillation; damping spirals inward. Axes, units, direction, and autonomous-model assumptions are essential.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-037",
+      "topic": "Electromagnetic Theory",
+      "title": "Gaussian pillbox across an interface",
+      "kind": "setup",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Gaussian pillbox across an interface</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><line x1=\"160\" y1=\"80\" x2=\"320\" y2=\"160\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><line x1=\"160\" y1=\"250\" x2=\"320\" y2=\"160\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><line x1=\"320\" y1=\"160\" x2=\"480\" y2=\"160\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"102\" y=\"55\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"160\" y=\"78\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">medium 1</text><rect x=\"262\" y=\"135\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"320\" y=\"158\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">surface σ</text><rect x=\"102\" y=\"225\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"160\" y=\"248\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">medium 2</text><rect x=\"422\" y=\"135\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"480\" y=\"158\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">pillbox</text></svg>",
+      "say": "Shrink a pillbox across the interface to isolate normal flux; state whether the boundary source is free or total charge and which field, E or D, is used.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-038",
+      "topic": "Electromagnetic Theory",
+      "title": "Ampère loop through a solenoid",
+      "kind": "setup",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Ampère loop through a solenoid</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><line x1=\"130\" y1=\"160\" x2=\"320\" y2=\"105\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><line x1=\"320\" y1=\"105\" x2=\"520\" y2=\"105\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><line x1=\"320\" y1=\"235\" x2=\"130\" y2=\"160\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"72\" y=\"135\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"130\" y=\"158\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">turns nI</text><rect x=\"262\" y=\"80\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"320\" y=\"103\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">inside path ℓ</text><rect x=\"262\" y=\"210\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"320\" y=\"233\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">outside return</text><rect x=\"462\" y=\"80\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"520\" y=\"103\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">B axial</text></svg>",
+      "say": "The ideal long-solenoid result follows because the inside segment is aligned with nearly uniform field while the outside contribution is neglected.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-039",
+      "topic": "Electromagnetic Theory",
+      "title": "Wave reflection and transmission at an interface",
+      "kind": "setup",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Wave reflection and transmission at an interface</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><line x1=\"90\" y1=\"210\" x2=\"320\" y2=\"160\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><line x1=\"320\" y1=\"160\" x2=\"110\" y2=\"70\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><line x1=\"320\" y1=\"160\" x2=\"520\" y2=\"90\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"32\" y=\"185\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"90\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">incident kᵢ</text><rect x=\"262\" y=\"135\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"320\" y=\"158\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">interface</text><rect x=\"52\" y=\"45\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"110\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">reflected kᵣ</text><rect x=\"462\" y=\"65\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"520\" y=\"88\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">transmitted kₜ</text></svg>",
+      "say": "Tangential phase matching gives angle relations; boundary conditions and impedance set amplitudes, polarization dependence, power flow, and possible total internal reflection.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-040",
+      "topic": "Electromagnetic Theory",
+      "title": "Skin-depth field decay in a conductor",
+      "kind": "graph",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Skin-depth field decay in a conductor</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><line x1=\"75\" y1=\"270\" x2=\"600\" y2=\"270\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><line x1=\"75\" y1=\"270\" x2=\"75\" y2=\"35\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><text x=\"590\" y=\"300\" text-anchor=\"end\" font-size=\"13\" fill=\"#0f172a\">depth z / δ</text><text x=\"22\" y=\"40\" font-size=\"13\" fill=\"#0f172a\">field amplitude</text><polyline points=\"101.2,56.2 180.0,117.0 258.8,162.0 337.5,195.8 432.0,225.0 521.2,243.0 573.8,252.0\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"3\"/><line x1=\"470\" y1=\"44\" x2=\"495\" y2=\"44\" stroke=\"#0f766e\" stroke-width=\"3\"/><text x=\"502\" y=\"48\" font-size=\"12\" fill=\"#0f172a\">exp(−z/δ)</text></svg>",
+      "say": "Field amplitude decays exponentially with depth in a good conductor approximation; frequency, conductivity, permeability, phase lag, and geometry define its limits.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-041",
+      "topic": "Electromagnetic Theory",
+      "title": "Antenna pattern and link geometry",
+      "kind": "setup",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Antenna pattern and link geometry</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><line x1=\"80\" y1=\"160\" x2=\"300\" y2=\"160\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><line x1=\"300\" y1=\"160\" x2=\"520\" y2=\"160\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><line x1=\"300\" y1=\"65\" x2=\"520\" y2=\"160\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"22\" y=\"135\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"80\" y=\"158\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">transmitter G_t</text><rect x=\"242\" y=\"135\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"300\" y=\"158\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">range R</text><rect x=\"462\" y=\"135\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"520\" y=\"158\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">receiver A_e</text><rect x=\"242\" y=\"40\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"300\" y=\"63\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">off-axis loss</text></svg>",
+      "say": "A link budget combines transmitted power, gain, range spreading, polarization, effective aperture, losses, noise, bandwidth, and required margin.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-042",
+      "topic": "Quantum Mechanics",
+      "title": "Wavefunction, amplitude, and probability density",
+      "kind": "compare",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Wavefunction, amplitude, and probability density</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><rect x=\"30.0\" y=\"75\" width=\"181.3\" height=\"170\" rx=\"10\" fill=\"#ecfeff\" stroke=\"#0f172a\"/><text x=\"120.7\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">ψ</text><text x=\"120.7\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"120.7\" dy=\"0\">complex amplitude +</tspan></text><text x=\"120.7\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"120.7\" dy=\"17\">phase</tspan></text><rect x=\"223.3\" y=\"75\" width=\"181.3\" height=\"170\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#0f172a\"/><text x=\"314.0\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">|ψ|²</text><text x=\"314.0\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"314.0\" dy=\"0\">probability density</tspan></text><rect x=\"416.7\" y=\"75\" width=\"181.3\" height=\"170\" rx=\"10\" fill=\"#ecfeff\" stroke=\"#0f172a\"/><text x=\"507.3\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">∫|ψ|² dx</text><text x=\"507.3\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"507.3\" dy=\"0\">normalization = 1</tspan></text></svg>",
+      "say": "The wavefunction is not itself a probability; relative phase affects interference, while measurement probabilities come from normalized modulus squared.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-043",
+      "topic": "Quantum Mechanics",
+      "title": "Finite-well bound and evanescent tails",
+      "kind": "graph",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Finite-well bound and evanescent tails</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><line x1=\"75\" y1=\"270\" x2=\"600\" y2=\"270\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><line x1=\"75\" y1=\"270\" x2=\"75\" y2=\"35\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><text x=\"590\" y=\"300\" text-anchor=\"end\" font-size=\"13\" fill=\"#0f172a\">position x</text><text x=\"22\" y=\"40\" font-size=\"13\" fill=\"#0f172a\">energy / ψ</text><polyline points=\"117.0,94.5 222.0,94.5 222.0,220.5 453.0,220.5 453.0,94.5 558.0,94.5\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"3\"/><line x1=\"470\" y1=\"44\" x2=\"495\" y2=\"44\" stroke=\"#0f766e\" stroke-width=\"3\"/><text x=\"502\" y=\"48\" font-size=\"12\" fill=\"#0f172a\">potential</text><polyline points=\"117.0,157.5 180.0,171.0 232.5,191.2 337.5,130.5 442.5,191.2 495.0,171.0 558.0,157.5\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"3\"/><line x1=\"470\" y1=\"65\" x2=\"495\" y2=\"65\" stroke=\"#b45309\" stroke-width=\"3\"/><text x=\"502\" y=\"69\" font-size=\"12\" fill=\"#0f172a\">bound ψ</text></svg>",
+      "say": "Finite barriers allow evanescent tails. Apply continuity conditions, distinguish wavefunction from energy, and state parity and normalization.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-044",
+      "topic": "Quantum Mechanics",
+      "title": "Spin measurement on a Bloch sphere",
+      "kind": "setup",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Spin measurement on a Bloch sphere</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><line x1=\"320\" y1=\"170\" x2=\"320\" y2=\"70\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><line x1=\"320\" y1=\"70\" x2=\"500\" y2=\"80\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><line x1=\"320\" y1=\"170\" x2=\"500\" y2=\"245\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"262\" y=\"45\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"320\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">state n</text><rect x=\"262\" y=\"145\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"320\" y=\"168\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">Bloch centre</text><rect x=\"442\" y=\"55\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"500\" y=\"78\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">+z outcome</text><rect x=\"442\" y=\"220\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"500\" y=\"243\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">−z outcome</text></svg>",
+      "say": "A pure spin-half state defines a Bloch direction; measurement along z gives two outcomes with probabilities set by projection, not a pre-existing classical arrow component.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-045",
+      "topic": "Quantum Mechanics",
+      "title": "Operator measurement and state update",
+      "kind": "flow",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Operator measurement and state update</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><rect x=\"25.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"77.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">prepared |ψ⟩</text><line x1=\"129.0\" y1=\"157\" x2=\"141.5\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"146.5\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"198.5\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">observable A</text><line x1=\"250.5\" y1=\"157\" x2=\"263.0\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"268.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"320.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">outcome a_n</text><line x1=\"372.0\" y1=\"157\" x2=\"384.5\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"389.5\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"441.5\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">projected component</text><line x1=\"493.5\" y1=\"157\" x2=\"506.0\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"511.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"563.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">repeat / new</text><text x=\"563.0\" y=\"162\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">basis</text></svg>",
+      "say": "Separate ensemble probabilities, individual outcome, and post-measurement state. Degeneracy and the measurement model determine the exact update rule.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-046",
+      "topic": "Quantum Mechanics",
+      "title": "Perturbative level shifts and mixing",
+      "kind": "compare",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Perturbative level shifts and mixing</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><rect x=\"30.0\" y=\"75\" width=\"181.3\" height=\"170\" rx=\"10\" fill=\"#ecfeff\" stroke=\"#0f172a\"/><text x=\"120.7\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">unperturbed</text><text x=\"120.7\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"120.7\" dy=\"0\">Eₙ, basis |n⟩</tspan></text><rect x=\"223.3\" y=\"75\" width=\"181.3\" height=\"170\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#0f172a\"/><text x=\"314.0\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">weak V</text><text x=\"314.0\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"314.0\" dy=\"0\">diagonal shift</tspan></text><rect x=\"416.7\" y=\"75\" width=\"181.3\" height=\"170\" rx=\"10\" fill=\"#ecfeff\" stroke=\"#0f172a\"/><text x=\"507.3\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">near degeneracy</text><text x=\"507.3\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"507.3\" dy=\"0\">mixing / diagonalize</tspan></text><text x=\"507.3\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"507.3\" dy=\"17\">subspace</tspan></text></svg>",
+      "say": "First-order shifts are expectation values only in the appropriate nondegenerate case; near degeneracy requires diagonalizing the perturbation in the relevant subspace.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-047",
+      "topic": "Statistical Mechanics",
+      "title": "Microstates grouped into a macrostate",
+      "kind": "flow",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Microstates grouped into a macrostate</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><rect x=\"25.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"77.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">many configurations</text><line x1=\"129.0\" y1=\"157\" x2=\"141.5\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"146.5\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"198.5\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">same E,V,N</text><line x1=\"250.5\" y1=\"157\" x2=\"263.0\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"268.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"320.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">multiplicity Ω</text><line x1=\"372.0\" y1=\"157\" x2=\"384.5\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"389.5\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"441.5\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">entropy k ln</text><text x=\"441.5\" y=\"162\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">Ω</text><line x1=\"493.5\" y1=\"157\" x2=\"506.0\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"511.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"563.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">equilibrium weighting</text></svg>",
+      "say": "A macrostate fixes coarse constraints while many microstates realize it; entropy depends on the stated counting and ensemble.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-048",
+      "topic": "Statistical Mechanics",
+      "title": "Boltzmann weights across energy levels",
+      "kind": "graph",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Boltzmann weights across energy levels</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><line x1=\"75\" y1=\"270\" x2=\"600\" y2=\"270\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><line x1=\"75\" y1=\"270\" x2=\"75\" y2=\"35\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><text x=\"590\" y=\"300\" text-anchor=\"end\" font-size=\"13\" fill=\"#0f172a\">energy E</text><text x=\"22\" y=\"40\" font-size=\"13\" fill=\"#0f172a\">probability p</text><polyline points=\"117.0,63.0 206.2,112.5 295.5,157.5 390.0,193.5 484.5,220.5 568.5,238.5\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"3\"/><line x1=\"470\" y1=\"44\" x2=\"495\" y2=\"44\" stroke=\"#0f766e\" stroke-width=\"3\"/><text x=\"502\" y=\"48\" font-size=\"12\" fill=\"#0f172a\">e^(−βE)</text></svg>",
+      "say": "Canonical probabilities decrease with energy but include degeneracy and normalization. Temperature changes the slope; the partition function generates averages.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-049",
+      "topic": "Statistical Mechanics",
+      "title": "Finite-system fluctuation distribution",
+      "kind": "graph",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Finite-system fluctuation distribution</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><line x1=\"75\" y1=\"270\" x2=\"600\" y2=\"270\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><line x1=\"75\" y1=\"270\" x2=\"75\" y2=\"35\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><text x=\"590\" y=\"300\" text-anchor=\"end\" font-size=\"13\" fill=\"#0f172a\">observable X</text><text x=\"22\" y=\"40\" font-size=\"13\" fill=\"#0f172a\">probability density</text><polyline points=\"101.2,258.8 169.5,243.0 232.5,184.5 295.5,101.2 337.5,63.0 379.5,101.2 442.5,184.5 505.5,243.0 573.8,258.8\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"3\"/><line x1=\"470\" y1=\"44\" x2=\"495\" y2=\"44\" stroke=\"#0f766e\" stroke-width=\"3\"/><text x=\"502\" y=\"48\" font-size=\"12\" fill=\"#0f172a\">near-Gaussian</text></svg>",
+      "say": "Fluctuations describe a distribution around an ensemble mean, not instrument error. Width scales with susceptibility and system size under stated conditions.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-050",
+      "topic": "Statistical Mechanics",
+      "title": "Density of states by dimensionality",
+      "kind": "graph",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Density of states by dimensionality</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><line x1=\"75\" y1=\"270\" x2=\"600\" y2=\"270\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><line x1=\"75\" y1=\"270\" x2=\"75\" y2=\"35\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><text x=\"590\" y=\"300\" text-anchor=\"end\" font-size=\"13\" fill=\"#0f172a\">energy E</text><text x=\"22\" y=\"40\" font-size=\"13\" fill=\"#0f172a\">density g(E)</text><polyline points=\"101.2,225.0 180.0,191.2 285.0,157.5 416.2,123.8 573.8,90.0\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"3\"/><line x1=\"470\" y1=\"44\" x2=\"495\" y2=\"44\" stroke=\"#0f766e\" stroke-width=\"3\"/><text x=\"502\" y=\"48\" font-size=\"12\" fill=\"#0f172a\">3D ∝ √E</text><polyline points=\"101.2,162.0 573.8,162.0\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"3\"/><line x1=\"470\" y1=\"65\" x2=\"495\" y2=\"65\" stroke=\"#b45309\" stroke-width=\"3\"/><text x=\"502\" y=\"69\" font-size=\"12\" fill=\"#0f172a\">2D constant</text><polyline points=\"101.2,67.5 153.8,108.0 258.8,146.2 416.2,173.2 573.8,189.0\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3\"/><line x1=\"470\" y1=\"86\" x2=\"495\" y2=\"86\" stroke=\"#7c3aed\" stroke-width=\"3\"/><text x=\"502\" y=\"90\" font-size=\"12\" fill=\"#0f172a\">1D ∝ 1/√E</text></svg>",
+      "say": "Density of states follows dispersion and dimensionality; combine it with occupation to calculate particles, energy, and response.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-051",
+      "topic": "Statistical Mechanics",
+      "title": "Classical and quantum heat-capacity limits",
+      "kind": "graph",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Classical and quantum heat-capacity limits</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><line x1=\"75\" y1=\"270\" x2=\"600\" y2=\"270\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><line x1=\"75\" y1=\"270\" x2=\"75\" y2=\"35\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><text x=\"590\" y=\"300\" text-anchor=\"end\" font-size=\"13\" fill=\"#0f172a\">temperature T</text><text x=\"22\" y=\"40\" font-size=\"13\" fill=\"#0f172a\">heat capacity C</text><polyline points=\"101.2,252.0 180.0,213.8 285.0,146.2 416.2,94.5 573.8,72.0\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"3\"/><line x1=\"470\" y1=\"44\" x2=\"495\" y2=\"44\" stroke=\"#0f766e\" stroke-width=\"3\"/><text x=\"502\" y=\"48\" font-size=\"12\" fill=\"#0f172a\">quantum mode</text><polyline points=\"101.2,72.0 573.8,72.0\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"3\"/><line x1=\"470\" y1=\"65\" x2=\"495\" y2=\"65\" stroke=\"#b45309\" stroke-width=\"3\"/><text x=\"502\" y=\"69\" font-size=\"12\" fill=\"#0f172a\">classical limit</text></svg>",
+      "say": "Quantum modes freeze out when level spacing exceeds thermal energy and approach equipartition only in the appropriate high-temperature limit.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-052",
+      "topic": "Nuclear Physics and Radiation Protection",
+      "title": "Exponential decay and half-life markers",
+      "kind": "graph",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Exponential decay and half-life markers</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><line x1=\"75\" y1=\"270\" x2=\"600\" y2=\"270\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><line x1=\"75\" y1=\"270\" x2=\"75\" y2=\"35\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><text x=\"590\" y=\"300\" text-anchor=\"end\" font-size=\"13\" fill=\"#0f172a\">time t / T₁/₂</text><text x=\"22\" y=\"40\" font-size=\"13\" fill=\"#0f172a\">N/N₀</text><polyline points=\"101.2,56.2 180.0,112.5 274.5,157.5 379.5,198.0 484.5,225.0 573.8,240.8\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"3\"/><line x1=\"470\" y1=\"44\" x2=\"495\" y2=\"44\" stroke=\"#0f766e\" stroke-width=\"3\"/><text x=\"502\" y=\"48\" font-size=\"12\" fill=\"#0f172a\">decay</text></svg>",
+      "say": "Each half-life halves the expected surviving population. Individual nuclei remain stochastic, and measured counts also include efficiency, background, and dead time.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-053",
+      "topic": "Nuclear Physics and Radiation Protection",
+      "title": "Alpha, beta, gamma, and neutron interactions",
+      "kind": "compare",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Alpha, beta, gamma, and neutron interactions</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><rect x=\"30.0\" y=\"75\" width=\"133.0\" height=\"170\" rx=\"10\" fill=\"#ecfeff\" stroke=\"#0f172a\"/><text x=\"96.5\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">α</text><text x=\"96.5\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"96.5\" dy=\"0\">dense ionization /</tspan></text><text x=\"96.5\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"96.5\" dy=\"17\">short range</tspan></text><rect x=\"175.0\" y=\"75\" width=\"133.0\" height=\"170\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#0f172a\"/><text x=\"241.5\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">β</text><text x=\"241.5\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"241.5\" dy=\"0\">ionization + bremsstrahlung</tspan></text><rect x=\"320.0\" y=\"75\" width=\"133.0\" height=\"170\" rx=\"10\" fill=\"#ecfeff\" stroke=\"#0f172a\"/><text x=\"386.5\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">γ</text><text x=\"386.5\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"386.5\" dy=\"0\">photon interactions</tspan></text><rect x=\"465.0\" y=\"75\" width=\"133.0\" height=\"170\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#0f172a\"/><text x=\"531.5\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">n</text><text x=\"531.5\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"531.5\" dy=\"0\">nuclear scattering /</tspan></text><text x=\"531.5\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"531.5\" dy=\"17\">capture</tspan></text></svg>",
+      "say": "Interaction physics differs by radiation and energy; shielding and detection therefore require material, spectrum, geometry, and approved safety analysis.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-054",
+      "topic": "Nuclear Physics and Radiation Protection",
+      "title": "Radiation detector pulse chain",
+      "kind": "flow",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Radiation detector pulse chain</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><rect x=\"25.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"77.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">energy deposition</text><line x1=\"129.0\" y1=\"157\" x2=\"141.5\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"146.5\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"198.5\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">charge / light</text><line x1=\"250.5\" y1=\"157\" x2=\"263.0\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"268.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"320.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">preamplifier</text><line x1=\"372.0\" y1=\"157\" x2=\"384.5\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"389.5\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"441.5\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">shaping + ADC</text><line x1=\"493.5\" y1=\"157\" x2=\"506.0\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"511.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"563.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">spectrum + calibration</text></svg>",
+      "say": "A source does not directly produce a spectrum. Include interaction probability, efficiency, gain, resolution, background, dead time, and calibration.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-055",
+      "topic": "Nuclear Physics and Radiation Protection",
+      "title": "Narrow-beam attenuation geometry",
+      "kind": "setup",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Narrow-beam attenuation geometry</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><line x1=\"80\" y1=\"160\" x2=\"300\" y2=\"160\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><line x1=\"300\" y1=\"160\" x2=\"530\" y2=\"160\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><line x1=\"300\" y1=\"160\" x2=\"300\" y2=\"60\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"22\" y=\"135\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"80\" y=\"158\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">source I₀</text><rect x=\"242\" y=\"135\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"300\" y=\"158\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">absorber μx</text><rect x=\"472\" y=\"135\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"530\" y=\"158\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">detector I</text><rect x=\"242\" y=\"35\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"300\" y=\"58\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">scatter rejected</text></svg>",
+      "say": "The exponential narrow-beam law tracks uncollided intensity under a defined geometry; buildup, broad spectra, secondary radiation, and real shielding need qualified analysis.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-056",
+      "topic": "Nuclear Physics and Radiation Protection",
+      "title": "Liquid-drop energy competition",
+      "kind": "compare",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Liquid-drop energy competition</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><rect x=\"30.0\" y=\"75\" width=\"133.0\" height=\"170\" rx=\"10\" fill=\"#ecfeff\" stroke=\"#0f172a\"/><text x=\"96.5\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">volume</text><text x=\"96.5\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"96.5\" dy=\"0\">binding grows with</tspan></text><text x=\"96.5\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"96.5\" dy=\"17\">A</tspan></text><rect x=\"175.0\" y=\"75\" width=\"133.0\" height=\"170\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#0f172a\"/><text x=\"241.5\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">surface</text><text x=\"241.5\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"241.5\" dy=\"0\">under-bound surface nucleons</tspan></text><rect x=\"320.0\" y=\"75\" width=\"133.0\" height=\"170\" rx=\"10\" fill=\"#ecfeff\" stroke=\"#0f172a\"/><text x=\"386.5\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">Coulomb</text><text x=\"386.5\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"386.5\" dy=\"0\">proton repulsion</tspan></text><rect x=\"465.0\" y=\"75\" width=\"133.0\" height=\"170\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#0f172a\"/><text x=\"531.5\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">asymmetry + pairing</text><text x=\"531.5\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"531.5\" dy=\"0\">composition / even–odd</tspan></text></svg>",
+      "say": "The semi-empirical terms explain broad mass trends but shell structure and microscopic dynamics remain; use consistent mass conventions in Q values.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-057",
+      "topic": "Orbital Mechanics, Spacecraft Systems, and Remote Sensing",
+      "title": "Specific orbital energy and conic type",
+      "kind": "compare",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Specific orbital energy and conic type</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><rect x=\"30.0\" y=\"75\" width=\"181.3\" height=\"170\" rx=\"10\" fill=\"#ecfeff\" stroke=\"#0f172a\"/><text x=\"120.7\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">ε &lt; 0</text><text x=\"120.7\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"120.7\" dy=\"0\">ellipse / circle</tspan></text><rect x=\"223.3\" y=\"75\" width=\"181.3\" height=\"170\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#0f172a\"/><text x=\"314.0\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">ε = 0</text><text x=\"314.0\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"314.0\" dy=\"0\">parabolic escape boundary</tspan></text><rect x=\"416.7\" y=\"75\" width=\"181.3\" height=\"170\" rx=\"10\" fill=\"#ecfeff\" stroke=\"#0f172a\"/><text x=\"507.3\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">ε &gt; 0</text><text x=\"507.3\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"507.3\" dy=\"0\">hyperbola</tspan></text></svg>",
+      "say": "Classify conics using specific energy under the two-body model, then state how angular momentum sets shape and real perturbations alter the trajectory.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-058",
+      "topic": "Orbital Mechanics, Spacecraft Systems, and Remote Sensing",
+      "title": "Spacecraft subsystem interface map",
+      "kind": "flow",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Spacecraft subsystem interface map</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><rect x=\"25.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"77.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">payload need</text><line x1=\"129.0\" y1=\"157\" x2=\"141.5\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"146.5\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"198.5\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">power + thermal</text><line x1=\"250.5\" y1=\"157\" x2=\"263.0\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"268.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"320.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">ADCS + structure</text><line x1=\"372.0\" y1=\"157\" x2=\"384.5\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"389.5\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"441.5\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">C&amp;DH + communications</text><line x1=\"493.5\" y1=\"157\" x2=\"506.0\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"511.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"563.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">FDIR + operations</text></svg>",
+      "say": "A subsystem cannot be optimized alone. Trace mass, power, heat, data, pointing, timing, contamination, reliability, and test interfaces.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-059",
+      "topic": "Orbital Mechanics, Spacecraft Systems, and Remote Sensing",
+      "title": "Attitude sensors, estimator, and actuators",
+      "kind": "flow",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Attitude sensors, estimator, and actuators</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><rect x=\"25.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"77.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">stars / Sun</text><text x=\"77.0\" y=\"162\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">/ field /</text><text x=\"77.0\" y=\"179\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">gyro</text><line x1=\"129.0\" y1=\"157\" x2=\"141.5\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"146.5\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"198.5\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">calibrated sensors</text><line x1=\"250.5\" y1=\"157\" x2=\"263.0\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"268.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"320.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">state estimator</text><line x1=\"372.0\" y1=\"157\" x2=\"384.5\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"389.5\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"441.5\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">control law</text><line x1=\"493.5\" y1=\"157\" x2=\"506.0\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"511.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"563.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">wheels / rods</text><text x=\"563.0\" y=\"162\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">/ thrusters</text></svg>",
+      "say": "Determination estimates orientation and rates; control commands actuators. Include frames, sensor biases, observability, momentum management, saturation, and safe mode.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-060",
+      "topic": "Orbital Mechanics, Spacecraft Systems, and Remote Sensing",
+      "title": "Rocket staging and inert-mass removal",
+      "kind": "flow",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Rocket staging and inert-mass removal</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><rect x=\"25.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"77.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">stage 1 burn</text><line x1=\"129.0\" y1=\"157\" x2=\"141.5\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"146.5\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"198.5\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">empty hardware</text><line x1=\"250.5\" y1=\"157\" x2=\"263.0\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"268.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"320.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">separation</text><line x1=\"372.0\" y1=\"157\" x2=\"384.5\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"389.5\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"441.5\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">stage 2 ignition</text><line x1=\"493.5\" y1=\"157\" x2=\"506.0\" y2=\"157\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"511.0\" y=\"118\" width=\"104\" height=\"78\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"563.0\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">payload injection</text></svg>",
+      "say": "Staging improves effective mass ratio by discarding inert hardware, at the cost of separation, ignition, structural, guidance, reliability, and integration risk.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-061",
+      "topic": "Orbital Mechanics, Spacecraft Systems, and Remote Sensing",
+      "title": "Active and passive remote-sensing chains",
+      "kind": "compare",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Active and passive remote-sensing chains</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><rect x=\"30.0\" y=\"75\" width=\"181.3\" height=\"170\" rx=\"10\" fill=\"#ecfeff\" stroke=\"#0f172a\"/><text x=\"120.7\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">passive</text><text x=\"120.7\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"120.7\" dy=\"0\">Sun/thermal source →</tspan></text><text x=\"120.7\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"120.7\" dy=\"17\">target → sensor</tspan></text><rect x=\"223.3\" y=\"75\" width=\"181.3\" height=\"170\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#0f172a\"/><text x=\"314.0\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">active</text><text x=\"314.0\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"314.0\" dy=\"0\">transmitter → target</tspan></text><text x=\"314.0\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"314.0\" dy=\"17\">→ return</tspan></text><rect x=\"416.7\" y=\"75\" width=\"181.3\" height=\"170\" rx=\"10\" fill=\"#ecfeff\" stroke=\"#0f172a\"/><text x=\"507.3\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">both</text><text x=\"507.3\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"507.3\" dy=\"0\">calibration + atmosphere</tspan></text><text x=\"507.3\" y=\"150\" text-anchor=\"middle\" font-size=\"12\" fill=\"#334155\"><tspan x=\"507.3\" dy=\"17\">+ validation</tspan></text></svg>",
+      "say": "Active and passive systems differ in illumination and observables but both require geometry, calibration, processing models, ground truth, and uncertainty.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-062",
+      "topic": "Orbital Mechanics, Spacecraft Systems, and Remote Sensing",
+      "title": "SAR range and azimuth geometry",
+      "kind": "setup",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>SAR range and azimuth geometry</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><line x1=\"90\" y1=\"70\" x2=\"300\" y2=\"145\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><line x1=\"300\" y1=\"145\" x2=\"520\" y2=\"235\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><line x1=\"90\" y1=\"70\" x2=\"220\" y2=\"55\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"32\" y=\"45\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"90\" y=\"68\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">platform velocity</text><rect x=\"242\" y=\"120\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"300\" y=\"143\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">slant range</text><rect x=\"462\" y=\"210\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"520\" y=\"233\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">ground swath</text><rect x=\"162\" y=\"30\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"220\" y=\"53\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">synthetic aperture</text></svg>",
+      "say": "Range comes from delay and bandwidth; azimuth resolution comes from coherent motion processing. State side-looking geometry, Doppler history, speckle, and calibration.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-063",
+      "topic": "Astronomy and Astrophysics",
+      "title": "Hertzsprung–Russell diagram reasoning",
+      "kind": "graph",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Hertzsprung–Russell diagram reasoning</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><line x1=\"75\" y1=\"270\" x2=\"600\" y2=\"270\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><line x1=\"75\" y1=\"270\" x2=\"75\" y2=\"35\" stroke=\"#0f172a\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><text x=\"590\" y=\"300\" text-anchor=\"end\" font-size=\"13\" fill=\"#0f172a\">temperature decreasing →</text><text x=\"22\" y=\"40\" font-size=\"13\" fill=\"#0f172a\">luminosity</text><polyline points=\"138.0,78.8 206.2,108.0 285.0,146.2 379.5,180.0 484.5,213.8 558.0,238.5\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"3\"/><line x1=\"470\" y1=\"44\" x2=\"495\" y2=\"44\" stroke=\"#0f766e\" stroke-width=\"3\"/><text x=\"502\" y=\"48\" font-size=\"12\" fill=\"#0f172a\">main sequence</text><polyline points=\"169.5,63.0 232.5,76.5 295.5,90.0\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"3\"/><line x1=\"470\" y1=\"65\" x2=\"495\" y2=\"65\" stroke=\"#b45309\" stroke-width=\"3\"/><text x=\"502\" y=\"69\" font-size=\"12\" fill=\"#0f172a\">giants</text><polyline points=\"432.0,220.5 505.5,234.0 558.0,247.5\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3\"/><line x1=\"470\" y1=\"86\" x2=\"495\" y2=\"86\" stroke=\"#7c3aed\" stroke-width=\"3\"/><text x=\"502\" y=\"90\" font-size=\"12\" fill=\"#0f172a\">white dwarfs</text></svg>",
+      "say": "State the axis conventions: temperature often decreases to the right and luminosity is logarithmic. Regions organize stellar states but do not alone provide an evolutionary track for one star.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    },
+    {
+      "id": "VIS-EXT-064",
+      "topic": "Radar and Microwave Systems",
+      "title": "Pulsed-radar delay and Doppler observables",
+      "kind": "setup",
+      "svg": "<svg viewBox=\"0 0 640 320\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:100%;background:#fff;border:1px solid #94a3b8\"><title>Pulsed-radar delay and Doppler observables</title><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#0f766e\"/></marker></defs><rect width=\"640\" height=\"320\" fill=\"#fff\"/><line x1=\"80\" y1=\"160\" x2=\"320\" y2=\"160\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><line x1=\"320\" y1=\"160\" x2=\"520\" y2=\"100\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><line x1=\"320\" y1=\"160\" x2=\"520\" y2=\"225\" stroke=\"#0f766e\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"22\" y=\"135\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"80\" y=\"158\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">transmit pulse</text><rect x=\"262\" y=\"135\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"320\" y=\"158\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">target</text><rect x=\"462\" y=\"75\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"520\" y=\"98\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">echo delay 2R/c</text><rect x=\"462\" y=\"200\" width=\"116\" height=\"50\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0f172a\"/><text x=\"520\" y=\"223\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">phase change →</text><text x=\"520\" y=\"239\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">v_r</text></svg>",
+      "say": "Delay measures slant range and coherent phase evolution measures radial velocity. Distinguish resolution, accuracy, ambiguity, maximum range, clutter, and signal-to-noise.",
+      "checklist": [
+        "Axes, frames, or system boundary are explicit where applicable.",
+        "Every arrow and variable has a physical meaning.",
+        "Units, scale, sign, or direction convention is stated.",
+        "The governing relation and its assumptions are spoken.",
+        "One limitation or falsification check is named."
+      ],
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-original-v1"
+    }
+  ]
+}

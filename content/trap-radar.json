@@ -1,0 +1,3736 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-08-15",
+  "traps": [
+    {
+      "id": "TRAP-001",
+      "category": "Formula dumping",
+      "severity": "medium",
+      "tags": [
+        "formula",
+        "communication"
+      ],
+      "wrong": "Writing Maxwell's equations and stopping.",
+      "why": "A formula without definitions, assumptions, or physical meaning does not demonstrate understanding.",
+      "recovery": "Name the source represented by each divergence/curl equation and connect them to a measurable field behavior.",
+      "followUp": "Define every symbol, state the governing assumption, and explain one limiting case.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-002",
+      "category": "Formula dumping",
+      "severity": "medium",
+      "tags": [
+        "formula",
+        "communication"
+      ],
+      "wrong": "Quoting Carnot efficiency without absolute temperatures.",
+      "why": "A formula without definitions, assumptions, or physical meaning does not demonstrate understanding.",
+      "recovery": "State the reversible two-reservoir assumptions and use kelvin before interpreting the bound.",
+      "followUp": "Define every symbol, state the governing assumption, and explain one limiting case.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-003",
+      "category": "Formula dumping",
+      "severity": "medium",
+      "tags": [
+        "formula",
+        "communication"
+      ],
+      "wrong": "Stating Bragg's law as proof of phase purity.",
+      "why": "A formula without definitions, assumptions, or physical meaning does not demonstrate understanding.",
+      "recovery": "Define theta and d, then separate peak-position evidence from detection limits and complementary composition evidence.",
+      "followUp": "Define every symbol, state the governing assumption, and explain one limiting case.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-004",
+      "category": "Formula dumping",
+      "severity": "medium",
+      "tags": [
+        "formula",
+        "communication"
+      ],
+      "wrong": "Writing the Hall coefficient and claiming mobility.",
+      "why": "A formula without definitions, assumptions, or physical meaning does not demonstrate understanding.",
+      "recovery": "State the one-carrier model and combine Hall data with conductivity before estimating mobility.",
+      "followUp": "Define every symbol, state the governing assumption, and explain one limiting case.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-005",
+      "category": "Formula dumping",
+      "severity": "medium",
+      "tags": [
+        "formula",
+        "communication"
+      ],
+      "wrong": "Quoting the decay law without the constant-hazard assumption.",
+      "why": "A formula without definitions, assumptions, or physical meaning does not demonstrate understanding.",
+      "recovery": "Derive dN/dt=-lambda N from a constant independent decay probability and distinguish activity from population.",
+      "followUp": "Define every symbol, state the governing assumption, and explain one limiting case.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-006",
+      "category": "Formula dumping",
+      "severity": "medium",
+      "tags": [
+        "formula",
+        "communication"
+      ],
+      "wrong": "Using vis-viva without identifying radius and semimajor axis.",
+      "why": "A formula without definitions, assumptions, or physical meaning does not demonstrate understanding.",
+      "recovery": "Define geocentric radius, semimajor axis, gravitational parameter, and the two-body assumption.",
+      "followUp": "Define every symbol, state the governing assumption, and explain one limiting case.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-007",
+      "category": "Formula dumping",
+      "severity": "medium",
+      "tags": [
+        "formula",
+        "communication"
+      ],
+      "wrong": "Writing the radar range equation without noise or loss assumptions.",
+      "why": "A formula without definitions, assumptions, or physical meaning does not demonstrate understanding.",
+      "recovery": "Explain the outward/return spreading, radar cross section, receive aperture, then list losses and detection criteria.",
+      "followUp": "Define every symbol, state the governing assumption, and explain one limiting case.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-008",
+      "category": "Formula dumping",
+      "severity": "medium",
+      "tags": [
+        "formula",
+        "communication"
+      ],
+      "wrong": "Giving uncertainty propagation without covariance.",
+      "why": "A formula without definitions, assumptions, or physical meaning does not demonstrate understanding.",
+      "recovery": "State first-order linearization and include covariance terms or justify independence.",
+      "followUp": "Define every symbol, state the governing assumption, and explain one limiting case.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-009",
+      "category": "Formula dumping",
+      "severity": "medium",
+      "tags": [
+        "formula",
+        "communication"
+      ],
+      "wrong": "Quoting the lens equation without a sign convention.",
+      "why": "A formula without definitions, assumptions, or physical meaning does not demonstrate understanding.",
+      "recovery": "Declare the object/image sign convention and paraxial thin-lens assumptions before substitution.",
+      "followUp": "Define every symbol, state the governing assumption, and explain one limiting case.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-010",
+      "category": "Formula dumping",
+      "severity": "medium",
+      "tags": [
+        "formula",
+        "communication"
+      ],
+      "wrong": "Calling the partition function only a normalization constant.",
+      "why": "A formula without definitions, assumptions, or physical meaning does not demonstrate understanding.",
+      "recovery": "Show how derivatives of ln Z generate energy, free energy, entropy, or fluctuations under the chosen ensemble.",
+      "followUp": "Define every symbol, state the governing assumption, and explain one limiting case.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-011",
+      "category": "Units and dimensions",
+      "severity": "high",
+      "tags": [
+        "units",
+        "numerical"
+      ],
+      "wrong": "Reporting escape velocity as 11.2 without units.",
+      "why": "A dimensionally inconsistent or unlabeled number can be plausible-looking but physically meaningless.",
+      "recovery": "Report approximately 11.2 km/s for the stated Earth-surface idealization and list omitted rotation/atmosphere effects.",
+      "followUp": "Repair the units, show one dimensional check, and report justified significant figures.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-012",
+      "category": "Units and dimensions",
+      "severity": "high",
+      "tags": [
+        "units",
+        "numerical"
+      ],
+      "wrong": "Using altitude directly in a formula requiring orbital radius.",
+      "why": "A dimensionally inconsistent or unlabeled number can be plausible-looking but physically meaningless.",
+      "recovery": "Add the central-body reference radius and use centre-to-spacecraft distance.",
+      "followUp": "Repair the units, show one dimensional check, and report justified significant figures.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-013",
+      "category": "Units and dimensions",
+      "severity": "high",
+      "tags": [
+        "units",
+        "numerical"
+      ],
+      "wrong": "Putting degrees into a small-angle formula expecting radians.",
+      "why": "A dimensionally inconsistent or unlabeled number can be plausible-looking but physically meaningless.",
+      "recovery": "Convert to radians and state where sin theta approximately equals theta is used.",
+      "followUp": "Repair the units, show one dimensional check, and report justified significant figures.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-014",
+      "category": "Units and dimensions",
+      "severity": "high",
+      "tags": [
+        "units",
+        "numerical"
+      ],
+      "wrong": "Using peak width in degrees in the Scherrer equation.",
+      "why": "A dimensionally inconsistent or unlabeled number can be plausible-looking but physically meaningless.",
+      "recovery": "Convert corrected specimen broadening to radians and distinguish coherent-domain size from particle size.",
+      "followUp": "Repair the units, show one dimensional check, and report justified significant figures.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-015",
+      "category": "Units and dimensions",
+      "severity": "high",
+      "tags": [
+        "units",
+        "numerical"
+      ],
+      "wrong": "Mixing centimetres and metres in attenuation exponents.",
+      "why": "A dimensionally inconsistent or unlabeled number can be plausible-looking but physically meaningless.",
+      "recovery": "Use consistent length units so mu times x is dimensionless.",
+      "followUp": "Repair the units, show one dimensional check, and report justified significant figures.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-016",
+      "category": "Units and dimensions",
+      "severity": "high",
+      "tags": [
+        "units",
+        "numerical"
+      ],
+      "wrong": "Treating electronvolt as voltage.",
+      "why": "A dimensionally inconsistent or unlabeled number can be plausible-looking but physically meaningless.",
+      "recovery": "Identify eV as an energy and convert with 1 eV equal to elementary charge times one volt when needed.",
+      "followUp": "Repair the units, show one dimensional check, and report justified significant figures.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-017",
+      "category": "Units and dimensions",
+      "severity": "high",
+      "tags": [
+        "units",
+        "numerical"
+      ],
+      "wrong": "Using Celsius in Carnot efficiency.",
+      "why": "A dimensionally inconsistent or unlabeled number can be plausible-looking but physically meaningless.",
+      "recovery": "Convert reservoir temperatures to kelvin because thermodynamic temperature ratios are required.",
+      "followUp": "Repair the units, show one dimensional check, and report justified significant figures.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-018",
+      "category": "Units and dimensions",
+      "severity": "high",
+      "tags": [
+        "units",
+        "numerical"
+      ],
+      "wrong": "Confusing hertz with radians per second.",
+      "why": "A dimensionally inconsistent or unlabeled number can be plausible-looking but physically meaningless.",
+      "recovery": "Use omega=2 pi f and keep angular frequency separate from cycles per second.",
+      "followUp": "Repair the units, show one dimensional check, and report justified significant figures.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-019",
+      "category": "Units and dimensions",
+      "severity": "high",
+      "tags": [
+        "units",
+        "numerical"
+      ],
+      "wrong": "Reporting variance with the same units as the measurement.",
+      "why": "A dimensionally inconsistent or unlabeled number can be plausible-looking but physically meaningless.",
+      "recovery": "Variance has squared units; standard deviation returns to the measurement unit.",
+      "followUp": "Repair the units, show one dimensional check, and report justified significant figures.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-020",
+      "category": "Units and dimensions",
+      "severity": "high",
+      "tags": [
+        "units",
+        "numerical"
+      ],
+      "wrong": "Writing SNR in decibels without defining amplitude or power convention.",
+      "why": "A dimensionally inconsistent or unlabeled number can be plausible-looking but physically meaningless.",
+      "recovery": "Define the linear SNR, bandwidth, and whether 10 log10 or 20 log10 is appropriate.",
+      "followUp": "Repair the units, show one dimensional check, and report justified significant figures.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-021",
+      "category": "Heat and temperature",
+      "severity": "medium",
+      "tags": [
+        "thermodynamics"
+      ],
+      "wrong": "Saying a hot body contains heat.",
+      "why": "Heat is boundary energy transfer; temperature is a state variable and neither should be described as a material fluid.",
+      "recovery": "Say the body has internal energy and temperature; heat names energy transferred because of a temperature difference.",
+      "followUp": "Separate state from transfer and state the system boundary and process.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-022",
+      "category": "Heat and temperature",
+      "severity": "medium",
+      "tags": [
+        "thermodynamics"
+      ],
+      "wrong": "Equating temperature directly with total internal energy.",
+      "why": "Heat is boundary energy transfer; temperature is a state variable and neither should be described as a material fluid.",
+      "recovery": "State the equation of state and degrees of freedom; internal energy may include many contributions.",
+      "followUp": "Separate state from transfer and state the system boundary and process.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-023",
+      "category": "Heat and temperature",
+      "severity": "medium",
+      "tags": [
+        "thermodynamics"
+      ],
+      "wrong": "Saying an adiabatic process has constant temperature.",
+      "why": "Heat is boundary energy transfer; temperature is a state variable and neither should be described as a material fluid.",
+      "recovery": "Adiabatic means no heat transfer; compression or expansion work can change temperature.",
+      "followUp": "Separate state from transfer and state the system boundary and process.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-024",
+      "category": "Heat and temperature",
+      "severity": "medium",
+      "tags": [
+        "thermodynamics"
+      ],
+      "wrong": "Calling heat capacity the heat stored in an object.",
+      "why": "Heat is boundary energy transfer; temperature is a state variable and neither should be described as a material fluid.",
+      "recovery": "Define heat capacity as a constrained derivative of energy or enthalpy with temperature.",
+      "followUp": "Separate state from transfer and state the system boundary and process.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-025",
+      "category": "Heat and temperature",
+      "severity": "medium",
+      "tags": [
+        "thermodynamics"
+      ],
+      "wrong": "Assuming two bodies at equal temperature contain equal energy.",
+      "why": "Heat is boundary energy transfer; temperature is a state variable and neither should be described as a material fluid.",
+      "recovery": "Equal temperature means thermal equilibrium, not equal mass, heat capacity, or internal energy.",
+      "followUp": "Separate state from transfer and state the system boundary and process.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-026",
+      "category": "Heat and temperature",
+      "severity": "medium",
+      "tags": [
+        "thermodynamics"
+      ],
+      "wrong": "Using Q as a state function.",
+      "why": "Heat is boundary energy transfer; temperature is a state variable and neither should be described as a material fluid.",
+      "recovery": "Use delta U, H, or S for state changes and reserve delta Q for path-dependent transfer.",
+      "followUp": "Separate state from transfer and state the system boundary and process.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-027",
+      "category": "Heat and temperature",
+      "severity": "medium",
+      "tags": [
+        "thermodynamics"
+      ],
+      "wrong": "Saying vacuum prevents spacecraft heating.",
+      "why": "Heat is boundary energy transfer; temperature is a state variable and neither should be described as a material fluid.",
+      "recovery": "Explain that radiation and internal dissipation remain while external convection is absent.",
+      "followUp": "Separate state from transfer and state the system boundary and process.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-028",
+      "category": "Heat and temperature",
+      "severity": "medium",
+      "tags": [
+        "thermodynamics"
+      ],
+      "wrong": "Treating a DSC peak as temperature itself.",
+      "why": "Heat is boundary energy transfer; temperature is a state variable and neither should be described as a material fluid.",
+      "recovery": "Describe differential heat flow versus programmed temperature and calibrate the transition/reaction interpretation.",
+      "followUp": "Separate state from transfer and state the system boundary and process.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-029",
+      "category": "Heat and temperature",
+      "severity": "medium",
+      "tags": [
+        "thermodynamics"
+      ],
+      "wrong": "Assuming thermal conductivity and diffusivity are the same.",
+      "why": "Heat is boundary energy transfer; temperature is a state variable and neither should be described as a material fluid.",
+      "recovery": "Relate diffusivity alpha=k/(rho c) and explain the distinct physical roles.",
+      "followUp": "Separate state from transfer and state the system boundary and process.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-030",
+      "category": "Heat and temperature",
+      "severity": "medium",
+      "tags": [
+        "thermodynamics"
+      ],
+      "wrong": "Calling latent heat a temperature rise.",
+      "why": "Heat is boundary energy transfer; temperature is a state variable and neither should be described as a material fluid.",
+      "recovery": "Explain energy transfer at coexistence while temperature can remain approximately constant during first-order transition.",
+      "followUp": "Separate state from transfer and state the system boundary and process.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-031",
+      "category": "Entropy",
+      "severity": "medium",
+      "tags": [
+        "thermodynamics",
+        "statistics"
+      ],
+      "wrong": "Defining entropy only as disorder.",
+      "why": "The word disorder hides the thermodynamic definition, system boundary, and entropy-transfer/generation balance.",
+      "recovery": "Use dS=delta Q_rev/T or S=k ln Omega under a stated ensemble, then explain the analogy's limits.",
+      "followUp": "Use a state-function, balance, or multiplicity definition with constraints.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-032",
+      "category": "Entropy",
+      "severity": "medium",
+      "tags": [
+        "thermodynamics",
+        "statistics"
+      ],
+      "wrong": "Saying entropy of every system always increases.",
+      "why": "The word disorder hides the thermodynamic definition, system boundary, and entropy-transfer/generation balance.",
+      "recovery": "A system entropy may decrease by exporting entropy; isolated total entropy cannot decrease.",
+      "followUp": "Use a state-function, balance, or multiplicity definition with constraints.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-033",
+      "category": "Entropy",
+      "severity": "medium",
+      "tags": [
+        "thermodynamics",
+        "statistics"
+      ],
+      "wrong": "Using delta Q_actual/T as entropy change for an irreversible path.",
+      "why": "The word disorder hides the thermodynamic definition, system boundary, and entropy-transfer/generation balance.",
+      "recovery": "Calculate state change with a reversible path or use entropy transfer plus generation.",
+      "followUp": "Use a state-function, balance, or multiplicity definition with constraints.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-034",
+      "category": "Entropy",
+      "severity": "medium",
+      "tags": [
+        "thermodynamics",
+        "statistics"
+      ],
+      "wrong": "Saying reversible means a process can simply be run backwards.",
+      "why": "The word disorder hides the thermodynamic definition, system boundary, and entropy-transfer/generation balance.",
+      "recovery": "Require restoration of system and surroundings with zero total entropy generation.",
+      "followUp": "Use a state-function, balance, or multiplicity definition with constraints.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-035",
+      "category": "Entropy",
+      "severity": "medium",
+      "tags": [
+        "thermodynamics",
+        "statistics"
+      ],
+      "wrong": "Assuming quasistatic implies reversible.",
+      "why": "The word disorder hides the thermodynamic definition, system boundary, and entropy-transfer/generation balance.",
+      "recovery": "Check friction, viscosity, finite gradients, hysteresis, and other dissipative mechanisms.",
+      "followUp": "Use a state-function, balance, or multiplicity definition with constraints.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-036",
+      "category": "Entropy",
+      "severity": "medium",
+      "tags": [
+        "thermodynamics",
+        "statistics"
+      ],
+      "wrong": "Claiming entropy production can be negative.",
+      "why": "The word disorder hides the thermodynamic definition, system boundary, and entropy-transfer/generation balance.",
+      "recovery": "Internal entropy generation is nonnegative; entropy flux can have either direction.",
+      "followUp": "Use a state-function, balance, or multiplicity definition with constraints.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-037",
+      "category": "Entropy",
+      "severity": "medium",
+      "tags": [
+        "thermodynamics",
+        "statistics"
+      ],
+      "wrong": "Ignoring mixing entropy because no heat is exchanged.",
+      "why": "The word disorder hides the thermodynamic definition, system boundary, and entropy-transfer/generation balance.",
+      "recovery": "Explain that adiabatic mixing can be irreversible and increase entropy.",
+      "followUp": "Use a state-function, balance, or multiplicity definition with constraints.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-038",
+      "category": "Entropy",
+      "severity": "medium",
+      "tags": [
+        "thermodynamics",
+        "statistics"
+      ],
+      "wrong": "Calling information entropy identical to thermodynamic entropy without a model.",
+      "why": "The word disorder hides the thermodynamic definition, system boundary, and entropy-transfer/generation balance.",
+      "recovery": "State the probability/coarse-graining and physical ensemble connecting the two.",
+      "followUp": "Use a state-function, balance, or multiplicity definition with constraints.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-039",
+      "category": "Entropy",
+      "severity": "medium",
+      "tags": [
+        "thermodynamics",
+        "statistics"
+      ],
+      "wrong": "Saying zero-temperature entropy is always exactly zero.",
+      "why": "The word disorder hides the thermodynamic definition, system boundary, and entropy-transfer/generation balance.",
+      "recovery": "Invoke the third-law conditions and note residual degeneracy or nonequilibrium exceptions.",
+      "followUp": "Use a state-function, balance, or multiplicity definition with constraints.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-040",
+      "category": "Entropy",
+      "severity": "medium",
+      "tags": [
+        "thermodynamics",
+        "statistics"
+      ],
+      "wrong": "Using entropy increase to predict reaction speed.",
+      "why": "The word disorder hides the thermodynamic definition, system boundary, and entropy-transfer/generation balance.",
+      "recovery": "Separate thermodynamic direction from kinetic barriers and transport.",
+      "followUp": "Use a state-function, balance, or multiplicity definition with constraints.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-041",
+      "category": "Quantum foundations",
+      "severity": "high",
+      "tags": [
+        "quantum"
+      ],
+      "wrong": "Calling the wavefunction a directly measurable material wave.",
+      "why": "Classical language can turn amplitudes, states, and measurements into incorrect claims.",
+      "recovery": "Describe it as a state amplitude in a chosen basis and connect observables through the Born rule.",
+      "followUp": "State the Hilbert-space object, Born probability, operator, and measurement assumptions.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-042",
+      "category": "Quantum foundations",
+      "severity": "high",
+      "tags": [
+        "quantum"
+      ],
+      "wrong": "Saying probability equals psi.",
+      "why": "Classical language can turn amplitudes, states, and measurements into incorrect claims.",
+      "recovery": "Use modulus squared of the amplitude and normalize the state.",
+      "followUp": "State the Hilbert-space object, Born probability, operator, and measurement assumptions.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-043",
+      "category": "Quantum foundations",
+      "severity": "high",
+      "tags": [
+        "quantum"
+      ],
+      "wrong": "Treating global and relative phase as equally observable.",
+      "why": "Classical language can turn amplitudes, states, and measurements into incorrect claims.",
+      "recovery": "Global phase leaves pure-state predictions unchanged; relative phase controls interference.",
+      "followUp": "State the Hilbert-space object, Born probability, operator, and measurement assumptions.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-044",
+      "category": "Quantum foundations",
+      "severity": "high",
+      "tags": [
+        "quantum"
+      ],
+      "wrong": "Saying uncertainty is only instrument error.",
+      "why": "Classical language can turn amplitudes, states, and measurements into incorrect claims.",
+      "recovery": "Define state spreads of noncommuting observables and separate apparatus uncertainty.",
+      "followUp": "State the Hilbert-space object, Born probability, operator, and measurement assumptions.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-045",
+      "category": "Quantum foundations",
+      "severity": "high",
+      "tags": [
+        "quantum"
+      ],
+      "wrong": "Writing delta x delta p equals hbar/2 for every state.",
+      "why": "Classical language can turn amplitudes, states, and measurements into incorrect claims.",
+      "recovery": "Use the inequality and state that equality occurs only for special minimum-uncertainty states.",
+      "followUp": "State the Hilbert-space object, Born probability, operator, and measurement assumptions.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-046",
+      "category": "Quantum foundations",
+      "severity": "high",
+      "tags": [
+        "quantum"
+      ],
+      "wrong": "Saying a stationary-state wavefunction has no time dependence.",
+      "why": "Classical language can turn amplitudes, states, and measurements into incorrect claims.",
+      "recovery": "Include the phase exp(-iEt/hbar) while noting stationary probability density.",
+      "followUp": "State the Hilbert-space object, Born probability, operator, and measurement assumptions.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-047",
+      "category": "Quantum foundations",
+      "severity": "high",
+      "tags": [
+        "quantum"
+      ],
+      "wrong": "Claiming tunnelling borrows energy.",
+      "why": "Classical language can turn amplitudes, states, and measurements into incorrect claims.",
+      "recovery": "State conserved total energy in a time-independent elastic barrier and evanescent forbidden-region amplitude.",
+      "followUp": "State the Hilbert-space object, Born probability, operator, and measurement assumptions.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-048",
+      "category": "Quantum foundations",
+      "severity": "high",
+      "tags": [
+        "quantum"
+      ],
+      "wrong": "Describing spin as a tiny sphere rotating.",
+      "why": "Classical language can turn amplitudes, states, and measurements into incorrect claims.",
+      "recovery": "Treat spin as intrinsic angular momentum with operator algebra and discrete projections.",
+      "followUp": "State the Hilbert-space object, Born probability, operator, and measurement assumptions.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-049",
+      "category": "Quantum foundations",
+      "severity": "high",
+      "tags": [
+        "quantum"
+      ],
+      "wrong": "Saying Pauli exclusion is a repulsive force.",
+      "why": "Classical language can turn amplitudes, states, and measurements into incorrect claims.",
+      "recovery": "Explain antisymmetry of identical-fermion states rather than a new force.",
+      "followUp": "State the Hilbert-space object, Born probability, operator, and measurement assumptions.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-050",
+      "category": "Quantum foundations",
+      "severity": "high",
+      "tags": [
+        "quantum"
+      ],
+      "wrong": "Calling a formally Hermitian differential expression automatically self-adjoint.",
+      "why": "Classical language can turn amplitudes, states, and measurements into incorrect claims.",
+      "recovery": "Specify operator domain and boundary conditions required for an observable and unitary evolution.",
+      "followUp": "State the Hilbert-space object, Born probability, operator, and measurement assumptions.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-051",
+      "category": "Measurement uncertainty",
+      "severity": "high",
+      "tags": [
+        "uncertainty",
+        "experiment"
+      ],
+      "wrong": "Using standard deviation as total uncertainty.",
+      "why": "A spread, specification, or error bar is not automatically the complete uncertainty of a defined measurement result.",
+      "recovery": "Add calibration, resolution, drift, model, sampling, and correlated systematic contributions.",
+      "followUp": "Define the measurand, uncertainty type, correlations, model, and coverage convention.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-052",
+      "category": "Measurement uncertainty",
+      "severity": "high",
+      "tags": [
+        "uncertainty",
+        "experiment"
+      ],
+      "wrong": "Calling systematic uncertainty removable by more repeats.",
+      "why": "A spread, specification, or error bar is not automatically the complete uncertainty of a defined measurement result.",
+      "recovery": "Use calibration, redesign, modelling, or independent method; repetition mainly improves random precision.",
+      "followUp": "Define the measurand, uncertainty type, correlations, model, and coverage convention.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-053",
+      "category": "Measurement uncertainty",
+      "severity": "high",
+      "tags": [
+        "uncertainty",
+        "experiment"
+      ],
+      "wrong": "Adding independent standard uncertainties linearly without reason.",
+      "why": "A spread, specification, or error bar is not automatically the complete uncertainty of a defined measurement result.",
+      "recovery": "Use quadrature for independent first-order terms or a covariance matrix for correlated inputs.",
+      "followUp": "Define the measurand, uncertainty type, correlations, model, and coverage convention.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-054",
+      "category": "Measurement uncertainty",
+      "severity": "high",
+      "tags": [
+        "uncertainty",
+        "experiment"
+      ],
+      "wrong": "Ignoring common calibration covariance across samples.",
+      "why": "A spread, specification, or error bar is not automatically the complete uncertainty of a defined measurement result.",
+      "recovery": "Model the shared calibration parameter so uncertainty does not falsely shrink in differences or averages.",
+      "followUp": "Define the measurand, uncertainty type, correlations, model, and coverage convention.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-055",
+      "category": "Measurement uncertainty",
+      "severity": "high",
+      "tags": [
+        "uncertainty",
+        "experiment"
+      ],
+      "wrong": "Reporting an error bar without saying what it represents.",
+      "why": "A spread, specification, or error bar is not automatically the complete uncertainty of a defined measurement result.",
+      "recovery": "Label SD, SE, confidence interval, credible interval, or expanded uncertainty and give the method.",
+      "followUp": "Define the measurand, uncertainty type, correlations, model, and coverage convention.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-056",
+      "category": "Measurement uncertainty",
+      "severity": "high",
+      "tags": [
+        "uncertainty",
+        "experiment"
+      ],
+      "wrong": "Using too many significant figures after propagation.",
+      "why": "A spread, specification, or error bar is not automatically the complete uncertainty of a defined measurement result.",
+      "recovery": "Round uncertainty sensibly and match the result's decimal place while retaining guard digits internally.",
+      "followUp": "Define the measurand, uncertainty type, correlations, model, and coverage convention.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-057",
+      "category": "Measurement uncertainty",
+      "severity": "high",
+      "tags": [
+        "uncertainty",
+        "experiment"
+      ],
+      "wrong": "Treating instrument resolution as accuracy.",
+      "why": "A spread, specification, or error bar is not automatically the complete uncertainty of a defined measurement result.",
+      "recovery": "Separate display/code resolution from bias, calibration, noise, linearity, and traceability.",
+      "followUp": "Define the measurand, uncertainty type, correlations, model, and coverage convention.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-058",
+      "category": "Measurement uncertainty",
+      "severity": "high",
+      "tags": [
+        "uncertainty",
+        "experiment"
+      ],
+      "wrong": "Applying linear propagation near a zero denominator.",
+      "why": "A spread, specification, or error bar is not automatically the complete uncertainty of a defined measurement result.",
+      "recovery": "Use the full nonlinear distribution or Monte Carlo and report asymmetry/instability.",
+      "followUp": "Define the measurand, uncertainty type, correlations, model, and coverage convention.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-059",
+      "category": "Measurement uncertainty",
+      "severity": "high",
+      "tags": [
+        "uncertainty",
+        "experiment"
+      ],
+      "wrong": "Using square-root counting error after background subtraction without propagation.",
+      "why": "A spread, specification, or error bar is not automatically the complete uncertainty of a defined measurement result.",
+      "recovery": "Propagate source and scaled background counts, live time, dead time, and efficiency.",
+      "followUp": "Define the measurand, uncertainty type, correlations, model, and coverage convention.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-060",
+      "category": "Measurement uncertainty",
+      "severity": "high",
+      "tags": [
+        "uncertainty",
+        "experiment"
+      ],
+      "wrong": "Claiming a confidence interval gives parameter probability.",
+      "why": "A spread, specification, or error bar is not automatically the complete uncertainty of a defined measurement result.",
+      "recovery": "Describe repeated-sampling coverage under the model; use a Bayesian credible interval only with stated prior/model.",
+      "followUp": "Define the measurand, uncertainty type, correlations, model, and coverage convention.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-061",
+      "category": "XRD interpretation",
+      "severity": "high",
+      "tags": [
+        "xrd",
+        "materials"
+      ],
+      "wrong": "Saying one matching peak proves the intended phase.",
+      "why": "Diffraction supports specific structural claims but can be distorted by instrument, sample, and model effects.",
+      "recovery": "Index the full pattern, inspect unmatched peaks/background, reference quality, and detection limits.",
+      "followUp": "Tie each XRD feature to a defensible claim and name what complementary evidence is needed.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-062",
+      "category": "XRD interpretation",
+      "severity": "high",
+      "tags": [
+        "xrd",
+        "materials"
+      ],
+      "wrong": "Calling absence of a peak proof that a phase is absent.",
+      "why": "Diffraction supports specific structural claims but can be distorted by instrument, sample, and model effects.",
+      "recovery": "State detection limit, overlap, texture, amorphous content, and sampling limitations.",
+      "followUp": "Tie each XRD feature to a defensible claim and name what complementary evidence is needed.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-063",
+      "category": "XRD interpretation",
+      "severity": "high",
+      "tags": [
+        "xrd",
+        "materials"
+      ],
+      "wrong": "Calling Scherrer size particle size.",
+      "why": "Diffraction supports specific structural claims but can be distorted by instrument, sample, and model effects.",
+      "recovery": "Report an apparent coherent-domain size after instrument correction and strain/shape qualifications.",
+      "followUp": "Tie each XRD feature to a defensible claim and name what complementary evidence is needed.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-064",
+      "category": "XRD interpretation",
+      "severity": "high",
+      "tags": [
+        "xrd",
+        "materials"
+      ],
+      "wrong": "Attributing all broadening to small size.",
+      "why": "Diffraction supports specific structural claims but can be distorted by instrument, sample, and model effects.",
+      "recovery": "Separate instrument, size, strain, defects, overlap, and line-shape effects with multiple peaks/model.",
+      "followUp": "Tie each XRD feature to a defensible claim and name what complementary evidence is needed.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-065",
+      "category": "XRD interpretation",
+      "severity": "high",
+      "tags": [
+        "xrd",
+        "materials"
+      ],
+      "wrong": "Interpreting intensity without preferred orientation.",
+      "why": "Diffraction supports specific structural claims but can be distorted by instrument, sample, and model effects.",
+      "recovery": "Account for texture, structure factor, multiplicity, absorption, geometry, and amount.",
+      "followUp": "Tie each XRD feature to a defensible claim and name what complementary evidence is needed.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-066",
+      "category": "XRD interpretation",
+      "severity": "high",
+      "tags": [
+        "xrd",
+        "materials"
+      ],
+      "wrong": "Using displayed 2 theta as theta in Bragg's law.",
+      "why": "Diffraction supports specific structural claims but can be distorted by instrument, sample, and model effects.",
+      "recovery": "Use the Bragg angle theta, half the common powder diffractometer display angle.",
+      "followUp": "Tie each XRD feature to a defensible claim and name what complementary evidence is needed.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-067",
+      "category": "XRD interpretation",
+      "severity": "high",
+      "tags": [
+        "xrd",
+        "materials"
+      ],
+      "wrong": "Claiming XRD measures exact composition.",
+      "why": "Diffraction supports specific structural claims but can be distorted by instrument, sample, and model effects.",
+      "recovery": "Use diffraction for phase/structure and a calibrated composition method for elemental ratios.",
+      "followUp": "Tie each XRD feature to a defensible claim and name what complementary evidence is needed.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-068",
+      "category": "XRD interpretation",
+      "severity": "high",
+      "tags": [
+        "xrd",
+        "materials"
+      ],
+      "wrong": "Ignoring sample displacement when lattice parameter shifts.",
+      "why": "Diffraction supports specific structural claims but can be distorted by instrument, sample, and model effects.",
+      "recovery": "Check zero/sample height/reference standard before physical strain/composition interpretation.",
+      "followUp": "Tie each XRD feature to a defensible claim and name what complementary evidence is needed.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-069",
+      "category": "XRD interpretation",
+      "severity": "high",
+      "tags": [
+        "xrd",
+        "materials"
+      ],
+      "wrong": "Using a database hit as a quantitative refinement.",
+      "why": "Diffraction supports specific structural claims but can be distorted by instrument, sample, and model effects.",
+      "recovery": "Distinguish search-match identification from fitted profile/structure and uncertainty.",
+      "followUp": "Tie each XRD feature to a defensible claim and name what complementary evidence is needed.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-070",
+      "category": "XRD interpretation",
+      "severity": "high",
+      "tags": [
+        "xrd",
+        "materials"
+      ],
+      "wrong": "Saying crystallinity percentage is software truth.",
+      "why": "Diffraction supports specific structural claims but can be distorted by instrument, sample, and model effects.",
+      "recovery": "State background/amorphous reference, model, integration choices, calibration, and uncertainty.",
+      "followUp": "Tie each XRD feature to a defensible claim and name what complementary evidence is needed.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-071",
+      "category": "Project evidence",
+      "severity": "high",
+      "tags": [
+        "project",
+        "honesty"
+      ],
+      "wrong": "Presenting a planned synthesis as completed.",
+      "why": "Project claims must distinguish completed work, planned work, unknown fields, observations, and interpretations.",
+      "recovery": "Label the route planned and state what has actually been done.",
+      "followUp": "Use the local fact ledger and connect each claim to actual evidence and personal work.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-072",
+      "category": "Project evidence",
+      "severity": "high",
+      "tags": [
+        "project",
+        "honesty"
+      ],
+      "wrong": "Reporting expected peaks as observed results.",
+      "why": "Project claims must distinguish completed work, planned work, unknown fields, observations, and interpretations.",
+      "recovery": "Separate predicted observations from acquired calibrated data.",
+      "followUp": "Use the local fact ledger and connect each claim to actual evidence and personal work.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-073",
+      "category": "Project evidence",
+      "severity": "high",
+      "tags": [
+        "project",
+        "honesty"
+      ],
+      "wrong": "Claiming the material is useful before property testing.",
+      "why": "Project claims must distinguish completed work, planned work, unknown fields, observations, and interpretations.",
+      "recovery": "State the proposed application and the missing performance/reliability tests.",
+      "followUp": "Use the local fact ledger and connect each claim to actual evidence and personal work.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-074",
+      "category": "Project evidence",
+      "severity": "high",
+      "tags": [
+        "project",
+        "honesty"
+      ],
+      "wrong": "Calling the project successful without predefined criteria.",
+      "why": "Project claims must distinguish completed work, planned work, unknown fields, observations, and interpretations.",
+      "recovery": "Define phase, composition, reproducibility, and property success criteria before viewing results.",
+      "followUp": "Use the local fact ledger and connect each claim to actual evidence and personal work.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-075",
+      "category": "Project evidence",
+      "severity": "high",
+      "tags": [
+        "project",
+        "honesty"
+      ],
+      "wrong": "Hiding a failed batch.",
+      "why": "Project claims must distinguish completed work, planned work, unknown fields, observations, and interpretations.",
+      "recovery": "Describe the observation, likely causes, controls, next test, and learning without deleting evidence.",
+      "followUp": "Use the local fact ledger and connect each claim to actual evidence and personal work.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-076",
+      "category": "Project evidence",
+      "severity": "high",
+      "tags": [
+        "project",
+        "honesty"
+      ],
+      "wrong": "Claiming one instrument proves the full interpretation.",
+      "why": "Project claims must distinguish completed work, planned work, unknown fields, observations, and interpretations.",
+      "recovery": "Build a complementary evidence chain and state remaining alternatives.",
+      "followUp": "Use the local fact ledger and connect each claim to actual evidence and personal work.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-077",
+      "category": "Project evidence",
+      "severity": "high",
+      "tags": [
+        "project",
+        "honesty"
+      ],
+      "wrong": "Using group results without identifying personal work.",
+      "why": "Project claims must distinguish completed work, planned work, unknown fields, observations, and interpretations.",
+      "recovery": "Separate what you performed, analysed, decided, learned, and received from others.",
+      "followUp": "Use the local fact ledger and connect each claim to actual evidence and personal work.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-078",
+      "category": "Project evidence",
+      "severity": "high",
+      "tags": [
+        "project",
+        "honesty"
+      ],
+      "wrong": "Inventing exact parameters not recorded in the notebook.",
+      "why": "Project claims must distinguish completed work, planned work, unknown fields, observations, and interpretations.",
+      "recovery": "Say the value is not currently verified and consult the notebook before a firm claim.",
+      "followUp": "Use the local fact ledger and connect each claim to actual evidence and personal work.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-079",
+      "category": "Project evidence",
+      "severity": "high",
+      "tags": [
+        "project",
+        "honesty"
+      ],
+      "wrong": "Calling correlation between synthesis temperature and property causal.",
+      "why": "Project claims must distinguish completed work, planned work, unknown fields, observations, and interpretations.",
+      "recovery": "Control phase, composition, microstructure, geometry, contacts, and repeat batches before mechanism.",
+      "followUp": "Use the local fact ledger and connect each claim to actual evidence and personal work.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-080",
+      "category": "Project evidence",
+      "severity": "high",
+      "tags": [
+        "project",
+        "honesty"
+      ],
+      "wrong": "Giving a polished conclusion despite early-stage status.",
+      "why": "Project claims must distinguish completed work, planned work, unknown fields, observations, and interpretations.",
+      "recovery": "Present motivation, planned method, known principles, current unknowns, and next discriminating experiment.",
+      "followUp": "Use the local fact ledger and connect each claim to actual evidence and personal work.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-081",
+      "category": "Personal contribution",
+      "severity": "high",
+      "tags": [
+        "project",
+        "ownership"
+      ],
+      "wrong": "Saying 'we did everything' without role detail.",
+      "why": "Interviewers need an honest boundary between personal judgement, routine execution, supervisor guidance, and team results.",
+      "recovery": "List your own preparation, instrument operation, analysis, troubleshooting, and decisions separately.",
+      "followUp": "Use first-person specifics only for work you can reproduce and defend.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-082",
+      "category": "Personal contribution",
+      "severity": "high",
+      "tags": [
+        "project",
+        "ownership"
+      ],
+      "wrong": "Taking credit for a supervisor's project design.",
+      "why": "Interviewers need an honest boundary between personal judgement, routine execution, supervisor guidance, and team results.",
+      "recovery": "Credit the supervisor's question/method guidance and state your implementation/learning.",
+      "followUp": "Use first-person specifics only for work you can reproduce and defend.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-083",
+      "category": "Personal contribution",
+      "severity": "high",
+      "tags": [
+        "project",
+        "ownership"
+      ],
+      "wrong": "Calling attendance in the lab hands-on experience.",
+      "why": "Interviewers need an honest boundary between personal judgement, routine execution, supervisor guidance, and team results.",
+      "recovery": "Name the procedure you personally performed and the controls you understood.",
+      "followUp": "Use first-person specifics only for work you can reproduce and defend.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-084",
+      "category": "Personal contribution",
+      "severity": "high",
+      "tags": [
+        "project",
+        "ownership"
+      ],
+      "wrong": "Claiming independent instrument operation after only observing.",
+      "why": "Interviewers need an honest boundary between personal judgement, routine execution, supervisor guidance, and team results.",
+      "recovery": "Say you observed or assisted and identify the training still needed.",
+      "followUp": "Use first-person specifics only for work you can reproduce and defend.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-085",
+      "category": "Personal contribution",
+      "severity": "high",
+      "tags": [
+        "project",
+        "ownership"
+      ],
+      "wrong": "Presenting group data analysis as your code.",
+      "why": "Interviewers need an honest boundary between personal judgement, routine execution, supervisor guidance, and team results.",
+      "recovery": "State whether you wrote, modified, ran, or only interpreted the analysis.",
+      "followUp": "Use first-person specifics only for work you can reproduce and defend.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-086",
+      "category": "Personal contribution",
+      "severity": "high",
+      "tags": [
+        "project",
+        "ownership"
+      ],
+      "wrong": "Hiding that a technician prepared the sample.",
+      "why": "Interviewers need an honest boundary between personal judgement, routine execution, supervisor guidance, and team results.",
+      "recovery": "Credit preparation and focus on your measurement or interpretation contribution.",
+      "followUp": "Use first-person specifics only for work you can reproduce and defend.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-087",
+      "category": "Personal contribution",
+      "severity": "high",
+      "tags": [
+        "project",
+        "ownership"
+      ],
+      "wrong": "Saying routine work required no judgement.",
+      "why": "Interviewers need an honest boundary between personal judgement, routine execution, supervisor guidance, and team results.",
+      "recovery": "Identify choices such as parameter verification, quality checks, anomaly logging, or repeat criteria.",
+      "followUp": "Use first-person specifics only for work you can reproduce and defend.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-088",
+      "category": "Personal contribution",
+      "severity": "high",
+      "tags": [
+        "project",
+        "ownership"
+      ],
+      "wrong": "Claiming mastery after one successful run.",
+      "why": "Interviewers need an honest boundary between personal judgement, routine execution, supervisor guidance, and team results.",
+      "recovery": "State the number/context of runs and what you could repeat independently.",
+      "followUp": "Use first-person specifics only for work you can reproduce and defend.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-089",
+      "category": "Personal contribution",
+      "severity": "high",
+      "tags": [
+        "project",
+        "ownership"
+      ],
+      "wrong": "Blaming the supervisor for project delay.",
+      "why": "Interviewers need an honest boundary between personal judgement, routine execution, supervisor guidance, and team results.",
+      "recovery": "Describe dependencies professionally and focus on actions, communication, and next steps.",
+      "followUp": "Use first-person specifics only for work you can reproduce and defend.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-090",
+      "category": "Personal contribution",
+      "severity": "high",
+      "tags": [
+        "project",
+        "ownership"
+      ],
+      "wrong": "Using certificates as evidence of skill.",
+      "why": "Interviewers need an honest boundary between personal judgement, routine execution, supervisor guidance, and team results.",
+      "recovery": "Demonstrate skill by explaining principle, procedure, failure modes, and a decision you made.",
+      "followUp": "Use first-person specifics only for work you can reproduce and defend.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-091",
+      "category": "Optics concepts",
+      "severity": "medium",
+      "tags": [
+        "optics"
+      ],
+      "wrong": "Calling every fringe pattern diffraction.",
+      "why": "Closely related optical effects require phase, geometry, polarization, and approximation distinctions.",
+      "recovery": "Distinguish coherent paths from finite-aperture propagation while noting both use superposition.",
+      "followUp": "Name the wave/ray model and state the relevant phase or aperture condition.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-092",
+      "category": "Optics concepts",
+      "severity": "medium",
+      "tags": [
+        "optics"
+      ],
+      "wrong": "Saying laser directionality comes only from stimulated emission.",
+      "why": "Closely related optical effects require phase, geometry, polarization, and approximation distinctions.",
+      "recovery": "Credit cavity geometry, transverse modes, aperture and diffraction along with coherent gain.",
+      "followUp": "Name the wave/ray model and state the relevant phase or aperture condition.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-093",
+      "category": "Optics concepts",
+      "severity": "medium",
+      "tags": [
+        "optics"
+      ],
+      "wrong": "Claiming magnification improves resolution.",
+      "why": "Closely related optical effects require phase, geometry, polarization, and approximation distinctions.",
+      "recovery": "Separate image scale from aperture PSF, aberrations, sampling and SNR.",
+      "followUp": "Name the wave/ray model and state the relevant phase or aperture condition.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-094",
+      "category": "Optics concepts",
+      "severity": "medium",
+      "tags": [
+        "optics"
+      ],
+      "wrong": "Writing thin-film bright condition without reflection phase.",
+      "why": "Closely related optical effects require phase, geometry, polarization, and approximation distinctions.",
+      "recovery": "Track index ordering and relative pi phase reversals before applying total phase.",
+      "followUp": "Name the wave/ray model and state the relevant phase or aperture condition.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-095",
+      "category": "Optics concepts",
+      "severity": "medium",
+      "tags": [
+        "optics"
+      ],
+      "wrong": "Saying total internal reflection has no field outside.",
+      "why": "Closely related optical effects require phase, geometry, polarization, and approximation distinctions.",
+      "recovery": "Mention the evanescent field in the lower-index medium.",
+      "followUp": "Name the wave/ray model and state the relevant phase or aperture condition.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-096",
+      "category": "Optics concepts",
+      "severity": "medium",
+      "tags": [
+        "optics"
+      ],
+      "wrong": "Saying Brewster angle removes all reflection.",
+      "why": "Closely related optical effects require phase, geometry, polarization, and approximation distinctions.",
+      "recovery": "Only ideal p-polarized reflection vanishes; s polarization and lossy media remain.",
+      "followUp": "Name the wave/ray model and state the relevant phase or aperture condition.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-097",
+      "category": "Optics concepts",
+      "severity": "medium",
+      "tags": [
+        "optics"
+      ],
+      "wrong": "Equating coherence with monochromaticity.",
+      "why": "Closely related optical effects require phase, geometry, polarization, and approximation distinctions.",
+      "recovery": "Define temporal/spatial phase correlation; narrow bandwidth can lengthen temporal coherence but is not the full definition.",
+      "followUp": "Name the wave/ray model and state the relevant phase or aperture condition.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-098",
+      "category": "Optics concepts",
+      "severity": "medium",
+      "tags": [
+        "optics"
+      ],
+      "wrong": "Calling Rayleigh criterion a universal fundamental limit.",
+      "why": "Closely related optical effects require phase, geometry, polarization, and approximation distinctions.",
+      "recovery": "State pupil/source/SNR criterion and distinguish information or estimator limits.",
+      "followUp": "Name the wave/ray model and state the relevant phase or aperture condition.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-099",
+      "category": "Optics concepts",
+      "severity": "medium",
+      "tags": [
+        "optics"
+      ],
+      "wrong": "Using paraxial lens formula for large angles without warning.",
+      "why": "Closely related optical effects require phase, geometry, polarization, and approximation distinctions.",
+      "recovery": "State small-angle/thin-lens approximation and aberration limits.",
+      "followUp": "Name the wave/ray model and state the relevant phase or aperture condition.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-100",
+      "category": "Optics concepts",
+      "severity": "medium",
+      "tags": [
+        "optics"
+      ],
+      "wrong": "Confusing polarization of light with material polarization P.",
+      "why": "Closely related optical effects require phase, geometry, polarization, and approximation distinctions.",
+      "recovery": "Use electric-field orientation for the wave and dipole moment per volume for matter.",
+      "followUp": "Name the wave/ray model and state the relevant phase or aperture condition.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-101",
+      "category": "Electromagnetic fields",
+      "severity": "high",
+      "tags": [
+        "electromagnetism"
+      ],
+      "wrong": "Calling potential the electric field.",
+      "why": "Field, auxiliary-field, potential, source, and boundary statements depend on region and constitutive model.",
+      "recovery": "Use E=-grad V in electrostatics and explain potential reference freedom.",
+      "followUp": "State source region, Maxwell equation, boundary condition, and material law separately.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-102",
+      "category": "Electromagnetic fields",
+      "severity": "high",
+      "tags": [
+        "electromagnetism"
+      ],
+      "wrong": "Saying D always equals epsilon E.",
+      "why": "Field, auxiliary-field, potential, source, and boundary statements depend on region and constitutive model.",
+      "recovery": "Start with D=epsilon0 E+P; epsilon E is a linear constitutive model.",
+      "followUp": "State source region, Maxwell equation, boundary condition, and material law separately.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-103",
+      "category": "Electromagnetic fields",
+      "severity": "high",
+      "tags": [
+        "electromagnetism"
+      ],
+      "wrong": "Saying H always equals B/mu.",
+      "why": "Field, auxiliary-field, potential, source, and boundary statements depend on region and constitutive model.",
+      "recovery": "Start with H=B/mu0-M and state the linear material approximation if used.",
+      "followUp": "State source region, Maxwell equation, boundary condition, and material law separately.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-104",
+      "category": "Electromagnetic fields",
+      "severity": "high",
+      "tags": [
+        "electromagnetism"
+      ],
+      "wrong": "Calling displacement current charge crossing a vacuum gap.",
+      "why": "Field, auxiliary-field, potential, source, and boundary statements depend on region and constitutive model.",
+      "recovery": "Describe time-varying electric flux and continuity; no conduction charge must cross.",
+      "followUp": "State source region, Maxwell equation, boundary condition, and material law separately.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-105",
+      "category": "Electromagnetic fields",
+      "severity": "high",
+      "tags": [
+        "electromagnetism"
+      ],
+      "wrong": "Saying magnetic force always performs no work in every system.",
+      "why": "Field, auxiliary-field, potential, source, and boundary statements depend on region and constitutive model.",
+      "recovery": "Point-charge qv cross B has zero power, but induced E and moving systems exchange energy.",
+      "followUp": "State source region, Maxwell equation, boundary condition, and material law separately.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-106",
+      "category": "Electromagnetic fields",
+      "severity": "high",
+      "tags": [
+        "electromagnetism"
+      ],
+      "wrong": "Claiming normal E is always continuous.",
+      "why": "Field, auxiliary-field, potential, source, and boundary statements depend on region and constitutive model.",
+      "recovery": "Use normal D jump equals free surface charge and then apply material laws.",
+      "followUp": "State source region, Maxwell equation, boundary condition, and material law separately.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-107",
+      "category": "Electromagnetic fields",
+      "severity": "high",
+      "tags": [
+        "electromagnetism"
+      ],
+      "wrong": "Claiming all electromagnetic fields are transverse.",
+      "why": "Field, auxiliary-field, potential, source, and boundary statements depend on region and constitutive model.",
+      "recovery": "Restrict to source-free plane waves; near/guided/plasma fields can be longitudinal.",
+      "followUp": "State source region, Maxwell equation, boundary condition, and material law separately.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-108",
+      "category": "Electromagnetic fields",
+      "severity": "high",
+      "tags": [
+        "electromagnetism"
+      ],
+      "wrong": "Calling Poynting vector energy density.",
+      "why": "Field, auxiliary-field, potential, source, and boundary statements depend on region and constitutive model.",
+      "recovery": "S is energy flux W/m2; u is field energy density J/m3.",
+      "followUp": "State source region, Maxwell equation, boundary condition, and material law separately.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-109",
+      "category": "Electromagnetic fields",
+      "severity": "high",
+      "tags": [
+        "electromagnetism"
+      ],
+      "wrong": "Saying vacuum path loss is absorption.",
+      "why": "Field, auxiliary-field, potential, source, and boundary statements depend on region and constitutive model.",
+      "recovery": "Explain geometric spreading and receive aperture in ideal free-space link.",
+      "followUp": "State source region, Maxwell equation, boundary condition, and material law separately.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-110",
+      "category": "Electromagnetic fields",
+      "severity": "high",
+      "tags": [
+        "electromagnetism"
+      ],
+      "wrong": "Using skin-depth formula for every conductor and geometry.",
+      "why": "Field, auxiliary-field, potential, source, and boundary statements depend on region and constitutive model.",
+      "recovery": "State good-conductor, homogeneous linear assumptions and proximity/surface effects.",
+      "followUp": "State source region, Maxwell equation, boundary condition, and material law separately.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-111",
+      "category": "Thermodynamic conditions",
+      "severity": "high",
+      "tags": [
+        "thermodynamics"
+      ],
+      "wrong": "Writing dU=Q-W without declaring work sign.",
+      "why": "Thermodynamic equalities and minimum principles are valid only under specified constraints and sign conventions.",
+      "recovery": "State heat into system and work by system positive, or declare the alternative consistently.",
+      "followUp": "State the system, held variables, work modes, reversibility, and total/molar basis.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-112",
+      "category": "Thermodynamic conditions",
+      "severity": "high",
+      "tags": [
+        "thermodynamics"
+      ],
+      "wrong": "Saying Qp equals delta H always.",
+      "why": "Thermodynamic equalities and minimum principles are valid only under specified constraints and sign conventions.",
+      "recovery": "Require closed system, constant pressure, only PV work, and compatible kinetic/potential assumptions.",
+      "followUp": "State the system, held variables, work modes, reversibility, and total/molar basis.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-113",
+      "category": "Thermodynamic conditions",
+      "severity": "high",
+      "tags": [
+        "thermodynamics"
+      ],
+      "wrong": "Using delta G below zero without fixed T and P.",
+      "why": "Thermodynamic equalities and minimum principles are valid only under specified constraints and sign conventions.",
+      "recovery": "State the closed-system fixed-T,P and allowed-work criterion and separate kinetics.",
+      "followUp": "State the system, held variables, work modes, reversibility, and total/molar basis.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-114",
+      "category": "Thermodynamic conditions",
+      "severity": "high",
+      "tags": [
+        "thermodynamics"
+      ],
+      "wrong": "Calling a spontaneous process fast.",
+      "why": "Thermodynamic equalities and minimum principles are valid only under specified constraints and sign conventions.",
+      "recovery": "Thermodynamics gives direction; activation and transport control rate.",
+      "followUp": "State the system, held variables, work modes, reversibility, and total/molar basis.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-115",
+      "category": "Thermodynamic conditions",
+      "severity": "high",
+      "tags": [
+        "thermodynamics"
+      ],
+      "wrong": "Saying reversible process is fast because states track equilibrium.",
+      "why": "Thermodynamic equalities and minimum principles are valid only under specified constraints and sign conventions.",
+      "recovery": "Reversible is an ideal no-entropy-generation limit and is generally approached slowly.",
+      "followUp": "State the system, held variables, work modes, reversibility, and total/molar basis.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-116",
+      "category": "Thermodynamic conditions",
+      "severity": "high",
+      "tags": [
+        "thermodynamics"
+      ],
+      "wrong": "Using PV-gamma for any adiabatic process.",
+      "why": "Thermodynamic equalities and minimum principles are valid only under specified constraints and sign conventions.",
+      "recovery": "Require ideal gas, reversible path and approximately constant heat capacities.",
+      "followUp": "State the system, held variables, work modes, reversibility, and total/molar basis.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-117",
+      "category": "Thermodynamic conditions",
+      "severity": "high",
+      "tags": [
+        "thermodynamics"
+      ],
+      "wrong": "Assuming Cp-Cv=R for all substances.",
+      "why": "Thermodynamic equalities and minimum principles are valid only under specified constraints and sign conventions.",
+      "recovery": "Restrict Mayer's relation to molar ideal gas under the model.",
+      "followUp": "State the system, held variables, work modes, reversibility, and total/molar basis.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-118",
+      "category": "Thermodynamic conditions",
+      "severity": "high",
+      "tags": [
+        "thermodynamics"
+      ],
+      "wrong": "Using Carnot efficiency for a practical cycle without losses.",
+      "why": "Thermodynamic equalities and minimum principles are valid only under specified constraints and sign conventions.",
+      "recovery": "Present it as reversible upper bound between absolute-temperature reservoirs.",
+      "followUp": "State the system, held variables, work modes, reversibility, and total/molar basis.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-119",
+      "category": "Thermodynamic conditions",
+      "severity": "high",
+      "tags": [
+        "thermodynamics"
+      ],
+      "wrong": "Applying Clausius-Clapeyron to solid-solid transition as ideal vapor.",
+      "why": "Thermodynamic equalities and minimum principles are valid only under specified constraints and sign conventions.",
+      "recovery": "Use general Clapeyron dP/dT=delta H/(T delta V).",
+      "followUp": "State the system, held variables, work modes, reversibility, and total/molar basis.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-120",
+      "category": "Thermodynamic conditions",
+      "severity": "high",
+      "tags": [
+        "thermodynamics"
+      ],
+      "wrong": "Saying heat capacity peak uniquely identifies a phase.",
+      "why": "Thermodynamic equalities and minimum principles are valid only under specified constraints and sign conventions.",
+      "recovery": "Check kinetics, decomposition, baseline, rate and structural corroboration.",
+      "followUp": "State the system, held variables, work modes, reversibility, and total/molar basis.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-121",
+      "category": "Nuclear quantities",
+      "severity": "high",
+      "tags": [
+        "nuclear",
+        "radiation"
+      ],
+      "wrong": "Calling activity the amount of radiation dose.",
+      "why": "Nuclear rate, energy, interaction, and protection quantities have different definitions and safety implications.",
+      "recovery": "Activity is decays per second; dose requires energy deposition per mass and weighting.",
+      "followUp": "Name the quantity, unit, model, detector response, and authorization boundary.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-122",
+      "category": "Nuclear quantities",
+      "severity": "high",
+      "tags": [
+        "nuclear",
+        "radiation"
+      ],
+      "wrong": "Calling cross section a probability.",
+      "why": "Nuclear rate, energy, interaction, and protection quantities have different definitions and safety implications.",
+      "recovery": "State area units and combine with flux and target number/path to obtain rate or probability.",
+      "followUp": "Name the quantity, unit, model, detector response, and authorization boundary.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-123",
+      "category": "Nuclear quantities",
+      "severity": "high",
+      "tags": [
+        "nuclear",
+        "radiation"
+      ],
+      "wrong": "Mixing atomic and nuclear masses in a Q value.",
+      "why": "Nuclear rate, energy, interaction, and protection quantities have different definitions and safety implications.",
+      "recovery": "Use one consistent mass convention and account for electrons/binding where needed.",
+      "followUp": "Name the quantity, unit, model, detector response, and authorization boundary.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-124",
+      "category": "Nuclear quantities",
+      "severity": "high",
+      "tags": [
+        "nuclear",
+        "radiation"
+      ],
+      "wrong": "Saying positive Q guarantees a rapid reaction.",
+      "why": "Nuclear rate, energy, interaction, and protection quantities have different definitions and safety implications.",
+      "recovery": "Conservation, barriers, selection rules and cross section determine occurrence/rate.",
+      "followUp": "Name the quantity, unit, model, detector response, and authorization boundary.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-125",
+      "category": "Nuclear quantities",
+      "severity": "high",
+      "tags": [
+        "nuclear",
+        "radiation"
+      ],
+      "wrong": "Calling criticality an accident.",
+      "why": "Nuclear rate, energy, interaction, and protection quantities have different definitions and safety implications.",
+      "recovery": "Define k-effective=1 as steady generation average and separate power/safety dynamics.",
+      "followUp": "Name the quantity, unit, model, detector response, and authorization boundary.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-126",
+      "category": "Nuclear quantities",
+      "severity": "high",
+      "tags": [
+        "nuclear",
+        "radiation"
+      ],
+      "wrong": "Saying a moderator absorbs neutrons to control power.",
+      "why": "Nuclear rate, energy, interaction, and protection quantities have different definitions and safety implications.",
+      "recovery": "A moderator mainly changes neutron energy by scattering; control absorbers are a separate function.",
+      "followUp": "Name the quantity, unit, model, detector response, and authorization boundary.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-127",
+      "category": "Nuclear quantities",
+      "severity": "high",
+      "tags": [
+        "nuclear",
+        "radiation"
+      ],
+      "wrong": "Treating detector counts as source activity.",
+      "why": "Nuclear rate, energy, interaction, and protection quantities have different definitions and safety implications.",
+      "recovery": "Include efficiency, branching, geometry, attenuation, dead time and background.",
+      "followUp": "Name the quantity, unit, model, detector response, and authorization boundary.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-128",
+      "category": "Nuclear quantities",
+      "severity": "high",
+      "tags": [
+        "nuclear",
+        "radiation"
+      ],
+      "wrong": "Using narrow-beam attenuation as absorbed dose.",
+      "why": "Nuclear rate, energy, interaction, and protection quantities have different definitions and safety implications.",
+      "recovery": "Distinguish uncollided intensity from energy deposited and broad-beam buildup.",
+      "followUp": "Name the quantity, unit, model, detector response, and authorization boundary.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-129",
+      "category": "Nuclear quantities",
+      "severity": "high",
+      "tags": [
+        "nuclear",
+        "radiation"
+      ],
+      "wrong": "Saying irradiation leaves the person radioactive.",
+      "why": "Nuclear rate, energy, interaction, and protection quantities have different definitions and safety implications.",
+      "recovery": "Separate external irradiation from contamination/activation scenarios.",
+      "followUp": "Name the quantity, unit, model, detector response, and authorization boundary.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-130",
+      "category": "Nuclear quantities",
+      "severity": "high",
+      "tags": [
+        "nuclear",
+        "radiation"
+      ],
+      "wrong": "Giving source-handling advice from a textbook calculation.",
+      "why": "Nuclear rate, energy, interaction, and protection quantities have different definitions and safety implications.",
+      "recovery": "Stop at conceptual principles and require authorization, calibrated survey, and radiation-safety procedure.",
+      "followUp": "Name the quantity, unit, model, detector response, and authorization boundary.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-131",
+      "category": "Radiation safety",
+      "severity": "critical",
+      "tags": [
+        "safety",
+        "radiation",
+        "barc"
+      ],
+      "wrong": "Suggesting a student should test an unknown radioactive object.",
+      "why": "Improvised radiation action can cause harm and violates the app's conceptual-only safety boundary.",
+      "recovery": "Do not approach or handle it; notify responsible authority or radiation-safety personnel.",
+      "followUp": "Stop, avoid spreading or handling, and follow authorized facility and radiation-safety instructions.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-132",
+      "category": "Radiation safety",
+      "severity": "critical",
+      "tags": [
+        "safety",
+        "radiation",
+        "barc"
+      ],
+      "wrong": "Designing shielding from one half-value calculation.",
+      "why": "Improvised radiation action can cause harm and violates the app's conceptual-only safety boundary.",
+      "recovery": "Treat the calculation as conceptual; qualified design needs spectrum, buildup, geometry, secondaries and regulation.",
+      "followUp": "Stop, avoid spreading or handling, and follow authorized facility and radiation-safety instructions.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-133",
+      "category": "Radiation safety",
+      "severity": "critical",
+      "tags": [
+        "safety",
+        "radiation",
+        "barc"
+      ],
+      "wrong": "Entering a controlled area because a meter looks low.",
+      "why": "Improvised radiation action can cause harm and violates the app's conceptual-only safety boundary.",
+      "recovery": "Access requires authorization, correct calibrated instrument, survey procedure and personnel controls.",
+      "followUp": "Stop, avoid spreading or handling, and follow authorized facility and radiation-safety instructions.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-134",
+      "category": "Radiation safety",
+      "severity": "critical",
+      "tags": [
+        "safety",
+        "radiation",
+        "barc"
+      ],
+      "wrong": "Picking up a suspected contaminated item with gloves.",
+      "why": "Improvised radiation action can cause harm and violates the app's conceptual-only safety boundary.",
+      "recovery": "Do not improvise; isolate/notify according to facility procedure without spreading material.",
+      "followUp": "Stop, avoid spreading or handling, and follow authorized facility and radiation-safety instructions.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-135",
+      "category": "Radiation safety",
+      "severity": "critical",
+      "tags": [
+        "safety",
+        "radiation",
+        "barc"
+      ],
+      "wrong": "Using time-distance-shielding as permission to work alone.",
+      "why": "Improvised radiation action can cause harm and violates the app's conceptual-only safety boundary.",
+      "recovery": "These are protection principles within an authorized programme, not independent permission.",
+      "followUp": "Stop, avoid spreading or handling, and follow authorized facility and radiation-safety instructions.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-136",
+      "category": "Radiation safety",
+      "severity": "critical",
+      "tags": [
+        "safety",
+        "radiation",
+        "barc"
+      ],
+      "wrong": "Recommending a detector without checking energy response.",
+      "why": "Improvised radiation action can cause harm and violates the app's conceptual-only safety boundary.",
+      "recovery": "Use the facility-specified calibrated instrument suitable for radiation type, energy and range.",
+      "followUp": "Stop, avoid spreading or handling, and follow authorized facility and radiation-safety instructions.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-137",
+      "category": "Radiation safety",
+      "severity": "critical",
+      "tags": [
+        "safety",
+        "radiation",
+        "barc"
+      ],
+      "wrong": "Assuming no alarm means no hazard.",
+      "why": "Improvised radiation action can cause harm and violates the app's conceptual-only safety boundary.",
+      "recovery": "Check instrument function/range, procedure, background and qualified survey; alarms have limitations.",
+      "followUp": "Stop, avoid spreading or handling, and follow authorized facility and radiation-safety instructions.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-138",
+      "category": "Radiation safety",
+      "severity": "critical",
+      "tags": [
+        "safety",
+        "radiation",
+        "barc"
+      ],
+      "wrong": "Cleaning suspected contamination immediately.",
+      "why": "Improvised radiation action can cause harm and violates the app's conceptual-only safety boundary.",
+      "recovery": "Prevent spread and wait for authorized radiation-protection response and monitoring.",
+      "followUp": "Stop, avoid spreading or handling, and follow authorized facility and radiation-safety instructions.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-139",
+      "category": "Radiation safety",
+      "severity": "critical",
+      "tags": [
+        "safety",
+        "radiation",
+        "barc"
+      ],
+      "wrong": "Posting a source image/location publicly.",
+      "why": "Improvised radiation action can cause harm and violates the app's conceptual-only safety boundary.",
+      "recovery": "Follow security, reporting and facility communication rules; do not disclose sensitive details.",
+      "followUp": "Stop, avoid spreading or handling, and follow authorized facility and radiation-safety instructions.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-140",
+      "category": "Radiation safety",
+      "severity": "critical",
+      "tags": [
+        "safety",
+        "radiation",
+        "barc"
+      ],
+      "wrong": "Giving medical advice after possible exposure.",
+      "why": "Improvised radiation action can cause harm and violates the app's conceptual-only safety boundary.",
+      "recovery": "Contact emergency/occupational radiation professionals through official procedure; do not diagnose or reassure independently.",
+      "followUp": "Stop, avoid spreading or handling, and follow authorized facility and radiation-safety instructions.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-141",
+      "category": "ISRO awareness",
+      "severity": "medium",
+      "tags": [
+        "isro",
+        "organization"
+      ],
+      "wrong": "Reciting mission names without knowing payload or objective.",
+      "why": "Mission lists without verified technical relevance become stale trivia rather than interview readiness.",
+      "recovery": "Choose one current officially verified mission and explain its measurement or engineering principle.",
+      "followUp": "Use one officially checked fact and connect it to a physics, subsystem, measurement, or reliability issue.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-142",
+      "category": "ISRO awareness",
+      "severity": "medium",
+      "tags": [
+        "isro",
+        "organization"
+      ],
+      "wrong": "Calling every Earth-observation satellite geostationary.",
+      "why": "Mission lists without verified technical relevance become stale trivia rather than interview readiness.",
+      "recovery": "Distinguish polar/sun-synchronous and geostationary missions by coverage and application.",
+      "followUp": "Use one officially checked fact and connect it to a physics, subsystem, measurement, or reliability issue.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-143",
+      "category": "ISRO awareness",
+      "severity": "medium",
+      "tags": [
+        "isro",
+        "organization"
+      ],
+      "wrong": "Saying ISRO only launches rockets.",
+      "why": "Mission lists without verified technical relevance become stale trivia rather than interview readiness.",
+      "recovery": "Describe space access, spacecraft, applications, science, ground systems and enabling work at a stable high level.",
+      "followUp": "Use one officially checked fact and connect it to a physics, subsystem, measurement, or reliability issue.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-144",
+      "category": "ISRO awareness",
+      "severity": "medium",
+      "tags": [
+        "isro",
+        "organization"
+      ],
+      "wrong": "Quoting an old Scientist-SC eligibility rule as current.",
+      "why": "Mission lists without verified technical relevance become stale trivia rather than interview readiness.",
+      "recovery": "Open the current official careers notice and label cycle/date before using it.",
+      "followUp": "Use one officially checked fact and connect it to a physics, subsystem, measurement, or reliability issue.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-145",
+      "category": "ISRO awareness",
+      "severity": "medium",
+      "tags": [
+        "isro",
+        "organization"
+      ],
+      "wrong": "Naming a centre without checking its official role.",
+      "why": "Mission lists without verified technical relevance become stale trivia rather than interview readiness.",
+      "recovery": "Verify centre role on ISRO's current centre page and connect only confirmed technical fit.",
+      "followUp": "Use one officially checked fact and connect it to a physics, subsystem, measurement, or reliability issue.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-146",
+      "category": "ISRO awareness",
+      "severity": "medium",
+      "tags": [
+        "isro",
+        "organization"
+      ],
+      "wrong": "Using a launch date from memory as an interview fact.",
+      "why": "Mission lists without verified technical relevance become stale trivia rather than interview readiness.",
+      "recovery": "Verify current mission page immediately before use or state uncertainty.",
+      "followUp": "Use one officially checked fact and connect it to a physics, subsystem, measurement, or reliability issue.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-147",
+      "category": "ISRO awareness",
+      "severity": "medium",
+      "tags": [
+        "isro",
+        "organization"
+      ],
+      "wrong": "Saying 'I love space' as the complete motivation.",
+      "why": "Mission lists without verified technical relevance become stale trivia rather than interview readiness.",
+      "recovery": "Add a specific contribution in optics, materials, electronics, payloads, remote sensing, data, or testing.",
+      "followUp": "Use one officially checked fact and connect it to a physics, subsystem, measurement, or reliability issue.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-148",
+      "category": "ISRO awareness",
+      "severity": "medium",
+      "tags": [
+        "isro",
+        "organization"
+      ],
+      "wrong": "Assuming Bengaluru preference guarantees posting.",
+      "why": "Mission lists without verified technical relevance become stale trivia rather than interview readiness.",
+      "recovery": "Express willingness to serve organizational need while explaining technical/location preference professionally.",
+      "followUp": "Use one officially checked fact and connect it to a physics, subsystem, measurement, or reliability issue.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-149",
+      "category": "ISRO awareness",
+      "severity": "medium",
+      "tags": [
+        "isro",
+        "organization"
+      ],
+      "wrong": "Calling satellite bus and payload the same.",
+      "why": "Mission lists without verified technical relevance become stale trivia rather than interview readiness.",
+      "recovery": "Separate mission instrument from supporting power, thermal, communication, structure and control.",
+      "followUp": "Use one officially checked fact and connect it to a physics, subsystem, measurement, or reliability issue.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-150",
+      "category": "ISRO awareness",
+      "severity": "medium",
+      "tags": [
+        "isro",
+        "organization"
+      ],
+      "wrong": "Claiming one mission success proves every subsystem reliable.",
+      "why": "Mission lists without verified technical relevance become stale trivia rather than interview readiness.",
+      "recovery": "Discuss qualification, redundancy, anomaly handling, margins and mission-specific evidence.",
+      "followUp": "Use one officially checked fact and connect it to a physics, subsystem, measurement, or reliability issue.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-151",
+      "category": "DRDO discipline",
+      "severity": "high",
+      "tags": [
+        "drdo",
+        "organization",
+        "confidentiality"
+      ],
+      "wrong": "Speculating about classified performance numbers.",
+      "why": "Defence interviews require public-domain technical reasoning, reliability, and strict confidentiality boundaries.",
+      "recovery": "Refuse speculation and discuss public fundamental trade-offs only.",
+      "followUp": "Keep examples public and generic; focus on requirements, physics, tests, interfaces, failure modes, and procedure.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-152",
+      "category": "DRDO discipline",
+      "severity": "high",
+      "tags": [
+        "drdo",
+        "organization",
+        "confidentiality"
+      ],
+      "wrong": "Presenting a public brochure number as universal system capability.",
+      "why": "Defence interviews require public-domain technical reasoning, reliability, and strict confidentiality boundaries.",
+      "recovery": "State source/context/date and avoid extrapolation beyond the official claim.",
+      "followUp": "Keep examples public and generic; focus on requirements, physics, tests, interfaces, failure modes, and procedure.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-153",
+      "category": "DRDO discipline",
+      "severity": "high",
+      "tags": [
+        "drdo",
+        "organization",
+        "confidentiality"
+      ],
+      "wrong": "Saying confidentiality means never documenting work.",
+      "why": "Defence interviews require public-domain technical reasoning, reliability, and strict confidentiality boundaries.",
+      "recovery": "Use authorized controlled documentation, access and communication channels.",
+      "followUp": "Keep examples public and generic; focus on requirements, physics, tests, interfaces, failure modes, and procedure.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-154",
+      "category": "DRDO discipline",
+      "severity": "high",
+      "tags": [
+        "drdo",
+        "organization",
+        "confidentiality"
+      ],
+      "wrong": "Optimizing one sensor metric while ignoring false alarms.",
+      "why": "Defence interviews require public-domain technical reasoning, reliability, and strict confidentiality boundaries.",
+      "recovery": "Include detection threshold, noise, environment, missed detections and system trade-offs.",
+      "followUp": "Keep examples public and generic; focus on requirements, physics, tests, interfaces, failure modes, and procedure.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-155",
+      "category": "DRDO discipline",
+      "severity": "high",
+      "tags": [
+        "drdo",
+        "organization",
+        "confidentiality"
+      ],
+      "wrong": "Calling a laboratory prototype field-ready.",
+      "why": "Defence interviews require public-domain technical reasoning, reliability, and strict confidentiality boundaries.",
+      "recovery": "Require environmental, reliability, interface, qualification and acceptance evidence.",
+      "followUp": "Keep examples public and generic; focus on requirements, physics, tests, interfaces, failure modes, and procedure.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-156",
+      "category": "DRDO discipline",
+      "severity": "high",
+      "tags": [
+        "drdo",
+        "organization",
+        "confidentiality"
+      ],
+      "wrong": "Ignoring operator and maintenance constraints.",
+      "why": "Defence interviews require public-domain technical reasoning, reliability, and strict confidentiality boundaries.",
+      "recovery": "Include usability, calibration, diagnostics, logistics and lifecycle support.",
+      "followUp": "Keep examples public and generic; focus on requirements, physics, tests, interfaces, failure modes, and procedure.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-157",
+      "category": "DRDO discipline",
+      "severity": "high",
+      "tags": [
+        "drdo",
+        "organization",
+        "confidentiality"
+      ],
+      "wrong": "Saying defence relevance excuses safety shortcuts.",
+      "why": "Defence interviews require public-domain technical reasoning, reliability, and strict confidentiality boundaries.",
+      "recovery": "Safety, verification and authorization remain non-negotiable engineering requirements.",
+      "followUp": "Keep examples public and generic; focus on requirements, physics, tests, interfaces, failure modes, and procedure.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-158",
+      "category": "DRDO discipline",
+      "severity": "high",
+      "tags": [
+        "drdo",
+        "organization",
+        "confidentiality"
+      ],
+      "wrong": "Claiming radar detects every target at its maximum range.",
+      "why": "Defence interviews require public-domain technical reasoning, reliability, and strict confidentiality boundaries.",
+      "recovery": "Range is probability/SNR/environment/target/waveform dependent, not one guaranteed boundary.",
+      "followUp": "Keep examples public and generic; focus on requirements, physics, tests, interfaces, failure modes, and procedure.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-159",
+      "category": "DRDO discipline",
+      "severity": "high",
+      "tags": [
+        "drdo",
+        "organization",
+        "confidentiality"
+      ],
+      "wrong": "Giving a generic national-service answer without technical fit.",
+      "why": "Defence interviews require public-domain technical reasoning, reliability, and strict confidentiality boundaries.",
+      "recovery": "Name one public technology lane and the measurements/tests you can contribute.",
+      "followUp": "Keep examples public and generic; focus on requirements, physics, tests, interfaces, failure modes, and procedure.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-160",
+      "category": "DRDO discipline",
+      "severity": "high",
+      "tags": [
+        "drdo",
+        "organization",
+        "confidentiality"
+      ],
+      "wrong": "Sharing a hypothetical restricted scenario in a portfolio.",
+      "why": "Defence interviews require public-domain technical reasoning, reliability, and strict confidentiality boundaries.",
+      "recovery": "Use sanitized public examples and follow classification/export/security rules.",
+      "followUp": "Keep examples public and generic; focus on requirements, physics, tests, interfaces, failure modes, and procedure.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-161",
+      "category": "Radar concepts",
+      "severity": "medium",
+      "tags": [
+        "radar",
+        "electromagnetism"
+      ],
+      "wrong": "Confusing target range with maximum detectable range.",
+      "why": "Radar quantities depend on waveform, geometry, target, propagation, processing, noise, and probability criteria.",
+      "recovery": "Use delay R=c delta t/2 for measurement and a separate SNR/range equation for detectability.",
+      "followUp": "Define the measured quantity and distinguish resolution, ambiguity, detection and accuracy.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-162",
+      "category": "Radar concepts",
+      "severity": "medium",
+      "tags": [
+        "radar",
+        "electromagnetism"
+      ],
+      "wrong": "Saying pulse width alone sets modern range resolution.",
+      "why": "Radar quantities depend on waveform, geometry, target, propagation, processing, noise, and probability criteria.",
+      "recovery": "Use effective bandwidth, including pulse compression and processing/window effects.",
+      "followUp": "Define the measured quantity and distinguish resolution, ambiguity, detection and accuracy.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-163",
+      "category": "Radar concepts",
+      "severity": "medium",
+      "tags": [
+        "radar",
+        "electromagnetism"
+      ],
+      "wrong": "Calling Doppler shift total target speed.",
+      "why": "Radar quantities depend on waveform, geometry, target, propagation, processing, noise, and probability criteria.",
+      "recovery": "It measures line-of-sight relative velocity for the stated geometry.",
+      "followUp": "Define the measured quantity and distinguish resolution, ambiguity, detection and accuracy.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-164",
+      "category": "Radar concepts",
+      "severity": "medium",
+      "tags": [
+        "radar",
+        "electromagnetism"
+      ],
+      "wrong": "Treating radar cross section as physical area.",
+      "why": "Radar quantities depend on waveform, geometry, target, propagation, processing, noise, and probability criteria.",
+      "recovery": "Describe it as direction/frequency/polarization/aspect-dependent scattering measure.",
+      "followUp": "Define the measured quantity and distinguish resolution, ambiguity, detection and accuracy.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-165",
+      "category": "Radar concepts",
+      "severity": "medium",
+      "tags": [
+        "radar",
+        "electromagnetism"
+      ],
+      "wrong": "Ignoring maximum unambiguous range.",
+      "why": "Radar quantities depend on waveform, geometry, target, propagation, processing, noise, and probability criteria.",
+      "recovery": "Connect pulse repetition interval to echo ambiguity and velocity trade-offs.",
+      "followUp": "Define the measured quantity and distinguish resolution, ambiguity, detection and accuracy.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-166",
+      "category": "Radar concepts",
+      "severity": "medium",
+      "tags": [
+        "radar",
+        "electromagnetism"
+      ],
+      "wrong": "Assuming antenna gain creates power.",
+      "why": "Radar quantities depend on waveform, geometry, target, propagation, processing, noise, and probability criteria.",
+      "recovery": "Gain concentrates radiated power and includes efficiency; coverage narrows.",
+      "followUp": "Define the measured quantity and distinguish resolution, ambiguity, detection and accuracy.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-167",
+      "category": "Radar concepts",
+      "severity": "medium",
+      "tags": [
+        "radar",
+        "electromagnetism"
+      ],
+      "wrong": "Calling a visible peak a detection.",
+      "why": "Radar quantities depend on waveform, geometry, target, propagation, processing, noise, and probability criteria.",
+      "recovery": "Use threshold and false-alarm probability under a noise/clutter model.",
+      "followUp": "Define the measured quantity and distinguish resolution, ambiguity, detection and accuracy.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-168",
+      "category": "Radar concepts",
+      "severity": "medium",
+      "tags": [
+        "radar",
+        "electromagnetism"
+      ],
+      "wrong": "Ignoring propagation and multipath.",
+      "why": "Radar quantities depend on waveform, geometry, target, propagation, processing, noise, and probability criteria.",
+      "recovery": "Include atmosphere, terrain/sea, ducting, blockage and interference for real operation.",
+      "followUp": "Define the measured quantity and distinguish resolution, ambiguity, detection and accuracy.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-169",
+      "category": "Radar concepts",
+      "severity": "medium",
+      "tags": [
+        "radar",
+        "electromagnetism"
+      ],
+      "wrong": "Using monostatic radar equation for bistatic geometry.",
+      "why": "Radar quantities depend on waveform, geometry, target, propagation, processing, noise, and probability criteria.",
+      "recovery": "Use separate transmitter-target and target-receiver ranges and bistatic scattering.",
+      "followUp": "Define the measured quantity and distinguish resolution, ambiguity, detection and accuracy.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-170",
+      "category": "Radar concepts",
+      "severity": "medium",
+      "tags": [
+        "radar",
+        "electromagnetism"
+      ],
+      "wrong": "Claiming integration always improves SNR as number of pulses.",
+      "why": "Radar quantities depend on waveform, geometry, target, propagation, processing, noise, and probability criteria.",
+      "recovery": "State coherent/noncoherent method, phase stability, target motion and correlation losses.",
+      "followUp": "Define the measured quantity and distinguish resolution, ambiguity, detection and accuracy.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-171",
+      "category": "Astronomy inference",
+      "severity": "medium",
+      "tags": [
+        "astronomy",
+        "research"
+      ],
+      "wrong": "Confusing luminosity with observed flux.",
+      "why": "Astronomical quantities are inferred through distance, calibration, selection, atmosphere, instrument response, and physical models.",
+      "recovery": "Relate flux to luminosity and distance, including extinction and geometry.",
+      "followUp": "Name the observable, calibration, model, uncertainty, and alternative explanation.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-172",
+      "category": "Astronomy inference",
+      "severity": "medium",
+      "tags": [
+        "astronomy",
+        "research"
+      ],
+      "wrong": "Calling redshift only Doppler motion.",
+      "why": "Astronomical quantities are inferred through distance, calibration, selection, atmosphere, instrument response, and physical models.",
+      "recovery": "Distinguish kinematic, gravitational and cosmological mechanisms.",
+      "followUp": "Name the observable, calibration, model, uncertainty, and alternative explanation.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-173",
+      "category": "Astronomy inference",
+      "severity": "medium",
+      "tags": [
+        "astronomy",
+        "research"
+      ],
+      "wrong": "Using apparent magnitude as intrinsic brightness.",
+      "why": "Astronomical quantities are inferred through distance, calibration, selection, atmosphere, instrument response, and physical models.",
+      "recovery": "Use distance/extinction and distinguish apparent from absolute magnitude/luminosity.",
+      "followUp": "Name the observable, calibration, model, uncertainty, and alternative explanation.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-174",
+      "category": "Astronomy inference",
+      "severity": "medium",
+      "tags": [
+        "astronomy",
+        "research"
+      ],
+      "wrong": "Claiming one spectral line uniquely gives composition.",
+      "why": "Astronomical quantities are inferred through distance, calibration, selection, atmosphere, instrument response, and physical models.",
+      "recovery": "Check identification, ionization/excitation, temperature, velocity, blending and calibration.",
+      "followUp": "Name the observable, calibration, model, uncertainty, and alternative explanation.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-175",
+      "category": "Astronomy inference",
+      "severity": "medium",
+      "tags": [
+        "astronomy",
+        "research"
+      ],
+      "wrong": "Saying a transit dip proves a planet.",
+      "why": "Astronomical quantities are inferred through distance, calibration, selection, atmosphere, instrument response, and physical models.",
+      "recovery": "Rule out binaries, activity, systematics, dilution and seek repeat/independent evidence.",
+      "followUp": "Name the observable, calibration, model, uncertainty, and alternative explanation.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-176",
+      "category": "Astronomy inference",
+      "severity": "medium",
+      "tags": [
+        "astronomy",
+        "research"
+      ],
+      "wrong": "Treating telescope pixel scale as angular resolution.",
+      "why": "Astronomical quantities are inferred through distance, calibration, selection, atmosphere, instrument response, and physical models.",
+      "recovery": "Include diffraction, seeing, aberration, tracking, PSF, sampling and SNR.",
+      "followUp": "Name the observable, calibration, model, uncertainty, and alternative explanation.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-177",
+      "category": "Astronomy inference",
+      "severity": "medium",
+      "tags": [
+        "astronomy",
+        "research"
+      ],
+      "wrong": "Calling a galaxy rotation curve direct proof of one dark-matter profile.",
+      "why": "Astronomical quantities are inferred through distance, calibration, selection, atmosphere, instrument response, and physical models.",
+      "recovery": "State baryonic model, geometry, distance and alternative gravity/systematic assumptions.",
+      "followUp": "Name the observable, calibration, model, uncertainty, and alternative explanation.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-178",
+      "category": "Astronomy inference",
+      "severity": "medium",
+      "tags": [
+        "astronomy",
+        "research"
+      ],
+      "wrong": "Ignoring selection effects in a source catalogue.",
+      "why": "Astronomical quantities are inferred through distance, calibration, selection, atmosphere, instrument response, and physical models.",
+      "recovery": "Model detection threshold, completeness, survey volume and measurement errors.",
+      "followUp": "Name the observable, calibration, model, uncertainty, and alternative explanation.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-179",
+      "category": "Astronomy inference",
+      "severity": "medium",
+      "tags": [
+        "astronomy",
+        "research"
+      ],
+      "wrong": "Using a colour image as quantitative radiometry.",
+      "why": "Astronomical quantities are inferred through distance, calibration, selection, atmosphere, instrument response, and physical models.",
+      "recovery": "Return to calibrated band data, stretch/processing and physical units.",
+      "followUp": "Name the observable, calibration, model, uncertainty, and alternative explanation.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-180",
+      "category": "Astronomy inference",
+      "severity": "medium",
+      "tags": [
+        "astronomy",
+        "research"
+      ],
+      "wrong": "Claiming model-data agreement proves uniqueness.",
+      "why": "Astronomical quantities are inferred through distance, calibration, selection, atmosphere, instrument response, and physical models.",
+      "recovery": "Compare alternatives, residuals, parameter covariance and predictive tests.",
+      "followUp": "Name the observable, calibration, model, uncertainty, and alternative explanation.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-181",
+      "category": "Statistics and fitting",
+      "severity": "high",
+      "tags": [
+        "statistics",
+        "data"
+      ],
+      "wrong": "Using R-squared as proof of causation.",
+      "why": "A fit score cannot substitute for a probability model, residual checks, uncertainty, and causal design.",
+      "recovery": "Separate association from mechanism and address confounders/design.",
+      "followUp": "State the data model, assumptions, residual diagnostics, uncertainty, and validation.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-182",
+      "category": "Statistics and fitting",
+      "severity": "high",
+      "tags": [
+        "statistics",
+        "data"
+      ],
+      "wrong": "Choosing a model because it has the highest R-squared.",
+      "why": "A fit score cannot substitute for a probability model, residual checks, uncertainty, and causal design.",
+      "recovery": "Compare residuals, predictive performance, complexity and physics.",
+      "followUp": "State the data model, assumptions, residual diagnostics, uncertainty, and validation.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-183",
+      "category": "Statistics and fitting",
+      "severity": "high",
+      "tags": [
+        "statistics",
+        "data"
+      ],
+      "wrong": "Reporting a fit parameter without covariance.",
+      "why": "A fit score cannot substitute for a probability model, residual checks, uncertainty, and causal design.",
+      "recovery": "Provide uncertainty/correlation and fit-domain sensitivity.",
+      "followUp": "State the data model, assumptions, residual diagnostics, uncertainty, and validation.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-184",
+      "category": "Statistics and fitting",
+      "severity": "high",
+      "tags": [
+        "statistics",
+        "data"
+      ],
+      "wrong": "Assuming Gaussian errors because the histogram looks bell-shaped.",
+      "why": "A fit score cannot substitute for a probability model, residual checks, uncertainty, and causal design.",
+      "recovery": "Check tails, independence, variance structure, truncation and physical noise model.",
+      "followUp": "State the data model, assumptions, residual diagnostics, uncertainty, and validation.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-185",
+      "category": "Statistics and fitting",
+      "severity": "high",
+      "tags": [
+        "statistics",
+        "data"
+      ],
+      "wrong": "Using ordinary least squares when x has important uncertainty.",
+      "why": "A fit score cannot substitute for a probability model, residual checks, uncertainty, and causal design.",
+      "recovery": "Use an errors-in-variables or full likelihood model.",
+      "followUp": "State the data model, assumptions, residual diagnostics, uncertainty, and validation.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-186",
+      "category": "Statistics and fitting",
+      "severity": "high",
+      "tags": [
+        "statistics",
+        "data"
+      ],
+      "wrong": "Treating reduced chi-square near one as proof.",
+      "why": "A fit score cannot substitute for a probability model, residual checks, uncertainty, and causal design.",
+      "recovery": "It only has meaning with correct model, independent uncertainties and degrees of freedom.",
+      "followUp": "State the data model, assumptions, residual diagnostics, uncertainty, and validation.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-187",
+      "category": "Statistics and fitting",
+      "severity": "high",
+      "tags": [
+        "statistics",
+        "data"
+      ],
+      "wrong": "Deleting points until the fit is significant.",
+      "why": "A fit score cannot substitute for a probability model, residual checks, uncertainty, and causal design.",
+      "recovery": "Use predeclared criteria, investigate causes and report sensitivity transparently.",
+      "followUp": "State the data model, assumptions, residual diagnostics, uncertainty, and validation.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-188",
+      "category": "Statistics and fitting",
+      "severity": "high",
+      "tags": [
+        "statistics",
+        "data"
+      ],
+      "wrong": "Interpreting p-value as probability the null is true.",
+      "why": "A fit score cannot substitute for a probability model, residual checks, uncertainty, and causal design.",
+      "recovery": "Describe tail probability under null/model and complement with effect/interval/design.",
+      "followUp": "State the data model, assumptions, residual diagnostics, uncertainty, and validation.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-189",
+      "category": "Statistics and fitting",
+      "severity": "high",
+      "tags": [
+        "statistics",
+        "data"
+      ],
+      "wrong": "Extrapolating far beyond calibration range.",
+      "why": "A fit score cannot substitute for a probability model, residual checks, uncertainty, and causal design.",
+      "recovery": "Restrict to validated range or justify physical model and expanded uncertainty.",
+      "followUp": "State the data model, assumptions, residual diagnostics, uncertainty, and validation.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-190",
+      "category": "Statistics and fitting",
+      "severity": "high",
+      "tags": [
+        "statistics",
+        "data"
+      ],
+      "wrong": "Ignoring multiple comparisons.",
+      "why": "A fit score cannot substitute for a probability model, residual checks, uncertainty, and causal design.",
+      "recovery": "Predefine hypotheses or control/report multiplicity and validation data.",
+      "followUp": "State the data model, assumptions, residual diagnostics, uncertainty, and validation.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-191",
+      "category": "Experimental integrity",
+      "severity": "high",
+      "tags": [
+        "experiment",
+        "ethics"
+      ],
+      "wrong": "Selecting only the best-looking micrograph.",
+      "why": "Reliable science requires predefined controls, representative sampling, raw-data preservation, and transparent processing.",
+      "recovery": "Use predefined representative fields, batches and quantitative distributions.",
+      "followUp": "Preserve the evidence chain and explain controls, calibration, repeats, artifacts, and negative results.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-192",
+      "category": "Experimental integrity",
+      "severity": "high",
+      "tags": [
+        "experiment",
+        "ethics"
+      ],
+      "wrong": "Removing an outlier because it hurts the conclusion.",
+      "why": "Reliable science requires predefined controls, representative sampling, raw-data preservation, and transparent processing.",
+      "recovery": "Investigate, apply a predefined criterion, and report analysis with/without.",
+      "followUp": "Preserve the evidence chain and explain controls, calibration, repeats, artifacts, and negative results.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-193",
+      "category": "Experimental integrity",
+      "severity": "high",
+      "tags": [
+        "experiment",
+        "ethics"
+      ],
+      "wrong": "Overwriting raw files with processed data.",
+      "why": "Reliable science requires predefined controls, representative sampling, raw-data preservation, and transparent processing.",
+      "recovery": "Preserve immutable raw data and version processing scripts/outputs.",
+      "followUp": "Preserve the evidence chain and explain controls, calibration, repeats, artifacts, and negative results.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-194",
+      "category": "Experimental integrity",
+      "severity": "high",
+      "tags": [
+        "experiment",
+        "ethics"
+      ],
+      "wrong": "Changing success criteria after seeing results.",
+      "why": "Reliable science requires predefined controls, representative sampling, raw-data preservation, and transparent processing.",
+      "recovery": "Predefine primary criteria and label exploratory post-hoc analysis.",
+      "followUp": "Preserve the evidence chain and explain controls, calibration, repeats, artifacts, and negative results.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-195",
+      "category": "Experimental integrity",
+      "severity": "high",
+      "tags": [
+        "experiment",
+        "ethics"
+      ],
+      "wrong": "Running no blank or reference.",
+      "why": "Reliable science requires predefined controls, representative sampling, raw-data preservation, and transparent processing.",
+      "recovery": "Add the control needed to separate instrument/substrate/reagent contribution.",
+      "followUp": "Preserve the evidence chain and explain controls, calibration, repeats, artifacts, and negative results.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-196",
+      "category": "Experimental integrity",
+      "severity": "high",
+      "tags": [
+        "experiment",
+        "ethics"
+      ],
+      "wrong": "Treating repeat scans as independent sample replicates.",
+      "why": "Reliable science requires predefined controls, representative sampling, raw-data preservation, and transparent processing.",
+      "recovery": "Distinguish technical repeatability from independent batch/biological/material replication.",
+      "followUp": "Preserve the evidence chain and explain controls, calibration, repeats, artifacts, and negative results.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-197",
+      "category": "Experimental integrity",
+      "severity": "high",
+      "tags": [
+        "experiment",
+        "ethics"
+      ],
+      "wrong": "Ignoring instrument warm-up and drift.",
+      "why": "Reliable science requires predefined controls, representative sampling, raw-data preservation, and transparent processing.",
+      "recovery": "Record time/order, references before/after, randomization and drift correction uncertainty.",
+      "followUp": "Preserve the evidence chain and explain controls, calibration, repeats, artifacts, and negative results.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-198",
+      "category": "Experimental integrity",
+      "severity": "high",
+      "tags": [
+        "experiment",
+        "ethics"
+      ],
+      "wrong": "Reporting software peak labels without inspection.",
+      "why": "Reliable science requires predefined controls, representative sampling, raw-data preservation, and transparent processing.",
+      "recovery": "Verify calibration, baseline, line shape, residuals and assignment evidence.",
+      "followUp": "Preserve the evidence chain and explain controls, calibration, repeats, artifacts, and negative results.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-199",
+      "category": "Experimental integrity",
+      "severity": "high",
+      "tags": [
+        "experiment",
+        "ethics"
+      ],
+      "wrong": "Calling a negative result a failed project.",
+      "why": "Reliable science requires predefined controls, representative sampling, raw-data preservation, and transparent processing.",
+      "recovery": "State sensitivity/power, what was ruled out, limitations and next discriminating test.",
+      "followUp": "Preserve the evidence chain and explain controls, calibration, repeats, artifacts, and negative results.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-200",
+      "category": "Experimental integrity",
+      "severity": "high",
+      "tags": [
+        "experiment",
+        "ethics"
+      ],
+      "wrong": "Keeping decisions outside the lab notebook.",
+      "why": "Reliable science requires predefined controls, representative sampling, raw-data preservation, and transparent processing.",
+      "recovery": "Record parameter changes, anomalies, files, rationale, responsible person and timestamps.",
+      "followUp": "Preserve the evidence chain and explain controls, calibration, repeats, artifacts, and negative results.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-201",
+      "category": "Project-choice HR",
+      "severity": "medium",
+      "tags": [
+        "hr",
+        "project"
+      ],
+      "wrong": "Saying the project was chosen for easy marks.",
+      "why": "Explaining a project as an easy-grade choice undermines scientific motivation and ownership.",
+      "recovery": "Explain feasible scope, hands-on synthesis/characterization learning and responsible workload management.",
+      "followUp": "Frame feasibility honestly through skills, constraints, supervision, and scientific opportunity without disparaging alternatives.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-202",
+      "category": "Project-choice HR",
+      "severity": "medium",
+      "tags": [
+        "hr",
+        "project"
+      ],
+      "wrong": "Saying no better supervisor accepted you.",
+      "why": "Explaining a project as an easy-grade choice undermines scientific motivation and ownership.",
+      "recovery": "Describe capacity constraints neutrally and why the selected supervision/project is valuable.",
+      "followUp": "Frame feasibility honestly through skills, constraints, supervision, and scientific opportunity without disparaging alternatives.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-203",
+      "category": "Project-choice HR",
+      "severity": "medium",
+      "tags": [
+        "hr",
+        "project"
+      ],
+      "wrong": "Calling the project small and unimportant.",
+      "why": "Explaining a project as an easy-grade choice undermines scientific motivation and ownership.",
+      "recovery": "State the precise question, transferable methods and evidence standard without exaggeration.",
+      "followUp": "Frame feasibility honestly through skills, constraints, supervision, and scientific opportunity without disparaging alternatives.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-204",
+      "category": "Project-choice HR",
+      "severity": "medium",
+      "tags": [
+        "hr",
+        "project"
+      ],
+      "wrong": "Comparing your project negatively with classmates.",
+      "why": "Explaining a project as an easy-grade choice undermines scientific motivation and ownership.",
+      "recovery": "Focus on your objectives, contribution, learning and next scientific step.",
+      "followUp": "Frame feasibility honestly through skills, constraints, supervision, and scientific opportunity without disparaging alternatives.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-205",
+      "category": "Project-choice HR",
+      "severity": "medium",
+      "tags": [
+        "hr",
+        "project"
+      ],
+      "wrong": "Saying exam preparation mattered more than research.",
+      "why": "Explaining a project as an easy-grade choice undermines scientific motivation and ownership.",
+      "recovery": "Explain balanced responsibilities and concrete project discipline rather than ranking commitments.",
+      "followUp": "Frame feasibility honestly through skills, constraints, supervision, and scientific opportunity without disparaging alternatives.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-206",
+      "category": "Project-choice HR",
+      "severity": "medium",
+      "tags": [
+        "hr",
+        "project"
+      ],
+      "wrong": "Pretending the project was your first choice when it was not.",
+      "why": "Explaining a project as an easy-grade choice undermines scientific motivation and ownership.",
+      "recovery": "Give a concise honest transition and current commitment without unnecessary grievance.",
+      "followUp": "Frame feasibility honestly through skills, constraints, supervision, and scientific opportunity without disparaging alternatives.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-207",
+      "category": "Project-choice HR",
+      "severity": "medium",
+      "tags": [
+        "hr",
+        "project"
+      ],
+      "wrong": "Blaming project scope for missing results.",
+      "why": "Explaining a project as an easy-grade choice undermines scientific motivation and ownership.",
+      "recovery": "State stage, completed work, dependencies and action plan.",
+      "followUp": "Frame feasibility honestly through skills, constraints, supervision, and scientific opportunity without disparaging alternatives.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-208",
+      "category": "Project-choice HR",
+      "severity": "medium",
+      "tags": [
+        "hr",
+        "project"
+      ],
+      "wrong": "Using project feasibility as synonym for low effort.",
+      "why": "Explaining a project as an easy-grade choice undermines scientific motivation and ownership.",
+      "recovery": "Define feasibility as controlled scope, available methods, safety, time and interpretable evidence.",
+      "followUp": "Frame feasibility honestly through skills, constraints, supervision, and scientific opportunity without disparaging alternatives.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-209",
+      "category": "Project-choice HR",
+      "severity": "medium",
+      "tags": [
+        "hr",
+        "project"
+      ],
+      "wrong": "Claiming passion for a material you cannot explain.",
+      "why": "Explaining a project as an easy-grade choice undermines scientific motivation and ownership.",
+      "recovery": "Use measured interest and demonstrate understanding of the actual physics/method.",
+      "followUp": "Frame feasibility honestly through skills, constraints, supervision, and scientific opportunity without disparaging alternatives.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-210",
+      "category": "Project-choice HR",
+      "severity": "medium",
+      "tags": [
+        "hr",
+        "project"
+      ],
+      "wrong": "Saying the supervisor will decide every next step.",
+      "why": "Explaining a project as an easy-grade choice undermines scientific motivation and ownership.",
+      "recovery": "Credit guidance while naming the questions, checks and decisions you can own.",
+      "followUp": "Frame feasibility honestly through skills, constraints, supervision, and scientific opportunity without disparaging alternatives.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-211",
+      "category": "Declared-subject HR",
+      "severity": "medium",
+      "tags": [
+        "hr",
+        "declared-subject"
+      ],
+      "wrong": "Saying 'I like all subjects equally.'",
+      "why": "Overbroad or fashionable subject claims invite depth that the candidate has not prepared.",
+      "recovery": "Name two or three prepared favourites and maintain survival basics elsewhere.",
+      "followUp": "Declare a narrow defensible set and state preparation boundaries honestly.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-212",
+      "category": "Declared-subject HR",
+      "severity": "medium",
+      "tags": [
+        "hr",
+        "declared-subject"
+      ],
+      "wrong": "Declaring quantum mechanics because it sounds advanced.",
+      "why": "Overbroad or fashionable subject claims invite depth that the candidate has not prepared.",
+      "recovery": "Declare it only if you can handle foundations, standard systems, derivations and follow-ups.",
+      "followUp": "Declare a narrow defensible set and state preparation boundaries honestly.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-213",
+      "category": "Declared-subject HR",
+      "severity": "medium",
+      "tags": [
+        "hr",
+        "declared-subject"
+      ],
+      "wrong": "Calling a subject easy.",
+      "why": "Overbroad or fashionable subject claims invite depth that the candidate has not prepared.",
+      "recovery": "Describe why its concepts fit your preparation, not why the panel should ask easy questions.",
+      "followUp": "Declare a narrow defensible set and state preparation boundaries honestly.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-214",
+      "category": "Declared-subject HR",
+      "severity": "medium",
+      "tags": [
+        "hr",
+        "declared-subject"
+      ],
+      "wrong": "Changing favourite subject after every difficult question.",
+      "why": "Overbroad or fashionable subject claims invite depth that the candidate has not prepared.",
+      "recovery": "Maintain a consistent declared set and recover honestly from uncertainty.",
+      "followUp": "Declare a narrow defensible set and state preparation boundaries honestly.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-215",
+      "category": "Declared-subject HR",
+      "severity": "medium",
+      "tags": [
+        "hr",
+        "declared-subject"
+      ],
+      "wrong": "Declaring only the project subject without fundamentals.",
+      "why": "Overbroad or fashionable subject claims invite depth that the candidate has not prepared.",
+      "recovery": "Prepare project-linked depth plus core mechanics/EM/thermo/math survival.",
+      "followUp": "Declare a narrow defensible set and state preparation boundaries honestly.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-216",
+      "category": "Declared-subject HR",
+      "severity": "medium",
+      "tags": [
+        "hr",
+        "declared-subject"
+      ],
+      "wrong": "Listing a course title as proof of mastery.",
+      "why": "Overbroad or fashionable subject claims invite depth that the candidate has not prepared.",
+      "recovery": "Demonstrate definitions, mechanism, derivation, numerical and limiting cases.",
+      "followUp": "Declare a narrow defensible set and state preparation boundaries honestly.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-217",
+      "category": "Declared-subject HR",
+      "severity": "medium",
+      "tags": [
+        "hr",
+        "declared-subject"
+      ],
+      "wrong": "Saying you dislike a foundational subject.",
+      "why": "Overbroad or fashionable subject claims invite depth that the candidate has not prepared.",
+      "recovery": "Acknowledge relative strength while showing required basics and improvement plan.",
+      "followUp": "Declare a narrow defensible set and state preparation boundaries honestly.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-218",
+      "category": "Declared-subject HR",
+      "severity": "medium",
+      "tags": [
+        "hr",
+        "declared-subject"
+      ],
+      "wrong": "Declaring a broad field such as electronics without scope.",
+      "why": "Overbroad or fashionable subject claims invite depth that the candidate has not prepared.",
+      "recovery": "Specify analog basics, devices, instrumentation, or signals and the depth prepared.",
+      "followUp": "Declare a narrow defensible set and state preparation boundaries honestly.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-219",
+      "category": "Declared-subject HR",
+      "severity": "medium",
+      "tags": [
+        "hr",
+        "declared-subject"
+      ],
+      "wrong": "Using grades as the only subject justification.",
+      "why": "Overbroad or fashionable subject claims invite depth that the candidate has not prepared.",
+      "recovery": "Connect conceptual understanding, problems, experiments, and oral explanation.",
+      "followUp": "Declare a narrow defensible set and state preparation boundaries honestly.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-220",
+      "category": "Declared-subject HR",
+      "severity": "medium",
+      "tags": [
+        "hr",
+        "declared-subject"
+      ],
+      "wrong": "Refusing questions outside favourites.",
+      "why": "Overbroad or fashionable subject claims invite depth that the candidate has not prepared.",
+      "recovery": "Answer foundational breadth honestly; favourites indicate depth, not immunity.",
+      "followUp": "Declare a narrow defensible set and state preparation boundaries honestly.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-221",
+      "category": "Unknown-answer recovery",
+      "severity": "high",
+      "tags": [
+        "communication",
+        "honesty"
+      ],
+      "wrong": "Inventing an exact numerical value.",
+      "why": "Bluffing or shutting down after uncertainty is worse than bounded first-principles reasoning.",
+      "recovery": "Say you do not recall the value, estimate its scale if possible, and state how to verify.",
+      "followUp": "State uncertainty, preserve known facts, reason conditionally, and identify verification.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-222",
+      "category": "Unknown-answer recovery",
+      "severity": "high",
+      "tags": [
+        "communication",
+        "honesty"
+      ],
+      "wrong": "Answering 'I don't know' and stopping immediately.",
+      "why": "Bluffing or shutting down after uncertainty is worse than bounded first-principles reasoning.",
+      "recovery": "Add the nearest known principle and a safe reasoning path if one exists.",
+      "followUp": "State uncertainty, preserve known facts, reason conditionally, and identify verification.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-223",
+      "category": "Unknown-answer recovery",
+      "severity": "high",
+      "tags": [
+        "communication",
+        "honesty"
+      ],
+      "wrong": "Continuing after realizing the premise is wrong.",
+      "why": "Bluffing or shutting down after uncertainty is worse than bounded first-principles reasoning.",
+      "recovery": "Correct yourself explicitly and restart from the valid principle.",
+      "followUp": "State uncertainty, preserve known facts, reason conditionally, and identify verification.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-224",
+      "category": "Unknown-answer recovery",
+      "severity": "high",
+      "tags": [
+        "communication",
+        "honesty"
+      ],
+      "wrong": "Agreeing with the panel's wrong premise to appear cooperative.",
+      "why": "Bluffing or shutting down after uncertainty is worse than bounded first-principles reasoning.",
+      "recovery": "Respectfully identify the assumption and explain the correction.",
+      "followUp": "State uncertainty, preserve known facts, reason conditionally, and identify verification.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-225",
+      "category": "Unknown-answer recovery",
+      "severity": "high",
+      "tags": [
+        "communication",
+        "honesty"
+      ],
+      "wrong": "Using excessive hedging for a fact you do know.",
+      "why": "Bluffing or shutting down after uncertainty is worse than bounded first-principles reasoning.",
+      "recovery": "State the well-supported core clearly and hedge only the uncertain boundary.",
+      "followUp": "State uncertainty, preserve known facts, reason conditionally, and identify verification.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-226",
+      "category": "Unknown-answer recovery",
+      "severity": "high",
+      "tags": [
+        "communication",
+        "honesty"
+      ],
+      "wrong": "Repeating the same wrong answer louder.",
+      "why": "Bluffing or shutting down after uncertainty is worse than bounded first-principles reasoning.",
+      "recovery": "Pause, revisit definitions/units/limits, and ask to clarify the question if needed.",
+      "followUp": "State uncertainty, preserve known facts, reason conditionally, and identify verification.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-227",
+      "category": "Unknown-answer recovery",
+      "severity": "high",
+      "tags": [
+        "communication",
+        "honesty"
+      ],
+      "wrong": "Quoting unrelated facts to fill silence.",
+      "why": "Bluffing or shutting down after uncertainty is worse than bounded first-principles reasoning.",
+      "recovery": "Stop after the bounded answer; silence is preferable to unsupported digression.",
+      "followUp": "State uncertainty, preserve known facts, reason conditionally, and identify verification.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-228",
+      "category": "Unknown-answer recovery",
+      "severity": "high",
+      "tags": [
+        "communication",
+        "honesty"
+      ],
+      "wrong": "Claiming you will Google it as the whole recovery.",
+      "why": "Bluffing or shutting down after uncertainty is worse than bounded first-principles reasoning.",
+      "recovery": "Show first-principles reasoning and name the authoritative source or calculation to consult.",
+      "followUp": "State uncertainty, preserve known facts, reason conditionally, and identify verification.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-229",
+      "category": "Unknown-answer recovery",
+      "severity": "high",
+      "tags": [
+        "communication",
+        "honesty"
+      ],
+      "wrong": "Hiding an unknown project field inside generic jargon.",
+      "why": "Bluffing or shutting down after uncertainty is worse than bounded first-principles reasoning.",
+      "recovery": "Label it unknown/planned and explain the measurement that will resolve it.",
+      "followUp": "State uncertainty, preserve known facts, reason conditionally, and identify verification.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-230",
+      "category": "Unknown-answer recovery",
+      "severity": "high",
+      "tags": [
+        "communication",
+        "honesty"
+      ],
+      "wrong": "Treating uncertainty as personal failure.",
+      "why": "Bluffing or shutting down after uncertainty is worse than bounded first-principles reasoning.",
+      "recovery": "Use it as a scientific boundary: known, inferred, unknown, and next test.",
+      "followUp": "State uncertainty, preserve known facts, reason conditionally, and identify verification.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-231",
+      "category": "Diagram quality",
+      "severity": "medium",
+      "tags": [
+        "diagram",
+        "communication"
+      ],
+      "wrong": "Drawing a graph without axis labels.",
+      "why": "An unlabeled sketch cannot communicate geometry, sign, boundary conditions, or measured variables.",
+      "recovery": "Label variable names, units, origin and relevant scale.",
+      "followUp": "Label the system, axes, directions, variables, units, and assumptions while drawing.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-232",
+      "category": "Diagram quality",
+      "severity": "medium",
+      "tags": [
+        "diagram",
+        "communication"
+      ],
+      "wrong": "Drawing field lines without arrow direction.",
+      "why": "An unlabeled sketch cannot communicate geometry, sign, boundary conditions, or measured variables.",
+      "recovery": "Add direction, source signs and note line density is qualitative.",
+      "followUp": "Label the system, axes, directions, variables, units, and assumptions while drawing.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-233",
+      "category": "Diagram quality",
+      "severity": "medium",
+      "tags": [
+        "diagram",
+        "communication"
+      ],
+      "wrong": "Sketching a circuit without ground/reference.",
+      "why": "An unlabeled sketch cannot communicate geometry, sign, boundary conditions, or measured variables.",
+      "recovery": "Mark reference node, polarity, current direction and component values/symbols.",
+      "followUp": "Label the system, axes, directions, variables, units, and assumptions while drawing.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-234",
+      "category": "Diagram quality",
+      "severity": "medium",
+      "tags": [
+        "diagram",
+        "communication"
+      ],
+      "wrong": "Drawing an orbit with central body at ellipse centre.",
+      "why": "An unlabeled sketch cannot communicate geometry, sign, boundary conditions, or measured variables.",
+      "recovery": "Place the central body at a focus and label periapsis, apoapsis and radius.",
+      "followUp": "Label the system, axes, directions, variables, units, and assumptions while drawing.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-235",
+      "category": "Diagram quality",
+      "severity": "medium",
+      "tags": [
+        "diagram",
+        "communication"
+      ],
+      "wrong": "Drawing an EM wave with E and B parallel.",
+      "why": "An unlabeled sketch cannot communicate geometry, sign, boundary conditions, or measured variables.",
+      "recovery": "Make E, B and propagation mutually perpendicular for vacuum plane wave and label phase.",
+      "followUp": "Label the system, axes, directions, variables, units, and assumptions while drawing.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-236",
+      "category": "Diagram quality",
+      "severity": "medium",
+      "tags": [
+        "diagram",
+        "communication"
+      ],
+      "wrong": "Sketching diffraction without aperture dimensions.",
+      "why": "An unlabeled sketch cannot communicate geometry, sign, boundary conditions, or measured variables.",
+      "recovery": "Label slit/aperture, wavelength, angle, screen/focal plane and central/minima conditions.",
+      "followUp": "Label the system, axes, directions, variables, units, and assumptions while drawing.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-237",
+      "category": "Diagram quality",
+      "severity": "medium",
+      "tags": [
+        "diagram",
+        "communication"
+      ],
+      "wrong": "Plotting resonance without damping labels.",
+      "why": "An unlabeled sketch cannot communicate geometry, sign, boundary conditions, or measured variables.",
+      "recovery": "Label frequency, amplitude/phase, omega0 and compare damping or Q.",
+      "followUp": "Label the system, axes, directions, variables, units, and assumptions while drawing.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-238",
+      "category": "Diagram quality",
+      "severity": "medium",
+      "tags": [
+        "diagram",
+        "communication"
+      ],
+      "wrong": "Drawing band diagram without energy axis or Fermi level.",
+      "why": "An unlabeled sketch cannot communicate geometry, sign, boundary conditions, or measured variables.",
+      "recovery": "Label energy, bands, gap, Fermi level and spatial/material regions if junction.",
+      "followUp": "Label the system, axes, directions, variables, units, and assumptions while drawing.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-239",
+      "category": "Diagram quality",
+      "severity": "medium",
+      "tags": [
+        "diagram",
+        "communication"
+      ],
+      "wrong": "Showing XRD peaks without 2-theta and intensity.",
+      "why": "An unlabeled sketch cannot communicate geometry, sign, boundary conditions, or measured variables.",
+      "recovery": "Label axes, wavelength/reference, peak position/width and background.",
+      "followUp": "Label the system, axes, directions, variables, units, and assumptions while drawing.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-240",
+      "category": "Diagram quality",
+      "severity": "medium",
+      "tags": [
+        "diagram",
+        "communication"
+      ],
+      "wrong": "Drawing error bars without saying what they represent.",
+      "why": "An unlabeled sketch cannot communicate geometry, sign, boundary conditions, or measured variables.",
+      "recovery": "State SD, SE, confidence, or uncertainty and sample count/model.",
+      "followUp": "Label the system, axes, directions, variables, units, and assumptions while drawing.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-241",
+      "category": "Current-fact provenance",
+      "severity": "critical",
+      "tags": [
+        "current-fact",
+        "organization",
+        "source"
+      ],
+      "wrong": "Quoting a previous-year application deadline as current.",
+      "why": "Recruitment, missions, programmes, people, dates, and policies change and must not be recalled as timeless facts.",
+      "recovery": "Open the current official notice and record its cycle and verification date.",
+      "followUp": "Use an official source, verification date, confidence, and may-change label—or state uncertainty.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-242",
+      "category": "Current-fact provenance",
+      "severity": "critical",
+      "tags": [
+        "current-fact",
+        "organization",
+        "source"
+      ],
+      "wrong": "Repeating an old eligibility criterion.",
+      "why": "Recruitment, missions, programmes, people, dates, and policies change and must not be recalled as timeless facts.",
+      "recovery": "Use the exact current advertisement and distinguish route/post/category conditions.",
+      "followUp": "Use an official source, verification date, confidence, and may-change label—or state uncertainty.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-243",
+      "category": "Current-fact provenance",
+      "severity": "critical",
+      "tags": [
+        "current-fact",
+        "organization",
+        "source"
+      ],
+      "wrong": "Stating an outdated mission status.",
+      "why": "Recruitment, missions, programmes, people, dates, and policies change and must not be recalled as timeless facts.",
+      "recovery": "Check the official mission page immediately before the interview.",
+      "followUp": "Use an official source, verification date, confidence, and may-change label—or state uncertainty.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-244",
+      "category": "Current-fact provenance",
+      "severity": "critical",
+      "tags": [
+        "current-fact",
+        "organization",
+        "source"
+      ],
+      "wrong": "Naming a current organization head from memory.",
+      "why": "Recruitment, missions, programmes, people, dates, and policies change and must not be recalled as timeless facts.",
+      "recovery": "Verify on the official site or omit the mutable name.",
+      "followUp": "Use an official source, verification date, confidence, and may-change label—or state uncertainty.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-245",
+      "category": "Current-fact provenance",
+      "severity": "critical",
+      "tags": [
+        "current-fact",
+        "organization",
+        "source"
+      ],
+      "wrong": "Using a coaching blog as the authority for salary.",
+      "why": "Recruitment, missions, programmes, people, dates, and policies change and must not be recalled as timeless facts.",
+      "recovery": "Use the current official notification/pay rules and label allowances/changes.",
+      "followUp": "Use an official source, verification date, confidence, and may-change label—or state uncertainty.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-246",
+      "category": "Current-fact provenance",
+      "severity": "critical",
+      "tags": [
+        "current-fact",
+        "organization",
+        "source"
+      ],
+      "wrong": "Claiming a centre's role from an old summary.",
+      "why": "Recruitment, missions, programmes, people, dates, and policies change and must not be recalled as timeless facts.",
+      "recovery": "Check the current official centre/laboratory page and avoid overgeneralization.",
+      "followUp": "Use an official source, verification date, confidence, and may-change label—or state uncertainty.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-247",
+      "category": "Current-fact provenance",
+      "severity": "critical",
+      "tags": [
+        "current-fact",
+        "organization",
+        "source"
+      ],
+      "wrong": "Listing a private company office or vacancy without date.",
+      "why": "Recruitment, missions, programmes, people, dates, and policies change and must not be recalled as timeless facts.",
+      "recovery": "Verify company career page and location for the specific role.",
+      "followUp": "Use an official source, verification date, confidence, and may-change label—or state uncertainty.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-248",
+      "category": "Current-fact provenance",
+      "severity": "critical",
+      "tags": [
+        "current-fact",
+        "organization",
+        "source"
+      ],
+      "wrong": "Presenting a reconstructed panel pattern as an actual interview transcript.",
+      "why": "Recruitment, missions, programmes, people, dates, and policies change and must not be recalled as timeless facts.",
+      "recovery": "Label it a training pattern and avoid leaked/verbatim claims.",
+      "followUp": "Use an official source, verification date, confidence, and may-change label—or state uncertainty.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-249",
+      "category": "Current-fact provenance",
+      "severity": "critical",
+      "tags": [
+        "current-fact",
+        "organization",
+        "source"
+      ],
+      "wrong": "Treating a source checked a year ago as current.",
+      "why": "Recruitment, missions, programmes, people, dates, and policies change and must not be recalled as timeless facts.",
+      "recovery": "Apply the stale threshold and recheck mutable sources before use.",
+      "followUp": "Use an official source, verification date, confidence, and may-change label—or state uncertainty.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    },
+    {
+      "id": "TRAP-250",
+      "category": "Current-fact provenance",
+      "severity": "critical",
+      "tags": [
+        "current-fact",
+        "organization",
+        "source"
+      ],
+      "wrong": "Letting AI-generated organization text become trusted automatically.",
+      "why": "Recruitment, missions, programmes, people, dates, and policies change and must not be recalled as timeless facts.",
+      "recovery": "Require official-source review and provenance before saving as a fact.",
+      "followUp": "Use an official source, verification date, confidence, and may-change label—or state uncertainty.",
+      "reviewedOn": "2026-08-15",
+      "status": "reviewed-distinct-v1"
+    }
+  ]
+}

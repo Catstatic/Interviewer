@@ -1,0 +1,1128 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-08-15",
+  "dossiers": [
+    {
+      "id": "isro",
+      "name": "ISRO",
+      "type": "Space programme and mission systems",
+      "locationNote": "Multiple centres across India; location and posting depend on the current recruitment notice and organizational need.",
+      "missionSummary": "India's national space organization, covering space systems, applications, access to space, science missions, and enabling infrastructure.",
+      "stableFacts": [
+        "Official ISRO career and centre information must be checked on the ISRO portal for every application cycle.",
+        "Physics-relevant work can connect to optics, detectors, materials, electronics, remote sensing, spacecraft systems, thermal engineering, communication, data analysis, and experimental validation.",
+        "A strong interview answer should connect a specific technical skill to reliable mission systems rather than only saying that space is inspiring."
+      ],
+      "technicalFit": [
+        "Optics and detectors",
+        "Materials characterization",
+        "Payload instrumentation",
+        "Remote sensing",
+        "Spacecraft thermal and radiation response",
+        "Experimental validation"
+      ],
+      "interviewFocus": [
+        "Declared-subject fundamentals",
+        "Project ownership",
+        "Spacecraft/payload relevance",
+        "Reliability and teamwork",
+        "Posting and service readiness",
+        "One officially verified programme or centre"
+      ],
+      "whyFramework": "Connect one verified ISRO need or work area to your actual physics, materials, optics, electronics, instrumentation, or data skills. State how you would learn, test, document, and contribute within a mission team.",
+      "officialSources": [
+        {
+          "label": "ISRO profile",
+          "url": "https://www.isro.gov.in/profile.html",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official",
+          "mayChange": false
+        },
+        {
+          "label": "ISRO careers",
+          "url": "https://www.isro.gov.in/Careers.html",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official-current-checked",
+          "mayChange": true
+        },
+        {
+          "label": "ISRO centres",
+          "url": "https://www.isro.gov.in/isro_centre.html",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official-current-checked",
+          "mayChange": true
+        }
+      ]
+    },
+    {
+      "id": "drdo",
+      "name": "DRDO",
+      "type": "Defence research, systems, testing, and technology",
+      "locationNote": "Laboratories are distributed by technology domain and location; current RAC/CEPTAM notices and laboratory pages are authoritative.",
+      "missionSummary": "DRDO works under the Ministry of Defence on sensors, systems, platforms, equipment, production/induction support, test and evaluation, and defence R&D capability.",
+      "stableFacts": [
+        "Official DRDO material describes work spanning land, air, sea, space, cyber, sensors, electronics, materials, simulation, life sciences, and other defence technology disciplines.",
+        "The interview preparation must remain at public, non-sensitive physics and engineering level and must never speculate about restricted capabilities.",
+        "Applied answers should include requirement, environment, calibration, validation, failure modes, reliability, interfaces, and confidentiality discipline."
+      ],
+      "technicalFit": [
+        "Radar and electromagnetic systems",
+        "Sensors and optoelectronics",
+        "Materials under extremes",
+        "Instrumentation and calibration",
+        "Signal processing",
+        "Reliability and environmental testing"
+      ],
+      "interviewFocus": [
+        "Fundamentals plus application",
+        "Testing under constraints",
+        "Project troubleshooting",
+        "Systems trade-offs",
+        "Safety and confidentiality",
+        "Team and laboratory readiness"
+      ],
+      "whyFramework": "Explain how your physics foundation can become dependable technology through measurement, modelling, testing, documentation, and team execution. Avoid generic patriotism without a technical contribution.",
+      "officialSources": [
+        {
+          "label": "About DRDO",
+          "url": "https://www.drdo.gov.in/drdo/organisation/about-drdo",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official",
+          "mayChange": false
+        },
+        {
+          "label": "DRDO opportunities",
+          "url": "https://www.drdo.gov.in/drdo/careers",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official-current-checked",
+          "mayChange": true
+        },
+        {
+          "label": "RAC",
+          "url": "https://rac.gov.in/",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official-current-checked",
+          "mayChange": true
+        }
+      ]
+    },
+    {
+      "id": "barc-dae",
+      "name": "BARC / DAE",
+      "type": "Nuclear science, engineering, materials, instrumentation, and applications",
+      "locationNote": "BARC and DAE units have different research, training, and posting contexts; current OCES/DGFS and recruitment notices are authoritative.",
+      "missionSummary": "BARC is a multidisciplinary nuclear research centre with official research areas including reactor technologies, fuel/reprocessing and waste management, isotope and radiation applications, accelerators and lasers, electronics/instrumentation/control, materials science, and basic/applied science.",
+      "stableFacts": [
+        "The BARC official overview emphasizes self-reliance and multidisciplinary research linking basic science and technology development.",
+        "BARC's official pages identify related DAE research institutions including IGCAR, RRCAT, and VECC.",
+        "Interview preparation must combine first-principles physics with radiation protection, evidence, procedure, documentation, and safety culture."
+      ],
+      "technicalFit": [
+        "Nuclear and radiation physics",
+        "Detectors and electronics",
+        "Materials science",
+        "Characterization",
+        "Thermodynamics/statistical physics",
+        "Accelerator/laser and instrumentation fundamentals"
+      ],
+      "interviewFocus": [
+        "Derivations and why-chains",
+        "Nuclear/quantum/thermo fundamentals",
+        "Project evidence",
+        "Detector and measurement principles",
+        "Safety culture",
+        "Unknown-answer honesty"
+      ],
+      "whyFramework": "Connect fundamental physics and disciplined experimental work to safe, reliable nuclear science and technology. Do not quote stale training, eligibility, programme, or posting facts.",
+      "officialSources": [
+        {
+          "label": "BARC about and research overview",
+          "url": "https://www.barc.gov.in/about/",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official",
+          "mayChange": false
+        },
+        {
+          "label": "DAE",
+          "url": "https://dae.gov.in/",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official-current-checked",
+          "mayChange": true
+        },
+        {
+          "label": "BARC careers",
+          "url": "https://www.barc.gov.in/careers/",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official-current-checked",
+          "mayChange": true
+        }
+      ]
+    },
+    {
+      "id": "csir-niist",
+      "name": "CSIR-NIIST",
+      "type": "Interdisciplinary research and technology",
+      "locationNote": "Thiruvananthapuram, Kerala.",
+      "missionSummary": "NIIST is a constituent laboratory of CSIR conducting interdisciplinary R&D, including materials, chemical, microbial, environmental, and agro-processing science and technology.",
+      "stableFacts": [
+        "The official NIIST overview identifies Materials Science and Technology among its R&D areas.",
+        "The institute describes advanced research facilities and pilot-plant capabilities for research, training, and process or product development.",
+        "A candidate should connect project methods to reproducibility, characterization, process scale-up, resource use, and defensible application claims."
+      ],
+      "technicalFit": [
+        "Materials synthesis",
+        "Structural and spectroscopic characterization",
+        "Sensors and functional materials",
+        "Process development",
+        "Experimental uncertainty",
+        "Scale-up and reproducibility"
+      ],
+      "interviewFocus": [
+        "Project depth",
+        "Instrument principles",
+        "Controls and uncertainty",
+        "Interdisciplinary communication",
+        "Scale-up",
+        "Research maturity"
+      ],
+      "whyFramework": "Connect hands-on synthesis and characterization to interdisciplinary materials or process research, while distinguishing a laboratory result from a reproducible and scalable technology.",
+      "officialSources": [
+        {
+          "label": "NIIST About Us",
+          "url": "https://www.niist.res.in/about-us/",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official",
+          "mayChange": false
+        },
+        {
+          "label": "NIIST home and opportunities",
+          "url": "https://www.niist.res.in/",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official-current-checked",
+          "mayChange": true
+        }
+      ]
+    },
+    {
+      "id": "iia",
+      "name": "Indian Institute of Astrophysics (IIA)",
+      "type": "Astronomy, astrophysics, related physics, and instrumentation",
+      "locationNote": "Headquarters in Bengaluru with observing and field facilities; current programme pages are authoritative.",
+      "missionSummary": "IIA is devoted to research and education in astronomy, astrophysics, and related physics, with observational facilities and an instrumentation-development programme.",
+      "stableFacts": [
+        "The official IIA overview lists research in the Sun and Solar System, stellar/galactic/extragalactic studies, theoretical astrophysics, and cosmology.",
+        "The Bengaluru campus includes electronics, photonics, mechanical, library, and data support for research and instrument development.",
+        "The institute operates or supports observing facilities at multiple Indian sites, so answers should connect science questions to measurements, calibration, detectors, optics, and data."
+      ],
+      "technicalFit": [
+        "Optics and detectors",
+        "Spectroscopy",
+        "Astronomical instrumentation",
+        "Data analysis",
+        "Solar and stellar physics",
+        "Materials for instruments"
+      ],
+      "interviewFocus": [
+        "Specific research question",
+        "Observable and instrument",
+        "Optics/detectors/spectroscopy",
+        "Mathematical reasoning",
+        "Uncertainty",
+        "Research motivation"
+      ],
+      "whyFramework": "Name an astronomical question, what observable would test it, which instrument and calibration are needed, and how your experimental or materials background supports that work.",
+      "officialSources": [
+        {
+          "label": "IIA official overview",
+          "url": "https://www.iiap.res.in/about-us/overview/",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official",
+          "mayChange": false
+        },
+        {
+          "label": "IIA opportunities",
+          "url": "https://www.iiap.res.in/iia_jobs/",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official-current-checked",
+          "mayChange": true
+        }
+      ]
+    },
+    {
+      "id": "iucaa",
+      "name": "IUCAA",
+      "type": "University-sector astronomy and astrophysics research, teaching, and development",
+      "locationNote": "Pune, Maharashtra; current admissions and opportunities must be checked on official pages.",
+      "missionSummary": "IUCAA is an autonomous institution set up by the UGC to promote astronomy and astrophysics in Indian universities and to be a centre of excellence for teaching, research, and development.",
+      "stableFacts": [
+        "The official IUCAA mission describes both core academic programmes and visitor/associate programmes supporting university astronomy.",
+        "Research preparation can span gravitation, cosmology, galaxies, high-energy astrophysics, solar physics, gravitational waves, observations, data, and instrumentation depending on the current group.",
+        "A strong answer should present a tractable research question, assumptions, observable evidence, computation or instrument needs, and uncertainty."
+      ],
+      "technicalFit": [
+        "Mathematical physics",
+        "Astrophysics and cosmology",
+        "Data analysis",
+        "Gravitation",
+        "Instrumentation",
+        "Scientific computing"
+      ],
+      "interviewFocus": [
+        "Research question",
+        "Mathematical assumptions",
+        "Model-data reasoning",
+        "Computation",
+        "Literature readiness",
+        "Uncertainty and falsification"
+      ],
+      "whyFramework": "Explain a precise research interest and how you would connect a physical model to observable or simulated evidence. Avoid saying only that the universe is fascinating.",
+      "officialSources": [
+        {
+          "label": "IUCAA official home and mission",
+          "url": "https://www.iucaa.in/en",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official",
+          "mayChange": false
+        },
+        {
+          "label": "IUCAA admissions test portal",
+          "url": "https://inat.iucaa.in/",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official-current-checked",
+          "mayChange": true
+        }
+      ]
+    },
+    {
+      "id": "rri",
+      "name": "Raman Research Institute (RRI)",
+      "type": "Basic research in physics",
+      "locationNote": "Bengaluru, Karnataka.",
+      "missionSummary": "RRI is an autonomous research institute engaged in basic science, with official research areas in Astronomy and Astrophysics, Light and Matter Physics, Soft Condensed Matter, and Theoretical Physics.",
+      "stableFacts": [
+        "The official overview states that RRI was founded by Sir C. V. Raman and is supported as an autonomous institute by the Department of Science and Technology.",
+        "Its breadth creates possible fits across astronomy, optics, quantum/light-matter physics, soft matter, materials measurements, and theory.",
+        "A candidate should select a specific group/question rather than presenting RRI as a generic physics employer."
+      ],
+      "technicalFit": [
+        "Astronomy and radio/X-ray instrumentation",
+        "Light–matter and quantum optics",
+        "Soft condensed matter",
+        "Materials measurement",
+        "Theoretical physics",
+        "Electronics and experimental systems"
+      ],
+      "interviewFocus": [
+        "Specific research theme",
+        "First-principles physics",
+        "Experiment or model design",
+        "Instrumentation",
+        "Data/uncertainty",
+        "Research fit"
+      ],
+      "whyFramework": "Choose one official research area and connect it to a concrete experiment, observable, theory problem, or instrument skill you can defend deeply.",
+      "officialSources": [
+        {
+          "label": "RRI official overview",
+          "url": "https://www.rri.res.in/about/overview",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official",
+          "mayChange": false
+        },
+        {
+          "label": "RRI careers",
+          "url": "https://www.rri.res.in/careers/regular-other-openings",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official-current-checked",
+          "mayChange": true
+        }
+      ]
+    },
+    {
+      "id": "prl",
+      "name": "Physical Research Laboratory (PRL)",
+      "type": "Space and fundamental sciences research",
+      "locationNote": "Department of Space unit with facilities/campuses identified on official PRL pages; current opportunities must be rechecked.",
+      "missionSummary": "PRL carries out fundamental research in astronomy and astrophysics, solar and heliophysics, space and atmospheric sciences, geosciences, planetary sciences, atomic/molecular/optical physics, and theoretical physics.",
+      "stableFacts": [
+        "Official PRL pages describe it as an autonomous unit of the Department of Space.",
+        "PRL research combines theory, observation, laboratory studies, remote sensing, data analysis, and scientific instrumentation.",
+        "Project and interview answers should connect a science question to payload or laboratory measurement, calibration, modelling, and uncertainty."
+      ],
+      "technicalFit": [
+        "Planetary and space science",
+        "Solar and atmospheric physics",
+        "Astronomy",
+        "AMO and optics",
+        "Payload instrumentation",
+        "Remote sensing and data analysis"
+      ],
+      "interviewFocus": [
+        "Research question",
+        "Observation or experiment",
+        "Instrumentation",
+        "Physics foundations",
+        "Data and modelling",
+        "Fit with space science"
+      ],
+      "whyFramework": "Identify one PRL research domain, the measurement or model it requires, and how your optics, materials, instrumentation, or data skills can contribute.",
+      "officialSources": [
+        {
+          "label": "PRL official home",
+          "url": "https://www.prl.res.in/",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official",
+          "mayChange": false
+        },
+        {
+          "label": "PRL research internship overview",
+          "url": "https://www.prl.res.in/prl-eng/summer_internship",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official",
+          "mayChange": true
+        },
+        {
+          "label": "PRL opportunities",
+          "url": "https://www.prl.res.in/prl-eng/advertisement",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official-current-checked",
+          "mayChange": true
+        }
+      ]
+    },
+    {
+      "id": "in-space-private",
+      "name": "IN-SPACe and Indian private-space ecosystem",
+      "type": "Promotion, enablement, authorization, and supervision of non-government space activity",
+      "locationNote": "IN-SPACe headquarters is in Ahmedabad; private-space roles and company locations change and require current verification.",
+      "missionSummary": "IN-SPACe is an autonomous single-window nodal agency in the Department of Space that promotes, enables, authorizes, and supervises space activities by non-government entities.",
+      "stableFacts": [
+        "Official IN-SPACe material describes non-government space activities spanning launch vehicles, satellites, ground stations, and space-data products and services.",
+        "The ecosystem is not one employer; each company, role, authorization context, and location must be verified independently.",
+        "Startup interviews often emphasize prototype choices, test evidence, cost, schedule, reliability, interfaces, documentation, and cross-functional learning."
+      ],
+      "technicalFit": [
+        "Payload and sensor engineering",
+        "Materials and qualification",
+        "Test and validation",
+        "Remote-sensing data",
+        "Optics and electronics",
+        "Reliability and systems engineering"
+      ],
+      "interviewFocus": [
+        "What can you build/test",
+        "Cheapest uncertainty-reducing experiment",
+        "Failure documentation",
+        "Trade-offs",
+        "Learning speed",
+        "Team interfaces and risk"
+      ],
+      "whyFramework": "Select a role family and explain a concrete first contribution: requirement, prototype, calibration, environmental test, evidence, failure criteria, documentation, and next iteration.",
+      "officialSources": [
+        {
+          "label": "IN-SPACe official portal",
+          "url": "https://www.inspace.gov.in/inspace",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official",
+          "mayChange": false
+        },
+        {
+          "label": "IN-SPACe authorization and opportunity information",
+          "url": "https://www.inspace.gov.in/",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official-current-checked",
+          "mayChange": true
+        }
+      ]
+    },
+    {
+      "id": "csir-npl",
+      "name": "CSIR-National Physical Laboratory",
+      "type": "National metrology, measurement standards, materials, and devices",
+      "locationNote": "New Delhi; current posts and programme details require official notice checks.",
+      "missionSummary": "CSIR-NPL is India’s national metrology institute, maintaining and disseminating measurement standards while conducting research in metrology, materials, devices, environmental/biomedical measurement, and related instrumentation.",
+      "stableFacts": [
+        "Official NPL material emphasizes national standards, SI traceability, precision measurement, calibration, and services to science and industry.",
+        "Official research descriptions include advanced materials/devices, quantum and electrical metrology, optical radiation, sensors, atmospheric/environmental measurement, and analytical instrumentation.",
+        "A strong fit answer should connect uncertainty, calibration, traceability, standards, instrumentation, and material/device characterization rather than generic laboratory interest."
+      ],
+      "technicalFit": [
+        "Measurement uncertainty and calibration",
+        "Materials/device metrology",
+        "Sensors and instrumentation",
+        "Optical/electrical standards",
+        "Environmental measurement",
+        "Quantum/precision measurement"
+      ],
+      "interviewFocus": [
+        "Units and uncertainty",
+        "Traceability",
+        "Calibration design",
+        "Instrument limitations",
+        "Materials/sensor evidence",
+        "Quality systems"
+      ],
+      "whyFramework": "Connect your experimental physics and characterization background to traceable measurement, uncertainty budgets, reference standards, and instruments that serve national science and industry.",
+      "officialSources": [
+        {
+          "label": "CSIR-NPL official home",
+          "url": "https://www.nplindia.in/",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official",
+          "mayChange": false
+        },
+        {
+          "label": "CSIR-NPL careers and announcements",
+          "url": "https://www.nplindia.in/index.php/recruitments/",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official-current-checked",
+          "mayChange": true
+        }
+      ]
+    },
+    {
+      "id": "rrcat",
+      "name": "Raja Ramanna Centre for Advanced Technology (RRCAT)",
+      "type": "Lasers, particle accelerators, materials, and enabling technologies",
+      "locationNote": "Indore, Madhya Pradesh; current opportunities and programme details require official checks.",
+      "missionSummary": "RRCAT is a Department of Atomic Energy R&D centre focused on lasers, particle accelerators, their applications, and related technologies such as RF, vacuum, cryogenics, controls, diagnostics, and materials.",
+      "stableFacts": [
+        "The official RRCAT overview identifies lasers and particle accelerators as its core front-line R&D areas.",
+        "Official material describes national synchrotron facilities and enabling work in superconducting RF, cryogenics, magnets, ultra-high vacuum, instrumentation, controls, materials, and laser applications.",
+        "Interview preparation should connect fundamental optics/EM/quantum/materials physics to a subsystem, diagnostic, measurement, or facility requirement."
+      ],
+      "technicalFit": [
+        "Lasers and nonlinear optics",
+        "Accelerator and beam physics",
+        "RF and controls",
+        "Ultra-high vacuum and cryogenics",
+        "Materials and synchrotron characterization",
+        "Diagnostics and instrumentation"
+      ],
+      "interviewFocus": [
+        "Laser/accelerator fundamentals",
+        "Vacuum/RF/cryogenic systems",
+        "Materials characterization",
+        "Diagnostics/calibration",
+        "Safety and facility discipline",
+        "Project fit"
+      ],
+      "whyFramework": "Choose one laser, accelerator, material, or diagnostic lane and explain the governing physics, instrument chain, calibration, uncertainty, and safety/facility constraints.",
+      "officialSources": [
+        {
+          "label": "RRCAT official About Us",
+          "url": "https://www.rrcat.gov.in/organization/cat/aboutus.html",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official",
+          "mayChange": false
+        },
+        {
+          "label": "RRCAT opportunities",
+          "url": "https://www.rrcat.gov.in/hrd/Openings/Current_Openings.html",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official-current-checked",
+          "mayChange": true
+        }
+      ]
+    },
+    {
+      "id": "igcar",
+      "name": "Indira Gandhi Centre for Atomic Research (IGCAR)",
+      "type": "Fast-reactor technology, closed fuel cycle, materials, safety, and multidisciplinary R&D",
+      "locationNote": "Kalpakkam, Tamil Nadu; current posts, projects, and access conditions require official checks.",
+      "missionSummary": "IGCAR is a DAE research centre with a mission focused on fast-reactor and associated closed-fuel-cycle technology supported by multidisciplinary physics, materials, chemistry, engineering, instrumentation, and safety research.",
+      "stableFacts": [
+        "Official IGCAR profiles describe sodium-cooled fast-reactor and associated fuel-cycle R&D as central objectives.",
+        "Official material lists work in reactor physics/engineering, materials/metallurgy, chemistry, reprocessing, safety, control/instrumentation, computation, non-destructive evaluation, and related basic science.",
+        "All interview and project discussion must remain conceptual/public and demonstrate rigorous safety, materials reliability, thermal, measurement, and procedure awareness."
+      ],
+      "technicalFit": [
+        "Reactor/materials physics",
+        "High-temperature materials and corrosion",
+        "Non-destructive evaluation",
+        "Thermal/structural mechanics",
+        "Control and instrumentation",
+        "Radiation/material characterization"
+      ],
+      "interviewFocus": [
+        "Nuclear/thermo/material fundamentals",
+        "Fast-spectrum concept",
+        "Materials under irradiation/temperature",
+        "Instrumentation and reliability",
+        "Safety culture",
+        "Project evidence"
+      ],
+      "whyFramework": "Connect your materials and measurement background to reliable evidence under thermal, radiation, structural, or chemical constraints while respecting authorization and safety boundaries.",
+      "officialSources": [
+        {
+          "label": "IGCAR official profile",
+          "url": "https://www.igcar.gov.in/igcarprofile.html",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official",
+          "mayChange": false
+        },
+        {
+          "label": "IGCAR opportunities",
+          "url": "https://www.igcar.gov.in/recruitment.html",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official-current-checked",
+          "mayChange": true
+        }
+      ]
+    },
+    {
+      "id": "vecc",
+      "name": "Variable Energy Cyclotron Centre (VECC)",
+      "type": "Accelerator science, nuclear physics, materials, detectors, and instrumentation",
+      "locationNote": "Kolkata, West Bengal; current programmes and openings require official checks.",
+      "missionSummary": "VECC is a DAE R&D centre working in accelerator science and technology, experimental/theoretical nuclear physics, materials and radiation-damage studies, detectors, computing, and allied engineering.",
+      "stableFacts": [
+        "Official VECC material identifies accelerator science/technology, nuclear physics, material science, computer science, and allied areas.",
+        "Official group descriptions include cyclotrons, radioactive ion beams, high-energy physics, detector development, RF/power electronics, cryogenics, instrumentation, and radiation-damage/material studies.",
+        "A good interview answer should link a specific measurement or accelerator subsystem to first principles, calibration, radiation safety, reliability, and data analysis."
+      ],
+      "technicalFit": [
+        "Accelerator and beam physics",
+        "Nuclear experiments and theory",
+        "Detector electronics",
+        "Radiation damage/materials",
+        "RF, power, cryogenics and controls",
+        "Scientific computing/data acquisition"
+      ],
+      "interviewFocus": [
+        "Accelerator fundamentals",
+        "Nuclear reactions/detectors",
+        "Materials under beams",
+        "Electronics and DAQ",
+        "Calibration/uncertainty",
+        "Facility safety"
+      ],
+      "whyFramework": "Identify one accelerator, detector, materials, electronics, or data lane and defend the relevant physics, measurement chain, uncertainty, and facility discipline.",
+      "officialSources": [
+        {
+          "label": "VECC official group overview",
+          "url": "https://www.vecc.gov.in/groups/index/152",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official",
+          "mayChange": false
+        },
+        {
+          "label": "VECC recruitment",
+          "url": "https://www.vecc.gov.in/recruitment",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official-current-checked",
+          "mayChange": true
+        }
+      ]
+    },
+    {
+      "id": "tifr",
+      "name": "Tata Institute of Fundamental Research (TIFR)",
+      "type": "Fundamental research in physics, mathematics, computer science, chemistry, biology, and technology",
+      "locationNote": "Main campus Mumbai with national centres and field stations; programme and opening details are mutable.",
+      "missionSummary": "TIFR is a multidisciplinary fundamental-research institution supported by the Department of Atomic Energy, with research across physical sciences, mathematics, computer science, chemistry, biology, astronomy, and related technology.",
+      "stableFacts": [
+        "Official TIFR material describes schools in mathematics, natural sciences, and technology/computer science plus national centres and field facilities.",
+        "Physics-relevant work spans theoretical, high-energy, nuclear/atomic, condensed-matter/materials, astronomy, optics, instrumentation, and computation depending on group.",
+        "A strong application must identify a specific department, question, method, and preparation rather than treating TIFR as a generic elite institution."
+      ],
+      "technicalFit": [
+        "Condensed matter and materials",
+        "Nuclear and atomic physics",
+        "Astronomy and astrophysics",
+        "High-energy/theoretical physics",
+        "Optics and instrumentation",
+        "Scientific computing"
+      ],
+      "interviewFocus": [
+        "Research question",
+        "Group and literature fit",
+        "Mathematical depth",
+        "Experiment/instrument design",
+        "Data/uncertainty",
+        "Long-term research readiness"
+      ],
+      "whyFramework": "Name one current official group and a precise question, then explain the model, observable/experiment, skill gap, and evidence you can contribute.",
+      "officialSources": [
+        {
+          "label": "TIFR official home",
+          "url": "https://www.tifr.res.in/",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official",
+          "mayChange": false
+        },
+        {
+          "label": "TIFR graduate admissions",
+          "url": "https://www.tifr.res.in/academics/gs_admissions.php",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official-current-checked",
+          "mayChange": true
+        }
+      ]
+    },
+    {
+      "id": "bel",
+      "name": "Bharat Electronics Limited (BEL)",
+      "type": "Strategic and professional electronics, systems, manufacturing, and lifecycle support",
+      "locationNote": "Multiple units including Bengaluru; current division, role, and posting must be checked in the specific official notice.",
+      "missionSummary": "BEL is a Ministry of Defence public-sector electronics enterprise working across strategic electronics and related systems, with roles involving design, engineering, manufacturing, integration, testing, qualification, and lifecycle support.",
+      "stableFacts": [
+        "Official BEL material describes a multi-product electronics portfolio spanning radar, communication, electro-optics, avionics, electronic warfare, naval, security, space and other domains.",
+        "Physics graduates fit only through a specific role requiring sensors, RF/optics, materials, test, calibration, embedded systems, reliability, manufacturing, or quality evidence.",
+        "Interview answers must stay public and avoid performance/specification claims not explicitly official and current."
+      ],
+      "technicalFit": [
+        "Radar/RF and antennas",
+        "Electro-optics and sensors",
+        "Avionics and communications",
+        "Test and qualification",
+        "Manufacturing and quality",
+        "Space/strategic electronics"
+      ],
+      "interviewFocus": [
+        "Electronics fundamentals",
+        "System interfaces",
+        "Calibration/testing",
+        "Reliability/quality",
+        "Confidentiality",
+        "Production and lifecycle thinking"
+      ],
+      "whyFramework": "Connect a specific electronics or test role to your actual circuit, optics, sensor, materials, measurement, and documentation skills; avoid generic defence motivation.",
+      "officialSources": [
+        {
+          "label": "BEL official home",
+          "url": "https://bel-india.in/",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official",
+          "mayChange": false
+        },
+        {
+          "label": "BEL careers",
+          "url": "https://bel-india.in/job-notifications/",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official-current-checked",
+          "mayChange": true
+        }
+      ]
+    },
+    {
+      "id": "ecil",
+      "name": "Electronics Corporation of India Limited (ECIL)",
+      "type": "Strategic electronics, nuclear control and instrumentation, defence, aerospace, and systems",
+      "locationNote": "Hyderabad/Telangana and other units; current roles and locations require official notice checks.",
+      "missionSummary": "ECIL is a DAE public-sector enterprise established to build indigenous professional-grade and strategic electronics, with work across nuclear control/instrumentation and additional defence, aerospace, security, and government-system domains.",
+      "stableFacts": [
+        "ECIL’s official overview emphasizes indigenous capability in professional-grade electronics and lifecycle support.",
+        "Official portfolios include nuclear control and instrumentation, radiation monitoring, strategic electronics, communication, automation, computing, security, and related manufacturing/testing.",
+        "A strong candidate answer should focus on electronics, instrumentation, calibration, safety, reliability, production, and lifecycle evidence rather than naming products without understanding."
+      ],
+      "technicalFit": [
+        "Nuclear instrumentation and controls",
+        "Radiation detectors/monitoring",
+        "Strategic electronics",
+        "Automation and embedded systems",
+        "Power electronics",
+        "Testing, manufacturing and lifecycle support"
+      ],
+      "interviewFocus": [
+        "Circuit/instrument fundamentals",
+        "Control and data acquisition",
+        "Calibration/safety",
+        "Reliability/qualification",
+        "Manufacturing quality",
+        "Public-domain confidentiality"
+      ],
+      "whyFramework": "Explain how your instrumentation and experimental discipline can support calibrated, reliable electronics through design, test, qualification, production, and lifecycle support.",
+      "officialSources": [
+        {
+          "label": "ECIL official overview",
+          "url": "https://www.ecil.co.in/about",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official",
+          "mayChange": false
+        },
+        {
+          "label": "ECIL careers",
+          "url": "https://www.ecil.co.in/jobs.html",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official-current-checked",
+          "mayChange": true
+        }
+      ]
+    },
+    {
+      "id": "hal",
+      "name": "Hindustan Aeronautics Limited (HAL)",
+      "type": "Aircraft, helicopters, engines, avionics, aerospace manufacturing, repair, overhaul, and upgrades",
+      "locationNote": "Multiple production, service, and R&D locations; current role/posting is notice-specific.",
+      "missionSummary": "HAL is a Ministry of Defence aerospace public-sector enterprise involved in design, development, manufacture, repair, overhaul, and upgrade of aircraft, helicopters, engines, avionics, systems, and aerospace structural components.",
+      "stableFacts": [
+        "Official HAL recruitment material describes distributed production/overhaul/service divisions and R&D centres, so posting cannot be assumed from a corporate location.",
+        "Physics/materials/instrumentation relevance can include avionics, sensors, structural materials, non-destructive testing, metrology, reliability, environmental qualification, and data, depending on the role.",
+        "A strong answer distinguishes laboratory characterization from certified aerospace production, configuration control, traceability, quality, and lifecycle support."
+      ],
+      "technicalFit": [
+        "Aerospace materials and NDT",
+        "Avionics and sensors",
+        "Environmental/structural testing",
+        "Metrology and quality",
+        "Manufacturing/process control",
+        "Reliability and lifecycle engineering"
+      ],
+      "interviewFocus": [
+        "Role-specific fundamentals",
+        "Production versus prototype",
+        "Traceability/configuration",
+        "Qualification and acceptance",
+        "Failure investigation",
+        "Posting/team readiness"
+      ],
+      "whyFramework": "Connect your measurement/materials/electronics skills to a specific aircraft or avionics lifecycle task and explain calibration, qualification, traceability, and safety evidence.",
+      "officialSources": [
+        {
+          "label": "HAL official home",
+          "url": "https://hal-india.co.in/",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official",
+          "mayChange": false
+        },
+        {
+          "label": "HAL official recruitment notice example — recheck current careers",
+          "url": "https://hal-india.co.in/backend//wp-content/uploads/career/Security%20Guard%20and%20Fireman%2011.02.2026_1770806673.pdf",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official-current-checked",
+          "mayChange": true
+        }
+      ]
+    },
+    {
+      "id": "csir-nal",
+      "name": "CSIR-National Aerospace Laboratories (NAL)",
+      "type": "Civil aerospace R&D, aircraft, aerodynamics, structures, materials, systems, and testing",
+      "locationNote": "Bengaluru, Karnataka; current programmes and opportunities require official checks.",
+      "missionSummary": "CSIR-NAL is a CSIR aerospace R&D laboratory working across aircraft design, aerodynamics, structures, flight mechanics/control, propulsion, advanced materials, electronics, testing, and related national aerospace programmes.",
+      "stableFacts": [
+        "Official NAL material describes advanced aerospace R&D and national facilities such as aerodynamic, structural, acoustic, materials, and systems testing capabilities.",
+        "Physics/materials candidates can connect through composites/coatings, structural health, sensors, aero/thermal measurements, wind-tunnel instrumentation, vibration/acoustics, failure analysis, and validation.",
+        "Interview answers should connect one role to requirements, models, calibrated experiments, uncertainty, safety, and certification/qualification context."
+      ],
+      "technicalFit": [
+        "Aerospace materials/composites",
+        "Experimental aerodynamics",
+        "Structural dynamics and health monitoring",
+        "Sensors and instrumentation",
+        "Acoustics/vibration testing",
+        "CFD/data/flight systems"
+      ],
+      "interviewFocus": [
+        "Mechanics/fluids/material fundamentals",
+        "Test facility principles",
+        "Instrumentation/calibration",
+        "Failure analysis",
+        "Model-test correlation",
+        "Aerospace safety and qualification"
+      ],
+      "whyFramework": "Choose one aerospace R&D or test lane and connect governing physics to a calibrated experiment, uncertainty, structural/system requirement, and validation path.",
+      "officialSources": [
+        {
+          "label": "CSIR-NAL official About Us",
+          "url": "https://www.nal.res.in/en/about-us",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official",
+          "mayChange": false
+        },
+        {
+          "label": "CSIR-NAL careers",
+          "url": "https://www.nal.res.in/en/career",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official-current-checked",
+          "mayChange": true
+        }
+      ]
+    },
+    {
+      "id": "pixxel",
+      "name": "Pixxel",
+      "type": "Private space company — hyperspectral Earth observation and geospatial intelligence",
+      "locationNote": "The official contact page checked on 2026-08-15 lists Bengaluru offices and a California office. The workplace for any role must still be confirmed from the current opening.",
+      "missionSummary": "Pixxel’s official site describes an end-to-end Earth-observation focus spanning hyperspectral satellites, imagery, and data-derived insights for monitoring changes on Earth.",
+      "stableFacts": [
+        "Hyperspectral imaging measures many comparatively narrow spectral bands; useful retrievals require radiometric, spectral, geometric, and atmospheric calibration rather than treating colour as composition.",
+        "The official company material connects satellite hardware with imagery and analysis, so interview preparation should cover the complete target-to-retrieval evidence chain.",
+        "Company scale, openings, product specifications, constellation status, revisit claims, and office requirements are mutable and must be rechecked on the official site."
+      ],
+      "technicalFit": [
+        "Hyperspectral optics and detectors",
+        "Radiometric/spectral calibration",
+        "Payload electronics and thermal control",
+        "Remote-sensing retrieval and validation",
+        "Image processing and uncertainty",
+        "Spacecraft integration, test and quality"
+      ],
+      "interviewFocus": [
+        "Spectral versus spatial resolution",
+        "Detector noise and calibration",
+        "Atmospheric correction and ground truth",
+        "Payload–bus interfaces",
+        "Data quality and uncertainty",
+        "Role-specific evidence from the current opening"
+      ],
+      "whyFramework": "Connect one actual skill in optics, materials, electronics, calibration, or data to a bounded hyperspectral-Earth-observation deliverable. Explain the measurement chain, validation, uncertainty, and interfaces rather than repeating marketing resolution or revisit claims.",
+      "officialSources": [
+        {
+          "label": "Pixxel official Earth-observation profile",
+          "url": "https://www.pixxel.space/",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official-company",
+          "mayChange": false
+        },
+        {
+          "label": "Pixxel careers",
+          "url": "https://www.pixxel.space/careers",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official-current",
+          "mayChange": true
+        },
+        {
+          "label": "Pixxel contact and office information",
+          "url": "https://www.pixxel.space/contact",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official-current",
+          "mayChange": true
+        }
+      ]
+    },
+    {
+      "id": "bellatrix-aerospace",
+      "name": "Bellatrix Aerospace",
+      "type": "Private space company — satellite propulsion and in-space mobility",
+      "locationNote": "The official contact page checked on 2026-08-15 lists a Bengaluru address. Current role location and work arrangement require a fresh official check.",
+      "missionSummary": "Bellatrix’s official site presents satellite-propulsion and in-space-mobility work across electric and greener chemical propulsion, small propulsion systems, and orbital platforms.",
+      "stableFacts": [
+        "Propulsion interview preparation should begin with momentum conservation, thrust, specific impulse, mass flow, power, efficiency, thermal limits, materials, plume interactions, and test evidence.",
+        "Electric and chemical propulsion occupy different thrust, specific-impulse, power, storage, lifetime, and mission-use trade spaces; one is not universally better.",
+        "Product specifications, qualification status, mission history, openings, and delivery claims can change and must be checked on the official pages immediately before use."
+      ],
+      "technicalFit": [
+        "Plasma and electromagnetic physics",
+        "Thermodynamics, vacuum and heat transfer",
+        "Materials compatibility and contamination",
+        "Power electronics and diagnostics",
+        "Orbital manoeuvre analysis",
+        "Qualification, reliability and test instrumentation"
+      ],
+      "interviewFocus": [
+        "Thrust and specific impulse",
+        "Electric versus chemical trade-offs",
+        "Vacuum/plasma diagnostics",
+        "Thermal and materials constraints",
+        "Propulsion–spacecraft interfaces",
+        "Safety, test evidence and failure modes"
+      ],
+      "whyFramework": "Choose one propulsion, diagnostic, power, materials, or mission-analysis lane and connect governing physics to a calibrated, safe, public-domain test. Do not quote a product number or flight claim unless freshly verified.",
+      "officialSources": [
+        {
+          "label": "Bellatrix official propulsion profile",
+          "url": "https://bellatrix.aero/",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official-company",
+          "mayChange": false
+        },
+        {
+          "label": "Bellatrix official contact and Bengaluru address",
+          "url": "https://bellatrix.aero/contact",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official-current",
+          "mayChange": true
+        }
+      ]
+    },
+    {
+      "id": "digantara",
+      "name": "Digantara",
+      "type": "Private space company — space-domain awareness, sensors, astrodynamics, and data fusion",
+      "locationNote": "This dossier is included in the Bengaluru ecosystem track. Exact office, role location, travel, and security conditions must be checked in the current official opening.",
+      "missionSummary": "Digantara’s official pages describe space-intelligence infrastructure that combines ground- and space-based sensing, orbital data, fusion, analytics, and decision support for detecting, tracking, and understanding objects in space.",
+      "stableFacts": [
+        "Space-domain-awareness work connects optical or ranging sensors to calibration, association, orbit determination, covariance, propagation, data fusion, and decision thresholds.",
+        "A sensor observation is not an orbit: timing, reference frames, measurement models, biases, geometry, dynamics, and uncertainty determine the estimate.",
+        "Operational performance numbers, partners, missions, openings, and sensitive applications are mutable; interview discussion must remain on verified public physics and engineering."
+      ],
+      "technicalFit": [
+        "Optical sensors and telescopes",
+        "LiDAR/ranging principles",
+        "Orbital mechanics and estimation",
+        "Time, frames and calibration",
+        "Statistical data fusion",
+        "Mission operations and resilient software"
+      ],
+      "interviewFocus": [
+        "Observation-to-orbit chain",
+        "Reference frames and timing",
+        "Covariance and uncertainty",
+        "Sensor calibration and false association",
+        "Data fusion and validation",
+        "Public-domain/security discipline"
+      ],
+      "whyFramework": "Explain how a calibrated observation becomes a defensible orbital estimate: sensor physics, timing/frame, measurement model, filtering, covariance, independent validation, and operational boundary. Avoid repeating unverified accuracy claims.",
+      "officialSources": [
+        {
+          "label": "Digantara official company and technology profile",
+          "url": "https://www.digantara.co.in/",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official-company",
+          "mayChange": false
+        },
+        {
+          "label": "Digantara careers",
+          "url": "https://www.digantara.co.in/careers",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official-current",
+          "mayChange": true
+        }
+      ]
+    },
+    {
+      "id": "galaxeye",
+      "name": "GalaxEye",
+      "type": "Private space company — combined radar and multispectral Earth observation",
+      "locationNote": "This record is grouped into the Bengaluru private-space track; the official company footer identifies the legal entity, while each current opening must be checked for actual workplace and employment terms.",
+      "missionSummary": "GalaxEye’s official pages describe an Earth-observation approach combining synthetic-aperture radar and multispectral optical sensing with co-registration and data-fusion processing.",
+      "stableFacts": [
+        "Radar and optical measurements have different interaction physics, noise, geometry, calibration, resolution, and interpretability; fusion does not remove those source uncertainties.",
+        "Co-located or near-simultaneous sensors can reduce some viewing/time mismatches, but registration, jitter, radiometric calibration, atmosphere, speckle, and validation still matter.",
+        "Mission name, launch schedule, exact specifications, performance claims, openings, and commercial availability are mutable and must be rechecked officially."
+      ],
+      "technicalFit": [
+        "Electromagnetic waves and SAR",
+        "Multispectral optics and detectors",
+        "RF and antenna systems",
+        "Image co-registration and fusion",
+        "Payload calibration and pointing",
+        "Spacecraft systems, AIT and reliability"
+      ],
+      "interviewFocus": [
+        "SAR versus optical interaction",
+        "Range/azimuth and spectral/spatial resolution",
+        "Speckle, clouds and atmosphere",
+        "Co-registration and timing",
+        "Payload–bus interfaces",
+        "Validation and limits of fused products"
+      ],
+      "whyFramework": "Compare what radar and optical channels physically measure, then explain calibration, synchronized geometry, registration, uncertainty, and a ground-truth validation test. Do not claim fusion automatically creates truth.",
+      "officialSources": [
+        {
+          "label": "GalaxEye official profile",
+          "url": "https://galaxeye.space/about",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official-company",
+          "mayChange": false
+        },
+        {
+          "label": "GalaxEye technology overview",
+          "url": "https://galaxeye.space/technology",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official-current",
+          "mayChange": true
+        },
+        {
+          "label": "GalaxEye careers",
+          "url": "https://galaxeye.space/job-portal",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official-current",
+          "mayChange": true
+        }
+      ]
+    },
+    {
+      "id": "kaleideo",
+      "name": "KaleidEO",
+      "type": "Private space company — optical/multispectral payloads and Earth-observation infrastructure",
+      "locationNote": "The official career pages include role-specific requirements; current location, experience, and opening status must be read from the individual posting rather than assumed from this Bengaluru ecosystem record.",
+      "missionSummary": "KaleidEO’s official material describes development of optical and multispectral Earth-observation payloads, edge processing, payload services, and links across the data and mission value chain.",
+      "stableFacts": [
+        "An optical payload answer should connect scene radiance to aperture, optical train, focal plane, electronics, digitization, calibration, geometric correction, retrieval, and validation.",
+        "Payload performance is a coupled systems problem involving optics, detector, structure, thermal stability, pointing, power, data, processing, contamination, and test evidence.",
+        "Planned satellites, performance numbers, programme milestones, product availability, and hiring requirements can change and need current official verification."
+      ],
+      "technicalFit": [
+        "Optical design and stray light",
+        "Focal-plane detectors and camera electronics",
+        "Radiometric/geometric calibration",
+        "Structural-thermal-optical performance",
+        "Image processing and edge computing",
+        "Payload AIT, quality and systems engineering"
+      ],
+      "interviewFocus": [
+        "GSD versus optical resolution",
+        "SNR and radiometry",
+        "MTF, jitter and thermal focus",
+        "Detector/electronics chain",
+        "Calibration and ground truth",
+        "Qualification and requirements traceability"
+      ],
+      "whyFramework": "Select one payload subsystem or processing lane and trace a requirement to physics, design, calibration, environmental test, acceptance evidence, and in-orbit validation. Keep programme and hiring claims source-dated.",
+      "officialSources": [
+        {
+          "label": "KaleidEO official company profile",
+          "url": "https://kaleideo.co/company/about-us/",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official-company",
+          "mayChange": false
+        },
+        {
+          "label": "KaleidEO careers",
+          "url": "https://kaleideo.co/careers-at-kaleideo/",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official-current",
+          "mayChange": true
+        }
+      ]
+    },
+    {
+      "id": "satsure",
+      "name": "SatSure",
+      "type": "Private space/data company — Earth intelligence and decision analytics",
+      "locationNote": "This dossier is part of the Bengaluru ecosystem track. Current role location, remote/on-site terms, and eligibility must be verified in the official opening.",
+      "missionSummary": "SatSure’s official pages describe transformation of satellite, aerial, LiDAR, and related Earth data into analytics-ready, industry-specific decision intelligence.",
+      "stableFacts": [
+        "A defensible Earth-intelligence product needs calibrated inputs, labelled/representative data, versioned processing, uncertainty, independent validation, and monitoring for geographic or temporal shift.",
+        "Remote-sensing analytics should distinguish measured radiance/backscatter, intermediate features, model output, and a real-world decision; these are not interchangeable evidence levels.",
+        "Customers, impact counters, current products, subsidiary plans, roles, and hiring requirements are mutable and must be verified on official pages before use."
+      ],
+      "technicalFit": [
+        "Remote-sensing physics",
+        "Geospatial/image analysis",
+        "Statistics and model validation",
+        "Data engineering and reproducibility",
+        "Ground truth and uncertainty",
+        "Domain-specific decision products"
+      ],
+      "interviewFocus": [
+        "Sensor-to-decision chain",
+        "Spatial/spectral/temporal resolution",
+        "Training/validation leakage",
+        "Ground-truth design",
+        "Uncertainty and model drift",
+        "Communication with domain users"
+      ],
+      "whyFramework": "Connect remote-sensing physics and reproducible analysis to one bounded decision problem. State inputs, labels, validation split, uncertainty, failure cost, deployment monitoring, and what a user can and cannot conclude.",
+      "officialSources": [
+        {
+          "label": "SatSure official company profile",
+          "url": "https://www.satsure.co/about-us/",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official-company",
+          "mayChange": false
+        },
+        {
+          "label": "SatSure careers",
+          "url": "https://www.satsure.co/careers/",
+          "verifiedOn": "2026-08-15",
+          "confidence": "official-current",
+          "mayChange": true
+        }
+      ]
+    }
+  ]
+}
