@@ -62,7 +62,7 @@ This dated block supersedes older numeric snapshots later in the historical audi
 Still blocked or intentionally incomplete:
 
 - **84 cue-only prompts** still need individually reviewed full layers or explicit aliases; no fuzzy auto-linking is permitted.
-- Actual project material, route, parameters, hazards, instruments, contribution, observations, and next experiment remain unknown until supplied by the user.
+- The supervisor, two-phase sequence, and grinding/firing-based synthesis workflow are now user-confirmed. The exact compound/material, precursors, ratios, firing temperature/time/cycles/atmosphere, instruments, hazards/controls, personal contribution, observations, and exact next run remain unknown.
 - **0 source checks are currently due** after the 2026-08-15 official-link refresh; mutable sources still expire after 30 days and must be refreshed near use.
 - Real screen-reader, zoom, forced-colour, stylus/touch, microphone, SpeechRecognition, print, and device testing requires external browsers/devices; no browser runtime is installed in this repository environment.
 - Real provider AI/vision/TTS operation still requires a user-supplied session key or local endpoint, current model access, quota, and browser CORS. Mocked paths pass; no cloud provider is bundled or claimed verified.
@@ -510,7 +510,7 @@ Delivered:
 
 Remaining:
 
-- User must enter the actual material, route, precursors, parameters, hazards, techniques, personal work, and next experiment.
+- User-confirmed context now includes Prof. RC Nath, grinding/firing synthesis, and later characterization. The exact compound, precursors, firing parameters/atmosphere, hazards, techniques, personal work, and exact next run still require user or notebook confirmation.
 - Add richer instrument/troubleshooting branches after those facts are confirmed.
 - A truth-ledger-bound scorecard now records negative-result, falsification, alternative-method, contribution, and reproducibility self-evidence; real project facts are still required for substantive scoring.
 - Project version snapshots and a truth-labelled supervisor-review JSON export are delivered. Formal approval/signature remains external and is never inferred.

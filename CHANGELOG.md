@@ -39,7 +39,7 @@
 
 ### Practice systems
 
-- Added structured project truth ledger and status-aware pitches.
+- Added structured project truth ledger and status-aware pitches; later recorded the user-confirmed Prof. RC Nath, grinding/firing synthesis phase, and subsequent characterization phase without inventing the compound or parameters.
 - Added adaptive Mission Control and editable target profiles.
 - Added real SRS scheduling, undo, user-set daily limits, leech detection, suspend, and bury controls.
 - Added a cross-module Revision Queue for weak answers, missed traps/formulae, and failed derivation steps.

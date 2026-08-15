@@ -100,7 +100,7 @@ It checks runtime boot, content hashes, unique IDs, question metadata, handlers,
 
 - AI availability depends on a user-configured current endpoint/model/key, provider quota, and browser CORS. Mocked provider tests pass, but no cloud connection is bundled or guaranteed.
 - Current missions, programmes, careers, eligibility, dates, salaries, and posting details must be rechecked on official sources.
-- Actual project personalization remains incomplete until the user enters confirmed material, synthesis, instrument, safety, contribution, and next-step facts.
+- Project context now records Prof. RC Nath, a grinding/firing synthesis phase, and a subsequent characterization phase. Personalization remains incomplete until the exact compound, precursors, firing schedule/atmosphere, instruments, safety controls, contribution, and next run are confirmed.
 - Training evidence and AI feedback do not predict selection.
 
 See [`MISSION_VIVA_REMAINING_WORK_AUDIT.md`](MISSION_VIVA_REMAINING_WORK_AUDIT.md) for the detailed completion and remaining-work ledger.

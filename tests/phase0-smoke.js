@@ -255,6 +255,7 @@ const runtimeAssertions = `
   ok(PROJECT_FIELD_SCHEMA.length >= 25, 'Structured project field schema is incomplete');
   ok(projectData().supervisor.state === 'known' && projectData().supervisor.value === 'RC Nath', 'Known supervisor default is missing');
   ok(projectData().material.state === 'unknown', 'Unknown material must remain explicitly unknown');
+  ok(projectData().synthesisMethod.state==='known'&&projectData().synthesisMethod.value.includes('Grinding and firing')&&projectData().plannedTechniques.state==='planned'&&projectData().nextExperiment.state==='planned','User-confirmed grinding/firing and characterization context was not preserved');
   ok(projectReadiness().unknown > 0 && !projectReadiness().ready, 'Incomplete project was incorrectly marked ready');
   const safePitch=projectPitchText(90);
   ok(safePitch.includes('will not invent it') && !/undefined|null/i.test(safePitch), 'Pitch does not preserve unknown project facts safely');ok(projectPitchText(90,'isro').includes('For ISRO')&&projectPitchText(90,'isro').includes('official sources'),'Target-lens project pitch failed');
