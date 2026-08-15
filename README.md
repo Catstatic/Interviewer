@@ -28,6 +28,7 @@ External study links and the optional AI/TTS integrations require internet or a 
 - Adaptive Mission Control, target-specific evidence maps, timed/role-specific boards, stress profiles, communication metrics, Exam Bridge, and target-scoped Pre-flight
 - Five-level declared-subject trees, dedicated answer-correction sequences, reviewed factual checklists, and user-authored simple/specialist revisions
 - Resumable Live Room/post-mortem state, hold-to-talk, local in-memory audio practice, and respectful timed interruptions
+- Professional responsive 2.5.0 interface with refined command navigation, polished cards/forms/modals, accessible themes, mobile touch rail, forced-colours, reduced motion, and print layouts
 
 Counts are schema-tested and do not include numbered placeholder variants.
 

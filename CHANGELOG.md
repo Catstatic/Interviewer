@@ -2,6 +2,13 @@
 
 ## 2026-08-15 — Arena repair and depth build
 
+### Release-candidate 2.5.0 professional interface pass
+
+- Rebuilt the visual system with a refined offline system-font stack, consistent surface/field variables, stronger information hierarchy, polished hero panels, compact evidence cards, clearer form controls, professional button states, improved modal presentation, and theme-aware shadows.
+- Fixed calm-light theme contrast by removing hard-coded dark card, rail, field, and statistic surfaces.
+- Added a mobile-first horizontal command rail below 640 px, larger touch targets, single-column cards, compact modal spacing, responsive statistics, and improved overflow behavior.
+- Added theme-aware tables, code blocks, details, canvases, links, selection, scrollbars, focus/hover/active/disabled states, and reduced-motion/forced-colours safeguards without external fonts or libraries.
+
 ### Release-candidate 2.4.0 completion pass
 
 - Split the maintainable application into `src/mission-viva.template.html`, `src/mission-viva.css`, and `src/mission-viva.js` while preserving `mission-viva.html` as the deterministic single-file deliverable.

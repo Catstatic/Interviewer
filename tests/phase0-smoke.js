@@ -72,6 +72,7 @@ assert(html.includes('class="skip-link"') && html.includes('Skip to main content
 assert(html.includes('role="dialog"') && html.includes('aria-modal="true"') && html.includes('aria-hidden="true"'), 'Accessible dialog semantics are missing');
 assert(html.includes('@media(prefers-reduced-motion:reduce)'), 'Reduced-motion CSS is missing');
 assert(html.includes('@media(forced-colors:active)'), 'Forced-colours CSS is missing');
+assert(html.includes('Professional interface refinement') && html.includes('backdrop-filter:blur') && html.includes('@media(max-width:640px)'), 'Professional responsive UI refinement is missing');
 assert(html.includes('@media print'), 'Print stylesheet is missing');
 assert(html.includes(':focus-visible'), 'Visible keyboard focus style is missing');
 const railMarkup=(html.match(/<aside class="rail">([\s\S]*?)<\/aside>/)||[])[1]||'';
@@ -174,7 +175,7 @@ sandbox.window.addEventListener = () => {};
 const runtimeAssertions = `
 (function phase0Assertions(){
   const ok = (condition, message) => { if (!condition) throw new Error(message); };
-  ok(BUILD_MANIFEST.version==='2.4.0'&&BUILD_MANIFEST.stage==='release-candidate'&&BUILD_MANIFEST.storageSchema===MV.version,'Build manifest is stale or inconsistent');
+  ok(BUILD_MANIFEST.version==='2.5.0'&&BUILD_MANIFEST.stage==='release-candidate'&&BUILD_MANIFEST.storageSchema===MV.version,'Build manifest is stale or inconsistent');
   ok(q.length > 0 && q.length < 1500, 'Generated question padding was not compacted');
   ok(QUESTION_STATS.total === q.length, 'QUESTION_STATS total is stale');
   ok(q.every(x => x[3] && x[3].id && x[3].org && x[3].difficulty), 'Question metadata is incomplete');
