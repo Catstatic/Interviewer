@@ -1,0 +1,13 @@
+{
+  "format": "MISSION_VIVA_BACKUP",
+  "version": 2,
+  "progress": {
+    "evidence": [],
+    "nested": {
+      "authorization": "forbidden-secret"
+    }
+  },
+  "settings": {
+    "theme": "default"
+  }
+}

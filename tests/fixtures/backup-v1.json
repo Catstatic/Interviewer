@@ -1,0 +1,26 @@
+{
+  "format": "MISSION_VIVA_BACKUP",
+  "version": 1,
+  "exportedOn": "2026-01-01T00:00:00.000Z",
+  "progress": {
+    "cards": {
+      "F-001": {
+        "easeFactor": 2.4,
+        "reviews": 2,
+        "next": 1767225600000,
+        "history": []
+      }
+    },
+    "evidence": []
+  },
+  "settings": {
+    "theme": "default",
+    "cycle": 2027,
+    "profile": {
+      "subjectStrategy": {
+        "Optics and Lasers": "declared"
+      }
+    }
+  },
+  "sessions": []
+}

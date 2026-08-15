@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.mission-viva.invalid/schemas/content-v1.json",
+  "title": "MISSION VIVA reviewed content records",
+  "description": "Documentation schema for source-controlled content. The repository's zero-dependency validator enforces the same required fields without downloading a JSON Schema runtime.",
+  "$defs": {
+    "source": {
+      "type": "object",
+      "required": ["label", "url", "verifiedOn", "confidence", "mayChange"],
+      "properties": {
+        "label": {"type": "string", "minLength": 1},
+        "url": {"type": "string", "pattern": "^https://"},
+        "verifiedOn": {"type": ["string", "null"], "format": "date"},
+        "confidence": {"type": "string", "minLength": 1},
+        "mayChange": {"type": "boolean"}
+      },
+      "additionalProperties": true
+    },
+    "answerLayer": {
+      "type": "object",
+      "required": ["id", "topic", "question", "shortAnswer", "modelAnswer", "assumptions", "traps", "followUps", "reviewedOn", "status"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^ANS-[0-9]{3}$"},
+        "topic": {"type": "string", "minLength": 1},
+        "question": {"type": "string", "minLength": 5},
+        "shortAnswer": {"type": "string", "minLength": 20},
+        "modelAnswer": {"type": "string", "minLength": 80},
+        "assumptions": {"type": "array", "minItems": 2, "items": {"type": "string"}},
+        "traps": {"type": "array", "minItems": 2, "items": {"type": "string"}},
+        "followUps": {"type": "array", "minItems": 5, "maxItems": 5, "items": {"type": "string"}},
+        "reviewedOn": {"type": "string", "format": "date"},
+        "status": {"const": "reviewed-full-v1"}
+      },
+      "additionalProperties": true
+    },
+    "answerAlias": {
+      "type": "object",
+      "required": ["id", "question", "targetType", "targetTopic", "targetQuestion", "rationale", "reviewedOn", "status"],
+      "properties": {
+        "targetType": {"enum": ["deep-sheet", "curated-full"]},
+        "status": {"const": "reviewed-semantic-alias-v1"}
+      },
+      "additionalProperties": true
+    },
+    "flashcard": {
+      "type": "object",
+      "required": ["id", "topic", "type", "front", "back", "reviewedOn", "status", "mayChange"],
+      "properties": {
+        "status": {"const": "reviewed-stable-v1"},
+        "mayChange": {"const": false}
+      },
+      "additionalProperties": true
+    },
+    "trap": {
+      "type": "object",
+      "required": ["id", "category", "severity", "wrong", "why", "recovery", "followUp", "tags", "reviewedOn", "status"],
+      "properties": {
+        "severity": {"enum": ["medium", "high", "critical"]},
+        "status": {"const": "reviewed-distinct-v1"}
+      },
+      "additionalProperties": true
+    },
+    "derivation": {
+      "type": "object",
+      "required": ["id", "topic", "title", "assumptions", "steps", "interpretation", "unitCheck", "commonMistake", "panelInterruption", "summary"],
+      "properties": {
+        "steps": {"type": "array", "minItems": 5, "items": {"type": "string"}}
+      },
+      "additionalProperties": true
+    },
+    "visual": {
+      "type": "object",
+      "required": ["id", "topic", "title", "svg", "say", "checklist", "reviewedOn", "status"],
+      "properties": {
+        "checklist": {"type": "array", "minItems": 5, "maxItems": 5},
+        "status": {"const": "reviewed-original-v1"}
+      },
+      "additionalProperties": true
+    },
+    "resource": {
+      "type": "object",
+      "required": ["id", "title", "url", "scope", "topic", "type", "level", "expectedUse", "learningMode", "checkedOn", "mayChange"],
+      "properties": {
+        "url": {"type": "string", "pattern": "^https://"},
+        "checkedOn": {"type": "string", "format": "date"}
+      },
+      "additionalProperties": true
+    },
+    "dossier": {
+      "type": "object",
+      "required": ["id", "name", "type", "locationNote", "missionSummary", "stableFacts", "technicalFit", "interviewFocus", "whyFramework", "officialSources"],
+      "properties": {
+        "stableFacts": {"type": "array", "minItems": 3},
+        "technicalFit": {"type": "array", "minItems": 4},
+        "interviewFocus": {"type": "array", "minItems": 4},
+        "officialSources": {"type": "array", "minItems": 2, "items": {"$ref": "#/$defs/source"}}
+      },
+      "additionalProperties": true
+    }
+  }
+}
